@@ -1,0 +1,9 @@
+int:		4
+short:		2
+long:		8
+long long:	8
+unsigned int:	4
+char:		1
+float:		4
+double:		8
+long double:	16

@@ -1,0 +1,1458 @@
+<html>
+
+<head>
+<meta name=Generator content="Microsoft Word 14 (filtered)">
+<title>CS 0449 – Introduction to Systems Software</title>
+
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Cambria;
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Verdana;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+h1
+	{margin-top:24.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:14.0pt;
+	font-family:"Cambria","serif";}
+h1.CxSpFirst
+	{margin-top:24.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:14.0pt;
+	font-family:"Cambria","serif";}
+h1.CxSpMiddle
+	{margin:0in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:14.0pt;
+	font-family:"Cambria","serif";}
+h1.CxSpLast
+	{margin:0in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:14.0pt;
+	font-family:"Cambria","serif";}
+h2
+	{margin-top:10.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:13.0pt;
+	font-family:"Cambria","serif";}
+h3
+	{margin-top:10.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	line-height:112%;
+	font-size:11.0pt;
+	font-family:"Cambria","serif";}
+h4
+	{margin-top:10.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Cambria","serif";
+	font-style:italic;}
+h5
+	{margin-top:10.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Cambria","serif";
+	color:#7F7F7F;}
+h6
+	{margin:0in;
+	margin-bottom:.0001pt;
+	line-height:112%;
+	font-size:11.0pt;
+	font-family:"Cambria","serif";
+	color:#7F7F7F;
+	font-style:italic;}
+p.MsoHeading7, li.MsoHeading7, div.MsoHeading7
+	{margin:0in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Cambria","serif";
+	font-style:italic;}
+p.MsoHeading8, li.MsoHeading8, div.MsoHeading8
+	{margin:0in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Cambria","serif";}
+p.MsoHeading9, li.MsoHeading9, div.MsoHeading9
+	{margin:0in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Cambria","serif";
+	letter-spacing:.25pt;
+	font-style:italic;}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+p.MsoTitle, li.MsoTitle, div.MsoTitle
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	border:none;
+	padding:0in;
+	font-size:26.0pt;
+	font-family:"Cambria","serif";
+	letter-spacing:.25pt;}
+p.MsoTitleCxSpFirst, li.MsoTitleCxSpFirst, div.MsoTitleCxSpFirst
+	{margin:0in;
+	margin-bottom:.0001pt;
+	border:none;
+	padding:0in;
+	font-size:26.0pt;
+	font-family:"Cambria","serif";
+	letter-spacing:.25pt;}
+p.MsoTitleCxSpMiddle, li.MsoTitleCxSpMiddle, div.MsoTitleCxSpMiddle
+	{margin:0in;
+	margin-bottom:.0001pt;
+	border:none;
+	padding:0in;
+	font-size:26.0pt;
+	font-family:"Cambria","serif";
+	letter-spacing:.25pt;}
+p.MsoTitleCxSpLast, li.MsoTitleCxSpLast, div.MsoTitleCxSpLast
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	border:none;
+	padding:0in;
+	font-size:26.0pt;
+	font-family:"Cambria","serif";
+	letter-spacing:.25pt;}
+p.MsoSubtitle, li.MsoSubtitle, div.MsoSubtitle
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:30.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:12.0pt;
+	font-family:"Cambria","serif";
+	letter-spacing:.65pt;
+	font-style:italic;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;}
+em
+	{letter-spacing:.5pt;
+	border:none;
+	font-weight:bold;}
+p.MsoPlainText, li.MsoPlainText, div.MsoPlainText
+	{mso-style-link:"Plain Text Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+p.MsoNoSpacing, li.MsoNoSpacing, div.MsoNoSpacing
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+p.MsoQuote, li.MsoQuote, div.MsoQuote
+	{margin-top:10.0pt;
+	margin-right:.25in;
+	margin-bottom:0in;
+	margin-left:.25in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";
+	font-style:italic;}
+p.MsoIntenseQuote, li.MsoIntenseQuote, div.MsoIntenseQuote
+	{margin-top:10.0pt;
+	margin-right:.8in;
+	margin-bottom:14.0pt;
+	margin-left:.7in;
+	text-align:justify;
+	line-height:115%;
+	border:none;
+	padding:0in;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";
+	font-weight:bold;
+	font-style:italic;}
+span.MsoSubtleEmphasis
+	{font-style:italic;}
+span.MsoIntenseEmphasis
+	{font-weight:bold;}
+span.MsoSubtleReference
+	{font-variant:small-caps;}
+span.MsoIntenseReference
+	{font-variant:small-caps;
+	letter-spacing:.25pt;
+	text-decoration:underline;}
+span.MsoBookTitle
+	{font-variant:small-caps;
+	letter-spacing:.25pt;
+	font-style:italic;}
+p.MsoTocHeading, li.MsoTocHeading, div.MsoTocHeading
+	{margin-top:24.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:14.0pt;
+	font-family:"Cambria","serif";
+	font-weight:bold;}
+p.MsoTocHeadingCxSpFirst, li.MsoTocHeadingCxSpFirst, div.MsoTocHeadingCxSpFirst
+	{margin-top:24.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:14.0pt;
+	font-family:"Cambria","serif";
+	font-weight:bold;}
+p.MsoTocHeadingCxSpMiddle, li.MsoTocHeadingCxSpMiddle, div.MsoTocHeadingCxSpMiddle
+	{margin:0in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:14.0pt;
+	font-family:"Cambria","serif";
+	font-weight:bold;}
+p.MsoTocHeadingCxSpLast, li.MsoTocHeadingCxSpLast, div.MsoTocHeadingCxSpLast
+	{margin:0in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:14.0pt;
+	font-family:"Cambria","serif";
+	font-weight:bold;}
+span.TitleChar
+	{mso-style-name:"Title Char";
+	font-family:"Cambria","serif";
+	letter-spacing:.25pt;}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	font-family:"Cambria","serif";
+	font-weight:bold;}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	font-family:"Cambria","serif";
+	font-weight:bold;}
+span.Heading3Char
+	{mso-style-name:"Heading 3 Char";
+	font-family:"Cambria","serif";
+	font-weight:bold;}
+span.Heading4Char
+	{mso-style-name:"Heading 4 Char";
+	font-family:"Cambria","serif";
+	font-weight:bold;
+	font-style:italic;}
+span.Heading5Char
+	{mso-style-name:"Heading 5 Char";
+	font-family:"Cambria","serif";
+	color:#7F7F7F;
+	font-weight:bold;}
+span.Heading6Char
+	{mso-style-name:"Heading 6 Char";
+	font-family:"Cambria","serif";
+	color:#7F7F7F;
+	font-weight:bold;
+	font-style:italic;}
+span.Heading7Char
+	{mso-style-name:"Heading 7 Char";
+	font-family:"Cambria","serif";
+	font-style:italic;}
+span.Heading8Char
+	{mso-style-name:"Heading 8 Char";
+	font-family:"Cambria","serif";}
+span.Heading9Char
+	{mso-style-name:"Heading 9 Char";
+	font-family:"Cambria","serif";
+	letter-spacing:.25pt;
+	font-style:italic;}
+span.SubtitleChar
+	{mso-style-name:"Subtitle Char";
+	font-family:"Cambria","serif";
+	letter-spacing:.65pt;
+	font-style:italic;}
+span.QuoteChar
+	{mso-style-name:"Quote Char";
+	font-style:italic;}
+span.IntenseQuoteChar
+	{mso-style-name:"Intense Quote Char";
+	font-weight:bold;
+	font-style:italic;}
+p.ScheduleHeading, li.ScheduleHeading, div.ScheduleHeading
+	{mso-style-name:"Schedule Heading";
+	margin:0in;
+	margin-bottom:.0001pt;
+	text-align:center;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";
+	font-weight:bold;}
+span.NoSpacingChar
+	{mso-style-name:"No Spacing Char";}
+span.ScheduleHeadingChar
+	{mso-style-name:"Schedule Heading Char";}
+span.PlainTextChar
+	{mso-style-name:"Plain Text Char";
+	mso-style-link:"Plain Text";
+	font-family:"Calibri","sans-serif";}
+ /* Page Definitions */
+ @page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-US link=blue vlink=purple>
+
+<div class=WordSection1>
+
+<div style='border:none;border-bottom:solid windowtext 1.0pt;padding:0in 0in 1.0pt 0in'>
+
+<p class=MsoTitleCxSpFirst><b>CS 0449–Intro to Systems Software</b></p>
+
+<p class=MsoTitleCxSpLast>Fall Term: 2131</p>
+
+</div>
+
+<div align=center>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0
+ style='margin-left:-12.25pt;border-collapse:collapse;border:none'>
+ <tr style='height:12.4pt'>
+  <td width=91 valign=top style='width:68.3pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:12.4pt'>
+  <p class=MsoNoSpacing>&nbsp;</p>
+  </td>
+  <td width=148 valign=top style='width:110.9pt;border:solid windowtext 1.0pt;
+  border-left:none;background:#D9D9D9;padding:0in 5.4pt 0in 5.4pt;height:12.4pt'>
+  <p class=MsoNoSpacing align=center style='text-align:center'><b>Class</b></p>
+  </td>
+  <td width=156 valign=top style='width:117.0pt;border:solid windowtext 1.0pt;
+  border-left:none;background:#D9D9D9;padding:0in 5.4pt 0in 5.4pt;height:12.4pt'>
+  <p class=MsoNoSpacing align=center style='text-align:center'><b>Recitation</b></p>
+  </td>
+  <td width=155 valign=top style='width:116.2pt;border:solid windowtext 1.0pt;
+  border-left:none;background:#D9D9D9;padding:0in 5.4pt 0in 5.4pt;height:12.4pt'>
+  <p class=MsoNoSpacing align=center style='text-align:center'><b>Recitation</b></p>
+  </td>
+ </tr>
+ <tr style='height:12.4pt'>
+  <td width=91 valign=top style='width:68.3pt;border:solid windowtext 1.0pt;
+  border-top:none;background:#D9D9D9;padding:0in 5.4pt 0in 5.4pt;height:12.4pt'>
+  <p class=MsoNoSpacing><b>Time:</b></p>
+  </td>
+  <td width=148 valign=top style='width:110.9pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:12.4pt'>
+  <p class=MsoNoSpacing align=center style='text-align:center'>11:00am –
+  12:15pm</p>
+  </td>
+  <td width=156 valign=top style='width:117.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:12.4pt'>
+  <p class=MsoNoSpacing align=center style='text-align:center'>2:00pm – 2:50pm</p>
+  </td>
+  <td width=155 valign=top style='width:116.2pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:12.4pt'>
+  <p class=MsoNoSpacing align=center style='text-align:center'>3:00pm – 3:50pm</p>
+  </td>
+ </tr>
+ <tr style='height:12.4pt'>
+  <td width=91 valign=top style='width:68.3pt;border:solid windowtext 1.0pt;
+  border-top:none;background:#D9D9D9;padding:0in 5.4pt 0in 5.4pt;height:12.4pt'>
+  <p class=MsoNoSpacing><b>Days:</b></p>
+  </td>
+  <td width=148 valign=top style='width:110.9pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:12.4pt'>
+  <p class=MsoNoSpacing align=center style='text-align:center'>TH</p>
+  </td>
+  <td width=156 valign=top style='width:117.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:12.4pt'>
+  <p class=MsoNoSpacing align=center style='text-align:center'>T</p>
+  </td>
+  <td width=155 valign=top style='width:116.2pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:12.4pt'>
+  <p class=MsoNoSpacing align=center style='text-align:center'>H</p>
+  </td>
+ </tr>
+ <tr style='height:13.05pt'>
+  <td width=91 valign=top style='width:68.3pt;border:solid windowtext 1.0pt;
+  border-top:none;background:#D9D9D9;padding:0in 5.4pt 0in 5.4pt;height:13.05pt'>
+  <p class=MsoNoSpacing><b>Room:</b></p>
+  </td>
+  <td width=148 valign=top style='width:110.9pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:13.05pt'>
+  <p class=MsoNoSpacing align=center style='text-align:center'>G30 BENDM</p>
+  </td>
+  <td width=156 valign=top style='width:117.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:13.05pt'>
+  <p class=MsoNoSpacing align=center style='text-align:center'><span
+  lang=FR-CH>6110 SENSQ</span></p>
+  </td>
+  <td width=155 valign=top style='width:116.2pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:13.05pt'>
+  <p class=MsoNoSpacing align=center style='text-align:center'><span
+  lang=FR-CH>6110 SENSQ</span></p>
+  </td>
+ </tr>
+ <tr style='height:13.05pt'>
+  <td width=91 valign=top style='width:68.3pt;border:solid windowtext 1.0pt;
+  border-top:none;background:#D9D9D9;padding:0in 5.4pt 0in 5.4pt;height:13.05pt'>
+  <p class=MsoNoSpacing><b><span lang=FR-CH>Webpage:</span></b></p>
+  </td>
+  <td width=459 colspan=3 valign=top style='width:344.1pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:13.05pt'>
+  <p class=MsoNoSpacing align=center style='text-align:center'><a
+  href="http://www.cs.pitt.edu/~jmisurda/teaching/cs0449.htm">http://www.cs.pitt.edu/~jmisurda/teaching/cs0449.htm</a></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<h1>Contact Information</h1>
+
+<div align=center>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0
+ style='margin-left:29.4pt;border-collapse:collapse;border:none'>
+ <tr>
+  <td width=276 colspan=2 valign=top style='width:206.9pt;border:solid windowtext 1.0pt;
+  background:#D9D9D9;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNoSpacing><b>Instructor:</b> Jonathan Misurda</p>
+  </td>
+  <td width=24 valign=top style='width:17.8pt;border:none;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNoSpacing><b>&nbsp;</b></p>
+  </td>
+  <td width=252 colspan=2 valign=top style='width:188.7pt;border:solid windowtext 1.0pt;
+  border-left:none;background:#D9D9D9;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNoSpacing><b>TA: </b>John Wenskovitch</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=105 valign=top style='width:79.1pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNoSpacing><b>Office:</b></p>
+  </td>
+  <td width=170 valign=top style='width:127.8pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNoSpacing>6203 Sennott Square</p>
+  </td>
+  <td width=24 valign=top style='width:17.8pt;border:none;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNoSpacing>&nbsp;</p>
+  </td>
+  <td width=108 valign=top style='width:81.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNoSpacing><b>Office:</b></p>
+  </td>
+  <td width=144 valign=top style='width:107.7pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNoSpacing>6512 Sennott Square</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=105 valign=top style='width:79.1pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNoSpacing><b>Email:</b></p>
+  </td>
+  <td width=170 valign=top style='width:127.8pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNoSpacing><a href="mailto:jmisurda@cs.pitt.edu">jmisurda@cs.pitt.edu</a>
+  </p>
+  </td>
+  <td width=24 valign=top style='width:17.8pt;border:none;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNoSpacing>&nbsp;</p>
+  </td>
+  <td width=108 valign=top style='width:81.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNoSpacing><b>Email:</b></p>
+  </td>
+  <td width=144 valign=top style='width:107.7pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNoSpacing><a href="mailto:jew51@pitt.edu">jew51@pitt.edu</a>  </p>
+  </td>
+ </tr>
+ <tr>
+  <td width=105 valign=top style='width:79.1pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNoSpacing><b>Office Hours:</b></p>
+  </td>
+  <td width=170 valign=top style='width:127.8pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNoSpacing>Wed: 3-5</p>
+  <p class=MsoNoSpacing>Tue, Thur: 2-4</p>
+  </td>
+  <td width=24 valign=top style='width:17.8pt;border:none;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNoSpacing>&nbsp;</p>
+  </td>
+  <td width=108 valign=top style='width:81.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNoSpacing><b>Office Hours:</b></p>
+  </td>
+  <td width=144 valign=top style='width:107.7pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoPlainText>Tuesday 3-5</p>
+  <p class=MsoPlainText>Wednesday 10-12</p>
+  <p class=MsoPlainText>Thursday 1-3</p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<h1>Description</h1>
+
+<p class=MsoNormal style='text-align:justify'>A <i>Computer System</i> is
+comprised of both hardware and software working in concert to accomplish useful
+work. In this course, we will explore the issues of programming a real computer
+system by examining the abstractions, interfaces, and design decisions that
+influence the way that software runs. This includes the role the Operating
+System has in communication and resource management. </p>
+
+<p class=MsoNormal style='text-align:justify'>The perspective we will take is
+one of the lifecycle of a program from implementation to execution. The simple
+act of compiling and running a program, a sequence of events we often take for granted,
+is a complex interaction of many different components that work together to
+manage the computer’s resources and perform the desired task. Together, these
+components form a working computer system.</p>
+
+<h1>Prerequisites</h1>
+
+<p class=MsoNormal style='text-align:justify'>Before enrolling in this course,
+you need to have completed <i>CS 0441 – </i><i>Discrete Structures for Computer
+Science</i>, <i>CS 0445 – </i><i>Data Structures</i>, and have completed or be
+currently enrolled in <i>CS 0447 – </i><i>Computer Organization and Assembly
+Language Programming</i>.</p>
+
+<p class=MsoNormal style='text-align:justify'>If you have any questions about
+the prerequisite material for the course, please ask at the beginning of the
+term.</p>
+
+<b><span style='font-size:14.0pt;line-height:115%;font-family:"Cambria","serif"'><br
+clear=all style='page-break-before:always'>
+</span></b>
+
+<h1>Course Purposes and Goals</h1>
+
+<p class=MsoNormal style='text-align:justify'>This course begins with the
+creation of executable programs in the C programming language. We will then
+explore the resultant program as it as stored on disk and as it is loaded for
+execution. Next, we will examine the interactions between our code and the code
+provided via libraries or the operating system to facilitate common, low-level
+tasks. Finally, we will look at the abstractions and resource management
+undertaken by the OS and its drivers to facilitate communication and hardware
+interaction.</p>
+
+<p class=MsoNormal style='text-align:justify'>The goals of the course are:</p>
+
+<p class=MsoNoSpacing style='margin-left:.5in;text-indent:-.25in'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Learning C programming. C is the most common language used for
+systems software.</p>
+
+<p class=MsoNoSpacing style='margin-left:.5in;text-indent:-.25in'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Exploring the layout of an executable program’s code and data
+both as stored on disk and loaded into memory.</p>
+
+<p class=MsoNoSpacing style='margin-left:.5in;text-indent:-.25in'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Interacting with the abstractions that libraries and the
+operating system provide.</p>
+
+<p class=MsoNoSpacing style='margin-left:.5in;text-indent:-.25in'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Implementing our own abstractions, and manage hardware resources
+through device drivers.</p>
+
+<h1>Textbooks</h1>
+
+<p class=MsoNormal><b><span style='text-transform:uppercase'>[Required Text]</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'>Oualline, Steve. <i>Practical C
+Programming</i>. O’Reilly, Sebastopol, CA, 1997.</p>
+
+<p class=MsoNormal>ISBN: 1-56592-306-5</p>
+
+<p class=MsoNormal><i>You may substitute instead (but you’re responsible for
+the appropriate readings):</i></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-indent:-.5in'>Kernighan, Brian
+W.  and Ritchie, Dennis M. <i>C Programming Language</i>. 2nd Ed. <span
+style='font-size:10.0pt;line-height:115%;font-family:"Verdana","sans-serif";
+color:black'>Prentice Hall PTR, 1988.</span></p>
+
+<p class=MsoNormal>ISBN: 0-13110-362-8</p>
+
+<p class=MsoNormal><b><span style='text-transform:uppercase'>[Online Required
+Texts]</span></b></p>
+
+<p class=MsoNormal>There are three additional textbooks that are available
+online in PDF form that we will refer to throughout the term. Links can be
+found on the course website.</p>
+
+<h1>Class Policies</h1>
+
+<p class=MsoNormal style='text-align:justify'><b>Exams:  </b>There will be two
+midterms and a final. The exams will be closed book/notes. The final exam will be
+Friday, December 14, 2012 from 4:00pm to 5:50pm, in the normal classroom. Cheating
+on exams will not be tolerated.  Anyone caught cheating will be given a zero
+for the test and reported to the department following University procedures.</p>
+
+<p class=MsoNormal style='text-align:justify'><b>Projects:  </b>There will be 5
+out-of-class assignments given.  These are to be completed in the given time
+(no extensions will be given without a valid excuse. <b>LATE WORK IS NOT
+ACCEPTED</b>. Contact me <i>before</i> the deadline for clarifications.)  These
+are meant to be your own work; anyone found to be collaborating will be
+disciplined in accordance to University policy.  Cheating means (but is not
+limited to): using code from previous terms, other universities, your friends,
+finding it on the Internet, getting help from unapproved forums, or outsourcing
+it.</p>
+
+<p class=MsoNormal style='text-align:justify'><b>Labs and Quizzes:</b> 
+Attending recitation is an important part of this course.  In recitation you
+will be able to work in a structured setting while completing small tasks
+(Labs). Concepts from class will be expanded upon and tested with unannounced
+quizzes.</p>
+
+<p class=MsoNormal style='text-align:justify'><b>Participation:  </b>Attendance
+will not be taken, but in a small class, any absence will be noticed.  Several
+unexcused missed classes will adversely affect your grade. </p>
+
+<h1 style='text-align:justify'>Grading</h1>
+
+<p class=MsoNormal style='text-align:justify'>Your grade will be based upon 3
+exams, 5 projects, labs and quizzes (the lowest one of which will be dropped),
+and participation:</p>
+
+<div align=center>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;border:none'>
+ <tr style='height:15.15pt'>
+  <td width=144 valign=top style='width:1.5in;border:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:15.15pt'>
+  <p class=MsoNoSpacing><b>First Midterm</b></p>
+  </td>
+  <td width=136 valign=top style='width:101.9pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0in 5.4pt 0in 5.4pt;height:15.15pt'>
+  <p class=MsoNoSpacing>15%</p>
+  </td>
+ </tr>
+ <tr style='height:14.35pt'>
+  <td width=144 valign=top style='width:1.5in;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:14.35pt'>
+  <p class=MsoNoSpacing><b>Second Midterm</b></p>
+  </td>
+  <td width=136 valign=top style='width:101.9pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:14.35pt'>
+  <p class=MsoNoSpacing>15%</p>
+  </td>
+ </tr>
+ <tr style='height:14.35pt'>
+  <td width=144 valign=top style='width:1.5in;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:14.35pt'>
+  <p class=MsoNoSpacing><b>Final Exam</b></p>
+  </td>
+  <td width=136 valign=top style='width:101.9pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:14.35pt'>
+  <p class=MsoNoSpacing>15%</p>
+  </td>
+ </tr>
+ <tr style='height:14.35pt'>
+  <td width=144 valign=top style='width:1.5in;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:14.35pt'>
+  <p class=MsoNoSpacing><b>5 Projects</b></p>
+  </td>
+  <td width=136 valign=top style='width:101.9pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:14.35pt'>
+  <p class=MsoNoSpacing>40% (8% each)</p>
+  </td>
+ </tr>
+ <tr style='height:14.35pt'>
+  <td width=144 valign=top style='width:1.5in;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:14.35pt'>
+  <p class=MsoNoSpacing><b>Labs and Quizzes</b></p>
+  </td>
+  <td width=136 valign=top style='width:101.9pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:14.35pt'>
+  <p class=MsoNoSpacing>10%</p>
+  </td>
+ </tr>
+ <tr style='height:14.35pt'>
+  <td width=144 valign=top style='width:1.5in;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:14.35pt'>
+  <p class=MsoNoSpacing><b>Participation</b></p>
+  </td>
+  <td width=136 valign=top style='width:101.9pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:14.35pt'>
+  <p class=MsoNoSpacing>5%</p>
+  </td>
+ </tr>
+ <tr style='height:14.35pt'>
+  <td width=144 valign=top style='width:1.5in;border:solid windowtext 1.0pt;
+  border-top:none;background:#D9D9D9;padding:0in 5.4pt 0in 5.4pt;height:14.35pt'>
+  <p class=MsoNoSpacing><b>Total</b></p>
+  </td>
+  <td width=136 valign=top style='width:101.9pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  background:#D9D9D9;padding:0in 5.4pt 0in 5.4pt;height:14.35pt'>
+  <p class=MsoNoSpacing>100%</p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<p class=MsoNormal style='margin-top:6.0pt'>&nbsp;</p>
+
+<p class=MsoNormal style='margin-top:6.0pt'>The scale for the term will be:</p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width="100%"
+ style='width:100.0%;border-collapse:collapse;border:none'>
+ <tr style='height:15.0pt'>
+  <td width="17%" style='width:17.12%;border:none;border-top:solid black 1.5pt;
+  background:silver;padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class=MsoNoSpacing>Percentage</p>
+  </td>
+  <td width="7%" style='width:7.58%;border:none;border-top:solid black 1.5pt;
+  padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class=MsoNoSpacing>100</p>
+  </td>
+  <td width="6%" style='width:6.06%;border:none;border-top:solid black 1.5pt;
+  padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class=MsoNoSpacing>95</p>
+  </td>
+  <td width="6%" style='width:6.06%;border:none;border-top:solid black 1.5pt;
+  padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class=MsoNoSpacing>90</p>
+  </td>
+  <td width="6%" style='width:6.14%;border:none;border-top:solid black 1.5pt;
+  padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class=MsoNoSpacing>89</p>
+  </td>
+  <td width="6%" style='width:6.06%;border:none;border-top:solid black 1.5pt;
+  padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class=MsoNoSpacing>85</p>
+  </td>
+  <td width="6%" style='width:6.06%;border:none;border-top:solid black 1.5pt;
+  padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class=MsoNoSpacing>80</p>
+  </td>
+  <td width="6%" style='width:6.1%;border:none;border-top:solid black 1.5pt;
+  padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class=MsoNoSpacing>79</p>
+  </td>
+  <td width="6%" style='width:6.06%;border:none;border-top:solid black 1.5pt;
+  padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class=MsoNoSpacing>75</p>
+  </td>
+  <td width="6%" style='width:6.06%;border:none;border-top:solid black 1.5pt;
+  padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class=MsoNoSpacing>70</p>
+  </td>
+  <td width="6%" style='width:6.34%;border:none;border-top:solid black 1.5pt;
+  padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class=MsoNoSpacing>69</p>
+  </td>
+  <td width="6%" style='width:6.06%;border:none;border-top:solid black 1.5pt;
+  padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class=MsoNoSpacing>65</p>
+  </td>
+  <td width="6%" style='width:6.06%;border:none;border-top:solid black 1.5pt;
+  padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class=MsoNoSpacing>60</p>
+  </td>
+  <td width="8%" style='width:8.24%;border:none;border-top:solid black 1.5pt;
+  padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class=MsoNoSpacing>&lt; 60</p>
+  </td>
+ </tr>
+ <tr style='height:.25in'>
+  <td width="17%" style='width:17.12%;border:none;border-bottom:solid black 1.5pt;
+  background:silver;padding:0in 5.4pt 0in 5.4pt;height:.25in'>
+  <p class=MsoNoSpacing>Letter</p>
+  </td>
+  <td width="7%" style='width:7.58%;border:none;border-bottom:solid black 1.5pt;
+  padding:0in 5.4pt 0in 5.4pt;height:.25in'>
+  <p class=MsoNoSpacing>A+</p>
+  </td>
+  <td width="6%" style='width:6.06%;border:none;border-bottom:solid black 1.5pt;
+  padding:0in 5.4pt 0in 5.4pt;height:.25in'>
+  <p class=MsoNoSpacing>A</p>
+  </td>
+  <td width="6%" style='width:6.06%;border:none;border-bottom:solid black 1.5pt;
+  padding:0in 5.4pt 0in 5.4pt;height:.25in'>
+  <p class=MsoNoSpacing>A-</p>
+  </td>
+  <td width="6%" style='width:6.14%;border:none;border-bottom:solid black 1.5pt;
+  padding:0in 5.4pt 0in 5.4pt;height:.25in'>
+  <p class=MsoNoSpacing>B+</p>
+  </td>
+  <td width="6%" style='width:6.06%;border:none;border-bottom:solid black 1.5pt;
+  padding:0in 5.4pt 0in 5.4pt;height:.25in'>
+  <p class=MsoNoSpacing>B</p>
+  </td>
+  <td width="6%" style='width:6.06%;border:none;border-bottom:solid black 1.5pt;
+  padding:0in 5.4pt 0in 5.4pt;height:.25in'>
+  <p class=MsoNoSpacing>B-</p>
+  </td>
+  <td width="6%" style='width:6.1%;border:none;border-bottom:solid black 1.5pt;
+  padding:0in 5.4pt 0in 5.4pt;height:.25in'>
+  <p class=MsoNoSpacing>C+</p>
+  </td>
+  <td width="6%" style='width:6.06%;border:none;border-bottom:solid black 1.5pt;
+  padding:0in 5.4pt 0in 5.4pt;height:.25in'>
+  <p class=MsoNoSpacing>C</p>
+  </td>
+  <td width="6%" style='width:6.06%;border:none;border-bottom:solid black 1.5pt;
+  padding:0in 5.4pt 0in 5.4pt;height:.25in'>
+  <p class=MsoNoSpacing>C-</p>
+  </td>
+  <td width="6%" style='width:6.34%;border:none;border-bottom:solid black 1.5pt;
+  padding:0in 5.4pt 0in 5.4pt;height:.25in'>
+  <p class=MsoNoSpacing>D+</p>
+  </td>
+  <td width="6%" style='width:6.06%;border:none;border-bottom:solid black 1.5pt;
+  padding:0in 5.4pt 0in 5.4pt;height:.25in'>
+  <p class=MsoNoSpacing>D</p>
+  </td>
+  <td width="6%" style='width:6.06%;border:none;border-bottom:solid black 1.5pt;
+  padding:0in 5.4pt 0in 5.4pt;height:.25in'>
+  <p class=MsoNoSpacing>D-</p>
+  </td>
+  <td width="8%" style='width:8.24%;border:none;border-bottom:solid black 1.5pt;
+  padding:0in 5.4pt 0in 5.4pt;height:.25in'>
+  <p class=MsoNoSpacing>F</p>
+  </td>
+ </tr>
+</table>
+
+<h1>Disability Resources and Services:</h1>
+
+<p class=MsoNormal style='text-align:justify'>If you have a disability for
+which you are requesting an accommodation, you are encouraged to contact both
+your instructor and Disability Resources and Services, 216 William Pitt Union, (412) 648-7890, as early as possible in the term. DRS will verify your disability
+and determine reasonable accommodations for this course.</p>
+
+<h1>Academic Integrity</h1>
+
+<p class=MsoNormal style='text-align:justify'>Students are expected to comply
+with the University of Pittsburgh’s Policy on Academic Integrity. Any student
+suspected of violating this obligation for any reason during the semester will
+be required to participate in the procedural process as outlined in the
+University Guidelines on Academic Integrity. For further information see: <a
+href="http://www.pitt.edu/~provost/ai1.html">http://www.pitt.edu/~provost/ai1.html</a>
+</p>
+
+<h1>Term Schedule</h1>
+
+<p class=MsoNormal style='text-align:justify'>The daily topics are subject to
+change depending on our pace.  They are there to assist you in the readings so
+you can focus on those concepts prior to class.</p>
+
+<p class=MsoNormal style='text-align:justify'>The textbooks are indicated as
+follows:</p>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal style='margin-bottom:6.0pt;text-align:justify'><i>Practical
+     C </i>– Course text</li>
+ <li class=MsoNormal style='margin-bottom:6.0pt;text-align:justify'><i>Misurda</i>
+     – CS 0449: Introduction to Systems Software (online)</li>
+ <li class=MsoNormal style='margin-bottom:6.0pt;text-align:justify'><i>ALP</i>
+     – Advanced Linux Programming (online)</li>
+ <li class=MsoNormal style='margin-bottom:6.0pt;text-align:justify'><i>LDD3</i>
+     – Linux Device Drivers, 3<sup>rd</sup> edition (online)</li>
+</ul>
+
+<p class=MsoNormal style='margin-bottom:6.0pt;text-align:justify'>&nbsp;</p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width="100%"
+ style='width:100.0%;border-collapse:collapse;border:none'>
+ <tr>
+  <td width="100%" valign=top style='width:100.0%;border:solid windowtext 1.0pt;
+  background:#D9D9D9;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0in;margin-bottom:.0001pt;
+  text-align:center'><b>Week 1: 8/28/2012 - 8/30/2012</b></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="100%" valign=top style='width:100.0%;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNoSpacing><span lang=NL style='text-transform:uppercase'>Readings:
+  </span><i>Practical C</i>, Chapters 1-4, 6, 8, 11</p>
+  <p class=MsoNoSpacing><span lang=NL>&nbsp;</span></p>
+  <p class=MsoNoSpacing><span lang=NL style='text-transform:uppercase'>Topics:</span></p>
+  <p class=MsoNoSpacing style='margin-left:.5in;text-indent:-.25in'><span
+  style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span>Intro to the Course</p>
+  <p class=MsoNoSpacing style='margin-left:.5in;text-indent:-.25in'><span
+  lang=NL style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><span lang=NL>C Programming</span></p>
+  <p class=MsoNoSpacing style='margin-left:1.0in;text-indent:-.25in'><span
+  style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+  </span></span>Data Types and Representation </p>
+  <p class=MsoNoSpacing style='margin-left:1.0in;text-indent:-.25in'><span
+  lang=NL style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+  </span></span>Operators &amp; Bitwise Manipulation </p>
+  <p class=MsoNoSpacing style='margin-left:1.0in;text-indent:-.25in'><span
+  lang=NL style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+  </span></span>Control Flow</p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt'>&nbsp;</p>
+  </td>
+ </tr>
+ <tr>
+  <td width="100%" valign=top style='width:100.0%;border:solid windowtext 1.0pt;
+  border-top:none;background:#D9D9D9;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0in;margin-bottom:.0001pt;
+  text-align:center'><b>Week 2: 9/4/2012 - 9/6/2012</b></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="100%" valign=top style='width:100.0%;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNoSpacing><b><span style='text-transform:uppercase'>Friday,
+  September 7, 2012</span>: Fall term add/drop period ends</b></p>
+  <p class=MsoNoSpacing><span style='text-transform:uppercase'>&nbsp;</span></p>
+  <p class=MsoNoSpacing><span style='text-transform:uppercase'>Readings</span><span
+  style='text-transform:uppercase'>:</span><i> Practical C</i>, Chapters 5, 7,
+  9</p>
+  <p class=MsoNoSpacing>&nbsp;</p>
+  <p class=MsoNoSpacing><span style='text-transform:uppercase'>Topics:</span></p>
+  <p class=MsoNoSpacing style='margin-left:.5in;text-indent:-.25in'><span
+  style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span>C Programming (continued)</p>
+  <p class=MsoNoSpacing style='margin-left:1.0in;text-indent:-.25in'><span
+  style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+  </span></span>Arrays</p>
+  <p class=MsoNoSpacing style='margin-left:1.0in;text-indent:-.25in'><span
+  style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+  </span></span>Strings</p>
+  <p class=MsoNoSpacing style='margin-left:1.0in;text-indent:-.25in'><span
+  style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+  </span></span>Functions </p>
+  <p class=MsoNoSpacing>&nbsp;</p>
+  </td>
+ </tr>
+ <tr>
+  <td width="100%" valign=top style='width:100.0%;border:solid windowtext 1.0pt;
+  border-top:none;background:#D9D9D9;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0in;margin-bottom:.0001pt;
+  text-align:center'><b>Week 3: 9/11/2012 - 9/13/2012</b></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="100%" valign=top style='width:100.0%;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNoSpacing><span style='text-transform:uppercase'>Readings</span><span
+  style='text-transform:uppercase'>: </span><i>Practical C</i>, Chapters 10,
+  12-14, 17; <i>Misurda,</i> Chapter 1</p>
+  <p class=MsoNoSpacing>&nbsp;</p>
+  <p class=MsoNoSpacing><span style='text-transform:uppercase'>Topics:</span></p>
+  <p class=MsoNoSpacing style='margin-left:.5in;text-indent:-.25in'><span
+  style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span>C Programming (continued)</p>
+  <p class=MsoNoSpacing style='margin-left:1.0in;text-indent:-.25in'><span
+  style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+  </span></span>Scope vs. Lifetime</p>
+  <p class=MsoNoSpacing style='margin-left:1.0in;text-indent:-.25in'><span
+  style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+  </span></span>Pointers</p>
+  <p class=MsoNoSpacing style='margin-left:1.0in;text-indent:-.25in'><span
+  style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+  </span></span>I/O </p>
+  <p class=MsoNoSpacing style='margin-left:1.5in;text-indent:-.25in'><span
+  style='font-family:Wingdings'>§<span style='font:7.0pt "Times New Roman"'>&nbsp;
+  </span></span>Console</p>
+  <p class=MsoNoSpacing style='margin-left:1.5in;text-indent:-.25in'><span
+  style='font-family:Wingdings'>§<span style='font:7.0pt "Times New Roman"'>&nbsp;
+  </span></span>Files</p>
+  <p class=MsoNoSpacing>&nbsp;</p>
+  </td>
+ </tr>
+ <tr>
+  <td width="100%" valign=top style='width:100.0%;border:solid windowtext 1.0pt;
+  border-top:none;background:#D9D9D9;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0in;margin-bottom:.0001pt;
+  text-align:center'><b>Week 4: 9/18/2012 - 9/20/2012</b></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="100%" valign=top style='width:100.0%;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNoSpacing><span style='text-transform:uppercase'>Readings</span><span
+  style='text-transform:uppercase'>:</span><i> Practical C</i>, Chapters 15-23</p>
+  <p class=MsoNoSpacing>&nbsp;</p>
+  <p class=MsoNoSpacing><span style='text-transform:uppercase'>Topics:</span></p>
+  <p class=MsoNoSpacing style='margin-left:.5in;text-indent:-.25in'><span
+  style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span>C Programming (continued)</p>
+  <p class=MsoNoSpacing style='margin-left:1.0in;text-indent:-.25in'><span
+  style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+  </span></span>Memory management </p>
+  <p class=MsoNoSpacing style='margin-left:1.5in;text-indent:-.25in'><span
+  style='font-family:Wingdings'>§<span style='font:7.0pt "Times New Roman"'>&nbsp;
+  </span></span>malloc/free </p>
+  <p class=MsoNoSpacing style='margin-left:1.0in;text-indent:-.25in'><span
+  style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+  </span></span>Structures, and Unions</p>
+  <p class=MsoNoSpacing>&nbsp;</p>
+  </td>
+ </tr>
+ <tr>
+  <td width="100%" valign=top style='width:100.0%;border:solid windowtext 1.0pt;
+  border-top:none;background:#D9D9D9;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0in;margin-bottom:.0001pt;
+  text-align:center'><b>Week 5: 9/25/2012 - 9/27/2012</b></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="100%" valign=top style='width:100.0%;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNoSpacing><span style='text-transform:uppercase'>Thursday, September
+  27, 2012</span>: <b>First Midterm Exam</b></p>
+  <p class=MsoNoSpacing>&nbsp;</p>
+  <p class=MsoNoSpacing><span style='text-transform:uppercase'>Topics:</span></p>
+  <p class=MsoNoSpacing style='margin-left:.5in;text-indent:-.25in'><span
+  style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span>Review for first midterm exam</p>
+  <p class=MsoNoSpacing>&nbsp;</p>
+  </td>
+ </tr>
+ <tr>
+  <td width="100%" valign=top style='width:100.0%;border:solid windowtext 1.0pt;
+  border-top:none;background:#D9D9D9;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0in;margin-bottom:.0001pt;
+  text-align:center'><b>Week 6: 10/2/2012 - 10/4/2012</b></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="100%" valign=top style='width:100.0%;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNoSpacing><span style='text-transform:uppercase'>Readings</span><span
+  style='text-transform:uppercase'>: </span><i>Misurda</i>, Chapters 2 - 3</p>
+  <p class=MsoNoSpacing>&nbsp;</p>
+  <p class=MsoNoSpacing><span style='text-transform:uppercase'>Topics:</span></p>
+  <p class=MsoNoSpacing style='margin-left:.5in;text-indent:-.25in'><span
+  style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span>Program Representation</p>
+  <p class=MsoNoSpacing style='margin-left:.5in;text-indent:-.25in'><span
+  style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span>Linking</p>
+  <p class=MsoNoSpacing style='margin-left:1.0in;text-indent:-.25in'><span
+  style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+  </span></span>Static </p>
+  <p class=MsoNoSpacing style='margin-left:1.0in;text-indent:-.25in'><span
+  style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+  </span></span>Dynamic </p>
+  <p class=MsoNoSpacing style='margin-left:.5in;text-indent:-.25in'><span
+  style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span>Libraries, archives, shared objects </p>
+  <p class=MsoNoSpacing style='margin-left:.5in;text-indent:-.25in'><span
+  lang=NL style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span>Executable file formats</p>
+  <p class=MsoNoSpacing><span lang=NL>&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="100%" valign=top style='width:100.0%;border:solid windowtext 1.0pt;
+  border-top:none;background:#D9D9D9;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0in;margin-bottom:.0001pt;
+  text-align:center'><b>Week 7: 10/9/2012 - 10/11/2012</b></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="100%" valign=top style='width:100.0%;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNoSpacing><b><span style='color:red;text-transform:uppercase'>Tuesday,
+  October 10, 2012</span><span style='color:red'>: No class, follow your Monday
+  schedule!</span></b></p>
+  <p class=MsoNoSpacing><b><span style='color:red;text-transform:uppercase'>&nbsp;</span></b></p>
+  <p class=MsoNoSpacing><span style='text-transform:uppercase'>Readings:</span>
+  <i>Misurda</i>, Chapters 4 - 6</p>
+  <p class=MsoNoSpacing>&nbsp;</p>
+  <p class=MsoNoSpacing><span style='text-transform:uppercase'>Topics:</span></p>
+  <p class=MsoNoSpacing style='margin-left:.5in;text-indent:-.25in'><span
+  style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span>Processes &amp; Address Spaces</p>
+  <p class=MsoNoSpacing style='margin-left:.5in;text-indent:-.25in'><span
+  style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span>Data Representation</p>
+  <p class=MsoNoSpacing style='margin-left:1.0in;text-indent:-.25in'><span
+  style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+  </span></span>Globals, constants</p>
+  <p class=MsoNoSpacing style='margin-left:1.0in;text-indent:-.25in'><span
+  style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+  </span></span>Activation Records</p>
+  <p class=MsoNoSpacing style='margin-left:1.0in;text-indent:-.25in'><span
+  style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+  </span></span>Arrays and Structures</p>
+  </td>
+ </tr>
+ <tr>
+  <td width="100%" valign=top style='width:100.0%;border:solid windowtext 1.0pt;
+  border-top:none;background:#D9D9D9;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0in;margin-bottom:.0001pt;
+  text-align:center'><b>Week 8: 10/16/2012 - 10/18/2012</b></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="100%" valign=top style='width:100.0%;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNoSpacing><span style='text-transform:uppercase'>Readings:</span><i>
+  Misurda</i>, Chapter 7; <i>ALP</i> Chapters 3, 8</p>
+  <p class=MsoNoSpacing>&nbsp;</p>
+  <p class=MsoNoSpacing><span style='text-transform:uppercase'>Topics:</span></p>
+  <ul style='margin-top:0in' type=disc>
+   <li class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;
+       line-height:normal'>Interaction with Operating System</li>
+  </ul>
+  <ul style='margin-top:0in' type=disc>
+   <ul style='margin-top:0in' type=circle>
+    <li class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;
+        line-height:normal'>interrupts (int 0x80, int 3) </li>
+    <li class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;
+        line-height:normal'>calling convention/ABI </li>
+   </ul>
+  </ul>
+  <ul style='margin-top:0in' type=disc>
+   <li class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;
+       line-height:normal'>Syscalls</li>
+  </ul>
+  <ul style='margin-top:0in' type=disc>
+   <li class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;
+       line-height:normal'>Signal Handling</li>
+  </ul>
+  </td>
+ </tr>
+ <tr>
+  <td width="100%" valign=top style='width:100.0%;border:solid windowtext 1.0pt;
+  border-top:none;background:#D9D9D9;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0in;margin-bottom:.0001pt;
+  text-align:center'><b>Week 9: 10/23/2012 - 10/25/2012</b></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="100%" valign=top style='width:100.0%;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNoSpacing><b><span style='text-transform:uppercase'>Friday,
+  October 26, 2012</span>: Withdrawal Deadline (For “W” grade)</b></p>
+  <p class=MsoNoSpacing><span style='text-transform:uppercase'>&nbsp;</span></p>
+  <p class=MsoNoSpacing><span style='text-transform:uppercase'>Readings: </span><i>LDD3,</i>
+  Chapters  1-2</p>
+  <p class=MsoNoSpacing>&nbsp;</p>
+  <p class=MsoNoSpacing><span style='text-transform:uppercase'>Topics:</span></p>
+  <p class=MsoNoSpacing style='margin-left:.5in;text-indent:-.25in'><span
+  lang=FR-CH style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><span lang=FR-CH>Linux Device Drivers</span></p>
+  <p class=MsoNoSpacing>&nbsp;</p>
+  </td>
+ </tr>
+ <tr>
+  <td width="100%" valign=top style='width:100.0%;border:solid windowtext 1.0pt;
+  border-top:none;background:#D9D9D9;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0in;margin-bottom:.0001pt;
+  text-align:center'><b>Week 10: 10/30/2012 - 11/1/2012</b></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="100%" valign=top style='width:100.0%;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNoSpacing><span style='text-transform:uppercase'>&nbsp;</span></p>
+  <p class=MsoNoSpacing><span style='text-transform:uppercase'>Thursday, November
+  1, 2012</span>: <b>Second Midterm Exam</b></p>
+  <p class=MsoNoSpacing>&nbsp;</p>
+  <p class=MsoNoSpacing><span style='text-transform:uppercase'>Topics:</span></p>
+  <p class=MsoNoSpacing style='margin-left:.5in;text-indent:-.25in'><span
+  style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span>Review for second midterm exam</p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt'>&nbsp;</p>
+  </td>
+ </tr>
+ <tr>
+  <td width="100%" valign=top style='width:100.0%;border:solid windowtext 1.0pt;
+  border-top:none;background:#D9D9D9;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0in;margin-bottom:.0001pt;
+  text-align:center'><b>Week 11: 11/6/2012 - 11/8/2012</b></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="100%" valign=top style='width:100.0%;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNoSpacing><span style='text-transform:uppercase'>&nbsp;</span></p>
+  <p class=MsoNoSpacing><span style='text-transform:uppercase'>Readings:</span>
+  <i>Practical C</i>, Chapters 7,10,18</p>
+  <p class=MsoNoSpacing>&nbsp;</p>
+  <p class=MsoNoSpacing><span style='text-transform:uppercase'>Topics:</span></p>
+  <p class=MsoNoSpacing style='margin-left:.5in;text-indent:-.25in'><span
+  style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span>Multi-file Development</p>
+  <p class=MsoNoSpacing style='margin-left:1.0in;text-indent:-.25in'><span
+  style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+  </span></span>Providing an interface/API</p>
+  <p class=MsoNoSpacing style='margin-left:1.0in;text-indent:-.25in'><span
+  style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+  </span></span>Header files </p>
+  <p class=MsoNoSpacing style='margin-left:1.0in;text-indent:-.25in'><span
+  lang=NL style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+  </span></span>Makefiles</p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt'>&nbsp;</p>
+  </td>
+ </tr>
+ <tr>
+  <td width="100%" valign=top style='width:100.0%;border:solid windowtext 1.0pt;
+  border-top:none;background:#D9D9D9;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0in;margin-bottom:.0001pt;
+  text-align:center'><b>Week 12: 11/13/2012 - 11/15/2012</b></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="100%" valign=top style='width:100.0%;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNoSpacing><span style='text-transform:uppercase'>&nbsp;</span></p>
+  <p class=MsoNoSpacing><span style='text-transform:uppercase'>Readings: </span><i>Misurda</i>,
+  Chapter 8; <i>ALP,</i> Chapter 3</p>
+  <p class=MsoNoSpacing><span style='text-transform:uppercase'>&nbsp;</span></p>
+  <p class=MsoNoSpacing><span style='text-transform:uppercase'>Topics:</span></p>
+  <p class=MsoNoSpacing style='margin-left:.5in;text-indent:-.25in'><span
+  style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span>Threading </p>
+  <p class=MsoNoSpacing style='margin-left:1.0in;text-indent:-.25in'><span
+  style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+  </span></span>User vs. Kernel Threading</p>
+  <p class=MsoNoSpacing style='margin-left:1.0in;text-indent:-.25in'><span
+  style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+  </span></span>Scheduling/yield/sleep </p>
+  <p class=MsoNoSpacing style='margin-left:1.0in;text-indent:-.25in'><span
+  style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+  </span></span>pthreads</p>
+  <p class=MsoNoSpacing style='margin-left:.5in'><span lang=NL>&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="100%" valign=top style='width:100.0%;border:solid windowtext 1.0pt;
+  border-top:none;background:#D9D9D9;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0in;margin-bottom:.0001pt;
+  text-align:center'><b>Week 13: 11/20/2012 - 11/22/2012</b></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="100%" valign=top style='width:100.0%;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNoSpacing><span style='text-transform:uppercase'>&nbsp;</span></p>
+  <p class=MsoNoSpacing><span style='text-transform:uppercase'>Thursday,
+  November 22, 2012</span>: Thanksgiving Break, University Closed </p>
+  <p class=MsoNoSpacing><span style='text-transform:uppercase'>&nbsp;</span></p>
+  <p class=MsoNoSpacing><span style='text-transform:uppercase'>Readings:</span><i>
+  Misurda</i>, Chapter 9</p>
+  <p class=MsoNoSpacing><span style='text-transform:uppercase'>&nbsp;</span></p>
+  <p class=MsoNoSpacing><span style='text-transform:uppercase'>Topics:</span></p>
+  <p class=MsoNoSpacing style='margin-left:.5in;text-indent:-.25in'><span
+  style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span>Deadlocks/Synchronization </p>
+  <p class=MsoNoSpacing style='margin-left:1.0in'>&nbsp;</p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width="100%"
+ style='width:100.0%;border-collapse:collapse;border:none'>
+ <tr>
+  <td width="100%" valign=top style='width:100.0%;border:solid windowtext 1.0pt;
+  background:#D9D9D9;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0in;margin-bottom:.0001pt;
+  text-align:center'><b>Week 14:  11/27/2012 - 11/29/2012</b></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="100%" valign=top style='width:100.0%;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNoSpacing><span style='text-transform:uppercase'>Readings: </span><i>Misurda</i>,
+  Chapter 10</p>
+  <p class=MsoNoSpacing>&nbsp;</p>
+  <p class=MsoNoSpacing><span style='text-transform:uppercase'>Topics:</span></p>
+  <p class=MsoNoSpacing style='margin-left:.5in;text-indent:-.25in'><span
+  style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span>Communication and Networking</p>
+  <p class=MsoNoSpacing style='margin-left:1.0in;text-indent:-.25in'><span
+  style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+  </span></span>Berkley Sockets</p>
+  <p class=MsoNoSpacing style='margin-left:1.0in;text-indent:-.25in'><span
+  style='font-family:"Courier New";text-transform:uppercase'>o<span
+  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span>Pipes</p>
+  <p class=MsoNoSpacing style='margin-left:1.0in;text-indent:-.25in'><span
+  style='font-family:"Courier New";text-transform:uppercase'>o<span
+  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span>Shared Memory</p>
+  <p class=MsoNoSpacing>&nbsp;</p>
+  </td>
+ </tr>
+ <tr>
+  <td width="100%" valign=top style='width:100.0%;border:solid windowtext 1.0pt;
+  border-top:none;background:#D9D9D9;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0in;margin-bottom:.0001pt;
+  text-align:center'><b>Week 15: 12/4/2012 - 12/6/2012</b></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="100%" valign=top style='width:100.0%;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNoSpacing><span style='text-transform:uppercase'>Readings: </span>Prepare
+  for the final exam</p>
+  <p class=MsoNoSpacing>&nbsp;</p>
+  <p class=MsoNoSpacing><span style='text-transform:uppercase'>Topics:</span></p>
+  <p class=MsoNoSpacing style='margin-left:.5in;text-indent:-.25in'><span
+  style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span>Finish up Networking</p>
+  <p class=MsoNoSpacing style='margin-left:.5in;text-indent:-.25in'><span
+  style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span>Review for the final exam</p>
+  <p class=MsoNoSpacing>&nbsp;</p>
+  </td>
+ </tr>
+ <tr>
+  <td width="100%" valign=top style='width:100.0%;border:solid windowtext 1.0pt;
+  border-top:none;background:#D9D9D9;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0in;margin-bottom:.0001pt;
+  text-align:center'><b>Finals Week</b></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="100%" valign=top style='width:100.0%;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNoSpacing>&nbsp;</p>
+  <p class=MsoNormal align=center style='text-align:center'><b><span
+  style='font-size:12.0pt;line-height:115%'>Final Exam: </span>Friday, December
+  14, 2012  from 4:00pm to 5:50pm</b></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal>&nbsp;</p>
+
+</div>
+
+</body>
+
+</html>

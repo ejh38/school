@@ -1,0 +1,1 @@
+if (balance >= 0)   if (INTEREST_RATE >= 0)      balance = balance + (INTEREST_RATE * balance) / 12;   else      System.out.println("Cannot have a negative interest.");else   balance = balance - OVERDRAWN_PENALTY;  

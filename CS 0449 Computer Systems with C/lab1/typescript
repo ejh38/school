@@ -1,0 +1,9 @@
+Script started on Thu 30 Aug 2012 03:04:52 PM EDT
+(1) thot $ gcc lab1.c
+lab1.c: In function `main':
+lab1.c:5: error: syntax error before "return"
+(2) thot $ Use "exit" to leave the shell.
+(2) thot $ exit
+exit
+
+Script done on Thu 30 Aug 2012 03:05:11 PM EDT

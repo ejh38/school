@@ -1,0 +1,23 @@
+Lickety Splits Financial Statement:
+	Most Recent Shipment: 
+		Crates: 0
+		Banana cost: 0.0
+		Labor (moves): 0
+		Labor cost: 0.0
+		------------------------
+		Total: 0.0
+
+	Overall Expenses: 
+		Crates: 0
+		Banana cost: 0.0
+		Labor (moves): 0
+		Labor cost: 0.0
+		------------------------
+		Total cost: 0.0
+
+No crates in the stack - please reorder!
+8 bananas needed for order
+Store is out of bananas!  The horror!
+The current day is now Day 1
+
+End of Simulation

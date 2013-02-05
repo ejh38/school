@@ -1,0 +1,1 @@
+public T getFront(){   T front = null;   if (!isEmpty())      front = firstNode.getData();       return front;} // end getFront

@@ -1,0 +1,1 @@
+// Finds the node containing the largest entry in a given tree.// rootNode is the root node of the tree.// Returns the node containing the largest entry in the tree.private BinaryNodeInterface<T> findLargest(BinaryNodeInterface<T> rootNode){   if (rootNode.hasRightChild())      rootNode = findLargest(rootNode.getRightChild());       return rootNode;} // end findLargest

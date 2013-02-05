@@ -1,0 +1,1 @@
+int anArray[] = {1, 2, 3, 4, 5};int sum = 0;for (int element : anArray)   sum = sum + element;System.out.println(sum);String friends[] = {"Gavin", "Gail", "Jared", "Jessie"};for (String name : friends)   System.out.println(name);  

@@ -1,0 +1,2442 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word" xmlns:m="http://schemas.microsoft.com/office/2004/12/omml" xmlns:mv="http://macVmlSchemaUri" xmlns="http://www.w3.org/TR/REC-html40"><head>
+<meta name="Title" content="CS 1501">
+<meta name="Keywords" content="">
+<meta http-equiv="Content-Type" content="text/html; charset=x-mac-roman">
+<meta name="ProgId" content="Word.Document">
+<meta name="Generator" content="Microsoft Word 14">
+<meta name="Originator" content="Microsoft Word 14">
+<link rel="File-List" href="http://www.cs.pitt.edu/%7Eramirez/cs445/quiz1-sol_files/filelist.xml">
+<link rel="Edit-Time-Data" href="http://www.cs.pitt.edu/%7Eramirez/cs445/quiz1-sol_files/editdata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<title>CS 1501</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>John C. Ramirez</o:Author>
+  <o:LastAuthor>John Ramirez</o:LastAuthor>
+  <o:Revision>2</o:Revision>
+  <o:TotalTime>2689</o:TotalTime>
+  <o:LastPrinted>2009-02-04T21:26:00Z</o:LastPrinted>
+  <o:Created>2012-02-15T16:43:00Z</o:Created>
+  <o:LastSaved>2012-02-15T16:43:00Z</o:LastSaved>
+  <o:Pages>4</o:Pages>
+  <o:Words>902</o:Words>
+  <o:Characters>5143</o:Characters>
+  <o:Company>University of Pittsburgh</o:Company>
+  <o:Lines>42</o:Lines>
+  <o:Paragraphs>12</o:Paragraphs>
+  <o:CharactersWithSpaces>6033</o:CharactersWithSpaces>
+  <o:Version>14.0</o:Version>
+ </o:DocumentProperties>
+ <o:OfficeDocumentSettings>
+  <o:PixelsPerInch>96</o:PixelsPerInch>
+ </o:OfficeDocumentSettings>
+</xml><![endif]-->
+<link rel="themeData" href="http://www.cs.pitt.edu/%7Eramirez/cs445/quiz1-sol_files/themedata.xml">
+<!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:Zoom>125</w:Zoom>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:TrackMoves>false</w:TrackMoves>
+  <w:TrackFormatting/>
+  <w:DisplayHorizontalDrawingGridEvery>0</w:DisplayHorizontalDrawingGridEvery>
+  <w:DisplayVerticalDrawingGridEvery>0</w:DisplayVerticalDrawingGridEvery>
+  <w:UseMarginsForDrawingGridOrigin/>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:DoNotPromoteQF/>
+  <w:LidThemeOther>EN-US</w:LidThemeOther>
+  <w:LidThemeAsian>JA</w:LidThemeAsian>
+  <w:LidThemeComplexScript>X-NONE</w:LidThemeComplexScript>
+  <w:StyleSortMethod>0</w:StyleSortMethod>
+  <w:Compatibility>
+   <w:FootnoteLayoutLikeWW8/>
+   <w:ShapeLayoutLikeWW8/>
+   <w:AlignTablesRowByRow/>
+   <w:ForgetLastTabAlignment/>
+   <w:DoNotUseHTMLParagraphAutoSpacing/>
+   <w:LayoutRawTableWidth/>
+   <w:LayoutTableRowsApart/>
+   <w:UseWord97LineBreakingRules/>
+   <w:SelectEntireFieldWithStartOrEnd/>
+   <w:UseWord2002TableStyleRules/>
+   <w:DontUseIndentAsNumberingTabStop/>
+   <w:FELineBreak11/>
+   <w:WW11IndentRules/>
+   <w:DontAutofitConstrainedTables/>
+   <w:AutofitLikeWW11/>
+   <w:HangulWidthLikeWW11/>
+   <w:UseNormalStyleForList/>
+   <w:DontVertAlignCellWithSp/>
+   <w:DontBreakConstrainedForcedTables/>
+   <w:DontVertAlignInTxbx/>
+   <w:Word11KerningPairs/>
+   <w:CachedColBalance/>
+  </w:Compatibility>
+  <m:mathPr>
+   <m:mathFont m:val="Cambria Math"/>
+   <m:brkBin m:val="before"/>
+   <m:brkBinSub m:val="&#45;-"/>
+   <m:smallFrac m:val="off"/>
+   <m:dispDef m:val="off"/>
+   <m:lMargin m:val="0"/>
+   <m:rMargin m:val="0"/>
+   <m:defJc m:val="centerGroup"/>
+   <m:wrapRight/>
+   <m:intLim m:val="subSup"/>
+   <m:naryLim m:val="subSup"/>
+  </m:mathPr></w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="false"
+  DefSemiHidden="false" DefQFormat="false" LatentStyleCount="276">
+  <w:LsdException Locked="false" QFormat="true" Name="Normal"/>
+  <w:LsdException Locked="false" QFormat="true" Name="heading 1"/>
+  <w:LsdException Locked="false" QFormat="true" Name="heading 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 9"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="caption"/>
+  <w:LsdException Locked="false" QFormat="true" Name="Title"/>
+  <w:LsdException Locked="false" Priority="1" Name="Default Paragraph Font"/>
+  <w:LsdException Locked="false" QFormat="true" Name="Subtitle"/>
+  <w:LsdException Locked="false" QFormat="true" Name="Strong"/>
+  <w:LsdException Locked="false" QFormat="true" Name="Emphasis"/>
+  <w:LsdException Locked="false" Priority="99" Name="No List"/>
+  <w:LsdException Locked="false" Priority="99" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Note Level 1"/>
+  <w:LsdException Locked="false" Priority="99" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Note Level 2"/>
+  <w:LsdException Locked="false" Priority="99" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Note Level 3"/>
+  <w:LsdException Locked="false" Priority="99" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Note Level 4"/>
+  <w:LsdException Locked="false" Priority="99" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Note Level 5"/>
+  <w:LsdException Locked="false" Priority="99" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Note Level 6"/>
+  <w:LsdException Locked="false" Priority="99" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Note Level 7"/>
+  <w:LsdException Locked="false" Priority="99" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Note Level 8"/>
+  <w:LsdException Locked="false" Priority="99" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Note Level 9"/>
+  <w:LsdException Locked="false" Priority="99" SemiHidden="true"
+   Name="Placeholder Text"/>
+  <w:LsdException Locked="false" Priority="1" SemiHidden="true" QFormat="true"
+   Name="No Spacing"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 1"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="99" SemiHidden="true" Name="Revision"/>
+  <w:LsdException Locked="false" Priority="34" QFormat="true"
+   Name="List Paragraph"/>
+  <w:LsdException Locked="false" Priority="29" QFormat="true" Name="Quote"/>
+  <w:LsdException Locked="false" Priority="30" QFormat="true"
+   Name="Intense Quote"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 1"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 1"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 2"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 2"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 2"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 3"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 3"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 3"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 4"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 4"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 4"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 5"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 5"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 5"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 6"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 6"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 6"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="19" QFormat="true"
+   Name="Subtle Emphasis"/>
+  <w:LsdException Locked="false" Priority="21" QFormat="true"
+   Name="Intense Emphasis"/>
+  <w:LsdException Locked="false" Priority="31" QFormat="true"
+   Name="Subtle Reference"/>
+  <w:LsdException Locked="false" Priority="32" QFormat="true"
+   Name="Intense Reference"/>
+  <w:LsdException Locked="false" Priority="33" QFormat="true" Name="Book Title"/>
+  <w:LsdException Locked="false" Priority="37" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Bibliography"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="TOC Heading"/>
+ </w:LatentStyles>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+@font-face
+	{font-family:"Courier New";
+	panose-1:2 7 3 9 2 2 5 2 4 4;
+	mso-font-charset:0;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:-536859905 -1073711037 9 0 511 0;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 0 0 0 1 0;}
+@font-face
+	{font-family:NewCenturySchlbk;
+	panose-1:0 0 0 0 0 0 0 0 0 0;
+	mso-font-alt:"Century Schoolbook";
+	mso-font-charset:0;
+	mso-generic-font-family:roman;
+	mso-font-format:other;
+	mso-font-pitch:variable;
+	mso-font-signature:3 0 0 0 1 0;}
+ /* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+h1
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-next:Normal;
+	margin:0in;
+	margin-bottom:.0001pt;
+	text-align:center;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:1;
+	font-size:14.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-font-kerning:0pt;
+	font-weight:normal;}
+h2
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-next:Normal;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.25in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:2;
+	font-size:14.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{mso-style-unhide:no;
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	tab-stops:center 3.0in right 6.0in;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{mso-style-unhide:no;
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	tab-stops:center 3.0in right 6.0in;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+p.MsoBodyText, li.MsoBodyText, div.MsoBodyText
+	{mso-style-unhide:no;
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+p.MsoBodyTextIndent, li.MsoBodyTextIndent, div.MsoBodyTextIndent
+	{mso-style-unhide:no;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.25in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+p.MsoDocumentMap, li.MsoDocumentMap, div.MsoDocumentMap
+	{mso-style-noshow:yes;
+	mso-style-unhide:no;
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	background:navy;
+	font-size:10.0pt;
+	font-family:Tahoma;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoPlainText, li.MsoPlainText, div.MsoPlainText
+	{mso-style-unhide:no;
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Courier New";
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	mso-default-props:yes;}
+ /* Page Definitions */
+@page
+	{mso-footnote-separator:url(":quiz1-sol_files:header.htm") fs;
+	mso-footnote-continuation-separator:url(":quiz1-sol_files:header.htm") fcs;
+	mso-endnote-separator:url(":quiz1-sol_files:header.htm") es;
+	mso-endnote-continuation-separator:url(":quiz1-sol_files:header.htm") ecs;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:.8in .7in .6in .7in;
+	mso-header-margin:.3in;
+	mso-footer-margin:.5in;
+	mso-header:url(":quiz1-sol_files:header.htm") h1;
+	mso-paper-source:0;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+@list l0
+	{mso-list-id:54672427;
+	mso-list-type:simple;
+	mso-list-template-ids:-136020398;}
+@list l0:level1
+	{mso-level-start-at:2;
+	mso-level-text:"%1\)";
+	mso-level-tab-stop:.25in;
+	mso-level-number-position:left;
+	margin-left:.25in;
+	text-indent:-.25in;
+	mso-ansi-font-weight:normal;
+	mso-ansi-font-style:normal;}
+@list l1
+	{mso-list-id:87626197;
+	mso-list-template-ids:-843528406;}
+@list l1:level1
+	{mso-level-text:"%1\)";
+	mso-level-tab-stop:.25in;
+	mso-level-number-position:left;
+	margin-left:.25in;
+	text-indent:-.25in;
+	mso-ansi-font-size:11.0pt;
+	font-family:"Times New Roman";
+	mso-ansi-font-weight:normal;
+	mso-ansi-font-style:normal;}
+@list l1:level2
+	{mso-level-number-format:alpha-lower;
+	mso-level-text:"%2\)";
+	mso-level-tab-stop:.55in;
+	mso-level-number-position:left;
+	margin-left:.55in;
+	text-indent:-.3in;
+	mso-ansi-font-size:11.0pt;
+	font-family:"Times New Roman";
+	mso-ansi-font-weight:normal;
+	mso-ansi-font-style:normal;}
+@list l1:level3
+	{mso-level-number-format:roman-lower;
+	mso-level-text:"%3\)";
+	mso-level-tab-stop:1.05in;
+	mso-level-number-position:left;
+	margin-left:.85in;
+	text-indent:-.3in;}
+@list l1:level4
+	{mso-level-number-format:alpha-lower;
+	mso-level-text:"%4\)";
+	mso-level-tab-stop:2.05in;
+	mso-level-number-position:left;
+	margin-left:2.05in;
+	text-indent:-.3in;
+	font-family:"Times New Roman";
+	mso-ansi-font-weight:normal;
+	mso-ansi-font-style:normal;}
+@list l1:level5
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level6
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:3.0in;
+	mso-level-number-position:right;
+	text-indent:-9.0pt;}
+@list l1:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level8
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level9
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:4.5in;
+	mso-level-number-position:right;
+	text-indent:-9.0pt;}
+@list l2
+	{mso-list-id:132480370;
+	mso-list-type:simple;
+	mso-list-template-ids:2138079882;}
+@list l2:level1
+	{mso-level-number-format:alpha-lower;
+	mso-level-text:"%1\)";
+	mso-level-tab-stop:20.25pt;
+	mso-level-number-position:left;
+	margin-left:20.25pt;
+	text-indent:-20.25pt;}
+@list l3
+	{mso-list-id:204102342;
+	mso-list-type:hybrid;
+	mso-list-template-ids:2093668836 69632170 67698713 67698715 67698703 67698713 67698715 67698703 67698713 67698715;}
+@list l3:level1
+	{mso-level-text:"%1\)";
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l3:level2
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l3:level3
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:1.5in;
+	mso-level-number-position:right;
+	text-indent:-9.0pt;}
+@list l3:level5
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l3:level6
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:3.0in;
+	mso-level-number-position:right;
+	text-indent:-9.0pt;}
+@list l3:level8
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l3:level9
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:4.5in;
+	mso-level-number-position:right;
+	text-indent:-9.0pt;}
+@list l4
+	{mso-list-id:237328679;
+	mso-list-type:simple;
+	mso-list-template-ids:-1895166482;}
+@list l4:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.25in;
+	mso-level-number-position:left;
+	margin-left:.25in;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l5
+	{mso-list-id:264921674;
+	mso-list-template-ids:67698717;}
+@list l5:level1
+	{mso-level-text:"%1\)";
+	mso-level-tab-stop:.25in;
+	mso-level-number-position:left;
+	margin-left:.25in;
+	text-indent:-.25in;}
+@list l5:level2
+	{mso-level-number-format:alpha-lower;
+	mso-level-text:"%2\)";
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	margin-left:.5in;
+	text-indent:-.25in;}
+@list l5:level3
+	{mso-level-number-format:roman-lower;
+	mso-level-text:"%3\)";
+	mso-level-tab-stop:.75in;
+	mso-level-number-position:left;
+	margin-left:.75in;
+	text-indent:-.25in;}
+@list l5:level4
+	{mso-level-text:"\(%4\)";
+	mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	margin-left:1.0in;
+	text-indent:-.25in;}
+@list l5:level5
+	{mso-level-number-format:alpha-lower;
+	mso-level-text:"\(%5\)";
+	mso-level-tab-stop:1.25in;
+	mso-level-number-position:left;
+	margin-left:1.25in;
+	text-indent:-.25in;}
+@list l5:level6
+	{mso-level-number-format:roman-lower;
+	mso-level-text:"\(%6\)";
+	mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	margin-left:1.5in;
+	text-indent:-.25in;}
+@list l5:level7
+	{mso-level-tab-stop:1.75in;
+	mso-level-number-position:left;
+	margin-left:1.75in;
+	text-indent:-.25in;}
+@list l5:level8
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	margin-left:2.0in;
+	text-indent:-.25in;}
+@list l5:level9
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:2.25in;
+	mso-level-number-position:left;
+	margin-left:2.25in;
+	text-indent:-.25in;}
+@list l6
+	{mso-list-id:299657534;
+	mso-list-type:simple;
+	mso-list-template-ids:-97859808;}
+@list l6:level1
+	{mso-level-number-format:alpha-lower;
+	mso-level-text:"%1\)";
+	mso-level-tab-stop:.6in;
+	mso-level-number-position:left;
+	margin-left:.6in;
+	text-indent:-.3in;}
+@list l7
+	{mso-list-id:307782760;
+	mso-list-template-ids:-1663383304;}
+@list l7:level1
+	{mso-level-text:"%1\)";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:.25in;
+	text-indent:-.25in;
+	mso-ansi-font-weight:normal;
+	mso-ansi-font-style:normal;}
+@list l7:level2
+	{mso-level-number-format:alpha-lower;
+	mso-level-text:"%2\)";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:.5in;
+	text-indent:-.25in;}
+@list l7:level3
+	{mso-level-number-format:roman-lower;
+	mso-level-text:"%3\)";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:.75in;
+	text-indent:-.25in;
+	font-family:"Times New Roman";}
+@list l7:level4
+	{mso-level-text:"\(%4\)";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:1.0in;
+	text-indent:-.25in;}
+@list l7:level5
+	{mso-level-number-format:alpha-lower;
+	mso-level-text:"\(%5\)";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:1.25in;
+	text-indent:-.25in;}
+@list l7:level6
+	{mso-level-number-format:roman-lower;
+	mso-level-text:"\(%6\)";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:1.5in;
+	text-indent:-.25in;}
+@list l7:level7
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:1.75in;
+	text-indent:-.25in;}
+@list l7:level8
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:2.0in;
+	text-indent:-.25in;}
+@list l7:level9
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:2.25in;
+	text-indent:-.25in;}
+@list l8
+	{mso-list-id:392312318;
+	mso-list-type:simple;
+	mso-list-template-ids:2138079882;}
+@list l8:level1
+	{mso-level-number-format:alpha-lower;
+	mso-level-text:"%1\)";
+	mso-level-tab-stop:20.25pt;
+	mso-level-number-position:left;
+	margin-left:20.25pt;
+	text-indent:-20.25pt;}
+@list l9
+	{mso-list-id:399910091;
+	mso-list-template-ids:67698717;}
+@list l9:level1
+	{mso-level-text:"%1\)";
+	mso-level-tab-stop:.25in;
+	mso-level-number-position:left;
+	margin-left:.25in;
+	text-indent:-.25in;}
+@list l9:level2
+	{mso-level-number-format:alpha-lower;
+	mso-level-text:"%2\)";
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	margin-left:.5in;
+	text-indent:-.25in;}
+@list l9:level3
+	{mso-level-number-format:roman-lower;
+	mso-level-text:"%3\)";
+	mso-level-tab-stop:.75in;
+	mso-level-number-position:left;
+	margin-left:.75in;
+	text-indent:-.25in;}
+@list l9:level4
+	{mso-level-text:"\(%4\)";
+	mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	margin-left:1.0in;
+	text-indent:-.25in;}
+@list l9:level5
+	{mso-level-number-format:alpha-lower;
+	mso-level-text:"\(%5\)";
+	mso-level-tab-stop:1.25in;
+	mso-level-number-position:left;
+	margin-left:1.25in;
+	text-indent:-.25in;}
+@list l9:level6
+	{mso-level-number-format:roman-lower;
+	mso-level-text:"\(%6\)";
+	mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	margin-left:1.5in;
+	text-indent:-.25in;}
+@list l9:level7
+	{mso-level-tab-stop:1.75in;
+	mso-level-number-position:left;
+	margin-left:1.75in;
+	text-indent:-.25in;}
+@list l9:level8
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	margin-left:2.0in;
+	text-indent:-.25in;}
+@list l9:level9
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:2.25in;
+	mso-level-number-position:left;
+	margin-left:2.25in;
+	text-indent:-.25in;}
+@list l10
+	{mso-list-id:475874529;
+	mso-list-type:simple;
+	mso-list-template-ids:2098073742;}
+@list l10:level1
+	{mso-level-text:"%1\)";
+	mso-level-tab-stop:20.25pt;
+	mso-level-number-position:left;
+	margin-left:20.25pt;
+	text-indent:-20.25pt;
+	mso-ansi-font-weight:bold;}
+@list l11
+	{mso-list-id:543834435;
+	mso-list-type:simple;
+	mso-list-template-ids:-800972200;}
+@list l11:level1
+	{mso-level-number-format:alpha-lower;
+	mso-level-text:"%1\)";
+	mso-level-tab-stop:.25in;
+	mso-level-number-position:left;
+	margin-left:.25in;
+	text-indent:-.25in;}
+@list l12
+	{mso-list-id:559946160;
+	mso-list-template-ids:-843528406;}
+@list l12:level1
+	{mso-level-text:"%1\)";
+	mso-level-tab-stop:.25in;
+	mso-level-number-position:left;
+	margin-left:.25in;
+	text-indent:-.25in;
+	mso-ansi-font-size:11.0pt;
+	font-family:"Times New Roman";
+	mso-ansi-font-weight:normal;
+	mso-ansi-font-style:normal;}
+@list l12:level2
+	{mso-level-number-format:alpha-lower;
+	mso-level-text:"%2\)";
+	mso-level-tab-stop:.55in;
+	mso-level-number-position:left;
+	margin-left:.55in;
+	text-indent:-.3in;
+	mso-ansi-font-size:11.0pt;
+	font-family:"Times New Roman";
+	mso-ansi-font-weight:normal;
+	mso-ansi-font-style:normal;}
+@list l12:level3
+	{mso-level-number-format:roman-lower;
+	mso-level-text:"%3\)";
+	mso-level-tab-stop:1.05in;
+	mso-level-number-position:left;
+	margin-left:.85in;
+	text-indent:-.3in;}
+@list l12:level4
+	{mso-level-number-format:alpha-lower;
+	mso-level-text:"%4\)";
+	mso-level-tab-stop:2.05in;
+	mso-level-number-position:left;
+	margin-left:2.05in;
+	text-indent:-.3in;
+	font-family:"Times New Roman";
+	mso-ansi-font-weight:normal;
+	mso-ansi-font-style:normal;}
+@list l12:level5
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l12:level6
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:3.0in;
+	mso-level-number-position:right;
+	text-indent:-9.0pt;}
+@list l12:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l12:level8
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l12:level9
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:4.5in;
+	mso-level-number-position:right;
+	text-indent:-9.0pt;}
+@list l13
+	{mso-list-id:665014611;
+	mso-list-type:simple;
+	mso-list-template-ids:-1003195796;}
+@list l13:level1
+	{mso-level-number-format:alpha-lower;
+	mso-level-text:"%1\)";
+	mso-level-tab-stop:.55in;
+	mso-level-number-position:left;
+	margin-left:.55in;
+	text-indent:-.3in;}
+@list l14
+	{mso-list-id:683167839;
+	mso-list-template-ids:-843528406;}
+@list l14:level1
+	{mso-level-text:"%1\)";
+	mso-level-tab-stop:.25in;
+	mso-level-number-position:left;
+	margin-left:.25in;
+	text-indent:-.25in;
+	mso-ansi-font-size:11.0pt;
+	font-family:"Times New Roman";
+	mso-ansi-font-weight:normal;
+	mso-ansi-font-style:normal;}
+@list l14:level2
+	{mso-level-number-format:alpha-lower;
+	mso-level-text:"%2\)";
+	mso-level-tab-stop:.55in;
+	mso-level-number-position:left;
+	margin-left:.55in;
+	text-indent:-.3in;
+	mso-ansi-font-size:11.0pt;
+	font-family:"Times New Roman";
+	mso-ansi-font-weight:normal;
+	mso-ansi-font-style:normal;}
+@list l14:level3
+	{mso-level-number-format:roman-lower;
+	mso-level-text:"%3\)";
+	mso-level-tab-stop:1.05in;
+	mso-level-number-position:left;
+	margin-left:.85in;
+	text-indent:-.3in;}
+@list l14:level4
+	{mso-level-number-format:alpha-lower;
+	mso-level-text:"%4\)";
+	mso-level-tab-stop:2.05in;
+	mso-level-number-position:left;
+	margin-left:2.05in;
+	text-indent:-.3in;
+	font-family:"Times New Roman";
+	mso-ansi-font-weight:normal;
+	mso-ansi-font-style:normal;}
+@list l14:level5
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l14:level6
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:3.0in;
+	mso-level-number-position:right;
+	text-indent:-9.0pt;}
+@list l14:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l14:level8
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l14:level9
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:4.5in;
+	mso-level-number-position:right;
+	text-indent:-9.0pt;}
+@list l15
+	{mso-list-id:705257217;
+	mso-list-template-ids:-843528406;}
+@list l15:level1
+	{mso-level-text:"%1\)";
+	mso-level-tab-stop:.25in;
+	mso-level-number-position:left;
+	margin-left:.25in;
+	text-indent:-.25in;
+	mso-ansi-font-size:11.0pt;
+	font-family:"Times New Roman";
+	mso-ansi-font-weight:normal;
+	mso-ansi-font-style:normal;}
+@list l15:level2
+	{mso-level-number-format:alpha-lower;
+	mso-level-text:"%2\)";
+	mso-level-tab-stop:.55in;
+	mso-level-number-position:left;
+	margin-left:.55in;
+	text-indent:-.3in;
+	mso-ansi-font-size:11.0pt;
+	font-family:"Times New Roman";
+	mso-ansi-font-weight:normal;
+	mso-ansi-font-style:normal;}
+@list l15:level3
+	{mso-level-number-format:roman-lower;
+	mso-level-text:"%3\)";
+	mso-level-tab-stop:1.05in;
+	mso-level-number-position:left;
+	margin-left:.85in;
+	text-indent:-.3in;}
+@list l15:level4
+	{mso-level-number-format:alpha-lower;
+	mso-level-text:"%4\)";
+	mso-level-tab-stop:2.05in;
+	mso-level-number-position:left;
+	margin-left:2.05in;
+	text-indent:-.3in;
+	font-family:"Times New Roman";
+	mso-ansi-font-weight:normal;
+	mso-ansi-font-style:normal;}
+@list l15:level5
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l15:level6
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:3.0in;
+	mso-level-number-position:right;
+	text-indent:-9.0pt;}
+@list l15:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l15:level8
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l15:level9
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:4.5in;
+	mso-level-number-position:right;
+	text-indent:-9.0pt;}
+@list l16
+	{mso-list-id:896934122;
+	mso-list-type:simple;
+	mso-list-template-ids:-64616964;}
+@list l16:level1
+	{mso-level-number-format:alpha-lower;
+	mso-level-text:"%1\)";
+	mso-level-tab-stop:.6in;
+	mso-level-number-position:left;
+	margin-left:.6in;
+	text-indent:-.3in;}
+@list l17
+	{mso-list-id:992757691;
+	mso-list-template-ids:925396218;}
+@list l17:level1
+	{mso-level-text:"%1\)";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:.25in;
+	text-indent:-.25in;}
+@list l17:level2
+	{mso-level-number-format:alpha-lower;
+	mso-level-text:"%2\)";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:.5in;
+	text-indent:-.25in;}
+@list l17:level3
+	{mso-level-number-format:roman-lower;
+	mso-level-text:"%3\)";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:.75in;
+	text-indent:-.25in;
+	font-family:"Times New Roman";}
+@list l17:level4
+	{mso-level-text:"\(%4\)";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:1.0in;
+	text-indent:-.25in;}
+@list l17:level5
+	{mso-level-number-format:alpha-lower;
+	mso-level-text:"\(%5\)";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:1.25in;
+	text-indent:-.25in;}
+@list l17:level6
+	{mso-level-number-format:roman-lower;
+	mso-level-text:"\(%6\)";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:1.5in;
+	text-indent:-.25in;}
+@list l17:level7
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:1.75in;
+	text-indent:-.25in;}
+@list l17:level8
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:2.0in;
+	text-indent:-.25in;}
+@list l17:level9
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:2.25in;
+	text-indent:-.25in;}
+@list l18
+	{mso-list-id:1031610191;
+	mso-list-type:simple;
+	mso-list-template-ids:1098385422;}
+@list l18:level1
+	{mso-level-number-format:alpha-lower;
+	mso-level-text:"%1\)";
+	mso-level-tab-stop:.6in;
+	mso-level-number-position:left;
+	margin-left:.6in;
+	text-indent:-.3in;}
+@list l19
+	{mso-list-id:1065106717;
+	mso-list-template-ids:67698717;}
+@list l19:level1
+	{mso-level-text:"%1\)";
+	mso-level-tab-stop:.25in;
+	mso-level-number-position:left;
+	margin-left:.25in;
+	text-indent:-.25in;}
+@list l19:level2
+	{mso-level-number-format:alpha-lower;
+	mso-level-text:"%2\)";
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	margin-left:.5in;
+	text-indent:-.25in;}
+@list l19:level3
+	{mso-level-number-format:roman-lower;
+	mso-level-text:"%3\)";
+	mso-level-tab-stop:.75in;
+	mso-level-number-position:left;
+	margin-left:.75in;
+	text-indent:-.25in;}
+@list l19:level4
+	{mso-level-text:"\(%4\)";
+	mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	margin-left:1.0in;
+	text-indent:-.25in;}
+@list l19:level5
+	{mso-level-number-format:alpha-lower;
+	mso-level-text:"\(%5\)";
+	mso-level-tab-stop:1.25in;
+	mso-level-number-position:left;
+	margin-left:1.25in;
+	text-indent:-.25in;}
+@list l19:level6
+	{mso-level-number-format:roman-lower;
+	mso-level-text:"\(%6\)";
+	mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	margin-left:1.5in;
+	text-indent:-.25in;}
+@list l19:level7
+	{mso-level-tab-stop:1.75in;
+	mso-level-number-position:left;
+	margin-left:1.75in;
+	text-indent:-.25in;}
+@list l19:level8
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	margin-left:2.0in;
+	text-indent:-.25in;}
+@list l19:level9
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:2.25in;
+	mso-level-number-position:left;
+	margin-left:2.25in;
+	text-indent:-.25in;}
+@list l20
+	{mso-list-id:1072772987;
+	mso-list-template-ids:-843528406;}
+@list l20:level1
+	{mso-level-text:"%1\)";
+	mso-level-tab-stop:.25in;
+	mso-level-number-position:left;
+	margin-left:.25in;
+	text-indent:-.25in;
+	mso-ansi-font-size:11.0pt;
+	font-family:"Times New Roman";
+	mso-ansi-font-weight:normal;
+	mso-ansi-font-style:normal;}
+@list l20:level2
+	{mso-level-number-format:alpha-lower;
+	mso-level-text:"%2\)";
+	mso-level-tab-stop:.55in;
+	mso-level-number-position:left;
+	margin-left:.55in;
+	text-indent:-.3in;
+	mso-ansi-font-size:11.0pt;
+	font-family:"Times New Roman";
+	mso-ansi-font-weight:normal;
+	mso-ansi-font-style:normal;}
+@list l20:level3
+	{mso-level-number-format:roman-lower;
+	mso-level-text:"%3\)";
+	mso-level-tab-stop:1.05in;
+	mso-level-number-position:left;
+	margin-left:.85in;
+	text-indent:-.3in;}
+@list l20:level4
+	{mso-level-number-format:alpha-lower;
+	mso-level-text:"%4\)";
+	mso-level-tab-stop:2.05in;
+	mso-level-number-position:left;
+	margin-left:2.05in;
+	text-indent:-.3in;
+	font-family:"Times New Roman";
+	mso-ansi-font-weight:normal;
+	mso-ansi-font-style:normal;}
+@list l20:level5
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l20:level6
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:3.0in;
+	mso-level-number-position:right;
+	text-indent:-9.0pt;}
+@list l20:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l20:level8
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l20:level9
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:4.5in;
+	mso-level-number-position:right;
+	text-indent:-9.0pt;}
+@list l21
+	{mso-list-id:1106148995;
+	mso-list-type:simple;
+	mso-list-template-ids:1658591836;}
+@list l21:level1
+	{mso-level-start-at:6;
+	mso-level-text:"%1\)";
+	mso-level-tab-stop:22.5pt;
+	mso-level-number-position:left;
+	margin-left:22.5pt;
+	text-indent:-22.5pt;}
+@list l22
+	{mso-list-id:1106732787;
+	mso-list-template-ids:67698717;}
+@list l22:level1
+	{mso-level-text:"%1\)";
+	mso-level-tab-stop:.25in;
+	mso-level-number-position:left;
+	margin-left:.25in;
+	text-indent:-.25in;}
+@list l22:level2
+	{mso-level-number-format:alpha-lower;
+	mso-level-text:"%2\)";
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	margin-left:.5in;
+	text-indent:-.25in;}
+@list l22:level3
+	{mso-level-number-format:roman-lower;
+	mso-level-text:"%3\)";
+	mso-level-tab-stop:.75in;
+	mso-level-number-position:left;
+	margin-left:.75in;
+	text-indent:-.25in;}
+@list l22:level4
+	{mso-level-text:"\(%4\)";
+	mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	margin-left:1.0in;
+	text-indent:-.25in;}
+@list l22:level5
+	{mso-level-number-format:alpha-lower;
+	mso-level-text:"\(%5\)";
+	mso-level-tab-stop:1.25in;
+	mso-level-number-position:left;
+	margin-left:1.25in;
+	text-indent:-.25in;}
+@list l22:level6
+	{mso-level-number-format:roman-lower;
+	mso-level-text:"\(%6\)";
+	mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	margin-left:1.5in;
+	text-indent:-.25in;}
+@list l22:level7
+	{mso-level-tab-stop:1.75in;
+	mso-level-number-position:left;
+	margin-left:1.75in;
+	text-indent:-.25in;}
+@list l22:level8
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	margin-left:2.0in;
+	text-indent:-.25in;}
+@list l22:level9
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:2.25in;
+	mso-level-number-position:left;
+	margin-left:2.25in;
+	text-indent:-.25in;}
+@list l23
+	{mso-list-id:1123422743;
+	mso-list-type:simple;
+	mso-list-template-ids:1280706584;}
+@list l23:level1
+	{mso-level-number-format:alpha-lower;
+	mso-level-text:"%1\)";
+	mso-level-tab-stop:.55in;
+	mso-level-number-position:left;
+	margin-left:.55in;
+	text-indent:-.3in;}
+@list l24
+	{mso-list-id:1126391868;
+	mso-list-template-ids:67698717;}
+@list l24:level1
+	{mso-level-text:"%1\)";
+	mso-level-tab-stop:.25in;
+	mso-level-number-position:left;
+	margin-left:.25in;
+	text-indent:-.25in;}
+@list l24:level2
+	{mso-level-number-format:alpha-lower;
+	mso-level-text:"%2\)";
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	margin-left:.5in;
+	text-indent:-.25in;}
+@list l24:level3
+	{mso-level-number-format:roman-lower;
+	mso-level-text:"%3\)";
+	mso-level-tab-stop:.75in;
+	mso-level-number-position:left;
+	margin-left:.75in;
+	text-indent:-.25in;}
+@list l24:level4
+	{mso-level-text:"\(%4\)";
+	mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	margin-left:1.0in;
+	text-indent:-.25in;}
+@list l24:level5
+	{mso-level-number-format:alpha-lower;
+	mso-level-text:"\(%5\)";
+	mso-level-tab-stop:1.25in;
+	mso-level-number-position:left;
+	margin-left:1.25in;
+	text-indent:-.25in;}
+@list l24:level6
+	{mso-level-number-format:roman-lower;
+	mso-level-text:"\(%6\)";
+	mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	margin-left:1.5in;
+	text-indent:-.25in;}
+@list l24:level7
+	{mso-level-tab-stop:1.75in;
+	mso-level-number-position:left;
+	margin-left:1.75in;
+	text-indent:-.25in;}
+@list l24:level8
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	margin-left:2.0in;
+	text-indent:-.25in;}
+@list l24:level9
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:2.25in;
+	mso-level-number-position:left;
+	margin-left:2.25in;
+	text-indent:-.25in;}
+@list l25
+	{mso-list-id:1228108680;
+	mso-list-type:simple;
+	mso-list-template-ids:961071124;}
+@list l25:level1
+	{mso-level-number-format:alpha-lower;
+	mso-level-text:"%1\)";
+	mso-level-tab-stop:.3in;
+	mso-level-number-position:left;
+	margin-left:.3in;
+	text-indent:-.3in;}
+@list l26
+	{mso-list-id:1267466527;
+	mso-list-template-ids:67698717;}
+@list l26:level1
+	{mso-level-text:"%1\)";
+	mso-level-tab-stop:.25in;
+	mso-level-number-position:left;
+	margin-left:.25in;
+	text-indent:-.25in;}
+@list l26:level2
+	{mso-level-number-format:alpha-lower;
+	mso-level-text:"%2\)";
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	margin-left:.5in;
+	text-indent:-.25in;}
+@list l26:level3
+	{mso-level-number-format:roman-lower;
+	mso-level-text:"%3\)";
+	mso-level-tab-stop:.75in;
+	mso-level-number-position:left;
+	margin-left:.75in;
+	text-indent:-.25in;}
+@list l26:level4
+	{mso-level-text:"\(%4\)";
+	mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	margin-left:1.0in;
+	text-indent:-.25in;}
+@list l26:level5
+	{mso-level-number-format:alpha-lower;
+	mso-level-text:"\(%5\)";
+	mso-level-tab-stop:1.25in;
+	mso-level-number-position:left;
+	margin-left:1.25in;
+	text-indent:-.25in;}
+@list l26:level6
+	{mso-level-number-format:roman-lower;
+	mso-level-text:"\(%6\)";
+	mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	margin-left:1.5in;
+	text-indent:-.25in;}
+@list l26:level7
+	{mso-level-tab-stop:1.75in;
+	mso-level-number-position:left;
+	margin-left:1.75in;
+	text-indent:-.25in;}
+@list l26:level8
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	margin-left:2.0in;
+	text-indent:-.25in;}
+@list l26:level9
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:2.25in;
+	mso-level-number-position:left;
+	margin-left:2.25in;
+	text-indent:-.25in;}
+@list l27
+	{mso-list-id:1371146739;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1018283170 257348354 1776444148 -1561154410 1920760990 1494153030 -257805988 -529241340 -57763224 847150478;}
+@list l27:level1
+	{mso-level-text:"%1\)";
+	mso-level-tab-stop:.25in;
+	mso-level-number-position:left;
+	margin-left:.25in;
+	text-indent:-.25in;
+	mso-ansi-font-size:11.0pt;
+	font-family:"Times New Roman";
+	mso-ansi-font-weight:normal;
+	mso-ansi-font-style:normal;}
+@list l27:level2
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l27:level3
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:1.5in;
+	mso-level-number-position:right;
+	text-indent:-9.0pt;}
+@list l27:level5
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l27:level6
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:3.0in;
+	mso-level-number-position:right;
+	text-indent:-9.0pt;}
+@list l27:level8
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l27:level9
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:4.5in;
+	mso-level-number-position:right;
+	text-indent:-9.0pt;}
+@list l28
+	{mso-list-id:1480732144;
+	mso-list-template-ids:67698717;}
+@list l28:level1
+	{mso-level-text:"%1\)";
+	mso-level-tab-stop:.25in;
+	mso-level-number-position:left;
+	margin-left:.25in;
+	text-indent:-.25in;}
+@list l28:level2
+	{mso-level-number-format:alpha-lower;
+	mso-level-text:"%2\)";
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	margin-left:.5in;
+	text-indent:-.25in;}
+@list l28:level3
+	{mso-level-number-format:roman-lower;
+	mso-level-text:"%3\)";
+	mso-level-tab-stop:.75in;
+	mso-level-number-position:left;
+	margin-left:.75in;
+	text-indent:-.25in;}
+@list l28:level4
+	{mso-level-text:"\(%4\)";
+	mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	margin-left:1.0in;
+	text-indent:-.25in;}
+@list l28:level5
+	{mso-level-number-format:alpha-lower;
+	mso-level-text:"\(%5\)";
+	mso-level-tab-stop:1.25in;
+	mso-level-number-position:left;
+	margin-left:1.25in;
+	text-indent:-.25in;}
+@list l28:level6
+	{mso-level-number-format:roman-lower;
+	mso-level-text:"\(%6\)";
+	mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	margin-left:1.5in;
+	text-indent:-.25in;}
+@list l28:level7
+	{mso-level-tab-stop:1.75in;
+	mso-level-number-position:left;
+	margin-left:1.75in;
+	text-indent:-.25in;}
+@list l28:level8
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	margin-left:2.0in;
+	text-indent:-.25in;}
+@list l28:level9
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:2.25in;
+	mso-level-number-position:left;
+	margin-left:2.25in;
+	text-indent:-.25in;}
+@list l29
+	{mso-list-id:1485008335;
+	mso-list-type:simple;
+	mso-list-template-ids:-975672254;}
+@list l29:level1
+	{mso-level-number-format:alpha-lower;
+	mso-level-text:"%1\)";
+	mso-level-tab-stop:56.25pt;
+	mso-level-number-position:left;
+	margin-left:56.25pt;
+	text-indent:-20.25pt;}
+@list l30
+	{mso-list-id:1521312711;
+	mso-list-template-ids:67698717;}
+@list l30:level1
+	{mso-level-text:"%1\)";
+	mso-level-tab-stop:.25in;
+	mso-level-number-position:left;
+	margin-left:.25in;
+	text-indent:-.25in;}
+@list l30:level2
+	{mso-level-number-format:alpha-lower;
+	mso-level-text:"%2\)";
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	margin-left:.5in;
+	text-indent:-.25in;}
+@list l30:level3
+	{mso-level-number-format:roman-lower;
+	mso-level-text:"%3\)";
+	mso-level-tab-stop:.75in;
+	mso-level-number-position:left;
+	margin-left:.75in;
+	text-indent:-.25in;}
+@list l30:level4
+	{mso-level-text:"\(%4\)";
+	mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	margin-left:1.0in;
+	text-indent:-.25in;}
+@list l30:level5
+	{mso-level-number-format:alpha-lower;
+	mso-level-text:"\(%5\)";
+	mso-level-tab-stop:1.25in;
+	mso-level-number-position:left;
+	margin-left:1.25in;
+	text-indent:-.25in;}
+@list l30:level6
+	{mso-level-number-format:roman-lower;
+	mso-level-text:"\(%6\)";
+	mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	margin-left:1.5in;
+	text-indent:-.25in;}
+@list l30:level7
+	{mso-level-tab-stop:1.75in;
+	mso-level-number-position:left;
+	margin-left:1.75in;
+	text-indent:-.25in;}
+@list l30:level8
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	margin-left:2.0in;
+	text-indent:-.25in;}
+@list l30:level9
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:2.25in;
+	mso-level-number-position:left;
+	margin-left:2.25in;
+	text-indent:-.25in;}
+@list l31
+	{mso-list-id:1645888820;
+	mso-list-type:simple;
+	mso-list-template-ids:1205370576;}
+@list l31:level1
+	{mso-level-text:"%1\)";
+	mso-level-tab-stop:20.25pt;
+	mso-level-number-position:left;
+	margin-left:20.25pt;
+	text-indent:-20.25pt;}
+@list l32
+	{mso-list-id:1730568286;
+	mso-list-type:simple;
+	mso-list-template-ids:132685644;}
+@list l32:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.75in;
+	mso-level-number-position:left;
+	margin-left:.75in;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l33
+	{mso-list-id:1748723311;
+	mso-list-type:simple;
+	mso-list-template-ids:557598304;}
+@list l33:level1
+	{mso-level-number-format:alpha-lower;
+	mso-level-text:"%1\)";
+	mso-level-tab-stop:.3in;
+	mso-level-number-position:left;
+	margin-left:.3in;
+	text-indent:-.3in;
+	mso-ansi-font-size:11.0pt;
+	font-family:"Times New Roman";
+	mso-hide:none;
+	text-transform:none;
+	text-effect:none;
+	text-shadow:none;
+	text-effect:none;
+	text-effect:none;
+	text-decoration:none;
+	text-line-through:none;
+	vertical-align:baseline;}
+@list l34
+	{mso-list-id:1752390056;
+	mso-list-type:simple;
+	mso-list-template-ids:-1003195796;}
+@list l34:level1
+	{mso-level-number-format:alpha-lower;
+	mso-level-text:"%1\)";
+	mso-level-tab-stop:.55in;
+	mso-level-number-position:left;
+	margin-left:.55in;
+	text-indent:-.3in;}
+@list l35
+	{mso-list-id:1819877561;
+	mso-list-type:simple;
+	mso-list-template-ids:-188194586;}
+@list l35:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l36
+	{mso-list-id:1821842891;
+	mso-list-type:simple;
+	mso-list-template-ids:2088266588;}
+@list l36:level1
+	{mso-level-number-format:alpha-lower;
+	mso-level-text:"%1\)";
+	mso-level-tab-stop:42.75pt;
+	mso-level-number-position:left;
+	margin-left:42.75pt;
+	text-indent:-20.25pt;}
+@list l37
+	{mso-list-id:1835998048;
+	mso-list-template-ids:-843528406;}
+@list l37:level1
+	{mso-level-text:"%1\)";
+	mso-level-tab-stop:.25in;
+	mso-level-number-position:left;
+	margin-left:.25in;
+	text-indent:-.25in;
+	mso-ansi-font-size:11.0pt;
+	font-family:"Times New Roman";
+	mso-ansi-font-weight:normal;
+	mso-ansi-font-style:normal;}
+@list l37:level2
+	{mso-level-number-format:alpha-lower;
+	mso-level-text:"%2\)";
+	mso-level-tab-stop:.55in;
+	mso-level-number-position:left;
+	margin-left:.55in;
+	text-indent:-.3in;
+	mso-ansi-font-size:11.0pt;
+	font-family:"Times New Roman";
+	mso-ansi-font-weight:normal;
+	mso-ansi-font-style:normal;}
+@list l37:level3
+	{mso-level-number-format:roman-lower;
+	mso-level-text:"%3\)";
+	mso-level-tab-stop:1.05in;
+	mso-level-number-position:left;
+	margin-left:.85in;
+	text-indent:-.3in;}
+@list l37:level4
+	{mso-level-number-format:alpha-lower;
+	mso-level-text:"%4\)";
+	mso-level-tab-stop:2.05in;
+	mso-level-number-position:left;
+	margin-left:2.05in;
+	text-indent:-.3in;
+	font-family:"Times New Roman";
+	mso-ansi-font-weight:normal;
+	mso-ansi-font-style:normal;}
+@list l37:level5
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l37:level6
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:3.0in;
+	mso-level-number-position:right;
+	text-indent:-9.0pt;}
+@list l37:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l37:level8
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l37:level9
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:4.5in;
+	mso-level-number-position:right;
+	text-indent:-9.0pt;}
+@list l38
+	{mso-list-id:1860317301;
+	mso-list-template-ids:-843528406;}
+@list l38:level1
+	{mso-level-text:"%1\)";
+	mso-level-tab-stop:.25in;
+	mso-level-number-position:left;
+	margin-left:.25in;
+	text-indent:-.25in;
+	mso-ansi-font-size:11.0pt;
+	font-family:"Times New Roman";
+	mso-ansi-font-weight:normal;
+	mso-ansi-font-style:normal;}
+@list l38:level2
+	{mso-level-number-format:alpha-lower;
+	mso-level-text:"%2\)";
+	mso-level-tab-stop:.55in;
+	mso-level-number-position:left;
+	margin-left:.55in;
+	text-indent:-.3in;
+	mso-ansi-font-size:11.0pt;
+	font-family:"Times New Roman";
+	mso-ansi-font-weight:normal;
+	mso-ansi-font-style:normal;}
+@list l38:level3
+	{mso-level-number-format:roman-lower;
+	mso-level-text:"%3\)";
+	mso-level-tab-stop:1.05in;
+	mso-level-number-position:left;
+	margin-left:.85in;
+	text-indent:-.3in;}
+@list l38:level4
+	{mso-level-number-format:alpha-lower;
+	mso-level-text:"%4\)";
+	mso-level-tab-stop:2.05in;
+	mso-level-number-position:left;
+	margin-left:2.05in;
+	text-indent:-.3in;
+	font-family:"Times New Roman";
+	mso-ansi-font-weight:normal;
+	mso-ansi-font-style:normal;}
+@list l38:level5
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l38:level6
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:3.0in;
+	mso-level-number-position:right;
+	text-indent:-9.0pt;}
+@list l38:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l38:level8
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l38:level9
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:4.5in;
+	mso-level-number-position:right;
+	text-indent:-9.0pt;}
+@list l39
+	{mso-list-id:2007202426;
+	mso-list-type:simple;
+	mso-list-template-ids:-711417656;}
+@list l39:level1
+	{mso-level-number-format:alpha-lower;
+	mso-level-text:"%1\)";
+	mso-level-tab-stop:56.25pt;
+	mso-level-number-position:left;
+	margin-left:56.25pt;
+	text-indent:-20.25pt;}
+@list l40
+	{mso-list-id:2036229674;
+	mso-list-template-ids:-2008022650;}
+@list l40:level1
+	{mso-level-text:"%1\)";
+	mso-level-tab-stop:.25in;
+	mso-level-number-position:left;
+	margin-left:.25in;
+	text-indent:-.25in;
+	mso-ansi-font-size:11.0pt;
+	font-family:"Times New Roman";
+	mso-ansi-font-weight:normal;
+	mso-ansi-font-style:normal;}
+@list l40:level2
+	{mso-level-number-format:alpha-lower;
+	mso-level-text:"%2\)";
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	margin-left:.5in;
+	text-indent:-.25in;
+	mso-ansi-font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-ansi-font-weight:normal;
+	mso-ansi-font-style:normal;}
+@list l40:level3
+	{mso-level-number-format:roman-lower;
+	mso-level-text:"%3\)";
+	mso-level-tab-stop:.75in;
+	mso-level-number-position:left;
+	margin-left:.75in;
+	text-indent:-.25in;}
+@list l40:level4
+	{mso-level-text:"\(%4\)";
+	mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	margin-left:1.0in;
+	text-indent:-.25in;}
+@list l40:level5
+	{mso-level-number-format:alpha-lower;
+	mso-level-text:"\(%5\)";
+	mso-level-tab-stop:1.25in;
+	mso-level-number-position:left;
+	margin-left:1.25in;
+	text-indent:-.25in;}
+@list l40:level6
+	{mso-level-number-format:roman-lower;
+	mso-level-text:"\(%6\)";
+	mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	margin-left:1.5in;
+	text-indent:-.25in;}
+@list l40:level7
+	{mso-level-tab-stop:1.75in;
+	mso-level-number-position:left;
+	margin-left:1.75in;
+	text-indent:-.25in;}
+@list l40:level8
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	margin-left:2.0in;
+	text-indent:-.25in;}
+@list l40:level9
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:2.25in;
+	mso-level-number-position:left;
+	margin-left:2.25in;
+	text-indent:-.25in;}
+@list l41
+	{mso-list-id:2090729942;
+	mso-list-type:simple;
+	mso-list-template-ids:-1714097292;}
+@list l41:level1
+	{mso-level-number-format:alpha-lower;
+	mso-level-text:"%1\)";
+	mso-level-tab-stop:.6in;
+	mso-level-number-position:left;
+	margin-left:.6in;
+	text-indent:-.3in;}
+ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="1029"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body style="" lang="EN-US">
+
+<div class="WordSection1">
+
+<p class="MsoPlainText" style="text-align:center" align="center"><b style="mso-bidi-font-weight:normal"><span style="font-size:16.0pt;mso-bidi-font-size:
+10.0pt;font-family:&quot;Times New Roman&quot;">CS 0445 Data Structures Spring 2012<o:p></o:p></span></b></p>
+
+<p class="MsoPlainText" style="text-align:center" align="center"><b style="mso-bidi-font-weight:normal"><span style="font-size:16.0pt;mso-bidi-font-size:
+10.0pt;font-family:&quot;Times New Roman&quot;">Quiz 1<o:p></o:p></span></b></p>
+
+<p class="MsoPlainText" style="text-align:center" align="center"><b style="mso-bidi-font-weight:normal"><span style="font-size:16.0pt;mso-bidi-font-size:
+10.0pt;font-family:&quot;Times New Roman&quot;"><o:p>&nbsp;</o:p></span></b></p>
+
+<p class="MsoPlainText" style="text-align:center" align="center"><b style="mso-bidi-font-weight:normal"><span style="font-size:22.0pt;mso-bidi-font-size:
+10.0pt;font-family:&quot;Times New Roman&quot;">SOLUTIONS<o:p></o:p></span></b></p>
+
+<p class="MsoPlainText"><o:p>&nbsp;</o:p></p>
+
+<div class="MsoPlainText" style="text-align:center" align="center"><b style="mso-bidi-font-weight:normal"><span style="font-size:14.0pt;mso-bidi-font-size:
+10.0pt;font-family:&quot;NewCenturySchlbk&quot;,&quot;serif&quot;">
+
+<hr align="center" size="2" width="100%">
+
+</span></b></div>
+
+<p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal" style="margin-left:.25in;text-indent:-.25in;mso-list:l7 level1 lfo31"><!--[if !supportLists]--><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt"><span style="mso-list:Ignore">1)<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp; </span></span></span><!--[endif]--><b style="mso-bidi-font-weight:normal"><span style="font-size:11.0pt;mso-bidi-font-size:
+10.0pt">Short Answers (10 points Ð 5 + 5)</span></b><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt"><o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-left:.5in;text-indent:-.25in;mso-list:l7 level2 lfo31"><!--[if !supportLists]--><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt"><span style="mso-list:Ignore">a)<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><!--[endif]--><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt">Consider the following two <b style="mso-bidi-font-weight:normal">interface declarations</b> in Java:<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-left:.75in;text-indent:-.25in;mso-list:l7 level3 lfo31"><!--[if !supportLists]--><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt"><span style="mso-list:Ignore">i)<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><!--[endif]--><b><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:&quot;Courier New&quot;;
+mso-bidi-font-family:&quot;Times New Roman&quot;">public interface Comparable</span></b><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:&quot;Courier New&quot;;
+mso-bidi-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-left:.75in"><b><span style="font-size:11.0pt;
+mso-bidi-font-size:10.0pt;font-family:&quot;Courier New&quot;;mso-bidi-font-family:&quot;Times New Roman&quot;">{
+public int compareTo(Object rhs) }<o:p></o:p></span></b></p>
+
+<p class="MsoNormal" style="margin-left:.75in"><span style="font-size:11.0pt;
+mso-bidi-font-size:10.0pt;font-family:&quot;Courier New&quot;;mso-bidi-font-family:&quot;Times New Roman&quot;"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal" style="margin-left:.75in;text-indent:-.25in;mso-list:l7 level3 lfo31"><!--[if !supportLists]--><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt"><span style="mso-list:Ignore">ii)<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp; </span></span></span><!--[endif]--><b><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:&quot;Courier New&quot;;
+mso-bidi-font-family:&quot;Times New Roman&quot;">public interface Comparable&lt;T&gt;</span></b><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:&quot;Courier New&quot;;
+mso-bidi-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-left:.75in"><b><span style="font-size:11.0pt;
+mso-bidi-font-size:10.0pt;font-family:&quot;Courier New&quot;;mso-bidi-font-family:&quot;Times New Roman&quot;">{
+public int compareTo(T rhs) }</span></b><span style="font-size:11.0pt;
+mso-bidi-font-size:10.0pt;font-family:&quot;Courier New&quot;;mso-bidi-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal" style="margin-left:.5in"><span style="font-size:11.0pt;
+mso-bidi-font-size:10.0pt">Explain how these declarations differ, the
+differences in the classes which implement them, and why it is recommended that
+the second version now be used by Java programmers.<span style="mso-spacerun:yes">&nbsp; </span>Be specific.<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal" style="margin-left:.5in"><b style="mso-bidi-font-weight:
+normal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt;color:maroon">Both
+allow generic behavior.<span style="mso-spacerun:yes">&nbsp; </span>However,
+the version in i) requires implementing classes to cast Object to the actual
+desired type within the method body, whereas the version in ii) utilizes the
+type parameter T and no casting is required.<span style="mso-spacerun:yes">&nbsp; </span>Thus, type checking (is the parameter
+object actually comparable to the current object?) must be done at run-time for
+version i) whereas this checking can be done at compile-time for version
+ii).<span style="mso-spacerun:yes">&nbsp; </span>Compile-time type checking is
+generally recommended when possible, which is why version ii) is preferred.<o:p></o:p></span></b></p>
+
+<p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal" style="margin-left:.5in;text-indent:-.25in;mso-list:l7 level2 lfo31"><!--[if !supportLists]--><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt"><span style="mso-list:Ignore">b)<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><!--[endif]--><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt">Consider the following Java
+code:<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-left:.5in"><span style="font-size:11.0pt;
+mso-bidi-font-size:10.0pt"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal" style="margin-left:.5in"><span class="GramE"><b style="mso-bidi-font-weight:normal"><span style="font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:&quot;Courier New&quot;">for</span></b></span><b style="mso-bidi-font-weight:
+normal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+&quot;Courier New&quot;"> (<span class="SpellE">int</span> <span class="SpellE">i</span> = 1;
+<span class="SpellE">i</span> &lt;= N; <span class="SpellE">i</span>++)<o:p></o:p></span></b></p>
+
+<p class="MsoNormal" style="margin-left:.5in"><b style="mso-bidi-font-weight:
+normal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+&quot;Courier New&quot;"><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="GramE">for</span> (<span class="SpellE">int</span> j = 1; j &lt;= <span class="SpellE">i</span>; j++)<o:p></o:p></span></b></p>
+
+<p class="MsoNormal" style="margin-left:.5in"><b style="mso-bidi-font-weight:
+normal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+&quot;Courier New&quot;"><span style="mso-tab-count:2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="SpellE"><span class="GramE">constant</span>_time_operation</span>();<o:p></o:p></span></b></p>
+
+<p class="MsoNormal"><b style="mso-bidi-font-weight:normal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:&quot;Courier New&quot;"><o:p>&nbsp;</o:p></span></b></p>
+
+<p class="MsoNormal" style="margin-left:.5in"><span style="font-size:11.0pt;
+mso-bidi-font-size:10.0pt">State and <b style="mso-bidi-font-weight:normal">justify
+(mathematically) </b>the Big-O runtime <b style="mso-bidi-font-weight:normal">in
+terms on N</b> of the code segment shown.<span style="mso-spacerun:yes">&nbsp;
+</span><b style="mso-bidi-font-weight:normal">Be careful!<o:p></o:p></b></span></p>
+
+<p class="MsoNormal" style="margin-left:.5in"><b style="mso-bidi-font-weight:
+normal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt"><o:p>&nbsp;</o:p></span></b></p>
+
+<p class="MsoNormal" style="margin-left:.5in;tab-stops:.5in"><b style="mso-bidi-font-weight:
+normal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt;color:maroon">The
+outer for loop executes N times, iterating on variable <span class="SpellE">i</span>.<span style="mso-spacerun:yes">&nbsp; </span>The inner for loop executes <span class="SpellE">i</span> times, where <span class="SpellE">i</span> is the current
+value of the outer loop control variable.<span style="mso-spacerun:yes">&nbsp;
+</span>Thus, the <span class="SpellE">constant_time_<span class="GramE">operation</span></span><span class="GramE">(</span>) will execute 1 time when <span class="SpellE">i</span> = 1,
+2 times when <span class="SpellE">i</span> = 2, and so on.<span style="mso-spacerun:yes">&nbsp; </span>This leads to the sum 1 + 2 + 3 + É + N
+= <span class="GramE">N(</span>N+1)/2.<span style="mso-spacerun:yes">&nbsp;
+</span>Ignoring lower order terms and constant multipliers leads to <span class="GramE">O(</span>N</span></b><b><sup><span style="font-size:11.0pt;
+color:maroon">2</span></sup></b><b><span style="font-size:11.0pt;color:maroon">).</span></b><span style="font-size:11.0pt;mso-bidi-font-weight:bold"><o:p></o:p></span></p>
+
+<p class="MsoNormal"><b style="mso-bidi-font-weight:normal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt"><o:p>&nbsp;</o:p></span></b></p>
+
+<b style="mso-bidi-font-weight:normal"><span style="font-size:11.0pt;
+mso-bidi-font-size:10.0pt;font-family:&quot;Times New Roman&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;;mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+mso-bidi-language:AR-SA"><br style="page-break-before:always" clear="all">
+</span></b>
+
+<p class="MsoNormal" style="margin-left:.25in;text-indent:-.25in;mso-list:l7 level1 lfo31"><!--[if !supportLists]--><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt"><span style="mso-list:Ignore">2)<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp; </span></span></span><!--[endif]--><b style="mso-bidi-font-weight:normal"><span style="font-size:11.0pt;mso-bidi-font-size:
+10.0pt">Fill in the Blanks and True/False (20 points Ð 2 points each)</span></b><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt"><span style="mso-spacerun:yes">&nbsp; </span>For each of the fill in the blanks, fill
+in the <b style="mso-bidi-font-weight:normal">most appropriate</b>
+word(s)/phrase in each blank.<span style="mso-spacerun:yes">&nbsp; </span>For
+each of the true/false, <b style="mso-bidi-font-weight:normal">EXPLAIN false
+statements.</b><o:p></o:p></span></p>
+
+<p class="MsoNormal" style="text-indent:.25in"><span style="font-size:11.0pt;
+mso-bidi-font-size:10.0pt"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:0in;margin-bottom:12.0pt;
+margin-left:.5in;text-indent:-.25in;line-height:150%;mso-list:l7 level2 lfo31"><!--[if !supportLists]--><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt;line-height:150%"><span style="mso-list:Ignore">a)<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><!--[endif]--><span style="font-size:11.0pt;mso-bidi-font-size:
+10.0pt;line-height:150%">If we use <b style="mso-bidi-font-weight:normal">inheritance</b>
+to create a new Java class utilizing an old class, the new class has a <span style="mso-spacerun:yes">&nbsp;</span><span class="GramE">[ has</span> a , is a ]
+____<b style="mso-bidi-font-weight:normal"><span style="color:maroon">is a</span></b>______________
+relationship with the old class.<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:0in;margin-bottom:12.0pt;
+margin-left:.5in;text-indent:-.25in;line-height:150%;mso-list:l7 level2 lfo31"><!--[if !supportLists]--><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt;line-height:150%"><span style="mso-list:Ignore">b)<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><!--[endif]--><span style="font-size:11.0pt;mso-bidi-font-size:
+10.0pt;line-height:150%">A Java method is <b style="mso-bidi-font-weight:normal">overridden</b>
+when a method implemented in class C is also implemented with an <b style="mso-bidi-font-weight:normal">identical signature</b> in a subclass of
+C.<span style="mso-spacerun:yes">&nbsp; </span><b style="mso-bidi-font-weight:
+normal">(T or F)</b> ____<b style="mso-bidi-font-weight:normal"><span style="color:maroon">T</span></b>_______.<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:0in;margin-bottom:12.0pt;
+margin-left:.5in;text-indent:-.25in;line-height:150%;mso-list:l7 level2 lfo31"><!--[if !supportLists]--><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt;line-height:150%"><span style="mso-list:Ignore">c)<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><!--[endif]--><span style="font-size:11.0pt;mso-bidi-font-size:
+10.0pt;line-height:150%">If a reference of some <b style="mso-bidi-font-weight:
+normal">Java interface</b> type is used to store an object, any public method <b style="mso-bidi-font-weight:normal">within that object</b> can be called
+through the reference. <b style="mso-bidi-font-weight:normal">(T or F)</b>
+_____<b style="mso-bidi-font-weight:normal"><span style="color:maroon">F</span></b>______.
+<b style="mso-bidi-font-weight:normal"><span style="color:maroon">Only the
+methods within the interface may be called.</span></b><o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:0in;margin-bottom:12.0pt;
+margin-left:.5in;text-indent:-.25in;line-height:150%;mso-list:l7 level2 lfo31"><!--[if !supportLists]--><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt;line-height:150%"><span style="mso-list:Ignore">d)<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><!--[endif]--><span style="font-size:11.0pt;mso-bidi-font-size:
+10.0pt;line-height:150%">In this course we will typically use ____<b style="mso-bidi-font-weight:normal"><span style="color:maroon">interfaces</span></b>___________________
+to <b style="mso-bidi-font-weight:normal">represent ADTs</b> and we will
+typically use _______<b style="mso-bidi-font-weight:normal"><span style="color:maroon">classes</span></b>__________________ to <b style="mso-bidi-font-weight:normal">represent implementations</b> of those
+ADTs.<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:0in;margin-bottom:12.0pt;
+margin-left:.5in;text-indent:-.25in;line-height:150%;mso-list:l7 level2 lfo31"><!--[if !supportLists]--><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt;line-height:150%"><span style="mso-list:Ignore">e)<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><!--[endif]--><b style="mso-bidi-font-weight:normal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt;line-height:150%">Resizing a
+Java array</span></b><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt;
+line-height:150%"> can be done in <b style="mso-bidi-font-weight:normal">constant
+time</b>, since we simply have to allocate a new array and copy a single
+reference to the new array.<span style="mso-spacerun:yes">&nbsp;&nbsp; </span><b style="mso-bidi-font-weight:normal">(T or F) </b>_____<b style="mso-bidi-font-weight:
+normal"><span style="color:maroon">F</span></b>_______.<span style="mso-spacerun:yes">&nbsp; </span><b style="mso-bidi-font-weight:normal"><span style="color:maroon">Each item (reference) from the old array must be copied
+into the new one.</span></b><o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:0in;margin-bottom:12.0pt;
+margin-left:.5in;text-indent:-.25in;line-height:150%;mso-list:l7 level2 lfo31"><!--[if !supportLists]--><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt;line-height:150%"><span style="mso-list:Ignore">f)<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><!--[endif]--><span style="font-size:11.0pt;mso-bidi-font-size:
+10.0pt;line-height:150%">The <b style="mso-bidi-font-weight:normal">Node class</b>
+that we use in our linked lists has an instance variable of class Node.<span style="mso-spacerun:yes">&nbsp; </span>For this reason Node is called a
+__________<b style="mso-bidi-font-weight:normal"><span style="color:maroon">self-referential</span></b>____________________________
+data type.<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:0in;margin-bottom:12.0pt;
+margin-left:.5in;text-indent:-.25in;line-height:150%;mso-list:l7 level2 lfo31"><!--[if !supportLists]--><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt;line-height:150%"><span style="mso-list:Ignore">g)<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><!--[endif]--><span style="font-size:11.0pt;mso-bidi-font-size:
+10.0pt;line-height:150%">To enable <b style="mso-bidi-font-weight:normal">direct
+access to the instance variables</b> of the Node class <b style="mso-bidi-font-weight:
+normal">from our <span class="SpellE">LinkedBag</span></b> class, we can
+implement the Node class as _____<b style="mso-bidi-font-weight:normal"><span style="color:maroon">a private, inner class</span></b>__________.<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:0in;margin-bottom:12.0pt;
+margin-left:.5in;text-indent:-.25in;line-height:150%;mso-list:l7 level2 lfo31"><!--[if !supportLists]--><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt;line-height:150%"><span style="mso-list:Ignore">h)<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;
+</span></span></span><!--[endif]--><span style="font-size:11.0pt;mso-bidi-font-size:
+10.0pt;line-height:150%">The postfix expression<span style="mso-spacerun:yes">&nbsp;&nbsp; </span></span><span class="GramE"><b style="mso-bidi-font-weight:normal"><span style="font-size:11.0pt;mso-bidi-font-size:
+10.0pt;line-height:150%;font-family:&quot;Courier New&quot;">6<span style="mso-spacerun:yes">&nbsp; </span>15</span></b></span><b style="mso-bidi-font-weight:
+normal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt;line-height:
+150%;font-family:&quot;Courier New&quot;"><span style="mso-spacerun:yes">&nbsp;
+</span>8<span style="mso-spacerun:yes">&nbsp; </span>3<span style="mso-spacerun:yes">&nbsp; </span>-<span style="mso-spacerun:yes">&nbsp;
+</span>/<span style="mso-spacerun:yes">&nbsp; </span>2<span style="mso-spacerun:yes">&nbsp; </span>+<span style="mso-spacerun:yes">&nbsp;
+</span>*<span style="mso-spacerun:yes">&nbsp; </span></span></b><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt;line-height:150%">evaluates
+to ________<b style="mso-bidi-font-weight:normal"><span style="color:maroon">30</span></b>_________.<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:0in;margin-bottom:12.0pt;
+margin-left:.5in;text-indent:-.25in;line-height:150%;mso-list:l7 level2 lfo31"><!--[if !supportLists]--><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt;line-height:150%"><span style="mso-list:Ignore">i)<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><!--[endif]--><span style="font-size:11.0pt;mso-bidi-font-size:
+10.0pt;line-height:150%">When we calculate the <b style="mso-bidi-font-weight:
+normal">average asymptotic runtime over a sequence of operations</b>, we are
+determining the _______<b style="mso-bidi-font-weight:normal"><span style="color:maroon">amortized time</span></b>____________ for the operations.<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:0in;margin-bottom:12.0pt;
+margin-left:.5in;text-indent:-.25in;line-height:150%;mso-list:l7 level2 lfo31"><!--[if !supportLists]--><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt;line-height:150%"><span style="mso-list:Ignore">j)<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><!--[endif]--><span style="font-size:11.0pt;mso-bidi-font-size:
+10.0pt;line-height:150%">Because we must <span class="GramE">push(</span>) new
+items to the <b style="mso-bidi-font-weight:normal">end of our Stack</b>, the
+linked implementation of a Stack is very inefficient, because we must <b style="mso-bidi-font-weight:normal">traverse the entire list</b> for each
+push().<span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><b style="mso-bidi-font-weight:normal">(T or F) </b>_____<b style="mso-bidi-font-weight:
+normal"><span style="color:maroon">F</span></b>_____ <b style="mso-bidi-font-weight:
+normal"><span style="color:maroon">We push items at the front of our list,
+which is <span class="GramE">O(</span>1).</span></b><o:p></o:p></span></p>
+
+<b style="mso-bidi-font-weight:normal"><span style="font-size:12.0pt;
+mso-bidi-font-size:10.0pt;font-family:&quot;Times New Roman&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;;mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+mso-bidi-language:AR-SA"><br style="page-break-before:always" clear="all">
+</span></b>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:0in;margin-bottom:6.0pt;
+margin-left:.25in;text-indent:-.25in;mso-list:l7 level1 lfo31"><!--[if !supportLists]--><span style="font-size:11.0pt"><span style="mso-list:Ignore">3)<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp; </span></span></span><!--[endif]--><b style="mso-bidi-font-weight:normal"><span style="font-size:11.0pt">Trace (10
+points)</span></b><span style="font-size:11.0pt"> Give ALL OUTPUT produced by
+the execution of the program below, in the correct order it is generated.<span style="mso-spacerun:yes">&nbsp; </span>Clearly mark the output by <b>drawing a
+box around it.</b><o:p></o:p></span></p>
+
+<table class="MsoNormalTable" style="width: 465.3pt; margin-left: 0.3in; border-collapse: collapse; border: medium none;" border="1" cellpadding="0" cellspacing="0" width="465">
+ <tbody><tr style="">
+  <td style="width: 465.3pt; border-width: 1pt medium 1pt 1pt; border-style: solid none solid solid; border-color: windowtext -moz-use-text-color windowtext windowtext; -moz-border-top-colors: none; -moz-border-right-colors: none; -moz-border-bottom-colors: none; -moz-border-left-colors: none; -moz-border-image: none; padding: 0in 5.4pt;" valign="top" width="465">
+  <p class="MsoBodyTextIndent" style="margin-left:0in"><span class="GramE"><b style="mso-bidi-font-weight:normal"><span style="font-size:9.0pt;font-family:
+  &quot;Courier New&quot;">public</span></b></span><b style="mso-bidi-font-weight:normal"><span style="font-size:9.0pt;font-family:&quot;Courier New&quot;"> class Trace<o:p></o:p></span></b></p>
+  <p class="MsoBodyTextIndent" style="margin-left:.9pt"><b style="mso-bidi-font-weight:
+  normal"><span style="font-size:9.0pt;font-family:&quot;Courier New&quot;">{<o:p></o:p></span></b></p>
+  <p class="MsoBodyTextIndent" style="margin-left:.9pt"><b style="mso-bidi-font-weight:
+  normal"><span style="font-size:9.0pt;font-family:&quot;Courier New&quot;"><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="GramE">public</span> static String [] items = {"Beatles",
+  "Clash", "Ramones", <span style="mso-tab-count:3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="mso-tab-count:4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ </span><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;</span>"Radiohead",
+  "Smiths"};<o:p></o:p></span></b></p>
+  <p class="MsoBodyTextIndent" style="margin-left:.9pt"><b style="mso-bidi-font-weight:
+  normal"><span style="font-size:9.0pt;font-family:&quot;Courier New&quot;"><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="GramE">public</span> static void <span class="SpellE">addItems</span>(<span class="SpellE">BagInterface</span>&lt;String&gt; B)<o:p></o:p></span></b></p>
+  <p class="MsoBodyTextIndent" style="margin-left:.9pt"><b style="mso-bidi-font-weight:
+  normal"><span style="font-size:9.0pt;font-family:&quot;Courier New&quot;"><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>{<o:p></o:p></span></b></p>
+  <p class="MsoBodyTextIndent" style="margin-left:.9pt"><b style="mso-bidi-font-weight:
+  normal"><span style="font-size:9.0pt;font-family:&quot;Courier New&quot;"><span style="mso-tab-count:2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="SpellE"><span class="GramE">System.out.print</span></span><span class="GramE">(</span>"Adding: ");<o:p></o:p></span></b></p>
+  <p class="MsoBodyTextIndent" style="margin-left:.9pt"><b style="mso-bidi-font-weight:
+  normal"><span style="font-size:9.0pt;font-family:&quot;Courier New&quot;"><span style="mso-tab-count:2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="GramE">for</span> (<span class="SpellE">int</span> <span class="SpellE">i</span>
+  = 0; <span class="SpellE">i</span> &lt; <span class="SpellE">items.length</span>;
+  <span class="SpellE">i</span>++)<o:p></o:p></span></b></p>
+  <p class="MsoBodyTextIndent" style="margin-left:.9pt"><b style="mso-bidi-font-weight:
+  normal"><span style="font-size:9.0pt;font-family:&quot;Courier New&quot;"><span style="mso-tab-count:2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>{<o:p></o:p></span></b></p>
+  <p class="MsoBodyTextIndent" style="margin-left:.9pt"><b style="mso-bidi-font-weight:
+  normal"><span style="font-size:9.0pt;font-family:&quot;Courier New&quot;"><span style="mso-tab-count:3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="SpellE"><span class="GramE">System.out.print</span></span><span class="GramE">(</span>items[<span class="SpellE">i</span>] + " ");<o:p></o:p></span></b></p>
+  <p class="MsoBodyTextIndent" style="margin-left:.9pt"><b style="mso-bidi-font-weight:
+  normal"><span style="font-size:9.0pt;font-family:&quot;Courier New&quot;"><span style="mso-tab-count:3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="SpellE"><span class="GramE">B.add</span></span><span class="GramE">(</span>items[<span class="SpellE">i</span>]);<o:p></o:p></span></b></p>
+  <p class="MsoBodyTextIndent" style="margin-left:.9pt"><b style="mso-bidi-font-weight:
+  normal"><span style="font-size:9.0pt;font-family:&quot;Courier New&quot;"><span style="mso-tab-count:2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>}<o:p></o:p></span></b></p>
+  <p class="MsoBodyTextIndent" style="margin-left:.9pt"><b style="mso-bidi-font-weight:
+  normal"><span style="font-size:9.0pt;font-family:&quot;Courier New&quot;"><span style="mso-tab-count:2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="SpellE"><span class="GramE">System.out.println</span></span><span class="GramE">(</span>);<o:p></o:p></span></b></p>
+  <p class="MsoBodyTextIndent" style="margin-left:.9pt"><b style="mso-bidi-font-weight:
+  normal"><span style="font-size:9.0pt;font-family:&quot;Courier New&quot;"><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>}<o:p></o:p></span></b></p>
+  <p class="MsoBodyTextIndent" style="margin-left:.9pt"><b style="mso-bidi-font-weight:
+  normal"><span style="font-size:9.0pt;font-family:&quot;Courier New&quot;"><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><o:p></o:p></span></b></p>
+  <p class="MsoBodyTextIndent" style="margin-left:.9pt"><b style="mso-bidi-font-weight:
+  normal"><span style="font-size:9.0pt;font-family:&quot;Courier New&quot;"><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="GramE">public</span> static &lt;T&gt; void <span class="SpellE">showItems</span>(<span class="SpellE">BagInterface</span>&lt;T&gt; B, String <span class="SpellE">msg</span>)<o:p></o:p></span></b></p>
+  <p class="MsoBodyTextIndent" style="margin-left:.9pt"><b style="mso-bidi-font-weight:
+  normal"><span style="font-size:9.0pt;font-family:&quot;Courier New&quot;"><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>{<o:p></o:p></span></b></p>
+  <p class="MsoBodyTextIndent" style="margin-left:.9pt"><b style="mso-bidi-font-weight:
+  normal"><span style="font-size:9.0pt;font-family:&quot;Courier New&quot;"><span style="mso-tab-count:2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="SpellE"><span class="GramE">System.out.println</span></span><span class="GramE">(</span><span class="SpellE">msg</span> + " contains: ");<o:p></o:p></span></b></p>
+  <p class="MsoBodyTextIndent" style="margin-left:.9pt"><b style="mso-bidi-font-weight:
+  normal"><span style="font-size:9.0pt;font-family:&quot;Courier New&quot;"><span style="mso-tab-count:2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>T
+  [] items = <span class="SpellE"><span class="GramE">B.toArray</span></span><span class="GramE">(</span>);<o:p></o:p></span></b></p>
+  <p class="MsoBodyTextIndent" style="margin-left:.9pt"><b style="mso-bidi-font-weight:
+  normal"><span style="font-size:9.0pt;font-family:&quot;Courier New&quot;"><span style="mso-tab-count:2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="GramE">for</span> (T x: items)<o:p></o:p></span></b></p>
+  <p class="MsoBodyTextIndent" style="margin-left:.9pt"><b style="mso-bidi-font-weight:
+  normal"><span style="font-size:9.0pt;font-family:&quot;Courier New&quot;"><span style="mso-tab-count:3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="SpellE"><span class="GramE">System.out.print</span></span><span class="GramE">(</span>x + " ");<o:p></o:p></span></b></p>
+  <p class="MsoBodyTextIndent" style="margin-left:.9pt"><b style="mso-bidi-font-weight:
+  normal"><span style="font-size:9.0pt;font-family:&quot;Courier New&quot;"><span style="mso-tab-count:2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="SpellE"><span class="GramE">System.out.println</span></span><span class="GramE">(</span>); <span class="SpellE">System.out.println</span>();<o:p></o:p></span></b></p>
+  <p class="MsoBodyTextIndent" style="margin-left:.9pt"><b style="mso-bidi-font-weight:
+  normal"><span style="font-size:9.0pt;font-family:&quot;Courier New&quot;"><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>}<o:p></o:p></span></b></p>
+  <p class="MsoBodyTextIndent" style="margin-left:.9pt"><b style="mso-bidi-font-weight:
+  normal"><span style="font-size:9.0pt;font-family:&quot;Courier New&quot;"><span style="mso-tab-count:2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><o:p></o:p></span></b></p>
+  <p class="MsoBodyTextIndent" style="margin-left:.9pt"><b style="mso-bidi-font-weight:
+  normal"><span style="font-size:9.0pt;font-family:&quot;Courier New&quot;"><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="GramE">public</span> static void main(String [] <span class="SpellE">args</span>)<o:p></o:p></span></b></p>
+  <p class="MsoBodyTextIndent" style="margin-left:.9pt"><b style="mso-bidi-font-weight:
+  normal"><span style="font-size:9.0pt;font-family:&quot;Courier New&quot;"><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>{<o:p></o:p></span></b></p>
+  <p class="MsoBodyTextIndent" style="margin-left:.9pt"><b style="mso-bidi-font-weight:
+  normal"><span style="font-size:9.0pt;font-family:&quot;Courier New&quot;"><span style="mso-tab-count:2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="SpellE">BagInterface</span>&lt;String&gt; <span class="SpellE">fixBag</span>
+  = new <span class="SpellE">ArrayBag</span>&lt;String&gt;(3);<o:p></o:p></span></b></p>
+  <p class="MsoBodyTextIndent" style="margin-left:.9pt"><b style="mso-bidi-font-weight:
+  normal"><span style="font-size:9.0pt;font-family:&quot;Courier New&quot;"><span style="mso-tab-count:2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="SpellE">BagInterface</span>&lt;String&gt; <span class="SpellE">dynBag</span>
+  = new <span class="SpellE">ResizableArrayBag</span>&lt;String&gt;(3);<o:p></o:p></span></b></p>
+  <p class="MsoBodyTextIndent" style="margin-left:.9pt"><b style="mso-bidi-font-weight:
+  normal"><span style="font-size:9.0pt;font-family:&quot;Courier New&quot;"><span style="mso-tab-count:2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="SpellE">BagInterface</span>&lt;String&gt; <span class="SpellE">linkBag</span>
+  = new <span class="SpellE">LinkedBag</span>&lt;String&gt;();<o:p></o:p></span></b></p>
+  <p class="MsoBodyTextIndent" style="margin-left:.9pt"><b style="mso-bidi-font-weight:
+  normal"><span style="font-size:9.0pt;font-family:&quot;Courier New&quot;"><o:p>&nbsp;</o:p></span></b></p>
+  <p class="MsoBodyTextIndent" style="margin-left:.9pt"><b style="mso-bidi-font-weight:
+  normal"><span style="font-size:9.0pt;font-family:&quot;Courier New&quot;"><span style="mso-tab-count:2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="SpellE"><span class="GramE">addItems</span></span>(<span class="SpellE">fixBag</span>);<o:p></o:p></span></b></p>
+  <p class="MsoBodyTextIndent" style="margin-left:.9pt"><b style="mso-bidi-font-weight:
+  normal"><span style="font-size:9.0pt;font-family:&quot;Courier New&quot;"><span style="mso-tab-count:2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="SpellE"><span class="GramE">addItems</span></span>(<span class="SpellE">dynBag</span>);<o:p></o:p></span></b></p>
+  <p class="MsoBodyTextIndent" style="margin-left:.9pt"><b style="mso-bidi-font-weight:
+  normal"><span style="font-size:9.0pt;font-family:&quot;Courier New&quot;"><span style="mso-tab-count:2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="SpellE"><span class="GramE">addItems</span></span>(<span class="SpellE">linkBag</span>);<o:p></o:p></span></b></p>
+  <p class="MsoBodyTextIndent" style="margin-left:.9pt"><b style="mso-bidi-font-weight:
+  normal"><span style="font-size:9.0pt;font-family:&quot;Courier New&quot;"><span style="mso-tab-count:2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="SpellE"><span class="GramE">System.out.println</span></span><span class="GramE">(</span>);<o:p></o:p></span></b></p>
+  <p class="MsoBodyTextIndent" style="margin-left:.9pt"><b style="mso-bidi-font-weight:
+  normal"><span style="font-size:9.0pt;font-family:&quot;Courier New&quot;"><span style="mso-tab-count:2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="SpellE"><span class="GramE">showItems</span></span>(<span class="SpellE">fixBag</span>,
+  "Fixed Bag");<o:p></o:p></span></b></p>
+  <p class="MsoBodyTextIndent" style="margin-left:.9pt"><b style="mso-bidi-font-weight:
+  normal"><span style="font-size:9.0pt;font-family:&quot;Courier New&quot;"><span style="mso-tab-count:2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="SpellE"><span class="GramE">showItems</span></span>(<span class="SpellE">dynBag</span>,
+  "Dynamic Bag");<o:p></o:p></span></b></p>
+  <p class="MsoBodyTextIndent" style="margin-left:.9pt"><b style="mso-bidi-font-weight:
+  normal"><span style="font-size:9.0pt;font-family:&quot;Courier New&quot;"><span style="mso-tab-count:2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="SpellE"><span class="GramE">showItems</span></span>(<span class="SpellE">linkBag</span>,
+  "Linked Bag");<span style="mso-tab-count:1">&nbsp;&nbsp; </span><o:p></o:p></span></b></p>
+  <p class="MsoBodyTextIndent" style="margin-left:.9pt"><b style="mso-bidi-font-weight:
+  normal"><span style="font-size:9.0pt;font-family:&quot;Courier New&quot;"><span style="mso-tab-count:2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><o:p></o:p></span></b></p>
+  <p class="MsoBodyTextIndent" style="margin-left:.9pt"><b style="mso-bidi-font-weight:
+  normal"><span style="font-size:9.0pt;font-family:&quot;Courier New&quot;"><span style="mso-tab-count:2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>String
+  <span class="SpellE">outtahere</span> = new <span class="GramE">String(</span>"Clash");<o:p></o:p></span></b></p>
+  <p class="MsoBodyTextIndent" style="margin-left:.9pt"><b style="mso-bidi-font-weight:
+  normal"><span style="font-size:9.0pt;font-family:&quot;Courier New&quot;"><span style="mso-tab-count:2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="SpellE"><span class="GramE">dynBag.remove</span></span>(<span class="SpellE">outtahere</span>);<o:p></o:p></span></b></p>
+  <p class="MsoBodyTextIndent" style="margin-left:.9pt"><b style="mso-bidi-font-weight:
+  normal"><span style="font-size:9.0pt;font-family:&quot;Courier New&quot;"><span style="mso-tab-count:2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="SpellE"><span class="GramE">linkBag.remove</span></span>(<span class="SpellE">outtahere</span>);<o:p></o:p></span></b></p>
+  <p class="MsoBodyTextIndent" style="margin-left:.9pt"><b style="mso-bidi-font-weight:
+  normal"><span style="font-size:9.0pt;font-family:&quot;Courier New&quot;"><span style="mso-tab-count:2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="SpellE"><span class="GramE">showItems</span></span>(<span class="SpellE">dynBag</span>,
+  "Dynamic Bag");<o:p></o:p></span></b></p>
+  <p class="MsoBodyTextIndent" style="margin-left:.9pt"><b style="mso-bidi-font-weight:
+  normal"><span style="font-size:9.0pt;font-family:&quot;Courier New&quot;"><span style="mso-tab-count:2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="SpellE"><span class="GramE">showItems</span></span>(<span class="SpellE">linkBag</span>,
+  "Linked Bag");<o:p></o:p></span></b></p>
+  <p class="MsoBodyTextIndent" style="margin-left:.9pt"><b style="mso-bidi-font-weight:
+  normal"><span style="font-size:9.0pt;font-family:&quot;Courier New&quot;"><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>}<o:p></o:p></span></b></p>
+  <p class="MsoBodyTextIndent" style="margin-left:.9pt"><b style="mso-bidi-font-weight:
+  normal"><span style="font-size:9.0pt;font-family:&quot;Courier New&quot;">}</span><o:p></o:p></b></p>
+  </td>
+ </tr>
+ <tr style="">
+  <td style="width: 465.3pt; border-right: 1pt solid windowtext; border-width: medium 1pt 1pt; border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; -moz-border-top-colors: none; -moz-border-right-colors: none; -moz-border-bottom-colors: none; -moz-border-left-colors: none; -moz-border-image: none; padding: 0in 5.4pt;" valign="top" width="465">
+  <p class="MsoBodyTextIndent"><b style="mso-bidi-font-weight:normal"><span style="font-size:9.0pt;font-family:&quot;Courier New&quot;;color:maroon">Adding:
+  Beatles Clash Ramones Radiohead Smiths <o:p></o:p></span></b></p>
+  <p class="MsoBodyTextIndent"><b style="mso-bidi-font-weight:normal"><span style="font-size:9.0pt;font-family:&quot;Courier New&quot;;color:maroon">Adding:
+  Beatles Clash Ramones Radiohead Smiths <o:p></o:p></span></b></p>
+  <p class="MsoBodyTextIndent"><b style="mso-bidi-font-weight:normal"><span style="font-size:9.0pt;font-family:&quot;Courier New&quot;;color:maroon">Adding:
+  Beatles Clash Ramones Radiohead Smiths <o:p></o:p></span></b></p>
+  <p class="MsoBodyTextIndent"><b style="mso-bidi-font-weight:normal"><span style="font-size:9.0pt;font-family:&quot;Courier New&quot;;color:maroon"><o:p>&nbsp;</o:p></span></b></p>
+  <p class="MsoBodyTextIndent"><b style="mso-bidi-font-weight:normal"><span style="font-size:9.0pt;font-family:&quot;Courier New&quot;;color:maroon">Fixed Bag
+  contains: <o:p></o:p></span></b></p>
+  <p class="MsoBodyTextIndent"><b style="mso-bidi-font-weight:normal"><span style="font-size:9.0pt;font-family:&quot;Courier New&quot;;color:maroon">Beatles Clash
+  Ramones <o:p></o:p></span></b></p>
+  <p class="MsoBodyTextIndent"><b style="mso-bidi-font-weight:normal"><span style="font-size:9.0pt;font-family:&quot;Courier New&quot;;color:maroon"><o:p>&nbsp;</o:p></span></b></p>
+  <p class="MsoBodyTextIndent"><b style="mso-bidi-font-weight:normal"><span style="font-size:9.0pt;font-family:&quot;Courier New&quot;;color:maroon">Dynamic Bag
+  contains: <o:p></o:p></span></b></p>
+  <p class="MsoBodyTextIndent"><b style="mso-bidi-font-weight:normal"><span style="font-size:9.0pt;font-family:&quot;Courier New&quot;;color:maroon">Beatles Clash
+  Ramones Radiohead Smiths <o:p></o:p></span></b></p>
+  <p class="MsoBodyTextIndent"><b style="mso-bidi-font-weight:normal"><span style="font-size:9.0pt;font-family:&quot;Courier New&quot;;color:maroon"><o:p>&nbsp;</o:p></span></b></p>
+  <p class="MsoBodyTextIndent"><b style="mso-bidi-font-weight:normal"><span style="font-size:9.0pt;font-family:&quot;Courier New&quot;;color:maroon">Linked Bag
+  contains: <o:p></o:p></span></b></p>
+  <p class="MsoBodyTextIndent"><b style="mso-bidi-font-weight:normal"><span style="font-size:9.0pt;font-family:&quot;Courier New&quot;;color:maroon">Smiths
+  Radiohead Ramones Clash Beatles <o:p></o:p></span></b></p>
+  <p class="MsoBodyTextIndent"><b style="mso-bidi-font-weight:normal"><span style="font-size:9.0pt;font-family:&quot;Courier New&quot;;color:maroon"><o:p>&nbsp;</o:p></span></b></p>
+  <p class="MsoBodyTextIndent"><b style="mso-bidi-font-weight:normal"><span style="font-size:9.0pt;font-family:&quot;Courier New&quot;;color:maroon">Dynamic Bag
+  contains: <o:p></o:p></span></b></p>
+  <p class="MsoBodyTextIndent"><b style="mso-bidi-font-weight:normal"><span style="font-size:9.0pt;font-family:&quot;Courier New&quot;;color:maroon">Beatles Smiths
+  Ramones Radiohead <o:p></o:p></span></b></p>
+  <p class="MsoBodyTextIndent"><b style="mso-bidi-font-weight:normal"><span style="font-size:9.0pt;font-family:&quot;Courier New&quot;;color:maroon"><o:p>&nbsp;</o:p></span></b></p>
+  <p class="MsoBodyTextIndent"><b style="mso-bidi-font-weight:normal"><span style="font-size:9.0pt;font-family:&quot;Courier New&quot;;color:maroon">Linked Bag
+  contains: <o:p></o:p></span></b></p>
+  <p class="MsoBodyTextIndent" style="margin-left:0in"><b style="mso-bidi-font-weight:
+  normal"><span style="font-size:9.0pt;font-family:&quot;Courier New&quot;;color:maroon"><span style="mso-spacerun:yes">&nbsp;&nbsp; </span>Radiohead Ramones Smiths Beatles</span></b><b style="mso-bidi-font-weight:normal"><span style="font-size:10.0pt;font-family:
+  &quot;Courier New&quot;"><o:p></o:p></span></b></p>
+  </td>
+ </tr>
+</tbody></table>
+
+<p class="MsoBodyTextIndent"><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></p>
+
+<span style="font-size:10.0pt;font-family:&quot;Times New Roman&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;;mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+mso-bidi-language:AR-SA"><br style="page-break-before:always" clear="all">
+</span>
+
+<p class="MsoNormal" style="margin-left:.25in;text-indent:-.25in;mso-list:l7 level1 lfo31"><!--[if !supportLists]--><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt;mso-bidi-font-weight:bold"><span style="mso-list:Ignore">4)<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;
+</span></span></span><!--[endif]--><b style="mso-bidi-font-weight:normal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt">Coding (10 points) </span></b><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt">Consider an </span><span class="SpellE"><b style="mso-bidi-font-weight:normal"><span style="font-size:
+11.0pt;mso-bidi-font-size:10.0pt;font-family:&quot;Courier New&quot;">ArrayBag</span></b></span><b style="mso-bidi-font-weight:normal"><span style="font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&lt;T&gt;</span></b><span style="font-size:
+11.0pt;mso-bidi-font-size:10.0pt"> object, B.<span style="mso-spacerun:yes">&nbsp; </span>Recall that the </span><span class="SpellE"><b style="mso-bidi-font-weight:normal"><span style="font-size:
+11.0pt;mso-bidi-font-size:10.0pt;font-family:&quot;Courier New&quot;">ArrayBag</span></b></span><b style="mso-bidi-font-weight:normal"><span style="font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&lt;T&gt;</span></b><b style="mso-bidi-font-weight:
+normal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt"> class</span></b><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt"> has two instance variables:<b><o:p></o:p></b></span></p>
+
+<p class="MsoNormal" style="margin-left:.5in"><span class="GramE"><b style="mso-bidi-font-weight:normal"><span style="font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:&quot;Courier New&quot;">private</span></b></span><b style="mso-bidi-font-weight:
+normal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+&quot;Courier New&quot;"> T [] bag;<o:p></o:p></span></b></p>
+
+<p class="MsoNormal" style="margin-left:.5in"><span class="GramE"><b style="mso-bidi-font-weight:normal"><span style="font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:&quot;Courier New&quot;">private</span></b></span><b style="mso-bidi-font-weight:
+normal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+&quot;Courier New&quot;"> <span class="SpellE">int</span> <span class="SpellE">numberOfEntries</span>;<o:p></o:p></span></b></p>
+
+<p class="MsoNormal" style="margin-left:.25in"><b><span style="font-size:11.0pt;
+mso-bidi-font-size:10.0pt"><o:p>&nbsp;</o:p></span></b></p>
+
+<p class="MsoNormal" style="margin-left:.25in"><span style="font-size:11.0pt;
+mso-bidi-font-size:10.0pt">Complete the code for the method below. <o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-left:.25in"><span style="font-size:11.0pt;
+mso-bidi-font-size:10.0pt"><o:p>&nbsp;</o:p></span></p>
+
+<table class="MsoNormalTable" style="margin-left: 0.25in; border-collapse: collapse; border: medium none;" border="1" cellpadding="0" cellspacing="0">
+ <tbody><tr style="">
+  <td style="width: 7.25in; border: 1pt solid windowtext; padding: 0in 5.4pt;" valign="top" width="522">
+  <p class="MsoNormal"><span class="GramE"><b style="mso-bidi-font-weight:normal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:&quot;Courier New&quot;">public</span></b></span><b style="mso-bidi-font-weight:normal"><span style="font-size:11.0pt;mso-bidi-font-size:
+  10.0pt;font-family:&quot;Courier New&quot;"> <span class="SpellE">int</span> <span class="SpellE">getFrequencyOf</span>(T <span class="SpellE">anEntry</span>)<span style="mso-spacerun:yes">&nbsp; </span>// return number of times <span class="SpellE">anEntry</span><o:p></o:p></span></b></p>
+  <p class="MsoNormal"><span class="GramE"><b style="mso-bidi-font-weight:normal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:&quot;Courier New&quot;">{<span style="mso-tab-count:7">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ </span>/</span></b></span><b style="mso-bidi-font-weight:normal"><span style="font-size:11.0pt;mso-bidi-font-size:
+  10.0pt;font-family:&quot;Courier New&quot;">/ occurs within the current Bag<o:p></o:p></span></b></p>
+  <p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt;
+  font-family:&quot;Courier New&quot;"><o:p>&nbsp;</o:p></span></p>
+  <p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt;
+  font-family:&quot;Courier New&quot;"><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp; </span></span><b style="mso-bidi-font-weight:normal"><span style="font-size:12.0pt;font-family:
+  &quot;Courier New&quot;;color:maroon">// One possible solution<o:p></o:p></span></b></p>
+  <p class="MsoNormal"><b style="mso-bidi-font-weight:normal"><span style="font-size:12.0pt;font-family:&quot;Courier New&quot;;color:maroon"><span style="mso-tab-count:2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="SpellE"><span class="GramE">int</span></span> counter = 0;<o:p></o:p></span></b></p>
+  <p class="MsoNormal"><b style="mso-bidi-font-weight:normal"><span style="font-size:12.0pt;font-family:&quot;Courier New&quot;;color:maroon"><o:p>&nbsp;</o:p></span></b></p>
+  <p class="MsoNormal"><b style="mso-bidi-font-weight:normal"><span style="font-size:12.0pt;font-family:&quot;Courier New&quot;;color:maroon"><span style="mso-tab-count:2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="GramE">for</span> (<span class="SpellE">int</span> index = 0; index &lt; <span class="SpellE">numberOfEntries</span>; index++) <o:p></o:p></span></b></p>
+  <p class="MsoNormal"><b style="mso-bidi-font-weight:normal"><span style="font-size:12.0pt;font-family:&quot;Courier New&quot;;color:maroon"><span style="mso-tab-count:2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>{<o:p></o:p></span></b></p>
+  <p class="MsoNormal"><b style="mso-bidi-font-weight:normal"><span style="font-size:12.0pt;font-family:&quot;Courier New&quot;;color:maroon"><span style="mso-tab-count:3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="GramE">if</span> (<span class="SpellE">anEntry.equals</span>(bag[index]))<o:p></o:p></span></b></p>
+  <p class="MsoNormal"><b style="mso-bidi-font-weight:normal"><span style="font-size:12.0pt;font-family:&quot;Courier New&quot;;color:maroon"><span style="mso-tab-count:3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>{<o:p></o:p></span></b></p>
+  <p class="MsoNormal"><b style="mso-bidi-font-weight:normal"><span style="font-size:12.0pt;font-family:&quot;Courier New&quot;;color:maroon"><span style="mso-tab-count:4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="GramE">counter</span>++;<o:p></o:p></span></b></p>
+  <p class="MsoNormal"><b style="mso-bidi-font-weight:normal"><span style="font-size:12.0pt;font-family:&quot;Courier New&quot;;color:maroon"><span style="mso-tab-count:3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>}
+  // <span class="GramE">end</span> if<o:p></o:p></span></b></p>
+  <p class="MsoNormal"><b style="mso-bidi-font-weight:normal"><span style="font-size:12.0pt;font-family:&quot;Courier New&quot;;color:maroon"><span style="mso-tab-count:2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>}
+  // <span class="GramE">end</span> for<o:p></o:p></span></b></p>
+  <p class="MsoNormal"><b style="mso-bidi-font-weight:normal"><span style="font-size:12.0pt;font-family:&quot;Courier New&quot;;color:maroon"><o:p>&nbsp;</o:p></span></b></p>
+  <p class="MsoNormal"><b style="mso-bidi-font-weight:normal"><span style="font-size:12.0pt;font-family:&quot;Courier New&quot;;color:maroon"><span style="mso-tab-count:2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="GramE">return</span> counter;<o:p></o:p></span></b></p>
+  <p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt;
+  font-family:&quot;Courier New&quot;"><o:p>&nbsp;</o:p></span></p>
+  <p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt;
+  font-family:&quot;Courier New&quot;"><o:p>&nbsp;</o:p></span></p>
+  <p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt;
+  font-family:&quot;Courier New&quot;"><span style="mso-spacerun:yes">&nbsp;</span><o:p></o:p></span></p>
+  <p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt;
+  font-family:&quot;Courier New&quot;"><o:p>&nbsp;</o:p></span></p>
+  <p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt;
+  font-family:&quot;Courier New&quot;"><o:p>&nbsp;</o:p></span></p>
+  <p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt;
+  font-family:&quot;Courier New&quot;"><o:p>&nbsp;</o:p></span></p>
+  <p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt;
+  font-family:&quot;Courier New&quot;"><o:p>&nbsp;</o:p></span></p>
+  <p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt;
+  font-family:&quot;Courier New&quot;"><o:p>&nbsp;</o:p></span></p>
+  <p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt;
+  font-family:&quot;Courier New&quot;"><o:p>&nbsp;</o:p></span></p>
+  <p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt;
+  font-family:&quot;Courier New&quot;"><o:p>&nbsp;</o:p></span></p>
+  <p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt;
+  font-family:&quot;Courier New&quot;"><o:p>&nbsp;</o:p></span></p>
+  <p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt;
+  font-family:&quot;Courier New&quot;"><o:p>&nbsp;</o:p></span></p>
+  <p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt;
+  font-family:&quot;Courier New&quot;"><o:p>&nbsp;</o:p></span></p>
+  <p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt;
+  font-family:&quot;Courier New&quot;"><o:p>&nbsp;</o:p></span></p>
+  <p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt;
+  font-family:&quot;Courier New&quot;"><o:p>&nbsp;</o:p></span></p>
+  <p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt;
+  font-family:&quot;Courier New&quot;"><o:p>&nbsp;</o:p></span></p>
+  <p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt;
+  font-family:&quot;Courier New&quot;"><o:p>&nbsp;</o:p></span></p>
+  <p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt;
+  font-family:&quot;Courier New&quot;"><o:p>&nbsp;</o:p></span></p>
+  <p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt;
+  font-family:&quot;Courier New&quot;"><o:p>&nbsp;</o:p></span></p>
+  <p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt;
+  font-family:&quot;Courier New&quot;"><o:p>&nbsp;</o:p></span></p>
+  <p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt;
+  font-family:&quot;Courier New&quot;"><o:p>&nbsp;</o:p></span></p>
+  <p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt;
+  font-family:&quot;Courier New&quot;"><o:p>&nbsp;</o:p></span></p>
+  <p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt;
+  font-family:&quot;Courier New&quot;"><o:p>&nbsp;</o:p></span></p>
+  <p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt;
+  font-family:&quot;Courier New&quot;"><o:p>&nbsp;</o:p></span></p>
+  <p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt;
+  font-family:&quot;Courier New&quot;"><o:p>&nbsp;</o:p></span></p>
+  <p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt;
+  font-family:&quot;Courier New&quot;"><o:p>&nbsp;</o:p></span></p>
+  <p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt;
+  font-family:&quot;Courier New&quot;"><o:p>&nbsp;</o:p></span></p>
+  <p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt;
+  font-family:&quot;Courier New&quot;"><o:p>&nbsp;</o:p></span></p>
+  <p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt;
+  font-family:&quot;Courier New&quot;"><o:p>&nbsp;</o:p></span></p>
+  <p class="MsoNormal"><b style="mso-bidi-font-weight:normal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:&quot;Courier New&quot;">}<o:p></o:p></span></b></p>
+  </td>
+ </tr>
+</tbody></table>
+
+<p class="MsoNormal" style="margin-left:.25in"><span style="font-size:11.0pt;
+mso-bidi-font-size:10.0pt;font-family:&quot;Courier New&quot;"><span style="mso-spacerun:yes">&nbsp;</span><o:p></o:p></span></p>
+
+</div>
+
+
+
+
+</body></html>

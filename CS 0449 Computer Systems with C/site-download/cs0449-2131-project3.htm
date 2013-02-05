@@ -1,0 +1,637 @@
+<html>
+
+<head>
+<meta name=Generator content="Microsoft Word 14 (filtered)">
+<title>Project 3</title>
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Cambria;
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+@font-face
+	{font-family:Consolas;
+	panose-1:2 11 6 9 2 2 4 3 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+h1
+	{mso-style-link:"Heading 1 Char";
+	margin-top:24.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:14.0pt;
+	font-family:"Cambria","serif";}
+h1.CxSpFirst
+	{mso-style-link:"Heading 1 Char";
+	margin-top:24.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:14.0pt;
+	font-family:"Cambria","serif";}
+h1.CxSpMiddle
+	{mso-style-link:"Heading 1 Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:14.0pt;
+	font-family:"Cambria","serif";}
+h1.CxSpLast
+	{mso-style-link:"Heading 1 Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:14.0pt;
+	font-family:"Cambria","serif";}
+h2
+	{mso-style-link:"Heading 2 Char";
+	margin-top:10.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:13.0pt;
+	font-family:"Cambria","serif";}
+h3
+	{mso-style-link:"Heading 3 Char";
+	margin-top:10.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	line-height:112%;
+	font-size:11.0pt;
+	font-family:"Cambria","serif";}
+h4
+	{mso-style-link:"Heading 4 Char";
+	margin-top:10.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Cambria","serif";
+	font-style:italic;}
+h5
+	{mso-style-link:"Heading 5 Char";
+	margin-top:10.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Cambria","serif";
+	color:#7F7F7F;}
+h6
+	{mso-style-link:"Heading 6 Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	line-height:112%;
+	font-size:11.0pt;
+	font-family:"Cambria","serif";
+	color:#7F7F7F;
+	font-style:italic;}
+p.MsoHeading7, li.MsoHeading7, div.MsoHeading7
+	{mso-style-link:"Heading 7 Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Cambria","serif";
+	font-style:italic;}
+p.MsoHeading8, li.MsoHeading8, div.MsoHeading8
+	{mso-style-link:"Heading 8 Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Cambria","serif";}
+p.MsoHeading9, li.MsoHeading9, div.MsoHeading9
+	{mso-style-link:"Heading 9 Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Cambria","serif";
+	letter-spacing:.25pt;
+	font-style:italic;}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{mso-style-link:"Header Char";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{mso-style-link:"Footer Char";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+p.MsoTitle, li.MsoTitle, div.MsoTitle
+	{mso-style-link:"Title Char";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	border:none;
+	padding:0in;
+	font-size:26.0pt;
+	font-family:"Cambria","serif";
+	letter-spacing:.25pt;}
+p.MsoTitleCxSpFirst, li.MsoTitleCxSpFirst, div.MsoTitleCxSpFirst
+	{mso-style-link:"Title Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	border:none;
+	padding:0in;
+	font-size:26.0pt;
+	font-family:"Cambria","serif";
+	letter-spacing:.25pt;}
+p.MsoTitleCxSpMiddle, li.MsoTitleCxSpMiddle, div.MsoTitleCxSpMiddle
+	{mso-style-link:"Title Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	border:none;
+	padding:0in;
+	font-size:26.0pt;
+	font-family:"Cambria","serif";
+	letter-spacing:.25pt;}
+p.MsoTitleCxSpLast, li.MsoTitleCxSpLast, div.MsoTitleCxSpLast
+	{mso-style-link:"Title Char";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	border:none;
+	padding:0in;
+	font-size:26.0pt;
+	font-family:"Cambria","serif";
+	letter-spacing:.25pt;}
+p.MsoSubtitle, li.MsoSubtitle, div.MsoSubtitle
+	{mso-style-link:"Subtitle Char";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:30.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:12.0pt;
+	font-family:"Cambria","serif";
+	letter-spacing:.65pt;
+	font-style:italic;}
+em
+	{letter-spacing:.5pt;
+	border:none;
+	font-weight:bold;}
+p.MsoNoSpacing, li.MsoNoSpacing, div.MsoNoSpacing
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+p.MsoQuote, li.MsoQuote, div.MsoQuote
+	{mso-style-link:"Quote Char";
+	margin-top:10.0pt;
+	margin-right:.25in;
+	margin-bottom:0in;
+	margin-left:.25in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";
+	font-style:italic;}
+p.MsoIntenseQuote, li.MsoIntenseQuote, div.MsoIntenseQuote
+	{mso-style-link:"Intense Quote Char";
+	margin-top:10.0pt;
+	margin-right:.8in;
+	margin-bottom:14.0pt;
+	margin-left:.7in;
+	text-align:justify;
+	line-height:115%;
+	border:none;
+	padding:0in;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";
+	font-weight:bold;
+	font-style:italic;}
+span.MsoSubtleEmphasis
+	{font-style:italic;}
+span.MsoIntenseEmphasis
+	{font-weight:bold;}
+span.MsoSubtleReference
+	{font-variant:small-caps;}
+span.MsoIntenseReference
+	{font-variant:small-caps;
+	letter-spacing:.25pt;
+	text-decoration:underline;}
+span.MsoBookTitle
+	{font-variant:small-caps;
+	letter-spacing:.25pt;
+	font-style:italic;}
+p.MsoTocHeading, li.MsoTocHeading, div.MsoTocHeading
+	{margin-top:24.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:14.0pt;
+	font-family:"Cambria","serif";
+	font-weight:bold;}
+p.MsoTocHeadingCxSpFirst, li.MsoTocHeadingCxSpFirst, div.MsoTocHeadingCxSpFirst
+	{margin-top:24.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:14.0pt;
+	font-family:"Cambria","serif";
+	font-weight:bold;}
+p.MsoTocHeadingCxSpMiddle, li.MsoTocHeadingCxSpMiddle, div.MsoTocHeadingCxSpMiddle
+	{margin:0in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:14.0pt;
+	font-family:"Cambria","serif";
+	font-weight:bold;}
+p.MsoTocHeadingCxSpLast, li.MsoTocHeadingCxSpLast, div.MsoTocHeadingCxSpLast
+	{margin:0in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:14.0pt;
+	font-family:"Cambria","serif";
+	font-weight:bold;}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-link:"Heading 1";
+	font-family:"Cambria","serif";
+	font-weight:bold;}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-link:"Heading 2";
+	font-family:"Cambria","serif";
+	font-weight:bold;}
+span.Heading3Char
+	{mso-style-name:"Heading 3 Char";
+	mso-style-link:"Heading 3";
+	font-family:"Cambria","serif";
+	font-weight:bold;}
+span.Heading4Char
+	{mso-style-name:"Heading 4 Char";
+	mso-style-link:"Heading 4";
+	font-family:"Cambria","serif";
+	font-weight:bold;
+	font-style:italic;}
+span.Heading5Char
+	{mso-style-name:"Heading 5 Char";
+	mso-style-link:"Heading 5";
+	font-family:"Cambria","serif";
+	color:#7F7F7F;
+	font-weight:bold;}
+span.Heading6Char
+	{mso-style-name:"Heading 6 Char";
+	mso-style-link:"Heading 6";
+	font-family:"Cambria","serif";
+	color:#7F7F7F;
+	font-weight:bold;
+	font-style:italic;}
+span.Heading7Char
+	{mso-style-name:"Heading 7 Char";
+	mso-style-link:"Heading 7";
+	font-family:"Cambria","serif";
+	font-style:italic;}
+span.Heading8Char
+	{mso-style-name:"Heading 8 Char";
+	mso-style-link:"Heading 8";
+	font-family:"Cambria","serif";}
+span.Heading9Char
+	{mso-style-name:"Heading 9 Char";
+	mso-style-link:"Heading 9";
+	font-family:"Cambria","serif";
+	letter-spacing:.25pt;
+	font-style:italic;}
+span.TitleChar
+	{mso-style-name:"Title Char";
+	mso-style-link:Title;
+	font-family:"Cambria","serif";
+	letter-spacing:.25pt;}
+span.SubtitleChar
+	{mso-style-name:"Subtitle Char";
+	mso-style-link:Subtitle;
+	font-family:"Cambria","serif";
+	letter-spacing:.65pt;
+	font-style:italic;}
+span.QuoteChar
+	{mso-style-name:"Quote Char";
+	mso-style-link:Quote;
+	font-style:italic;}
+span.IntenseQuoteChar
+	{mso-style-name:"Intense Quote Char";
+	mso-style-link:"Intense Quote";
+	font-weight:bold;
+	font-style:italic;}
+span.HeaderChar
+	{mso-style-name:"Header Char";
+	mso-style-link:Header;}
+span.FooterChar
+	{mso-style-name:"Footer Char";
+	mso-style-link:Footer;}
+ /* Page Definitions */
+ @page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-US>
+
+<div class=WordSection1>
+
+<div style='border:none;border-bottom:solid windowtext 1.0pt;padding:0in 0in 1.0pt 0in'>
+
+<p class=MsoTitleCxSpFirst>Project 3: A Custom malloc()</p>
+
+<p class=MsoTitleCxSpLast><span style='font-size:20.0pt'>Due: Sunday, November 4,
+2012, at 11:59pm</span></p>
+
+</div>
+
+<h1>Description </h1>
+
+<p class=MsoNormal>In our discussions of dynamic memory management we discussed
+the operation of the standard C library call, malloc(). Malloc designates a
+region of a process’s address space from the symbol _end (where the code and
+global data ends) to brk as the heap.</p>
+
+<p class=MsoNormal>As part of dynamic memory management, we also discussed
+various algorithms for the management of the empty spaces that may be created
+after a malloc()-managed heap has had some of it’s allocations freed. In this
+assignment, you are asked to create your own version of malloc, one that uses the
+worst-fit algorithm.</p>
+
+<p class=MsoNormal><span class=Heading1Char><span style='font-size:14.0pt;
+line-height:115%'>Details</span></span><span class=Heading1Char><span
+style='font-size:14.0pt;line-height:115%'><img width=639 height=209
+src="cs0449-2131-project3_files/image001.gif"></span></span></p>
+
+<p class=MsoNormal>We are programmatically able to grow or shrink the size of
+the heap by setting new values of brk. The function sbrk() handles scaling the
+brk value by its parameter:</p>
+
+<div style='border-top:solid windowtext 1.0pt;border-left:none;border-bottom:
+solid windowtext 1.0pt;border-right:none;padding:1.0pt 0in 1.0pt 0in'>
+
+<p class=MsoNoSpacing style='border:none;padding:0in'><span lang=FR
+style='font-size:10.0pt;font-family:Consolas'>void *sbrk(intptr_t increment);</span></p>
+
+<p class=MsoNoSpacing style='border:none;padding:0in'><span lang=FR
+style='font-size:10.0pt;font-family:Consolas'>&nbsp;</span></p>
+
+<p class=MsoNoSpacing style='border:none;padding:0in'><b><span lang=FR
+style='font-size:10.0pt;font-family:Consolas'>DESCRIPTION</span></b></p>
+
+<p class=MsoNoSpacing style='border:none;padding:0in'><span style='font-size:
+10.0pt;font-family:Consolas'>brk sets the end of the data segment to the value
+specified by  end_data_segment, when that value is reasonable, the system does
+have  enough memory and the process does not exceed its max data size (see
+setrlimit(2)).</span></p>
+
+<p class=MsoNoSpacing style='border:none;padding:0in'><span style='font-size:
+10.0pt;font-family:Consolas'>&nbsp;</span></p>
+
+<p class=MsoNoSpacing style='border:none;padding:0in'><span style='font-size:
+10.0pt;font-family:Consolas'>sbrk increments the program’s data space by
+increment bytes. sbrk isn’t a system call, it is just a C library wrapper. Calling
+sbrk with an increment of 0 can be used to find the current location of the
+program break.</span></p>
+
+<p class=MsoNoSpacing style='border:none;padding:0in'><span style='font-size:
+10.0pt;font-family:Consolas'>&nbsp;</span></p>
+
+<p class=MsoNoSpacing style='border:none;padding:0in'><b><span
+style='font-size:10.0pt;font-family:Consolas'>RETURN VALUE</span></b></p>
+
+<p class=MsoNoSpacing style='border:none;padding:0in'><span style='font-size:
+10.0pt;font-family:Consolas'>On success, brk returns zero, and sbrk returns a
+pointer to the start of the new area. On error, -1 is returned, and errno is
+set to ENOMEM.</span></p>
+
+</div>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>A simple place to start then is to create a malloc which,
+with each request, simply increments brk by the amount requested and returns
+the old value of brk as the pointer. However, when you want to write a free()
+function, the parameter to free() is just a pointer to the start of the region,
+so you have no way to determine how much space to deallocate. In order to know
+what space is free or used, and how big each region is, we must use one of the
+techniques from class: Bitmaps or Linked lists.</p>
+
+<p class=MsoNormal>From our discussion in class, linked lists seem like the
+better choice, but now we need some place to store this dynamic list of free
+and occupied memory regions inside of the heap. If we just allocated some
+fixed-size region, that space may not be adequate for how many nodes in the
+list we’d need to create. A better idea is illustrated in the figure below:</p>
+
+<p class=MsoNormal><img width=624 height=249
+src="cs0449-2131-project3_files/image002.gif"></p>
+
+<p class=MsoNormal>We can add some additional space to each update of brk in
+order to accommodate a structure that is a node in our linked list, and this
+structure can contain useful things like:</p>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt'>The size
+     of this chunk of memory</li>
+ <li class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt'>Whether it
+     is free or empty</li>
+ <li class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt'>A pointer
+     to the next node</li>
+ <li class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt'>A pointer
+     to the previous node</li>
+</ul>
+
+<p class=MsoNormal style='margin-top:10.0pt;margin-right:0in;margin-bottom:
+0in;margin-left:0in;margin-bottom:.0001pt'>We then return back a pointer that
+is in the middle of the chunk we allocated, and thus the program calling
+malloc() will never notice the additional structure. However, when we get a
+pointer back to free, we can simply look at the memory before it for the
+structure that we wrote there with the information we need.</p>
+
+<b><span style='font-size:14.0pt;line-height:115%;font-family:"Cambria","serif"'><br
+clear=all style='page-break-before:always'>
+</span></b>
+
+<h1>Requirements </h1>
+
+<p class=MsoNormal>You are to create two functions for this project.</p>
+
+<ol style='margin-top:0in' start=1 type=1>
+ <li class=MsoNormal>A malloc() replacement called <span style='font-family:
+     Consolas'>void *my_worstfit_malloc(int size)</span> that allocates memory
+     using the worst- fit algorithm. Again, if no empty space is big enough,
+     allocate more via sbrk().</li>
+ <li class=MsoNormal>A free() called <span style='font-family:Consolas'>void
+     my_free(void *ptr)</span> that deallocates a pointer that was originally
+     allocated by the malloc you wrote above.</li>
+</ol>
+
+<p class=MsoNormal>Your free function should coalesce adjacent free blocks as
+we described in class. If the block that touches brk is free, you should use
+sbrk() with a negative offset to reduce the size of the heap. </p>
+
+<p class=MsoNormal>As you are developing, you will want to create a driver
+program that tests your calls to your mallocs and frees. A week before the due
+date, I will provide a sample driver program that must work. During grading, we
+will use a second driver program in addition to the first one in order to test
+that your code works.</p>
+
+<h1>Environment </h1>
+
+<p class=MsoNormal>For this project we will again be working on <span
+style='font-family:Consolas'>thot.cs.pitt.edu</span> </p>
+
+<p class=MsoNormal>This machine is a 64-bit machine, and to avoid pointer cast
+warnings, build using the -m32 option for gcc. This will build a 32-bit program
+instead of a 64-bit one.</p>
+
+<h1>Hints/Notes</h1>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal>When you manually change brk with sbrk, you may not call
+     malloc or mmap, as they may have unintended consequences. All allocations
+     will have to be done with your new custom malloc().</li>
+ <li class=MsoNormal>In C, the sentinel value for the end of a linked list is having
+     the next pointer set to NULL. </li>
+ <li class=MsoNormal>Make sure you don’t lose the beginning or end of your
+     linked list. You may want 2 global variables to keep track of either end</li>
+ <li class=MsoNormal>sbrk(0) will tell you the current value of brk which can
+     help in debugging</li>
+ <li class=MsoNormal>gdb is your friend, no matter what you think after project
+     2</li>
+</ul>
+
+<b><span style='font-size:14.0pt;line-height:115%;font-family:"Cambria","serif"'><br
+clear=all style='page-break-before:always'>
+</span></b>
+
+<h1>What to turn in</h1>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal style='margin-bottom:6.0pt'>A header file named mymalloc.h
+     with the prototypes of your two functions</li>
+ <li class=MsoNormal style='margin-bottom:6.0pt'>A C file named mymalloc.c with
+     the implementations of your two functions</li>
+ <li class=MsoNormal style='margin-bottom:6.0pt'>The test program you used
+     during your initial testing</li>
+ <li class=MsoNormal style='margin-bottom:6.0pt'>Any documentation you provide
+     to help us grade your project</li>
+</ul>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'>To create a tar.gz file, if your
+code is in a folder named project3, execute the following commands:</p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt'>
+
+<p class=MsoNormal style='margin-bottom:6.0pt;border:none;padding:0in'><span
+style='font-family:Consolas'>tar cvf USERNAME-project3.tar project3</span></p>
+
+<p class=MsoNormal style='margin-bottom:6.0pt;border:none;padding:0in'><span
+style='font-family:Consolas'>gzip USERNAME-project3.tar</span></p>
+
+</div>
+
+<p class=MsoNormal>Where USERNAME is your username.</p>
+
+<p class=MsoNormal style='text-align:justify'><b><span style='color:red'>Copy
+your archive to the appropriate directory for your lecture time</span></b>:</p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-family:Consolas'>~jrmst106/submit/449/11am</span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-family:Consolas'>~jrmst106/submit/449/4pm</span></p>
+
+<p class=MsoNormal><span style='font-family:Consolas'>&nbsp;</span></p>
+
+</div>
+
+</body>
+
+</html>

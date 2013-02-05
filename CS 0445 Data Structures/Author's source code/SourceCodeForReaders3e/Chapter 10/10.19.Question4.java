@@ -1,0 +1,1 @@
+PriorityQueueInterface<String> myPriorityQueue =                                new LinkedPriorityQueue<String>();myPriorityQueue.add("Jane");myPriorityQueue.add("Jim");myPriorityQueue.add("Jill");String name = myPriorityQueue.remove();myPriorityQueue.add(name);myPriorityQueue.add("Jess");

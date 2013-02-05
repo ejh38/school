@@ -1,0 +1,41 @@
+sub		$r1, $r1 	1241
+put	 	$r1 		c200 
+put		$r2			c400
+add		$r1, $r1	1240
+add		$r1, $r2	1280
+addi	$r1, 0x70	02E1
+addi	$r2, 0x07	040F
+halt				2001
+
+addui	$r1, 0xAF	037E
+put	 	$r1 		c200 
+addi	$r2, 0xFF	05FF
+put		$r2			c400
+add		$r1, $r2	1280
+put	 	$r1 		c200 
+and		$r1, $r2	3280
+put		$r1			c200
+nor		$r1, $r2	c201
+put		$r1			c200
+sub		$r1, $r1 	1241
+put		$r1			c200
+
+addui	$r0, 0x22	
+
+ff
+ffff
+?
+?
+
+
+addui	$r0, 0x22	0042
+addi	$r2, 0x01	0403
+sllv	$r0, $r2	4081
+put	 	$r0 		c000
+halt				2001
+
+lw		$r1, $r0	7200
+ 
+	# use $r2 to make sure we're shifting by contents!
+	put	$r0		# output 0x44
+	halt

@@ -1,0 +1,1 @@
+QueueInterface<String> myQueue = new LinkedQueue<String>();myQueue.enqueue("Jim");myQueue.enqueue("Jess");myQueue.enqueue("Jill");myQueue.enqueue("Jane");String name = myQueue.dequeue();myQueue.enqueue(name);myQueue.enqueue(myQueue.getFront());name = myQueue.dequeue();

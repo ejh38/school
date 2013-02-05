@@ -1,0 +1,1 @@
+public void println(Object theObject){	System.out.println(theObject.toString());} // end println

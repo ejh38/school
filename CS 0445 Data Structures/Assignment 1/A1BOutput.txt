@@ -1,0 +1,21 @@
+Buffer Initialized
+Buffer Saved to File
+Buffer Cleared
+Buffer restored
+Here is the data:
+Name: Bleach Volume: 128.0 oz. Price: 1.28
+Name: Milk Volume: 128.0 oz. Price: 2.56
+Name: TV Price: 800.0
+Name: DVD Price: 200.0
+Name: Sugar Weight: 80.0 oz. Price: 0.4
+Name: Salt Weight: 400.0 oz. Price: 4.0
+
+Sorting the data
+
+Here is the data:
+Name: Sugar Weight: 80.0 oz. Price: 0.4
+Name: Bleach Volume: 128.0 oz. Price: 1.28
+Name: Milk Volume: 128.0 oz. Price: 2.56
+Name: Salt Weight: 400.0 oz. Price: 4.0
+Name: DVD Price: 200.0
+Name: TV Price: 800.0

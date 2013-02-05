@@ -1,0 +1,18 @@
+Algorithm : Quick
+Array Size: 20
+Order: Random
+Number of trials: 20
+Average Time: 8.039999999999999E-5
+
+Algorithm : Quick
+Array Size: 20
+Order: Sorted
+Number of trials: 20
+Average Time: 6.575000000000001E-5
+
+Algorithm : Quick
+Array Size: 20
+Order: Reverse Sorted
+Number of trials: 20
+Average Time: 1.317E-4
+

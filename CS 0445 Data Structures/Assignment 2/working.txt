@@ -1,0 +1,123 @@
+
+
+
+
+				1 , 5, 3, 4, 7, 6, 8, 2
+				
+				
+				
+				1							push stack because stack is empty
+				
+				
+				5		1					pop stack push temp, then push stack since empty
+				
+				
+						3					push tempstack because < peek stack, > temp stack
+				5		1
+				
+				
+				
+						4
+						3					push tempstack because < peek stack, > temp stack
+				5		1
+				
+				
+				
+						5					pop stack push temp because > peek stack, > temp stack
+						4					then push stack since empty
+						3
+				7		1						
+												
+				
+						6					push tempstack because < peek stack, > temp stack
+						5					
+						4
+						3
+				7		1
+				
+				
+				
+				
+						7					pop stack push temp because > peek stack, then push stack
+						6					since empty
+						5
+						4
+						3
+				8		1
+				
+				
+				
+						
+				3							pop temp stack push stack because < peek stack AND < peek temp
+				4							continue until < peek stack > peek temp,
+				5							then push temp
+				6
+				7		2
+				8		1
+				
+				
+				
+				END: pop temp push stack till temp empty
+				
+				keepLooking = true;
+				while (keepLooking)
+				{
+					if (stack.isEmpty())
+					{
+						stack.push(tempCrate1);
+						recentMoves++;
+						keepLooking = false;
+					}
+					else
+					{
+						// stack is not empty
+						tempCrate2 = stack.peek();
+						if (tempCrate1.compareTo(tempCrate2) < 1)
+						{
+							// if the crate less than/equal to top stack
+							if (tempStack.isEmpty())
+							{
+								// if tempStack is empty, then push onto tempStack
+								tempStack.push(tempCrate1);
+								recentMoves++;
+								keepLooking = false;
+							}
+							else
+							{
+								// if tempStack isn't empty
+								tempCrate2 = tempStack.peek();
+								if (tempCrate1.compareTo(tempCrate2) > -1)
+								{
+									// if greater than/equal to top tempStack, then push onto tempStack
+									tempStack.push(tempCrate1);
+									recentMoves++;
+									keepLooking = false;
+								}
+								else
+								{
+									// if less than top tempStack, pop off of tempStack, push onto stack
+									stack.push(tempStack.pop());
+									recentMoves++;
+								}
+							}
+						}
+						else
+						// greater than the top of the Stack
+						{
+							tempStack.push(stack.pop())
+							recentMoves++;
+						}
+					}
+				}
+				if (i == (temp1 - 1)
+				{
+					while (!tempStack.isEmpty())
+					{
+						stack.push(tempStack.pop());
+						recentMoves++;
+					}
+				}
+				
+				
+				
+				

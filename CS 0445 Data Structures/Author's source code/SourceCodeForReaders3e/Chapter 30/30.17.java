@@ -1,0 +1,1 @@
+Name april = new Name("April", "Jones");Name twin = (Name)april.clone();twin.setLast("Smith");

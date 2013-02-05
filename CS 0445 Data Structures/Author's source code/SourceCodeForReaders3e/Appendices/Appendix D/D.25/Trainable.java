@@ -1,0 +1,1 @@
+public interface Trainable extends Callable, Capable{	public void sit();	public void speak();	public void lieDown();} // end Trainable

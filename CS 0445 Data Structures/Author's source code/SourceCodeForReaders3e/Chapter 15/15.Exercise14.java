@@ -1,0 +1,1 @@
+ListIterator<String> nameIterator = nameList.getIterator();System.out.println(nameIterator.next());nameIterator.next();nameIterator.next();System.out.println(nameIterator.next());nameIterator.set("Brittany");nameIterator.previous();nameIterator.remove();System.out.println(nameIterator.next());displayList(nameList);

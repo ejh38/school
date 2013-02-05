@@ -1,0 +1,20 @@
+Name: Zach Sadler				Assignment #: 3
+
+Lab Day and Time: Monday 1:00 pm
+Lab Instructor: Di Bao
+Program Due Date: February 29, 2012
+Handed in Date: February 29, 2012
+
+Source code file names: Assig3.java
+
+Compiled (.class) file names: Assig3.class
+
+Other file names: 
+
+My program compiles without errors. 
+
+Additional comments/Extra credit:
+I noticed two possible errors. 
+	The first is that expressions like "3 4 5 6 7 + 8." will evaluate. These evaluate to the sum of the first digit, plus the third, plus (the fifth operation the last). For example: "3 4 5 6 7 + 8" evaluates to 3 + 5 + (7+8), and "3 4 5 6 7 * 8" evaluates to 3 + 5 + (7*8).
+	The second is that expressions like "1 + 2 + 4 + 5." will evaluate, sometimes with the incorrect answer. For example, "1 + 2 + 3." will evaluate to 6 (which is correct). Similarly, "2 * 3 + 1 + 1" will evaluate to the correct answer but "1 + 2 * 3 + 1" will not evaluate to the correct answer.
+	Not sure if this is an 'error,' but occasionally my program will report more than one thing wrong with an expression. For example, "(1 + 2)) +." will give an 'illegal character' exception and an 'unequal parentheses' exception.

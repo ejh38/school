@@ -1,0 +1,1 @@
+if ((salary > expenses) || (salary + savings > expenses))   System.out.println("Solvent");else   System.out.println("Bankrupt"); 

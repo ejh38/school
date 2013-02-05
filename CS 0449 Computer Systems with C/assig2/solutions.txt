@@ -1,0 +1,60 @@
+zps6_1:
+
+'qALOkANiONTVajBUqPMgnZsX'
+
+was the password. I found this by doing basically the same thing as we did in the Puzzle Lab. I thought that strcmp was a good place to look if the password was just a string of ascii characters, and it worked. I did disas at main, then set a breakpoint at the strcmp location, then did x/s (char *)0x8090b08, just as in the lab, to see the string being given to the strcmp call.
+
+
+
+
+
+zps6_2:
+
+3.141593
+
+was the password. I found this by first disas main, then after noticing the call to '<d>', doing disas c, d, e, and s. Each time I did x/s (char *)$eax, $ebx, $esp, $esi, until I found some strings that looked promising. Eventually I stumbled upon 3.141593
+
+
+
+
+
+zps6_3:
+print insp
+rintinsps s
+int spr sp
+int int in
+i nt n t i
+rint insp
+int spint
+rint12345
+rint123456
+rint012345
+rint 01234
+eint01234
+qint01234
+tint01234
+wint01234
+yint01234
+^^^ QWERTYint01234
+qwin01234
+qrwin01234
+qr0123456
+qriiiiiii
+qwiiiiiii
+qwjjjjjjj
+wqjjjjjjj
+yyjjjjjjj
+ytccccccc
+
+DOESNT
+intintintint
+rint r r r 
+rint inspe
+aint01234
+iint 01234
+1in012345
+qin012345
+qwerty123
+qwei01234
+yyyyyyyyy
+yyyjjjjjj

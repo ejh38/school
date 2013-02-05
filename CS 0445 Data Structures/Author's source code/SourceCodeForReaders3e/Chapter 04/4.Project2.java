@@ -1,0 +1,1 @@
+// Loop Afor (i = 1; i <= n; i++)   for (j = 1; j <= 10000; j++)      sum = sum + j;    // Loop Bfor (i = 1; i <= n; i++)   for (j = 1; j <= n; j++)      sum = sum + j;

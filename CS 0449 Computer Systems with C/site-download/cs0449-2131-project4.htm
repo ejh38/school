@@ -1,0 +1,856 @@
+<html>
+
+<head>
+<meta name=Generator content="Microsoft Word 14 (filtered)">
+<title>Project 4</title>
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Cambria;
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Consolas;
+	panose-1:2 11 6 9 2 2 4 3 2 4;}
+@font-face
+	{font-family:"Andale Sans UI";}
+@font-face
+	{font-family:Lucidasans;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+h1
+	{margin-top:.25in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	text-indent:0in;
+	line-height:115%;
+	font-size:14.0pt;
+	font-family:"Cambria","serif";}
+h2
+	{margin-top:10.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	text-indent:0in;
+	line-height:115%;
+	font-size:13.0pt;
+	font-family:"Cambria","serif";}
+h3
+	{margin-top:10.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	text-indent:0in;
+	line-height:111%;
+	font-size:11.0pt;
+	font-family:"Cambria","serif";}
+h4
+	{margin-top:10.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	text-indent:0in;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Cambria","serif";
+	font-style:italic;}
+h5
+	{margin-top:10.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	text-indent:0in;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Cambria","serif";
+	color:#7F7F7F;}
+h6
+	{margin:0in;
+	margin-bottom:.0001pt;
+	text-indent:0in;
+	line-height:111%;
+	font-size:11.0pt;
+	font-family:"Cambria","serif";
+	color:#7F7F7F;
+	font-style:italic;}
+p.MsoHeading7, li.MsoHeading7, div.MsoHeading7
+	{margin:0in;
+	margin-bottom:.0001pt;
+	text-indent:0in;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Cambria","serif";
+	font-style:italic;}
+p.MsoHeading8, li.MsoHeading8, div.MsoHeading8
+	{margin:0in;
+	margin-bottom:.0001pt;
+	text-indent:0in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Cambria","serif";}
+p.MsoHeading9, li.MsoHeading9, div.MsoHeading9
+	{margin:0in;
+	margin-bottom:.0001pt;
+	text-indent:0in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Cambria","serif";
+	letter-spacing:.25pt;
+	font-style:italic;}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+p.MsoCaption, li.MsoCaption, div.MsoCaption
+	{margin-top:6.0pt;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:12.0pt;
+	font-family:"Calibri","sans-serif";
+	font-style:italic;}
+p.MsoList, li.MsoList, div.MsoList
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+p.MsoTitle, li.MsoTitle, div.MsoTitle
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	border:none;
+	padding:0in;
+	font-size:26.0pt;
+	font-family:"Cambria","serif";
+	letter-spacing:.25pt;}
+p.MsoBodyText, li.MsoBodyText, div.MsoBodyText
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+p.MsoSubtitle, li.MsoSubtitle, div.MsoSubtitle
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:30.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:12.0pt;
+	font-family:"Cambria","serif";
+	letter-spacing:.65pt;
+	font-style:italic;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;}
+em
+	{letter-spacing:.5pt;
+	font-weight:bold;}
+p.MsoNoSpacing, li.MsoNoSpacing, div.MsoNoSpacing
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+p.MsoQuote, li.MsoQuote, div.MsoQuote
+	{margin-top:10.0pt;
+	margin-right:.25in;
+	margin-bottom:0in;
+	margin-left:.25in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";
+	font-style:italic;}
+p.MsoIntenseQuote, li.MsoIntenseQuote, div.MsoIntenseQuote
+	{margin-top:10.0pt;
+	margin-right:.8in;
+	margin-bottom:14.0pt;
+	margin-left:.7in;
+	text-align:justify;
+	line-height:115%;
+	border:none;
+	padding:0in;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";
+	font-weight:bold;
+	font-style:italic;}
+span.MsoSubtleEmphasis
+	{font-style:italic;}
+span.MsoIntenseEmphasis
+	{font-weight:bold;}
+span.MsoSubtleReference
+	{font-variant:small-caps;}
+span.MsoIntenseReference
+	{font-variant:small-caps;
+	letter-spacing:.25pt;
+	text-decoration:underline;}
+span.MsoBookTitle
+	{font-variant:small-caps;
+	letter-spacing:.25pt;
+	font-style:italic;}
+p.MsoTocHeading, li.MsoTocHeading, div.MsoTocHeading
+	{margin-top:.25in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:14.0pt;
+	font-family:"Cambria","serif";
+	font-weight:bold;}
+span.WW8Num7z0
+	{mso-style-name:WW8Num7z0;
+	font-family:Symbol;}
+span.WW8Num8z0
+	{mso-style-name:WW8Num8z0;
+	font-family:Symbol;}
+span.WW8Num9z0
+	{mso-style-name:WW8Num9z0;
+	font-family:Symbol;}
+span.WW8Num10z0
+	{mso-style-name:WW8Num10z0;
+	font-family:Symbol;}
+span.WW8Num12z0
+	{mso-style-name:WW8Num12z0;
+	font-family:Symbol;}
+span.WW8Num13z0
+	{mso-style-name:WW8Num13z0;
+	font-family:Symbol;}
+span.WW8Num13z1
+	{mso-style-name:WW8Num13z1;
+	font-family:"Courier New";}
+span.WW8Num13z2
+	{mso-style-name:WW8Num13z2;
+	font-family:Wingdings;}
+span.WW8Num18z0
+	{mso-style-name:WW8Num18z0;
+	font-family:Symbol;}
+span.WW8Num18z1
+	{mso-style-name:WW8Num18z1;
+	font-family:"Courier New";}
+span.WW8Num18z2
+	{mso-style-name:WW8Num18z2;
+	font-family:Wingdings;}
+span.TitleChar
+	{mso-style-name:"Title Char";
+	font-family:"Cambria","serif";
+	letter-spacing:.25pt;}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	font-family:"Cambria","serif";
+	font-weight:bold;}
+span.CodeChar
+	{mso-style-name:"Code Char";
+	font-family:Consolas;}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	font-family:"Cambria","serif";
+	font-weight:bold;}
+span.Heading3Char
+	{mso-style-name:"Heading 3 Char";
+	font-family:"Cambria","serif";
+	font-weight:bold;}
+span.Heading4Char
+	{mso-style-name:"Heading 4 Char";
+	font-family:"Cambria","serif";
+	font-weight:bold;
+	font-style:italic;}
+span.Heading5Char
+	{mso-style-name:"Heading 5 Char";
+	font-family:"Cambria","serif";
+	color:#7F7F7F;
+	font-weight:bold;}
+span.Heading6Char
+	{mso-style-name:"Heading 6 Char";
+	font-family:"Cambria","serif";
+	color:#7F7F7F;
+	font-weight:bold;
+	font-style:italic;}
+span.Heading7Char
+	{mso-style-name:"Heading 7 Char";
+	font-family:"Cambria","serif";
+	font-style:italic;}
+span.Heading8Char
+	{mso-style-name:"Heading 8 Char";
+	font-family:"Cambria","serif";}
+span.Heading9Char
+	{mso-style-name:"Heading 9 Char";
+	font-family:"Cambria","serif";
+	letter-spacing:.25pt;
+	font-style:italic;}
+span.SubtitleChar
+	{mso-style-name:"Subtitle Char";
+	font-family:"Cambria","serif";
+	letter-spacing:.65pt;
+	font-style:italic;}
+span.QuoteChar
+	{mso-style-name:"Quote Char";
+	font-style:italic;}
+span.IntenseQuoteChar
+	{mso-style-name:"Intense Quote Char";
+	font-weight:bold;
+	font-style:italic;}
+span.NumberingSymbols
+	{mso-style-name:"Numbering Symbols";}
+p.Heading, li.Heading, div.Heading
+	{mso-style-name:Heading;
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:0in;
+	line-height:115%;
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family:"Arial","sans-serif";}
+p.Index, li.Index, div.Index
+	{mso-style-name:Index;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+p.Code, li.Code, div.Code
+	{mso-style-name:Code;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	font-size:10.0pt;
+	font-family:Consolas;}
+p.Framecontents, li.Framecontents, div.Framecontents
+	{mso-style-name:"Frame contents";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+ /* Page Definitions */
+ @page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+
+</head>
+
+<body bgcolor=white lang=EN-US link=blue vlink=purple>
+
+<div class=WordSection1>
+
+<div style='border:none;border-bottom:solid black 1.0pt;padding:0in 0in 1.0pt 0in'>
+
+<p class=MsoTitle>CS 0449 – Project 4: /dev/e<br>
+<span style='font-size:22.0pt'>Due:  Monday, November 26, 2012 at 11:59pm</span></p>
+
+</div>
+
+<h1>Project Description</h1>
+
+<p class=MsoNormal>Standard UNIX and Linux systems come with a few special
+files like <span style='font-size:10.0pt;line-height:115%;font-family:Consolas'>/dev/zero</span>,
+which returns nothing but zeros when it is read, and /<span style='font-size:
+10.0pt;line-height:115%;font-family:Consolas'>dev/random</span>, which returns
+random bytes. In this project, you will write a device driver to create a new
+device, <span style='font-size:10.0pt;line-height:115%;font-family:Consolas'>/dev/e</span><span
+style='font-size:10.0pt;line-height:115%'> </span>which returns the digits of
+everyone’s second favorite irrational number: <i>e</i><span style='font-family:
+Symbol'>.</span></p>
+
+<h1 style='margin-left:0in;text-indent:0in'>How It Will Work</h1>
+
+<p class=MsoNormal>For this project we will need to create three parts: the
+device driver, the special file <span style='font-size:10.0pt;line-height:115%;
+font-family:Consolas'>/dev/e</span>, and a test program to convince ourselves
+it works. The good news is that I have provided a function that will generate
+the first N digits of e for you. Your job is then to make a device driver, and
+a simple program named e_digits that takes two command-line arguments of which
+digits of e to return (start to end, zero indexed):</p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt'>
+
+<p class=Code style='margin-bottom:0in;margin-bottom:.0001pt;border:none;
+padding:0in'>./e_digits 0 3</p>
+
+<p class=Code style='margin-bottom:0in;margin-bottom:.0001pt;border:none;
+padding:0in'>2718</p>
+
+<p class=Code style='margin-bottom:0in;margin-bottom:.0001pt;border:none;
+padding:0in'>./e_digits 4 8</p>
+
+<p class=Code style='margin-bottom:0in;margin-bottom:.0001pt;border:none;
+padding:0in'>28182</p>
+
+</div>
+
+<h1 style='margin-left:0in;text-indent:0in'>Implementation</h1>
+
+<p class=MsoNormal>Our device driver will be a character device (although it
+could be a block device since we can access individual bytes of e by address)
+that will implement a read function and return the appropriate substring of e
+back to the user. </p>
+
+<h1 style='margin-left:0in;text-indent:0in'>Installation and Example </h1>
+
+<ol style='margin-top:0in' start=1 type=1>
+ <li class=MsoNormal>On <span style='font-size:10.0pt;line-height:115%;
+     font-family:Consolas'>thot.cs.pitt.edu</span>, login and <span
+     style='font-size:10.0pt;line-height:115%;font-family:Consolas'>cd</span><span
+     style='font-size:10.0pt;line-height:115%'> </span>to your <span
+     style='font-size:10.0pt;line-height:115%;font-family:Consolas'>/u/SysLab/USERNAME</span><span
+     style='font-size:10.0pt;line-height:115%'> </span>directory. </li>
+ <li class=MsoNormal><span style='font-size:10.0pt;line-height:115%;font-family:
+     Consolas'>tar xvfz ../shared/hello_dev.tar.gz</span></li>
+ <li class=MsoNormal><span style='font-size:10.0pt;line-height:115%;font-family:
+     Consolas'>cd hello_dev</span></li>
+ <li class=MsoNormal>Open the Makefile with the editor of your choice. (E.g., <span
+     style='font-size:10.0pt;line-height:115%;font-family:Consolas'>pico
+     Makefile</span>)</li>
+ <li class=MsoNormal>We need to setup the path to compile against the proper
+     version of the kernel. To do this, change the line:</li>
+</ol>
+
+<p class=Code style='margin-left:.5in'>KDIR  := /lib/modules/$(shell uname
+-r)/build</p>
+
+<p class=MsoNormal style='margin-left:.5in'>to</p>
+
+<p class=Code style='margin-left:.5in'>KDIR  := /u/SysLab/shared/linux-2.6.23.1</p>
+
+<ol style='margin-top:0in' start=6 type=1>
+ <li class=MsoNormal>Build the kernel object. The ARCH=i386 is important
+     because we are building a 32-bit kernel on a 64-bit machine.</li>
+</ol>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt;
+margin-left:.5in;margin-right:0in'>
+
+<p class=Code style='border:none;padding:0in'>make ARCH=i386</p>
+
+</div>
+
+<ol style='margin-top:0in' start=7 type=1>
+ <li class=MsoNormal>Download and launch QEMU. For Windows users, you can just
+     double click the <span style='font-size:10.0pt;line-height:115%;
+     font-family:Consolas'>qemu-win.bat</span><span style='font-size:10.0pt;
+     line-height:115%'> </span>that is supplied in the zipfile available on my
+     website. Mac users should download and install <span style='font-size:
+     10.0pt;line-height:115%;font-family:Consolas'>Q.app</span><span
+     style='font-size:10.0pt;line-height:115%'> </span>and use the <span
+     style='font-size:10.0pt;line-height:115%;font-family:Consolas'>tty.qcow2</span><span
+     style='font-size:10.0pt;line-height:115%'> </span>disk image provided in
+     the main zipfile. Linux users are left to install qemu as appropriate.</li>
+ <li class=MsoNormal>When Linux boots under QEMU login using the root/root
+     account (username/password).</li>
+ <li class=MsoNormal>We now need to download the kernel module you just built
+     into the kernel using scp:</li>
+</ol>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt;
+margin-left:.5in;margin-right:0in'>
+
+<p class=Code style='border:none;padding:0in'>scp USERNAME@thot.cs.pitt.edu:/u/SysLab/USERNAME/hello_dev/hello_dev.ko
+.</p>
+
+</div>
+
+<ol style='margin-top:0in' start=10 type=1>
+ <li class=MsoNormal>Load the driver using insmod:</li>
+</ol>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt;
+margin-left:.5in;margin-right:0in'>
+
+<p class=MsoNormal style='border:none;padding:0in'><span style='font-size:10.0pt;
+line-height:115%;font-family:Consolas'>insmod hello_dev.ko</span></p>
+
+</div>
+
+<ol style='margin-top:0in' start=11 type=1>
+ <li class=MsoNormal>We now need to make the device file in /dev. First, we
+     need to find the MAJOR and MINOR numbers that identify the new device:</li>
+</ol>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt;
+margin-left:.5in;margin-right:0in'>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;border:none;
+padding:0in'><span style='font-size:10.0pt;line-height:115%;font-family:Consolas'>cd
+/sys/class/misc/hello</span></p>
+
+<p class=MsoNormal style='margin-bottom:12.0pt;border:none;padding:0in'><span
+style='font-size:10.0pt;line-height:115%;font-family:Consolas'>cat dev </span></p>
+
+</div>
+
+<ol style='margin-top:0in' start=12 type=1>
+ <li class=MsoNormal>The output should be a number like 10:63. The 10 is the
+     MAJOR and the 63 is the MINOR.</li>
+ <li class=MsoNormal>We use <span style='font-size:10.0pt;line-height:115%;
+     font-family:Consolas'>mknod</span><span style='font-size:10.0pt;
+     line-height:115%'> </span>to make a special file. The name will be <span
+     style='font-size:10.0pt;line-height:115%;font-family:Consolas'>hello</span><span
+     style='font-size:10.0pt;line-height:115%'> </span>and it is a character
+     device. The 10 and the 63 correspond to the MAJOR and MINOR numbers we
+     discovered above (if different, use the ones you saw.)</li>
+</ol>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 1.0pt 1.0pt 1.0pt;
+margin-left:.5in;margin-right:0in'>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;border:none;
+padding:0in'><span style='font-size:10.0pt;line-height:115%;font-family:Consolas'>cd
+/dev/</span></p>
+
+<p class=MsoNormal style='border:none;padding:0in'><span style='font-size:10.0pt;
+line-height:115%;font-family:Consolas'>mknod hello c 10 63</span></p>
+
+</div>
+
+<ol style='margin-top:0in' start=14 type=1>
+ <li class=MsoNormal>We can now read the data out of <span style='font-size:
+     10.0pt;line-height:115%;font-family:Consolas'>/dev/hello</span><span
+     style='font-size:10.0pt;line-height:115%'> </span>with a simple call to
+     cat:</li>
+</ol>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt;
+margin-left:.5in;margin-right:0in'>
+
+<p class=MsoNormal style='border:none;padding:0in'><span style='font-size:10.0pt;
+line-height:115%;font-family:Consolas'>cat /dev/hello</span></p>
+
+</div>
+
+<ol style='margin-top:0in' start=15 type=1>
+ <li class=MsoNormal>You should see “Hello, world!” which came from the driver.
+     We can clean up by removing the device and unloading the module:</li>
+</ol>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt;
+margin-left:.5in;margin-right:0in'>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;border:none;
+padding:0in'><span style='font-size:10.0pt;line-height:115%;font-family:Consolas'>rm
+/dev/hello</span></p>
+
+<p class=MsoNormal style='border:none;padding:0in'><span style='font-size:10.0pt;
+line-height:115%;font-family:Consolas'>rmmod hello_dev.ko</span></p>
+
+</div>
+
+<h1 style='margin-left:0in;text-indent:0in'>What to Do Next</h1>
+
+<p class=MsoNormal>The code for the example we went through comes from:</p>
+
+<p class=MsoNormal><a
+href="http://www.linuxdevcenter.com/pub/a/linux/2007/07/05/devhelloworld-a-simple-introduction-to-device-drivers-under-linux.html?page=2">http://www.linuxdevcenter.com/pub/a/linux/2007/07/05/devhelloworld-a-simple-introduction-to-device-drivers-under-linux.html?page=2</a>
+</p>
+
+<p class=MsoNormal>Read that while going through the source to get an idea of
+what the Module is doing. Start with the third section entitled “Hello, World!
+Using /dev/hello_world” and read up until the author starts describing udev
+rules; we are not using udev under QEMU.</p>
+
+<p class=MsoNormal>When you have an idea of what is going on, make a new
+directory under your <span style='font-size:10.0pt;line-height:115%;font-family:
+Consolas'>/u/SysLab/USERNAME</span><span style='font-size:10.0pt;line-height:
+115%'> </span>directory called <span style='font-size:10.0pt;line-height:115%;
+font-family:Consolas'>e_driver</span>:</p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt'>
+
+<p class=MsoNormal style='border:none;padding:0in'><span style='font-size:10.0pt;
+line-height:115%;font-family:Consolas'>mkdir e_driver</span></p>
+
+</div>
+
+<p class=MsoNormal>Copy and rename the <span style='font-size:10.0pt;
+line-height:115%;font-family:Consolas'>hello_dev.c</span><span
+style='font-size:10.0pt;line-height:115%'> </span>from the example, and copy
+over the <span style='font-size:10.0pt;line-height:115%;font-family:Consolas'>Makefile</span>.
+Edit the <span style='font-size:10.0pt;line-height:115%;font-family:Consolas'>Makefile</span><span
+style='font-size:10.0pt;line-height:115%'> </span>to build your new file.
+Change all the references of “hello” to “e_driver”.</p>
+
+<p class=MsoNormal>The e generating function can be copied from the <span
+style='font-size:10.0pt;line-height:115%;font-family:Consolas'>/u/SysLab/shared</span><span
+style='font-size:10.0pt;line-height:115%'> </span>directory:</p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt'>
+
+<p class=MsoNormal style='border:none;padding:0in'><span style='font-size:10.0pt;
+line-height:115%;font-family:Consolas'>cp /u/SysLab/shared/e.h .</span></p>
+
+</div>
+
+<p class=MsoNormal>Your job is to make a read function that returns the
+appropriate substring of e back (starting at <span style='font-size:10.0pt;
+line-height:115%;font-family:Consolas'>*ppos</span><span style='font-size:10.0pt;
+line-height:115%'> </span>and stretching out <span style='font-size:10.0pt;
+line-height:115%;font-family:Consolas'>count</span><span style='font-size:10.0pt;
+line-height:115%'> </span>digits. Notice that the <span style='font-size:10.0pt;
+line-height:115%;font-family:Consolas'>e.h</span><span style='font-size:10.0pt;
+line-height:115%'> </span>code will give you all the digits from 2718 until some
+maximum you specify. You’ll need to make this work.</p>
+
+<h1 style='margin-left:0in;text-indent:0in'>Building the Driver</h1>
+
+<p class=MsoNormal>To build any changes you have made, on <span
+style='font-size:10.0pt;line-height:115%;font-family:Consolas'>thot</span><span
+style='font-size:10.0pt;line-height:115%'> </span>in your <span
+style='font-size:10.0pt;line-height:115%;font-family:Consolas'>e_driver</span><span
+style='font-size:10.0pt;line-height:115%'> </span>directory, simply:</p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt'>
+
+<p class=Code style='border:none;padding:0in'>make ARCH=i386</p>
+
+</div>
+
+<p class=MsoNormal>If you want to force a rebuild of everything you may want to
+remove the object files first:</p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt'>
+
+<p class=Code style='border:none;padding:0in'>rm *.o</p>
+
+</div>
+
+<h1 style='margin-left:0in;text-indent:0in'>Copying the Files to QEMU</h1>
+
+<p class=MsoNormal>From QEMU, you will need to download the driver that you
+just built.  Use <span style='font-size:10.0pt;line-height:115%;font-family:
+Consolas'>scp</span> to download the driver to a home directory (<span
+style='font-size:10.0pt;line-height:115%;font-family:Consolas'>/root/ </span>if
+root):</p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt'>
+
+<p class=Code style='border:none;padding:0in'>scp
+USERNAME@thot.cs.pitt.edu:/u/SysLab/USERNAME/e_driver/e_driver.ko .</p>
+
+</div>
+
+<h1 style='margin-left:0in;text-indent:0in'>Loading the Driver into the Kernel
+in QEMU</h1>
+
+<p class=MsoNormal>As root (either by logging in or via <span style='font-size:
+10.0pt;line-height:115%;font-family:Consolas'>su</span>):</p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt'>
+
+<p class=Code style='border:none;padding:0in'>insmod e_driver.ko</p>
+
+</div>
+
+<h1 style='margin-left:0in;text-indent:0in'>Making the /dev/e Device</h1>
+
+<p class=MsoNormal>Like in the example, we’ll need to determine the MAJOR and
+MINOR numbers for this particular driver.</p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt'>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;border:none;
+padding:0in'><span style='font-size:10.0pt;line-height:115%;font-family:Consolas'>cd
+</span><span style='font-size:10.0pt;line-height:115%;font-family:Consolas'>/sys/class/misc/e_driver</span></p>
+
+<p class=MsoNormal style='border:none;padding:0in'><span style='font-size:10.0pt;
+line-height:115%;font-family:Consolas'>cat dev</span></p>
+
+</div>
+
+<p class=MsoNormal>and use those numbers to make the<span style='font-size:
+10.0pt;line-height:115%;font-family:Consolas'> /dev/e</span> file:</p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt'>
+
+<p class=Code style='border:none;padding:0in'>cd /dev<br>
+mknod e c MAJOR MINOR</p>
+
+</div>
+
+<h1 style='margin-left:0in;text-indent:0in'>Unloading the Driver from the
+Kernel in QEMU</h1>
+
+<p class=MsoNormal>As root (either by logging in or via <span style='font-size:
+10.0pt;line-height:115%;font-family:Consolas'>su</span>):</p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt'>
+
+<p class=Code style='border:none;padding:0in'>rmmod e_driver.ko</p>
+
+</div>
+
+<p class=MsoNormal>Then you can remove the <span style='font-size:10.0pt;
+line-height:115%;font-family:Consolas'>/dev/e</span><span style='font-size:
+10.0pt;line-height:115%'> </span>file:</p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt'>
+
+<p class=MsoNormal style='border:none;padding:0in'><span style='font-size:10.0pt;
+line-height:115%;font-family:Consolas'>rm /dev/e</span></p>
+
+</div>
+
+<h1 style='margin-left:0in;text-indent:0in'>Implementing and Building the e_digit
+Program</h1>
+
+<p class=MsoNormal>Since thot is a 64-bit machine and QEMU emulates a 32-bit
+machine, we should build with the –m32 flag:</p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt'>
+
+<p class=Code style='border:none;padding:0in'>gcc –m32 –o e_digit e_digit.c </p>
+
+</div>
+
+<h1 style='margin-left:0in;text-indent:0in'>Running e_digit</h1>
+
+<p class=MsoNormal>We cannot run our <span style='font-size:10.0pt;line-height:
+115%;font-family:Consolas'>e_digit </span>program on <span style='font-size:
+10.0pt;line-height:115%;font-family:Consolas'>thot.cs.pitt.edu</span> because
+its kernel does not have the device driver loaded. However, we can test the
+program under QEMU once we have installed the new driver. We first need to
+download <span style='font-size:10.0pt;line-height:115%;font-family:Consolas'>e_digit</span>
+using <span style='font-size:10.0pt;line-height:115%;font-family:Consolas'>scp</span>
+as we did for the driver. However, we can just run it from our home directory
+without any installation necessary.</p>
+
+<h1 style='margin-left:0in;text-indent:0in'>File Backups</h1>
+
+<p class=MsoNormal>One of the major contributions the university provides for
+the AFS filesystem is nightly backups. However, the <span style='font-size:
+10.0pt;line-height:115%;font-family:Consolas'>/u/SysLab/</span> partition is <b>not</b>
+part of AFS space. Thus, any files you modify under your personal directory in <span
+style='font-size:10.0pt;line-height:115%;font-family:Consolas'>/u/SysLab/</span>
+are not backed up. If there is a catastrophic disk failure, all of your work
+will be irrecoverably lost. As such, it is my recommendation that you:</p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt;line-height:115%;
+color:red'>Backup all the files you change under </span></b><b><span
+style='font-size:12.0pt;line-height:115%;font-family:Consolas;color:red'>/u/SysLab</span></b><b><span
+style='font-size:12.0pt;line-height:115%;color:red'> to your </span></b><b><span
+style='font-size:12.0pt;line-height:115%;font-family:Consolas;color:red'>~/private/</span></b><b><span
+style='font-size:12.0pt;line-height:115%;color:red'> directory frequently!</span></b></p>
+
+<p class=MsoNormal>Loss of work not backed up is not grounds for an extension. <span
+style='color:red;text-transform:uppercase'>You have been warned</span>.</p>
+
+<h1 style='margin-left:0in;text-indent:0in'>&nbsp;</h1>
+
+<h1 style='margin-left:0in;text-indent:0in'>Hints and Notes</h1>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+     150%'><span style='font-size:10.0pt;line-height:150%;font-family:Consolas'>printk()</span>
+     is the version of <span style='font-size:10.0pt;line-height:150%;
+     font-family:Consolas'>printf()</span> you can use for debugging messages
+     from the kernel.</li>
+ <li class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+     150%'>In the driver, you can use some standard C functions, but not all.
+     They must be part of the kernel to work.</li>
+ <li class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+     150%'>In the <span style='font-size:10.0pt;line-height:150%;font-family:
+     Consolas'>e_digit</span><span style='font-size:10.0pt;line-height:150%'> </span>program,
+     you may use any of the C standard library functions.</li>
+ <li class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+     150%'>As root, typing <span style='font-size:10.0pt;line-height:150%;
+     font-family:Consolas'>poweroff</span><span style='font-size:10.0pt;
+     line-height:150%'> </span>in QEMU will shut it down cleanly.</li>
+ <li class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+     150%'>If the module crashes, it may become impossible to delete the file
+     you created with mkdev in /dev. If that happens, just grab a new disk
+     image and start over. It’s why we’re developing in a virtual machine as
+     opposed to a real one.</li>
+</ul>
+
+<h1 style='margin-left:0in;text-indent:0in;line-height:150%'>Requirements and
+Submission</h1>
+
+<p class=MsoNormal>You need to submit:</p>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+     150%'>Your <span style='font-size:10.0pt;line-height:150%;font-family:
+     Consolas'>e_driver.c </span>file and the <span style='font-size:10.0pt;
+     line-height:150%;font-family:Consolas'>Makefile</span><span
+     style='font-size:10.0pt;line-height:150%'> </span></li>
+ <li class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+     150%'>Your well-commented <span style='font-size:10.0pt;line-height:150%;
+     font-family:Consolas'>e_digit</span><span style='font-size:10.0pt;
+     line-height:150%'> </span>program’s source</li>
+</ul>
+
+<p class=MsoNormal>Make a tar.gz file named <span style='font-size:10.0pt;
+line-height:115%;font-family:Consolas'>USERNAME-project4.tar.gz</span></p>
+
+<p class=MsoNormal><b><span style='color:red'>Copy your archive to the
+appropriate directory for your lecture time:</span></b></p>
+
+<p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+style='font-size:12.0pt;font-family:Consolas'>~jrmst106/submit/449/11am</span></p>
+
+<p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+style='font-size:12.0pt;font-family:Consolas'>~jrmst106/submit/449/4pm</span></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,1 @@
+public String getPhoneNumber(Name personName){   return phoneBook.getValue(personName);} // end getPhoneNumberpublic String getPhoneNumber(String firstName, String lastName){   Name fullName = new Name(firstName, lastName);   return phoneBook.getValue(fullName);} // end getPhoneNumber

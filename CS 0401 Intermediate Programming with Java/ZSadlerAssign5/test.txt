@@ -1,0 +1,13 @@
+Snowflake:162:321:10
+Tree:370:229:60
+Greeting:443:460:30:Edit Text
+Snowman:118:500:150
+Present:391:532:40
+House:624:270:100
+Snowflake:350:392:10
+Snowman:248:473:150
+Tree:236:372:60
+Present:377:324:40
+Tree:102:136:60
+Tree:106:232:60
+Snowflake:219:59:10

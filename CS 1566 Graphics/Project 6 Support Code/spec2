@@ -1,0 +1,28 @@
+# object definition:
+# object_type (tx ty tz 1) (sx sy sz 1)  (rx ry rz 1) (mat_shiny) (mat_emission) (mat_amb) (mat_diffuse) (mat_specular)
+2 (0.0 0 0.0 1.0) (0.7 0.7 0.7 1.0) (0 0 180 1) (0.5) (1.0 1.0 1.0 1.0) (1.0 1.0 1.0 1.0) (1.0 1.0 0 1.0) (0 1.0 0 1.0)
+
+# object definition:
+# object_type (tx ty tz 1) (sx sy sz 1)  (rx ry rz 1) (mat_shiny) (mat_emission) (mat_amb) (mat_diffuse) (mat_specular)
+4 (0.0 1.0 0.0 1.0) (1.0 1.0 1.0 1.0) (0 0 0 1) (0.5) (1.0 1.0 1.0 1.0) (1.0 1.0 1.0 1.0) (1.0 1.0 0 1.0) (0 1.0 0 1.0)
+
+# object definition:
+# object_type (tx ty tz 1) (sx sy sz 1)  (rx ry rz 1) (mat_shiny) (mat_emission) (mat_amb) (mat_diffuse) (mat_specular)
+3 (0.0 -1.2 0.0 1.0) (1.0 1.0 1.0 1.0) (0 0 0 1) (0.5) (1.0 1.0 1.0 1.0) (1.0 1.0 1.0 1.0) (1.0 1.0 0 1.0) (0 1.0 0 1.0)
+
+# object definition:
+# object_type (tx ty tz 1) (sx sy sz 1)  (rx ry rz 1) (mat_shiny) (mat_emission) (mat_amb) (mat_diffuse) (mat_specular)
+0 (3.0 0 0.0 1.0) (1.0 1.0 1.0 1.0) (0 0 0 1) (0.5) (1.0 1.0 1.0 1.0) (1.0 1.0 1.0 1.0) (1.0 1.0 0 1.0) (0 1.0 0 1.0)
+
+# object definition:
+# object_type (tx ty tz 1) (sx sy sz 1)  (rx ry rz 1) (mat_shiny) (mat_emission) (mat_amb) (mat_diffuse) (mat_specular)
+1 (-3.0 0 0.0 1.0) (1.0 1.0 1.0 1.0) (0 0 0 1) (0.5) (1.0 1.0 1.0 1.0) (1.0 1.0 1.0 1.0) (1.0 1.0 0 1.0) (0 1.0 0 1.0)
+
+#camera definitions:
+#c (posx posy posz 1) (lookx looky lookz 1) (upx upy upz 1)
+c (0 0 10 1) (0 0 -1 1) ( 0 1 0 1)
+
+# light definitions:
+# l (amb) (diffuse) (specular) (pos) [optional (dir) (angle)]
+l (0 0 0) (0.5 0.5 0.5) (0.5 0.5 0.5) (0 15 0 1) (0 15 0 0) (10)
+ 

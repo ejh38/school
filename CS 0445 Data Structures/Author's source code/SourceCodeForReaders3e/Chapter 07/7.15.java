@@ -1,0 +1,1 @@
+/** Displays the integers in an array.    @param array  an array of integers    @param first  the index of the first element displayed    @param last   the index of the last element displayed,                  0 <= first <= last < array.length */public static void displayArray(int[] array, int first, int last)

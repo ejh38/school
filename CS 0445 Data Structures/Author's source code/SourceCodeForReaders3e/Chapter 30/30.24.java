@@ -1,0 +1,1 @@
+public class LList<T extends Copyable> implements CloneableListInterface<T>{   private Node firstNode; // reference to first node   private int  numberOfEntries;   // . . .  

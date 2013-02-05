@@ -1,0 +1,1 @@
+   public boolean isEmpty()   {      return stack.isEmpty();   } // end isEmpty   public void clear()   {      stack.clear();   } // end clear

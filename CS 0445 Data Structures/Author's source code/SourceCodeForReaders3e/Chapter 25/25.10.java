@@ -1,0 +1,1 @@
+public boolean contains(T entry){   return getEntry(entry) != null; } // end contains

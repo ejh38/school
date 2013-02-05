@@ -1,0 +1,1 @@
+public void display(){   Iterator<String> keyIterator = wordTable.getKeyIterator();   Iterator<Integer> valueIterator = wordTable.getValueIterator();   while (keyIterator.hasNext())   {      System.out.println(keyIterator.next() + " " +                          valueIterator.next());   } // end while} // end display

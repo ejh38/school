@@ -1,0 +1,10 @@
+What is the square root of 9801?
+99
+Is 43 a prime number? (yes or no)
+yes
+Mathematician who wrote Principia Mathematica: Issac ______
+Newton
+Let A = {1, 2, 3}, B = {3, 4}. Then A intersect B = 
+3
+2^8 = 
+256

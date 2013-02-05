@@ -1,0 +1,1 @@
+public boolean isEmpty(){   return queueNode == freeNode;} // end isEmptyprivate boolean isChainFull(){   return queueNode == freeNode.getNextNode();} // end isChainFull

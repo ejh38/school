@@ -1,0 +1,21 @@
+Name: Zach Sadler			Assignment #: 3
+
+Lab Day and Time: Tuesday 5:30 pm
+Lab Instructor: Wencan Luo
+Program Due Date: November 1, 2011
+Handed in Date: November 1, 2011
+
+Source code file names: Assig3.java, HangPlayer.java, WordServer.java
+
+Compiled (.class) file names: Assig3.class, HangPlayer.class, WordServer.class
+
+Other file names: players.txt, a3words.txt
+
+My program compiles and runs without errors
+
+Additional comments/Extra credit:
+You will be prompted to enter the name of the players txt file and the words txt file during the execution of the program, so no command line arguments are needed.
+
+For extra credit, I incorporated a system to give the user five free letters per game. I implemented this through the HangPlayer class by adding another instance variable, a constructor to read the free letters left, and a mutator to decrease the number of free letters by one. In the Assig3 file I check to see if the user guesses '2', in which case I give a random free letter and then decrease the number of free letters by one.
+
+In addition, I use two method calls, pause() and clearScreen() which are defined in Assig3 and are primarily used for clean formatting.

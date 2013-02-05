@@ -1,0 +1,1 @@
+public boolean hasNext(){   return nextNode != null;} // end hasNext

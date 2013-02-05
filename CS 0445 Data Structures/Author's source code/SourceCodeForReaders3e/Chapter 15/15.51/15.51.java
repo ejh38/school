@@ -1,0 +1,1 @@
+package java.lang;public interface Iterable<T>{   /** @return an iterator for a collection of objects of type T */   Iterator<T> iterator()} // end Iterable

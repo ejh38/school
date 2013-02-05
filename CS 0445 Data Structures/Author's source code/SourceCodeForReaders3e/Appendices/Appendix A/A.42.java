@@ -1,0 +1,1 @@
+if ((pressure > min) && (pressure < max))   System.out.println("Pressure is OK.");else   System.out.println("Warning: Pressure is out of range.");  

@@ -1,0 +1,1 @@
+if (balance > 0)   System.out.println("Positive balance");else if (balance < 0)   System.out.println("Negative balance");else if (balance == 0)   System.out.println("Zero balance");  

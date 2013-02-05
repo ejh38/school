@@ -1,0 +1,1 @@
+public class Driver{   public static void main(String[] args) 	{      FamilyMember jack = new FamilyMember(new Name("Jack", "Buck"));      FamilyMember jane = new FamilyMember(new Name("Jane", "Doe"));      jack.setSpouse(jane);      jane.setSpouse(jack);      FamilyMember copy = (FamilyMember)jane.clone();   } // end main} // end Driver

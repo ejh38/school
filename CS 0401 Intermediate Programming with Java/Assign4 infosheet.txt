@@ -1,0 +1,17 @@
+Name: Zach Sadler				Assignment #: 4
+
+Lab Day and Time: Tuesday 5:30 pm
+Lab Instructor: Wencan Luo
+Program Due Date: November 22, 2011
+Handed in Date: November 22, 2011
+
+Source code file names: Assig4.java, HangPlayer.java, HangFigure.java, WordServer.java
+
+Compiled (.class) file names: Assig4.class, Assig4$MyListener.class, Assig4$MyPanel.class, HangPlayer.class, HangFigure.class, WordServer.class
+
+Other file names: players.txt, a3words.txt
+
+My program compiles and runs without errors
+
+Additional comments/Extra credit:
+I included a PlayerPane which displays the current players wins and losses throughout the game, updating after each loss and win.

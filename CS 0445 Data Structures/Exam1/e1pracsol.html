@@ -1,0 +1,1667 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word" xmlns:m="http://schemas.microsoft.com/office/2004/12/omml" xmlns="http://www.w3.org/TR/REC-html40"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="ProgId" content="Word.Document">
+<meta name="Generator" content="Microsoft Word 14">
+<meta name="Originator" content="Microsoft Word 14">
+<link rel="File-List" href="http://www.cs.pitt.edu/%7Eramirez/cs445/e1pracsol_files/filelist.xml">
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>John C. Ramirez</o:Author>
+  <o:Template>9A82420E.dotm</o:Template>
+  <o:LastAuthor>ramirez</o:LastAuthor>
+  <o:Revision>92</o:Revision>
+  <o:TotalTime>322</o:TotalTime>
+  <o:Created>2002-02-22T19:34:00Z</o:Created>
+  <o:LastSaved>2012-02-15T16:38:00Z</o:LastSaved>
+  <o:Pages>3</o:Pages>
+  <o:Words>1285</o:Words>
+  <o:Characters>7327</o:Characters>
+  <o:Company>University of Pittsburgh</o:Company>
+  <o:Lines>61</o:Lines>
+  <o:Paragraphs>17</o:Paragraphs>
+  <o:CharactersWithSpaces>8595</o:CharactersWithSpaces>
+  <o:Version>14.00</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]-->
+<link rel="themeData" href="http://www.cs.pitt.edu/%7Eramirez/cs445/e1pracsol_files/themedata.thmx">
+<link rel="colorSchemeMapping" href="http://www.cs.pitt.edu/%7Eramirez/cs445/e1pracsol_files/colorschememapping.xml">
+<!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:Zoom>75</w:Zoom>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:TrackMoves/>
+  <w:TrackFormatting/>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:DoNotPromoteQF/>
+  <w:LidThemeOther>EN-US</w:LidThemeOther>
+  <w:LidThemeAsian>X-NONE</w:LidThemeAsian>
+  <w:LidThemeComplexScript>X-NONE</w:LidThemeComplexScript>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+   <w:DontGrowAutofit/>
+   <w:SplitPgBreakAndParaMark/>
+   <w:DontVertAlignCellWithSp/>
+   <w:DontBreakConstrainedForcedTables/>
+   <w:DontVertAlignInTxbx/>
+   <w:Word11KerningPairs/>
+   <w:CachedColBalance/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+  <m:mathPr>
+   <m:mathFont m:val="Cambria Math"/>
+   <m:brkBin m:val="before"/>
+   <m:brkBinSub m:val="&#45;-"/>
+   <m:smallFrac m:val="off"/>
+   <m:dispDef/>
+   <m:lMargin m:val="0"/>
+   <m:rMargin m:val="0"/>
+   <m:defJc m:val="centerGroup"/>
+   <m:wrapIndent m:val="1440"/>
+   <m:intLim m:val="subSup"/>
+   <m:naryLim m:val="undOvr"/>
+  </m:mathPr></w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="false"
+  DefSemiHidden="false" DefQFormat="false" LatentStyleCount="267">
+  <w:LsdException Locked="false" QFormat="true" Name="Normal"/>
+  <w:LsdException Locked="false" QFormat="true" Name="heading 1"/>
+  <w:LsdException Locked="false" QFormat="true" Name="heading 2"/>
+  <w:LsdException Locked="false" QFormat="true" Name="heading 3"/>
+  <w:LsdException Locked="false" QFormat="true" Name="heading 4"/>
+  <w:LsdException Locked="false" QFormat="true" Name="heading 5"/>
+  <w:LsdException Locked="false" QFormat="true" Name="heading 6"/>
+  <w:LsdException Locked="false" QFormat="true" Name="heading 7"/>
+  <w:LsdException Locked="false" QFormat="true" Name="heading 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 9"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="caption"/>
+  <w:LsdException Locked="false" QFormat="true" Name="Title"/>
+  <w:LsdException Locked="false" Priority="1" Name="Default Paragraph Font"/>
+  <w:LsdException Locked="false" QFormat="true" Name="Subtitle"/>
+  <w:LsdException Locked="false" QFormat="true" Name="Strong"/>
+  <w:LsdException Locked="false" QFormat="true" Name="Emphasis"/>
+  <w:LsdException Locked="false" Priority="99" Name="HTML Preformatted"/>
+  <w:LsdException Locked="false" Priority="99" Name="No List"/>
+  <w:LsdException Locked="false" Priority="99" SemiHidden="true"
+   Name="Placeholder Text"/>
+  <w:LsdException Locked="false" Priority="1" QFormat="true" Name="No Spacing"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 1"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="99" SemiHidden="true" Name="Revision"/>
+  <w:LsdException Locked="false" Priority="34" QFormat="true"
+   Name="List Paragraph"/>
+  <w:LsdException Locked="false" Priority="29" QFormat="true" Name="Quote"/>
+  <w:LsdException Locked="false" Priority="30" QFormat="true"
+   Name="Intense Quote"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 1"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 1"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 2"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 2"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 2"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 3"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 3"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 3"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 4"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 4"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 4"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 5"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 5"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 5"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 6"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 6"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 6"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="19" QFormat="true"
+   Name="Subtle Emphasis"/>
+  <w:LsdException Locked="false" Priority="21" QFormat="true"
+   Name="Intense Emphasis"/>
+  <w:LsdException Locked="false" Priority="31" QFormat="true"
+   Name="Subtle Reference"/>
+  <w:LsdException Locked="false" Priority="32" QFormat="true"
+   Name="Intense Reference"/>
+  <w:LsdException Locked="false" Priority="33" QFormat="true" Name="Book Title"/>
+  <w:LsdException Locked="false" Priority="37" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Bibliography"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="TOC Heading"/>
+ </w:LatentStyles>
+</xml><![endif]-->
+<style>
+<!--
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";}
+h1
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"Heading 1 Char";
+	mso-style-next:Normal;
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:1;
+	font-size:14.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	mso-font-kerning:0pt;
+	font-weight:normal;}
+h2
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"Heading 2 Char";
+	mso-style-next:Normal;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:3.0pt;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:2;
+	font-size:14.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	font-weight:normal;
+	text-decoration:underline;
+	text-underline:single;}
+h3
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"Heading 3 Char";
+	mso-style-next:Normal;
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:3;
+	font-size:14.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	font-weight:normal;
+	text-decoration:underline;
+	text-underline:single;}
+h4
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"Heading 4 Char";
+	mso-style-next:Normal;
+	margin:0in;
+	margin-bottom:.0001pt;
+	text-align:center;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:4;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;}
+h5
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"Heading 5 Char";
+	mso-style-next:Normal;
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:5;
+	font-size:10.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Courier New";
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;}
+h6
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"Heading 6 Char";
+	mso-style-next:Normal;
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:6;
+	font-size:11.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Courier New";
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;}
+p.MsoHeading7, li.MsoHeading7, div.MsoHeading7
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"Heading 7 Char";
+	mso-style-next:Normal;
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:7;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";
+	font-weight:bold;}
+p.MsoHeading8, li.MsoHeading8, div.MsoHeading8
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"Heading 8 Char";
+	mso-style-next:Normal;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.25in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:8;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";
+	font-weight:bold;}
+p.MsoTitle, li.MsoTitle, div.MsoTitle
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"Title Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	text-align:center;
+	mso-pagination:widow-orphan;
+	font-size:18.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";}
+p.MsoBodyText, li.MsoBodyText, div.MsoBodyText
+	{mso-style-unhide:no;
+	mso-style-link:"Body Text Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:14.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";}
+p.MsoBodyTextIndent, li.MsoBodyTextIndent, div.MsoBodyTextIndent
+	{mso-style-unhide:no;
+	mso-style-link:"Body Text Indent Char";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:21.15pt;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";}
+p.MsoBodyText2, li.MsoBodyText2, div.MsoBodyText2
+	{mso-style-unhide:no;
+	mso-style-link:"Body Text 2 Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Courier New";
+	mso-fareast-font-family:"Times New Roman";}
+p.MsoBodyTextIndent2, li.MsoBodyTextIndent2, div.MsoBodyTextIndent2
+	{mso-style-unhide:no;
+	mso-style-link:"Body Text Indent 2 Char";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.25in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";
+	font-weight:bold;}
+p.MsoBodyTextIndent3, li.MsoBodyTextIndent3, div.MsoBodyTextIndent3
+	{mso-style-unhide:no;
+	mso-style-link:"Body Text Indent 3 Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	text-indent:21.0pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";
+	font-weight:bold;}
+a:link, span.MsoHyperlink
+	{mso-style-unhide:no;
+	color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-unhide:no;
+	color:purple;
+	text-decoration:underline;
+	text-underline:single;}
+pre
+	{mso-style-priority:99;
+	mso-style-link:"HTML Preformatted Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Courier New";
+	mso-fareast-font-family:"Times New Roman";}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Heading 1";
+	mso-ansi-font-size:14.0pt;
+	mso-bidi-font-size:14.0pt;
+	font-family:"Cambria","serif";
+	mso-ascii-font-family:Cambria;
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:Cambria;
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#365F91;
+	mso-themecolor:accent1;
+	mso-themeshade:191;
+	font-weight:bold;}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Heading 2";
+	mso-ansi-font-size:13.0pt;
+	mso-bidi-font-size:13.0pt;
+	font-family:"Cambria","serif";
+	mso-ascii-font-family:Cambria;
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:Cambria;
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#4F81BD;
+	mso-themecolor:accent1;
+	font-weight:bold;}
+span.Heading3Char
+	{mso-style-name:"Heading 3 Char";
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Heading 3";
+	mso-ansi-font-size:12.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Cambria","serif";
+	mso-ascii-font-family:Cambria;
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:Cambria;
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#4F81BD;
+	mso-themecolor:accent1;
+	font-weight:bold;}
+span.Heading4Char
+	{mso-style-name:"Heading 4 Char";
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Heading 4";
+	mso-ansi-font-size:12.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Cambria","serif";
+	mso-ascii-font-family:Cambria;
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:Cambria;
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#4F81BD;
+	mso-themecolor:accent1;
+	font-weight:bold;
+	font-style:italic;}
+span.Heading5Char
+	{mso-style-name:"Heading 5 Char";
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Heading 5";
+	mso-ansi-font-size:12.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Cambria","serif";
+	mso-ascii-font-family:Cambria;
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:Cambria;
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#243F60;
+	mso-themecolor:accent1;
+	mso-themeshade:127;}
+span.Heading6Char
+	{mso-style-name:"Heading 6 Char";
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Heading 6";
+	mso-ansi-font-size:12.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Cambria","serif";
+	mso-ascii-font-family:Cambria;
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:Cambria;
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#243F60;
+	mso-themecolor:accent1;
+	mso-themeshade:127;
+	font-style:italic;}
+span.Heading7Char
+	{mso-style-name:"Heading 7 Char";
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Heading 7";
+	mso-ansi-font-size:12.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Cambria","serif";
+	mso-ascii-font-family:Cambria;
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:Cambria;
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#404040;
+	mso-themecolor:text1;
+	mso-themetint:191;
+	font-style:italic;}
+span.Heading8Char
+	{mso-style-name:"Heading 8 Char";
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Heading 8";
+	font-family:"Cambria","serif";
+	mso-ascii-font-family:Cambria;
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:Cambria;
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#404040;
+	mso-themecolor:text1;
+	mso-themetint:191;}
+span.TitleChar
+	{mso-style-name:"Title Char";
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:Title;
+	mso-ansi-font-size:26.0pt;
+	mso-bidi-font-size:26.0pt;
+	font-family:"Cambria","serif";
+	mso-ascii-font-family:Cambria;
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:Cambria;
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#17365D;
+	mso-themecolor:text2;
+	mso-themeshade:191;
+	letter-spacing:.25pt;
+	mso-font-kerning:14.0pt;}
+span.BodyTextChar
+	{mso-style-name:"Body Text Char";
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Body Text";
+	mso-ansi-font-size:12.0pt;
+	mso-bidi-font-size:12.0pt;}
+span.BodyTextIndentChar
+	{mso-style-name:"Body Text Indent Char";
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Body Text Indent";
+	mso-ansi-font-size:12.0pt;
+	mso-bidi-font-size:12.0pt;}
+span.BodyText2Char
+	{mso-style-name:"Body Text 2 Char";
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Body Text 2";
+	mso-ansi-font-size:12.0pt;
+	mso-bidi-font-size:12.0pt;}
+span.BodyTextIndent2Char
+	{mso-style-name:"Body Text Indent 2 Char";
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Body Text Indent 2";
+	mso-ansi-font-size:12.0pt;
+	mso-bidi-font-size:12.0pt;}
+span.BodyTextIndent3Char
+	{mso-style-name:"Body Text Indent 3 Char";
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Body Text Indent 3";
+	mso-ansi-font-size:8.0pt;
+	mso-bidi-font-size:8.0pt;}
+span.HTMLPreformattedChar
+	{mso-style-name:"HTML Preformatted Char";
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"HTML Preformatted";
+	font-family:"Courier New";
+	mso-ascii-font-family:"Courier New";
+	mso-hansi-font-family:"Courier New";
+	mso-bidi-font-family:"Courier New";}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	mso-default-props:yes;
+	font-size:10.0pt;
+	mso-ansi-font-size:10.0pt;
+	mso-bidi-font-size:10.0pt;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ @list l0
+	{mso-list-id:316881280;
+	mso-list-type:hybrid;
+	mso-list-template-ids:416070802 -1978735184 67698713 67698715 67698703 67698713 67698715 67698703 67698713 67698715;}
+@list l0:level1
+	{mso-level-text:"%1\)";
+	mso-level-tab-stop:21.0pt;
+	mso-level-number-position:left;
+	margin-left:21.0pt;
+	text-indent:-21.0pt;
+	font-family:"Times New Roman","serif";}
+@list l0:level2
+	{mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level3
+	{mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level4
+	{mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level5
+	{mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level6
+	{mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level8
+	{mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level9
+	{mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1
+	{mso-list-id:362288250;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1691341036 1629275192 67698713 67698715 67698703 67698713 67698715 67698703 67698713 67698715;}
+@list l1:level1
+	{mso-level-text:"%1\)";
+	mso-level-tab-stop:.25in;
+	mso-level-number-position:left;
+	margin-left:.25in;
+	text-indent:-.25in;
+	font-family:"Times New Roman","serif";}
+@list l1:level2
+	{mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level3
+	{mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level4
+	{mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level5
+	{mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level6
+	{mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level8
+	{mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level9
+	{mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l2
+	{mso-list-id:1016468478;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1911729886 1629275192 67698713 67698715 67698703 67698713 67698715 67698703 67698713 67698715;}
+@list l2:level1
+	{mso-level-text:"%1\)";
+	mso-level-tab-stop:.25in;
+	mso-level-number-position:left;
+	margin-left:.25in;
+	text-indent:-.25in;
+	font-family:"Times New Roman","serif";}
+@list l2:level2
+	{mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l2:level3
+	{mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l2:level4
+	{mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l2:level5
+	{mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l2:level6
+	{mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l2:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l2:level8
+	{mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l2:level9
+	{mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l3
+	{mso-list-id:1104619442;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1399041948 753167112 67698713 67698715 67698703 67698713 67698715 67698703 67698713 67698715;}
+@list l3:level1
+	{mso-level-number-format:alpha-lower;
+	mso-level-text:"%1\)";
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Times New Roman","serif";}
+@list l3:level2
+	{mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l3:level3
+	{mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l3:level4
+	{mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l3:level5
+	{mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l3:level6
+	{mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l3:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l3:level8
+	{mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l3:level9
+	{mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l4
+	{mso-list-id:1483498245;
+	mso-list-type:hybrid;
+	mso-list-template-ids:33174106 1629275192 67698713 67698715 67698703 67698713 67698715 67698703 67698713 67698715;}
+@list l4:level1
+	{mso-level-text:"%1\)";
+	mso-level-tab-stop:.25in;
+	mso-level-number-position:left;
+	margin-left:.25in;
+	text-indent:-.25in;
+	font-family:"Times New Roman","serif";}
+@list l4:level2
+	{mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l4:level3
+	{mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l4:level4
+	{mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l4:level5
+	{mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l4:level6
+	{mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l4:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l4:level8
+	{mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l4:level9
+	{mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l5
+	{mso-list-id:2115903913;
+	mso-list-type:hybrid;
+	mso-list-template-ids:360495556 1629275192 67698713 67698715 67698703 67698713 67698715 67698703 67698713 67698715;}
+@list l5:level1
+	{mso-level-text:"%1\)";
+	mso-level-tab-stop:.25in;
+	mso-level-number-position:left;
+	margin-left:.25in;
+	text-indent:-.25in;
+	font-family:"Times New Roman","serif";}
+@list l5:level2
+	{mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l5:level3
+	{mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l5:level4
+	{mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l5:level5
+	{mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l5:level6
+	{mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l5:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l5:level8
+	{mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l5:level9
+	{mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="1026"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body style="" lang="EN-US" link="blue" vlink="purple">
+
+<div class="WordSection1">
+
+<p class="MsoTitle">CS 0445 Data Structures</p>
+
+<p class="MsoNormal" style="text-align:center" align="center"><span style="font-size:18.0pt;mso-bidi-font-size:12.0pt">Midterm Exam Practice
+Question <span style="color:red">SOLUTIONS</span><o:p></o:p></span></p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoBodyText">Before looking at these solutions, I strongly recommend
+that you give all of the questions a "good try".</p>
+
+<p class="MsoNormal"><span style="font-size:14.0pt;mso-bidi-font-size:12.0pt"><o:p>&nbsp;</o:p></span></p>
+
+<h1><u><span style="mso-fareast-font-family:&quot;Times New Roman&quot;">Fill in the
+Blanks<o:p></o:p></span></u></h1>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal" style="margin-left:.25in;text-indent:-.25in;mso-list:l5 level1 lfo2;
+tab-stops:list .25in"><!--[if !supportLists]--><span style="mso-list:Ignore">1)<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><!--[endif]-->Abstract
+Data Types (ADTs) can be thought of as an encapsulation of ________<b>data</b>_____________
+and _______<b>operations</b>___________.</p>
+
+<p class="MsoNormal" style="margin-left:.25in;text-indent:-.25in;mso-list:l5 level1 lfo2;
+tab-stops:list .25in"><!--[if !supportLists]--><span style="mso-list:Ignore">2)<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><!--[endif]-->The
+two primary techniques for building a new class in Java are through _____<b style="mso-bidi-font-weight:normal">composition</b>_____________ (use
+components from previously defined classes) and _____<b style="mso-bidi-font-weight:
+normal">inheritance</b>________________ (extend a previously defined class).</p>
+
+<p class="MsoNormal" style="margin-left:.25in;text-indent:-.25in;mso-list:l5 level1 lfo2;
+tab-stops:list .25in"><!--[if !supportLists]--><span style="mso-list:Ignore">3)<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><!--[endif]-->If
+a method in a superclass is redefined in a subclass using the identical method
+signature, we say that we are _______<b>overriding</b>_____________ the method</p>
+
+<p class="MsoNormal" style="margin-left:.25in;text-indent:-.25in;mso-list:l5 level1 lfo2;
+tab-stops:list .25in"><!--[if !supportLists]--><span style="mso-list:Ignore">4)<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><!--[endif]-->The
+two ADT Bag implementations that we discussed in detail had _____<b style="mso-bidi-font-weight:normal">an array (or dynamic array) </b>________
+and ______<b style="mso-bidi-font-weight:normal">a linked list</b>___________
+as their underlying data implementations.</p>
+
+<p class="MsoNormal" style="margin-left:.25in;text-indent:-.25in;mso-list:l5 level1 lfo2;
+tab-stops:list .25in"><!--[if !supportLists]--><span style="mso-list:Ignore">5)<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><!--[endif]-->A
+program that executes 4N<sup>2</sup> + 100N + 10000 operations for a problem of
+size N has a Big-O run-time of ___<span class="GramE"><b>O(</b></span><b>N<sup>2</sup>)</b>_____.</p>
+
+<p class="MsoNormal" style="margin-left:.25in;text-indent:-.25in;mso-list:l5 level1 lfo2;
+tab-stops:list .25in"><!--[if !supportLists]--><span style="mso-list:Ignore">6)<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><!--[endif]-->The
+postfix <span class="GramE">expression <span style="mso-spacerun:yes">&nbsp;</span>10</span><span style="mso-spacerun:yes">&nbsp; </span><span style="mso-spacerun:yes">&nbsp;</span>6 <span style="mso-spacerun:yes">&nbsp;&nbsp;</span>2<span style="mso-spacerun:yes">&nbsp;&nbsp; </span>* <span style="mso-spacerun:yes">&nbsp;&nbsp;</span>7<span style="mso-spacerun:yes">&nbsp; </span><span style="mso-spacerun:yes">&nbsp;</span><span style="mso-spacerun:yes">&nbsp;</span>– <span style="mso-spacerun:yes">&nbsp;</span><span style="mso-spacerun:yes">&nbsp;</span><span style="mso-spacerun:yes">&nbsp;</span>/<span style="mso-spacerun:yes">&nbsp;&nbsp;
+</span>evaluates to ________<b style="mso-bidi-font-weight:normal">2</b>__________.<span style="mso-spacerun:yes">&nbsp; </span></p>
+
+<p class="MsoNormal" style="margin-left:.25in;text-indent:-.25in;mso-list:l5 level1 lfo2;
+tab-stops:list .25in"><!--[if !supportLists]--><span style="mso-list:Ignore">7)<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><!--[endif]-->Any
+recursive method needs one or more ______<b>base cases</b>_______ and one or
+more ______<b>recursive cases</b>_______.</p>
+
+<p class="MsoNormal" style="margin-left:.25in;text-indent:-.25in;mso-list:l5 level1 lfo2;
+tab-stops:list .25in"><!--[if !supportLists]--><span style="mso-list:Ignore">8)<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><!--[endif]-->Any
+recursive method that is ______<b style="mso-bidi-font-weight:normal">tail-recursive</b>_______________
+can easily be converted into a non-recursive equivalent method.</p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal"><u><span style="font-size:14.0pt;mso-bidi-font-size:12.0pt">True/False
+(explain why false answers are false)<o:p></o:p></span></u></p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal" style="margin-left:21.0pt;text-indent:-21.0pt;mso-list:l0 level1 lfo4;
+tab-stops:list 21.0pt"><!--[if !supportLists]--><span style="mso-list:Ignore">1)<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><!--[endif]-->Java primitive types can be stored in <span class="SpellE">ArrayBags</span>. </p>
+
+<p class="MsoBodyTextIndent3">FALSE – <span class="SpellE">ArrayBags</span> store
+only Objects (and subclasses thereof).<span style="mso-spacerun:yes">&nbsp;
+</span>If you want to store primitive values, you must use the wrapper classes
+(ex: Integer).</p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal" style="margin-left:.3in;text-indent:-21.0pt;mso-list:l0 level1 lfo4;
+tab-stops:list 21.0pt"><!--[if !supportLists]--><span style="mso-list:Ignore">2)<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><!--[endif]-->Assuming
+the <span class="SpellE">BagInterface</span>&lt;T&gt; interface and the <span class="SpellE">LinkedBag</span>&lt;T&gt; class as we discussed, the following
+statement is legal:</p>
+
+<p class="MsoNormal" style="margin-left:21.0pt"><span class="SpellE"><span style="font-family:&quot;Courier New&quot;">BagInterface</span></span><span style="font-family:&quot;Courier New&quot;">&lt;String&gt; L = new <span class="SpellE">LinkedBag</span>&lt;String<span class="GramE">&gt;(</span>);<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-left:21.0pt"><b style="mso-bidi-font-weight:
+normal">TRUE<o:p></o:p></b></p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal" style="margin-left:.3in;text-indent:-.3in;mso-list:l0 level1 lfo4;
+tab-stops:list 21.0pt"><!--[if !supportLists]--><span style="mso-list:Ignore">3)<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><!--[endif]-->Assuming the <span class="SpellE">BagInterface</span>&lt;T&gt;
+interface as we discussed, the following statement is legal:</p>
+
+<p class="MsoNormal" style="margin-left:21.0pt"><span class="SpellE"><span style="font-family:&quot;Courier New&quot;">BagInterface</span></span><span style="font-family:&quot;Courier New&quot;">&lt;String&gt; L = new <span class="SpellE">BagInterface</span>&lt;String<span class="GramE">&gt;(</span>);<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-left:21.0pt"><b style="mso-bidi-font-weight:
+normal">FALSE – We cannot make objects of interfaces.<o:p></o:p></b></p>
+
+<p class="MsoNormal" style="margin-left:21.15pt"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal" style="margin-left:21.0pt;text-indent:-21.0pt;mso-list:l0 level1 lfo4;
+tab-stops:list 21.0pt"><!--[if !supportLists]--><span style="mso-list:Ignore">4)<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><!--[endif]-->Binary Search has a worst case run-time of <span class="GramE">O(</span>N).</p>
+
+<p class="MsoNormal" style="margin-left:21.0pt"><b>FALSE – Binary Search has a
+worst case run-time of <span class="GramE">O(</span>log<sub>2</sub>N).<o:p></o:p></b></p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal" style="margin-left:21.0pt;text-indent:-21.0pt;mso-list:l0 level1 lfo4;
+tab-stops:list 21.0pt"><!--[if !supportLists]--><span style="mso-list:Ignore">5)<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><!--[endif]-->The data in a singly linked list is contiguous.</p>
+
+<p class="MsoNormal" style="margin-left:21.0pt"><b>FALSE – A fundamental property
+of linked list is that the data is NOT contiguous, but, rather, in arbitrary
+locations.<o:p></o:p></b></p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal" style="margin-left:.3in;text-indent:-21.0pt;mso-list:l0 level1 lfo4;
+tab-stops:list 21.0pt"><!--[if !supportLists]--><span style="mso-list:Ignore">6)<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><!--[endif]-->Recursion
+is implemented utilizing <b style="mso-bidi-font-weight:normal">activation
+records</b> and the <b style="mso-bidi-font-weight:normal">run-time queue
+(RTQ).</b></p>
+
+<p class="MsoNormal" style="margin-left:.3in"><b style="mso-bidi-font-weight:
+normal">FALSE – it utilizes the run-time stack.</b></p>
+
+<p class="MsoNormal" style="margin-left:3.0pt"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal" style="margin-left:3.0pt"><o:p>&nbsp;</o:p></p>
+
+<h2><span style="mso-fareast-font-family:&quot;Times New Roman&quot;">Short Answers<o:p></o:p></span></h2>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal" style="margin-left:.25in;text-indent:-.25in;mso-list:l2 level1 lfo6;
+tab-stops:list .25in"><!--[if !supportLists]--><span style="mso-list:Ignore">1)<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><!--[endif]-->In
+lecture we discussed two variations for resizing a dynamic array list:</p>
+
+<p class="MsoNormal" style="margin-left:.5in;text-indent:-.25in;mso-list:l2 level2 lfo6;
+tab-stops:list .5in 1.0in"><!--[if !supportLists]--><span style="mso-list:Ignore">1.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><!--[endif]-->Increase
+the size of the array by 1</p>
+
+<p class="MsoNormal" style="margin-left:.5in;text-indent:-.25in;mso-list:l2 level2 lfo6;
+tab-stops:list .5in 1.0in"><!--[if !supportLists]--><span style="mso-list:Ignore">2.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><!--[endif]-->Double
+the size of the array</p>
+
+<p class="MsoNormal" style="margin-left:.25in">Explain which of these is preferable
+and why.<span style="mso-spacerun:yes">&nbsp; </span>Be specific, using mathematical
+justification.<span style="mso-spacerun:yes">&nbsp; </span>You do not have to give
+all of the mathematical details for b) but you must give the general idea.</p>
+
+<p class="MsoNormal" style="margin-left:.25in"><b style="mso-bidi-font-weight:
+normal">See <span class="SpellE">Powerpoint</span> slides 126-130.<span style="mso-spacerun:yes">&nbsp; </span>Your math does not have to be as detailed as
+that shown in the slides, but you must have the general idea as to which is
+preferable and why.<span style="mso-spacerun:yes">&nbsp; </span>For example:<o:p></o:p></b></p>
+
+<p class="MsoNormal" style="margin-left:.5in"><b style="mso-bidi-font-weight:
+normal">It is preferable to double the size of the array rather than to
+increase it by one. If we increase the size by one, we must resize at each <span class="GramE">add(</span>).<span style="mso-spacerun:yes">&nbsp; </span>Over a sequence
+of N adds, this will cause us to do 1 + 2 + 3 + … + N assignments, which is a
+total of <span class="GramE">O(</span>N<sup>2</sup>).<span style="mso-spacerun:yes">&nbsp; </span>Amortized over the N adds this gives us a
+time of <span class="GramE">O(</span>N) per add.<span style="mso-spacerun:yes">&nbsp;
+</span>If we double the array size when we resize, during most adds we only
+have to do one assignment, and only occasionally have to resize (when N is 1
+more than a power of 2).<span style="mso-spacerun:yes">&nbsp; </span>This evaluates
+to 2N-1 total assignments, which gives us an amortized time of <span class="GramE">O(</span>1) per add.<o:p></o:p></b></p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal" style="margin-left:.25in;text-indent:-.25in;mso-list:l2 level1 lfo6;
+tab-stops:list .25in"><!--[if !supportLists]--><span style="mso-list:Ignore">2)<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><!--[endif]-->In
+implementing our <span class="SpellE">LinkedBag</span> class the text authors
+made the Node class an <b style="mso-bidi-font-weight:normal">inner class</b>.<span style="mso-spacerun:yes">&nbsp; </span>Explain what an inner class is and why the
+Node class was implemented in this way.</p>
+
+<p class="MsoNormal" style="margin-left:.25in"><b style="mso-bidi-font-weight:
+normal">See <span class="SpellE">Powerpoint</span> slide 86.<span style="mso-spacerun:yes">&nbsp; </span>An inner class is a Java class that is wholly
+defined within another class.<span style="mso-spacerun:yes">&nbsp; </span>Its data
+and methods, even private ones, are accessible to the outer class.<span style="mso-spacerun:yes">&nbsp; </span>This is useful for our <span class="SpellE">LinkedBag</span>
+because it allows the <span class="SpellE">LinkedBag</span> methods to access the
+next and data fields of Node objects without requiring <span class="SpellE">accessor</span>
+and <span class="SpellE">mutator</span> methods, yet it does not allow a client
+to access them (since they are still private).<o:p></o:p></b></p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<h3><span style="mso-fareast-font-family:&quot;Times New Roman&quot;">Traces<o:p></o:p></span></h3>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal" style="margin-left:.25in;text-indent:-.25in;mso-list:l1 level1 lfo8;
+tab-stops:list .25in"><!--[if !supportLists]--><span style="mso-list:Ignore">1)<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><!--[endif]-->Give
+ALL output produced by the execution of the Java program below.<span style="mso-spacerun:yes">&nbsp; </span>To avoid ambiguity, clearly mark your output
+by <b>drawing a box around it.</b></p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<table class="MsoNormalTable" style="border-collapse: collapse; border: medium none;" border="1" cellpadding="0" cellspacing="0">
+ <tbody><tr style="">
+  <td style="width: 377.6pt; border: 1pt solid windowtext; padding: 0in 5.4pt;" valign="top" width="503">
+  <p class="MsoNormal" style="mso-layout-grid-align:none;text-autospace:none"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;color:blue">public</span><b><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;"> </span></b><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;color:blue">class</span><b><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;"> PracTrace1</span></b><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;"><o:p></o:p></span></p>
+  <p class="MsoNormal" style="mso-layout-grid-align:none;text-autospace:none"><b><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;">{</span></b><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;"><o:p></o:p></span></p>
+  <p class="MsoNormal" style="mso-layout-grid-align:none;text-autospace:none"><b><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;"><span style="mso-tab-count:
+  1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></b><span class="SpellE"><span style="font-size:10.0pt;
+  font-family:&quot;Courier New&quot;;color:blue">int</span></span><b><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;"> data;</span></b><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;"><o:p></o:p></span></p>
+  <p class="MsoNormal" style="mso-layout-grid-align:none;text-autospace:none"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;"><o:p>&nbsp;</o:p></span></p>
+  <p class="MsoNormal" style="mso-layout-grid-align:none;text-autospace:none"><b><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;"><span style="mso-tab-count:
+  1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></b><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;
+  color:blue">public</span><b><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;">
+  PracTrace1(</span></b><span class="SpellE"><span style="font-size:10.0pt;
+  font-family:&quot;Courier New&quot;;color:blue">int</span></span><b><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;"> d)</span></b><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;"><o:p></o:p></span></p>
+  <p class="MsoNormal" style="mso-layout-grid-align:none;text-autospace:none"><b><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;"><span style="mso-tab-count:
+  1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>{<span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp; </span>data = d;<span style="mso-tab-count:1">&nbsp;&nbsp; </span>}</span></b><span style="font-size:10.0pt;
+  font-family:&quot;Courier New&quot;"><o:p></o:p></span></p>
+  <p class="MsoNormal" style="mso-layout-grid-align:none;text-autospace:none"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;"><o:p>&nbsp;</o:p></span></p>
+  <p class="MsoNormal" style="mso-layout-grid-align:none;text-autospace:none"><b><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;"><span style="mso-tab-count:
+  1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></b><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;
+  color:blue">public</span><b><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;">
+  </span></b><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;
+  color:blue">void</span><b><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;">
+  change(</span></b><span class="SpellE"><span style="font-size:10.0pt;
+  font-family:&quot;Courier New&quot;;color:blue">int</span></span><b><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;"> <span class="SpellE">newdata</span>)</span></b><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;"><o:p></o:p></span></p>
+  <p class="MsoNormal" style="mso-layout-grid-align:none;text-autospace:none"><b><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;"><span style="mso-tab-count:
+  1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>{<span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp; </span>data = <span class="SpellE">newdata</span>;<span style="mso-tab-count:1">&nbsp;&nbsp; </span>}</span></b><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;"><o:p></o:p></span></p>
+  <p class="MsoNormal" style="mso-layout-grid-align:none;text-autospace:none"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;"><o:p>&nbsp;</o:p></span></p>
+  <p class="MsoNormal" style="mso-layout-grid-align:none;text-autospace:none"><b><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;"><span style="mso-tab-count:
+  1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></b><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;
+  color:blue">public</span><b><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;">
+  String <span class="SpellE">toString</span>()</span></b><span style="font-size:
+  10.0pt;font-family:&quot;Courier New&quot;"><o:p></o:p></span></p>
+  <p class="MsoNormal" style="mso-layout-grid-align:none;text-autospace:none"><b><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;"><span style="mso-tab-count:
+  1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>{</span></b><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;"><o:p></o:p></span></p>
+  <p class="MsoNormal" style="mso-layout-grid-align:none;text-autospace:none"><b><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;"><span style="mso-tab-count:
+  2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></b><span style="font-size:10.0pt;font-family:
+  &quot;Courier New&quot;;color:blue">return</span><b><span style="font-size:10.0pt;
+  font-family:&quot;Courier New&quot;"> </span></b><span style="font-size:10.0pt;
+  font-family:&quot;Courier New&quot;;color:blue">new</span><b><span style="font-size:
+  10.0pt;font-family:&quot;Courier New&quot;"> String("Data: " + data);</span></b><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;"><o:p></o:p></span></p>
+  <p class="MsoNormal" style="mso-layout-grid-align:none;text-autospace:none"><b><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;"><span style="mso-tab-count:
+  1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>}</span></b><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;"><o:p></o:p></span></p>
+  <p class="MsoNormal" style="mso-layout-grid-align:none;text-autospace:none"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;"><o:p>&nbsp;</o:p></span></p>
+  <p class="MsoNormal" style="mso-layout-grid-align:none;text-autospace:none"><b><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;"><span style="mso-tab-count:
+  1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></b><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;
+  color:blue">public</span><b><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;">
+  </span></b><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;
+  color:blue">static</span><b><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;">
+  </span></b><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;
+  color:blue">void</span><b><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;">
+  main(String [] <span class="SpellE">args</span>)</span></b><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;"><o:p></o:p></span></p>
+  <p class="MsoNormal" style="mso-layout-grid-align:none;text-autospace:none"><b><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;"><span style="mso-tab-count:
+  1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>{</span></b><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;"><o:p></o:p></span></p>
+  <p class="MsoNormal" style="mso-layout-grid-align:none;text-autospace:none"><b><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;"><span style="mso-tab-count:
+  2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>PracTrace1 [] A1 = </span></b><span style="font-size:
+  10.0pt;font-family:&quot;Courier New&quot;;color:blue">new</span><b><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;"> PracTrace1[4];</span></b><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;"><o:p></o:p></span></p>
+  <p class="MsoNormal" style="mso-layout-grid-align:none;text-autospace:none"><b><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;"><span style="mso-spacerun:yes">&nbsp; </span><span style="mso-tab-count:2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>A1[0]
+  = </span></b><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;
+  color:blue">new</span><b><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;">
+  PracTrace1(10);</span></b><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;"><o:p></o:p></span></p>
+  <p class="MsoNormal" style="mso-layout-grid-align:none;text-autospace:none"><b><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;"><span style="mso-spacerun:yes">&nbsp; </span><span style="mso-tab-count:2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>A1[1]
+  = </span></b><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;
+  color:blue">new</span><b><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;">
+  PracTrace1(20);</span></b><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;"><o:p></o:p></span></p>
+  <p class="MsoNormal" style="mso-layout-grid-align:none;text-autospace:none"><b><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;"><span style="mso-spacerun:yes">&nbsp;</span><span style="mso-tab-count:2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>A1[2]
+  = </span></b><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;
+  color:blue">new</span><b><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;">
+  PracTrace1(30);</span></b><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;"><o:p></o:p></span></p>
+  <p class="MsoNormal" style="mso-layout-grid-align:none;text-autospace:none"><b><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;"><span style="mso-spacerun:yes">&nbsp;</span><span style="mso-tab-count:2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>A1[3]
+  = </span></b><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;
+  color:blue">new</span><b><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;">
+  PracTrace1(40);</span></b><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;"><o:p></o:p></span></p>
+  <p class="MsoNormal" style="mso-layout-grid-align:none;text-autospace:none"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;"><o:p>&nbsp;</o:p></span></p>
+  <p class="MsoNormal" style="mso-layout-grid-align:none;text-autospace:none"><b><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;"><span style="mso-tab-count:
+  2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="SpellE">showData</span>(A1);</span></b><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;"><o:p></o:p></span></p>
+  <p class="MsoNormal" style="mso-layout-grid-align:none;text-autospace:none"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;"><o:p>&nbsp;</o:p></span></p>
+  <p class="MsoNormal" style="mso-layout-grid-align:none;text-autospace:none"><b><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;"><span style="mso-tab-count:
+  2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>PracTrace1 [] A2 = A1;</span></b><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;"><o:p></o:p></span></p>
+  <p class="MsoNormal" style="mso-layout-grid-align:none;text-autospace:none"><b><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;"><span style="mso-tab-count:
+  2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>PracTrace1 [] A3 = </span></b><span style="font-size:
+  10.0pt;font-family:&quot;Courier New&quot;;color:blue">new</span><b><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;"> PracTrace1[A1.length];</span></b><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;"><o:p></o:p></span></p>
+  <p class="MsoNormal" style="mso-layout-grid-align:none;text-autospace:none"><b><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;"><span style="mso-tab-count:
+  2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></b><span style="font-size:10.0pt;font-family:
+  &quot;Courier New&quot;;color:blue">for</span><b><span style="font-size:10.0pt;
+  font-family:&quot;Courier New&quot;"> (</span></b><span class="SpellE"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;color:blue">int</span></span><b><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;"> <span class="SpellE">i</span>
+  = 0; <span class="SpellE">i</span> &lt; A1.length; <span class="SpellE">i</span>++)</span></b><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;"><o:p></o:p></span></p>
+  <p class="MsoNormal" style="mso-layout-grid-align:none;text-autospace:none"><b><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;"><span style="mso-tab-count:
+  3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>A3[<span class="SpellE">i</span>] = A1[<span class="SpellE">i</span>];</span></b><span style="font-size:10.0pt;font-family:
+  &quot;Courier New&quot;"><o:p></o:p></span></p>
+  <p class="MsoNormal" style="mso-layout-grid-align:none;text-autospace:none"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;"><o:p>&nbsp;</o:p></span></p>
+  <p class="MsoNormal" style="mso-layout-grid-align:none;text-autospace:none"><b><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;"><span style="mso-tab-count:
+  2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>A2[1].change(25);</span></b><span style="font-size:
+  10.0pt;font-family:&quot;Courier New&quot;"><o:p></o:p></span></p>
+  <p class="MsoNormal" style="mso-layout-grid-align:none;text-autospace:none"><b><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;"><span style="mso-tab-count:
+  2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>A2[2] = </span></b><span style="font-size:10.0pt;
+  font-family:&quot;Courier New&quot;;color:blue">new</span><b><span style="font-size:
+  10.0pt;font-family:&quot;Courier New&quot;"> PracTrace1(35);</span></b><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;"><o:p></o:p></span></p>
+  <p class="MsoNormal" style="mso-layout-grid-align:none;text-autospace:none"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;"><o:p>&nbsp;</o:p></span></p>
+  <p class="MsoNormal" style="mso-layout-grid-align:none;text-autospace:none"><b><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;"><span style="mso-tab-count:
+  2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>A1[2].change(77);</span></b><span style="font-size:
+  10.0pt;font-family:&quot;Courier New&quot;"><o:p></o:p></span></p>
+  <p class="MsoNormal" style="mso-layout-grid-align:none;text-autospace:none"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;"><o:p>&nbsp;</o:p></span></p>
+  <p class="MsoNormal" style="mso-layout-grid-align:none;text-autospace:none"><b><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;"><span style="mso-tab-count:
+  2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>A3[0].change(15);</span></b><span style="font-size:
+  10.0pt;font-family:&quot;Courier New&quot;"><o:p></o:p></span></p>
+  <p class="MsoNormal" style="mso-layout-grid-align:none;text-autospace:none"><b><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;"><span style="mso-tab-count:
+  2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>A3[2].change(88);</span></b><span style="font-size:
+  10.0pt;font-family:&quot;Courier New&quot;"><o:p></o:p></span></p>
+  <p class="MsoNormal" style="mso-layout-grid-align:none;text-autospace:none"><b><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;"><span style="mso-tab-count:
+  2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>A3[3] = </span></b><span style="font-size:10.0pt;
+  font-family:&quot;Courier New&quot;;color:blue">new</span><b><span style="font-size:
+  10.0pt;font-family:&quot;Courier New&quot;"> PracTrace1(45);</span></b><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;"><o:p></o:p></span></p>
+  <p class="MsoNormal" style="mso-layout-grid-align:none;text-autospace:none"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;"><o:p>&nbsp;</o:p></span></p>
+  <p class="MsoNormal" style="mso-layout-grid-align:none;text-autospace:none"><b><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;"><span style="mso-tab-count:
+  2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="SpellE">showData</span>(A1);</span></b><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;"><o:p></o:p></span></p>
+  <p class="MsoNormal" style="mso-layout-grid-align:none;text-autospace:none"><b><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;"><span style="mso-tab-count:
+  2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="SpellE">showData</span>(A2);</span></b><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;"><o:p></o:p></span></p>
+  <p class="MsoNormal" style="mso-layout-grid-align:none;text-autospace:none"><b><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;"><span style="mso-tab-count:
+  2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="SpellE">showData</span>(A3);</span></b><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;"><o:p></o:p></span></p>
+  <p class="MsoNormal" style="mso-layout-grid-align:none;text-autospace:none"><b><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;"><span style="mso-tab-count:
+  1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>}</span></b><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;"><o:p></o:p></span></p>
+  <p class="MsoNormal" style="mso-layout-grid-align:none;text-autospace:none"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;"><o:p>&nbsp;</o:p></span></p>
+  <p class="MsoNormal" style="mso-layout-grid-align:none;text-autospace:none"><b><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;"><span style="mso-tab-count:
+  1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></b><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;
+  color:blue">public</span><b><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;">
+  </span></b><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;
+  color:blue">static</span><b><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;">
+  </span></b><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;
+  color:blue">void</span><b><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;">
+  <span class="SpellE">showData</span>(PracTrace1 [] A)</span></b><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;"><o:p></o:p></span></p>
+  <p class="MsoNormal" style="mso-layout-grid-align:none;text-autospace:none"><b><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;"><span style="mso-tab-count:
+  1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>{</span></b><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;"><o:p></o:p></span></p>
+  <p class="MsoNormal" style="mso-layout-grid-align:none;text-autospace:none"><b><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;"><span style="mso-tab-count:
+  2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></b><span style="font-size:10.0pt;font-family:
+  &quot;Courier New&quot;;color:blue">for</span><b><span style="font-size:10.0pt;
+  font-family:&quot;Courier New&quot;"> (</span></b><span class="SpellE"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;color:blue">int</span></span><b><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;"> <span class="SpellE">i</span>
+  = 0; <span class="SpellE">i</span> &lt; <span class="SpellE">A.length</span>; <span class="SpellE">i</span>++)</span></b><span style="font-size:10.0pt;font-family:
+  &quot;Courier New&quot;"><o:p></o:p></span></p>
+  <p class="MsoNormal" style="mso-layout-grid-align:none;text-autospace:none"><b><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;"><span style="mso-tab-count:
+  3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="SpellE">System.out.println</span>(A[<span class="SpellE">i</span>]);</span></b><span style="font-size:10.0pt;font-family:
+  &quot;Courier New&quot;"><o:p></o:p></span></p>
+  <p class="MsoNormal" style="mso-layout-grid-align:none;text-autospace:none"><b><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;"><span style="mso-tab-count:
+  2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="SpellE">System.out.println</span>();</span></b><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;"><o:p></o:p></span></p>
+  <p class="MsoNormal" style="mso-layout-grid-align:none;text-autospace:none"><b><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;"><span style="mso-tab-count:
+  1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>}</span></b><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;"><o:p></o:p></span></p>
+  <p class="MsoNormal"><b><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;">}</span></b></p>
+  </td>
+  <td style="width: 1.5in; border-width: 1pt 1pt 1pt medium; border-style: solid solid solid none; border-color: windowtext windowtext windowtext -moz-use-text-color; -moz-border-top-colors: none; -moz-border-right-colors: none; -moz-border-bottom-colors: none; -moz-border-left-colors: none; -moz-border-image: none; padding: 0in 5.4pt;" valign="top" width="144">
+  <h5><span style="mso-fareast-font-family:&quot;Times New Roman&quot;;
+  mso-ansi-language:PT-BR" lang="PT-BR">OUTPUT<o:p></o:p></span></h5>
+  <p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:
+  12.0pt;font-family:&quot;Courier New&quot;;mso-ansi-language:PT-BR" lang="PT-BR">Data: 10<o:p></o:p></span></p>
+  <p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:
+  12.0pt;font-family:&quot;Courier New&quot;;mso-ansi-language:PT-BR" lang="PT-BR">Data: 20<o:p></o:p></span></p>
+  <p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:
+  12.0pt;font-family:&quot;Courier New&quot;;mso-ansi-language:PT-BR" lang="PT-BR">Data: 30<o:p></o:p></span></p>
+  <p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:
+  12.0pt;font-family:&quot;Courier New&quot;;mso-ansi-language:PT-BR" lang="PT-BR">Data: 40<o:p></o:p></span></p>
+  <p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:
+  12.0pt;font-family:&quot;Courier New&quot;;mso-ansi-language:PT-BR" lang="PT-BR"><o:p>&nbsp;</o:p></span></p>
+  <p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:
+  12.0pt;font-family:&quot;Courier New&quot;;mso-ansi-language:PT-BR" lang="PT-BR">Data: 15<o:p></o:p></span></p>
+  <p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:
+  12.0pt;font-family:&quot;Courier New&quot;;mso-ansi-language:PT-BR" lang="PT-BR">Data: 25<o:p></o:p></span></p>
+  <p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:
+  12.0pt;font-family:&quot;Courier New&quot;;mso-ansi-language:PT-BR" lang="PT-BR">Data: 77<o:p></o:p></span></p>
+  <p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:
+  12.0pt;font-family:&quot;Courier New&quot;;mso-ansi-language:PT-BR" lang="PT-BR">Data: 40<o:p></o:p></span></p>
+  <p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:
+  12.0pt;font-family:&quot;Courier New&quot;;mso-ansi-language:PT-BR" lang="PT-BR"><o:p>&nbsp;</o:p></span></p>
+  <p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:
+  12.0pt;font-family:&quot;Courier New&quot;;mso-ansi-language:PT-BR" lang="PT-BR">Data: 15<o:p></o:p></span></p>
+  <p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:
+  12.0pt;font-family:&quot;Courier New&quot;;mso-ansi-language:PT-BR" lang="PT-BR">Data: 25<o:p></o:p></span></p>
+  <p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:
+  12.0pt;font-family:&quot;Courier New&quot;;mso-ansi-language:PT-BR" lang="PT-BR">Data: 77<o:p></o:p></span></p>
+  <p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:
+  12.0pt;font-family:&quot;Courier New&quot;;mso-ansi-language:PT-BR" lang="PT-BR">Data: 40<o:p></o:p></span></p>
+  <p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:
+  12.0pt;font-family:&quot;Courier New&quot;;mso-ansi-language:PT-BR" lang="PT-BR"><o:p>&nbsp;</o:p></span></p>
+  <p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:
+  12.0pt;font-family:&quot;Courier New&quot;;mso-ansi-language:PT-BR" lang="PT-BR">Data: 15<o:p></o:p></span></p>
+  <p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:
+  12.0pt;font-family:&quot;Courier New&quot;;mso-ansi-language:PT-BR" lang="PT-BR">Data: 25<o:p></o:p></span></p>
+  <p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:12.0pt;
+  font-family:&quot;Courier New&quot;">Data: 88<o:p></o:p></span></p>
+  <p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:12.0pt;
+  font-family:&quot;Courier New&quot;">Data: 45<o:p></o:p></span></p>
+  <h6><span style="mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p>&nbsp;</o:p></span></h6>
+  <h6><span style="mso-fareast-font-family:&quot;Times New Roman&quot;">COMMENTS</span><span style="mso-fareast-font-family:&quot;Times New Roman&quot;;font-weight:normal"><o:p></o:p></span></h6>
+  <p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:12.0pt">Note
+  that references A1 and A2 share the same object, so their output is
+  identical.<span style="mso-spacerun:yes">&nbsp; </span>Even though A3 is a
+  separate array, it shares objects with A1, so mutations on them will affect
+  both arrays unless a new object is assigned to the location.<o:p></o:p></span></p>
+  <p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:12.0pt">Download
+  and run this program and experiment with it to better understand the
+  solution.<o:p></o:p></span></p>
+  </td>
+ </tr>
+</tbody></table>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal" style="margin-left:.25in;text-indent:-.25in;mso-list:l1 level1 lfo8;
+tab-stops:list .25in"><!--[if !supportLists]--><span style="mso-list:Ignore">2)<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><!--[endif]-->Give
+ALL output produced by the execution of the Java program below.<span style="mso-spacerun:yes">&nbsp; </span>To avoid ambiguity, clearly mark your output
+by <b>drawing a box around it.</b></p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<table class="MsoNormalTable" style="border-collapse: collapse; border: medium none;" border="1" cellpadding="0" cellspacing="0">
+ <tbody><tr style="">
+  <td colspan="2" style="width: 634.1pt; border: 1pt solid windowtext; padding: 0in 5.4pt;" valign="top" width="845">
+  <p class="MsoNormal"><span style="font-family:&quot;Courier New&quot;">public class <span class="SpellE">PracTrace</span><o:p></o:p></span></p>
+  <p class="MsoNormal"><span style="font-family:&quot;Courier New&quot;">{<o:p></o:p></span></p>
+  <p class="MsoNormal"><span style="font-family:&quot;Courier New&quot;"><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp; </span>static <span class="SpellE">int</span> [] A
+  = {50, 40, 80, 60, 90};<o:p></o:p></span></p>
+  <p class="MsoNormal"><span style="font-family:&quot;Courier New&quot;"><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="SpellE">int</span> <span class="SpellE">workingSum</span> = 0;<o:p></o:p></span></p>
+  <p class="MsoNormal"><span style="font-family:&quot;Courier New&quot;"><o:p>&nbsp;</o:p></span></p>
+  <p class="MsoNormal"><span style="font-family:&quot;Courier New&quot;"><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp; </span>public <span class="SpellE">PracTrace</span>()<o:p></o:p></span></p>
+  <p class="MsoNormal"><span style="font-family:&quot;Courier New&quot;"><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp; </span>{<o:p></o:p></span></p>
+  <p class="MsoNormal"><span style="font-family:&quot;Courier New&quot;"><span style="mso-tab-count:2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="SpellE">workingSum</span>
+  = 0;<o:p></o:p></span></p>
+  <p class="MsoNormal"><span style="font-family:&quot;Courier New&quot;"><span style="mso-tab-count:2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="SpellE">int</span> sum = <span class="SpellE">recGetSum</span>(A, 0);<o:p></o:p></span></p>
+  <p class="MsoNormal"><span style="font-family:&quot;Courier New&quot;"><span style="mso-tab-count:2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="SpellE">System.out.println</span>("The
+  final working sum is " + <span class="SpellE">workingSum</span>);<o:p></o:p></span></p>
+  <p class="MsoNormal"><span style="font-family:&quot;Courier New&quot;"><span style="mso-tab-count:2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="SpellE">System.out.println</span>("The
+  overall sum is " + sum);<o:p></o:p></span></p>
+  <p class="MsoNormal"><span style="font-family:&quot;Courier New&quot;"><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp; </span>}<o:p></o:p></span></p>
+  <p class="MsoNormal"><span style="font-family:&quot;Courier New&quot;"><o:p>&nbsp;</o:p></span></p>
+  <p class="MsoNormal"><span style="font-family:&quot;Courier New&quot;"><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp; </span>public <span class="SpellE">int</span> <span class="SpellE">recGetSum</span>(<span class="SpellE">int</span> [] A, <span class="SpellE">int</span> <span class="SpellE">loc</span>)<o:p></o:p></span></p>
+  <p class="MsoNormal"><span style="font-family:&quot;Courier New&quot;"><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp; </span>{<o:p></o:p></span></p>
+  <p class="MsoNormal"><span style="font-family:&quot;Courier New&quot;"><span style="mso-tab-count:2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>if (<span class="SpellE">loc</span>
+  &lt; <span class="SpellE">A.length</span>)<o:p></o:p></span></p>
+  <p class="MsoNormal"><span style="font-family:&quot;Courier New&quot;"><span style="mso-tab-count:2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>{<o:p></o:p></span></p>
+  <p class="MsoNormal"><span style="font-family:&quot;Courier New&quot;"><span style="mso-tab-count:3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="SpellE">workingSum</span>
+  = <span class="SpellE">workingSum</span> + A[<span class="SpellE">loc</span>];<o:p></o:p></span></p>
+  <p class="MsoNormal"><span style="font-family:&quot;Courier New&quot;"><span style="mso-tab-count:3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="SpellE">System.out.println</span>("<span class="SpellE">loc</span> = " + <span class="SpellE">loc</span> + "
+  working sum = " + <span class="SpellE">workingSum</span>);<o:p></o:p></span></p>
+  <p class="MsoNormal"><span style="font-family:&quot;Courier New&quot;"><span style="mso-tab-count:3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="SpellE">int</span> <span class="SpellE">theSum</span> = A[<span class="SpellE">loc</span>] + <span class="SpellE">recGetSum</span>(A, <span class="SpellE">loc</span> + 1);<o:p></o:p></span></p>
+  <p class="MsoNormal"><span style="font-family:&quot;Courier New&quot;"><span style="mso-tab-count:3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="SpellE">workingSum</span>
+  = <span class="SpellE">workingSum</span> - A[<span class="SpellE">loc</span>];<o:p></o:p></span></p>
+  <p class="MsoNormal"><span style="font-family:&quot;Courier New&quot;"><span style="mso-tab-count:3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="SpellE">System.out.println</span>("<span class="SpellE">loc</span> = " + <span class="SpellE">loc</span> + "
+  working sum = " + <span class="SpellE">workingSum</span>);<o:p></o:p></span></p>
+  <p class="MsoNormal"><span style="font-family:&quot;Courier New&quot;"><span style="mso-tab-count:3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>return <span class="SpellE">theSum</span>;<o:p></o:p></span></p>
+  <p class="MsoNormal"><span style="font-family:&quot;Courier New&quot;"><span style="mso-tab-count:2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>}<o:p></o:p></span></p>
+  <p class="MsoNormal"><span style="font-family:&quot;Courier New&quot;"><span style="mso-tab-count:2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>else<o:p></o:p></span></p>
+  <p class="MsoNormal"><span style="font-family:&quot;Courier New&quot;"><span style="mso-tab-count:3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>return 0;<o:p></o:p></span></p>
+  <p class="MsoNormal"><span style="font-family:&quot;Courier New&quot;"><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp; </span>}<o:p></o:p></span></p>
+  <p class="MsoNormal"><span style="font-family:&quot;Courier New&quot;"><o:p>&nbsp;</o:p></span></p>
+  <p class="MsoNormal"><span style="font-family:&quot;Courier New&quot;"><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp; </span>public static void main(String [] <span class="SpellE">args</span>)<o:p></o:p></span></p>
+  <p class="MsoNormal"><span style="font-family:&quot;Courier New&quot;"><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp; </span>{<o:p></o:p></span></p>
+  <p class="MsoNormal"><span style="font-family:&quot;Courier New&quot;"><span style="mso-tab-count:2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="SpellE">PracTrace</span>
+  P = new <span class="SpellE">PracTrace</span>();<o:p></o:p></span></p>
+  <p class="MsoNormal"><span style="font-family:&quot;Courier New&quot;"><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp; </span>}<o:p></o:p></span></p>
+  <p class="MsoNormal"><span style="font-family:&quot;Courier New&quot;">}</span></p>
+  </td>
+ </tr>
+ <tr style="">
+  <td style="width: 274.3pt; border-right: 1pt solid windowtext; border-width: medium 1pt 1pt; border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; -moz-border-top-colors: none; -moz-border-right-colors: none; -moz-border-bottom-colors: none; -moz-border-left-colors: none; -moz-border-image: none; padding: 0in 5.4pt;" valign="top" width="366">
+  <p class="MsoNormal"><b><span style="font-family:&quot;Courier New&quot;">OUTPUT:<o:p></o:p></span></b></p>
+  <p class="MsoNormal"><span class="SpellE"><span style="font-family:&quot;Courier New&quot;">loc</span></span><span style="font-family:&quot;Courier New&quot;"> = 0 working sum = 50<o:p></o:p></span></p>
+  <p class="MsoNormal"><span class="SpellE"><span style="font-family:&quot;Courier New&quot;">loc</span></span><span style="font-family:&quot;Courier New&quot;"> = 1 working sum = 90<o:p></o:p></span></p>
+  <p class="MsoNormal"><span class="SpellE"><span style="font-family:&quot;Courier New&quot;">loc</span></span><span style="font-family:&quot;Courier New&quot;"> = 2 working sum = 170<o:p></o:p></span></p>
+  <p class="MsoNormal"><span class="SpellE"><span style="font-family:&quot;Courier New&quot;">loc</span></span><span style="font-family:&quot;Courier New&quot;"> = 3 working sum = 230<o:p></o:p></span></p>
+  <p class="MsoNormal"><span class="SpellE"><span style="font-family:&quot;Courier New&quot;">loc</span></span><span style="font-family:&quot;Courier New&quot;"> = 4 working sum = 320<o:p></o:p></span></p>
+  <p class="MsoNormal"><span class="SpellE"><span style="font-family:&quot;Courier New&quot;">loc</span></span><span style="font-family:&quot;Courier New&quot;"> = 4 working sum = 230<o:p></o:p></span></p>
+  <p class="MsoNormal"><span class="SpellE"><span style="font-family:&quot;Courier New&quot;">loc</span></span><span style="font-family:&quot;Courier New&quot;"> = 3 working sum = 170<o:p></o:p></span></p>
+  <p class="MsoNormal"><span class="SpellE"><span style="font-family:&quot;Courier New&quot;">loc</span></span><span style="font-family:&quot;Courier New&quot;"> = 2 working sum = 90<o:p></o:p></span></p>
+  <p class="MsoNormal"><span class="SpellE"><span style="font-family:&quot;Courier New&quot;">loc</span></span><span style="font-family:&quot;Courier New&quot;"> = 1 working sum = 50<o:p></o:p></span></p>
+  <p class="MsoNormal"><span class="SpellE"><span style="font-family:&quot;Courier New&quot;">loc</span></span><span style="font-family:&quot;Courier New&quot;"> = 0 working sum = 0<o:p></o:p></span></p>
+  <p class="MsoNormal"><span style="font-family:&quot;Courier New&quot;">The final working
+  sum is 0<o:p></o:p></span></p>
+  <p class="MsoNormal"><span style="font-family:&quot;Courier New&quot;">The overall sum is
+  320<o:p></o:p></span></p>
+  </td>
+  <td style="width: 359.8pt; border-width: medium 1pt 1pt medium; border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; padding: 0in 5.4pt;" valign="top" width="480">
+  <p class="MsoNormal"><b><span style="font-family:&quot;Courier New&quot;">COMMENTS:<o:p></o:p></span></b></p>
+  <p class="MsoNormal"><span style="font-family:&quot;Courier New&quot;">Note how the
+  recursive calls terminate in the reverse order of their calls.<span style="mso-spacerun:yes">&nbsp; </span>Also note how the items are
+  "removed" from the working sum as the calls terminate.<o:p></o:p></span></p>
+  </td>
+ </tr>
+</tbody></table>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<h3><span style="mso-fareast-font-family:&quot;Times New Roman&quot;">Coding<o:p></o:p></span></h3>
+
+<p class="MsoNormal"><span style="font-family:&quot;Courier New&quot;"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Courier New&quot;"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal" style="margin-left:.25in;text-indent:-.25in;mso-list:l4 level1 lfo10;
+tab-stops:list .25in"><!--[if !supportLists]--><span style="mso-list:Ignore">1)<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><!--[endif]-->A
+method that is useful in the <span class="SpellE">LinkedBag</span> class is the method
+<o:p></o:p></p>
+
+<p class="MsoNormal" style="margin-left:.25in"><span class="GramE"><b style="mso-bidi-font-weight:normal"><span style="font-family:&quot;Courier New&quot;">private</span></b></span><b style="mso-bidi-font-weight:normal"><span style="font-family:&quot;Courier New&quot;">
+Node <span class="SpellE">getReferenceTo</span>(T <span class="SpellE">anEntry</span>)</span><span style="mso-spacerun:yes">&nbsp; </span><o:p></o:p></b></p>
+
+<p class="MsoNormal" style="margin-left:.25in">This method iterates through the
+linked list and returns a reference to the first node whose data matches <span class="SpellE"><b style="mso-bidi-font-weight:normal"><span style="font-family:
+&quot;Courier New&quot;">anEntry</span></b></span>.<span style="mso-spacerun:yes">&nbsp;
+</span>Complete this method below.<span style="mso-spacerun:yes">&nbsp;
+</span>Recall that the <span class="SpellE">LinkedBag</span> class has two
+instance variables:<o:p></o:p></p>
+
+<p class="MsoNormal" style="margin-left:.25in"><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="GramE"><b style="mso-bidi-font-weight:normal"><span style="font-family:
+&quot;Courier New&quot;">private</span></b></span><b style="mso-bidi-font-weight:normal"><span style="font-family:&quot;Courier New&quot;"> Node <span class="SpellE">firstNode</span>;<o:p></o:p></span></b></p>
+
+<p class="MsoNormal" style="margin-left:.25in"><b style="mso-bidi-font-weight:
+normal"><span style="font-family:&quot;Courier New&quot;"><span style="mso-tab-count:
+1">&nbsp; </span><span class="GramE">private</span> <span class="SpellE">int</span> <span class="SpellE">numberOfEntries</span><o:p></o:p></span></b></p>
+
+<p class="MsoNormal" style="margin-left:.25in">Recall that the Node class has two
+instance variables:<o:p></o:p></p>
+
+<p class="MsoNormal" style="margin-left:.25in"><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="GramE"><b style="mso-bidi-font-weight:normal"><span style="font-family:
+&quot;Courier New&quot;">private</span></b></span><b style="mso-bidi-font-weight:normal"><span style="font-family:&quot;Courier New&quot;"> T data;<o:p></o:p></span></b></p>
+
+<p class="MsoNormal" style="margin-left:.25in"><b style="mso-bidi-font-weight:
+normal"><span style="font-family:&quot;Courier New&quot;"><span style="mso-tab-count:
+1">&nbsp; </span><span class="GramE">private</span> Node next;<o:p></o:p></span></b></p>
+
+<p class="MsoNormal" style="margin-left:.25in"><span style="font-family:&quot;Courier New&quot;"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal" style="tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;"><span style="mso-tab-count:
+1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span class="GramE"><b style="mso-bidi-font-weight:normal"><span style="font-family:&quot;Courier New&quot;">private</span></b></span><b style="mso-bidi-font-weight:
+normal"><span style="font-family:&quot;Courier New&quot;"> Node <span class="SpellE">getReferenceTo</span>(T
+<span class="SpellE">anEntry</span>)<o:p></o:p></span></b></p>
+
+<p class="MsoNormal" style="tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt"><b style="mso-bidi-font-weight:normal"><span style="font-family:&quot;Courier New&quot;"><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>{<o:p></o:p></span></b></p>
+
+<p class="MsoNormal" style="tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt"><b style="mso-bidi-font-weight:normal"><span style="font-family:&quot;Courier New&quot;"><span style="mso-tab-count:2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="SpellE"><span class="GramE">boolean</span></span> found = false;<o:p></o:p></span></b></p>
+
+<p class="MsoNormal" style="tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt"><b style="mso-bidi-font-weight:normal"><span style="font-family:&quot;Courier New&quot;"><span style="mso-tab-count:2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Node <span class="SpellE">currentNode</span>
+= <span class="SpellE">firstNode</span>;<o:p></o:p></span></b></p>
+
+<p class="MsoNormal" style="tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt"><b style="mso-bidi-font-weight:normal"><span style="font-family:&quot;Courier New&quot;"><span style="mso-tab-count:2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><o:p></o:p></span></b></p>
+
+<p class="MsoNormal" style="tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt"><b style="mso-bidi-font-weight:normal"><span style="font-family:&quot;Courier New&quot;"><span style="mso-tab-count:2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="GramE">while</span>
+(!found &amp;&amp; (<span class="SpellE">currentNode</span> != null))<o:p></o:p></span></b></p>
+
+<p class="MsoNormal" style="tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt"><b style="mso-bidi-font-weight:normal"><span style="font-family:&quot;Courier New&quot;"><span style="mso-tab-count:2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>{<o:p></o:p></span></b></p>
+
+<p class="MsoNormal" style="tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt"><b style="mso-bidi-font-weight:normal"><span style="font-family:&quot;Courier New&quot;"><span style="mso-tab-count:3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="GramE">if</span> (<span class="SpellE">anEntry.equals</span>(<span class="SpellE">currentNode.data</span>))<o:p></o:p></span></b></p>
+
+<p class="MsoNormal" style="tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt"><b style="mso-bidi-font-weight:normal"><span style="font-family:&quot;Courier New&quot;"><span style="mso-tab-count:4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ </span><span class="GramE">found</span>
+= true;<o:p></o:p></span></b></p>
+
+<p class="MsoNormal" style="tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt"><b style="mso-bidi-font-weight:normal"><span style="font-family:&quot;Courier New&quot;"><span style="mso-tab-count:3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="GramE">else</span><o:p></o:p></span></b></p>
+
+<p class="MsoNormal" style="tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt"><b style="mso-bidi-font-weight:normal"><span style="font-family:&quot;Courier New&quot;"><span style="mso-tab-count:4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ </span><span class="SpellE"><span class="GramE">currentNode</span></span> = <span class="SpellE">currentNode.next</span>;<o:p></o:p></span></b></p>
+
+<p class="MsoNormal" style="tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt"><b style="mso-bidi-font-weight:normal"><span style="font-family:&quot;Courier New&quot;"><span style="mso-tab-count:2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>} // end while<o:p></o:p></span></b></p>
+
+<p class="MsoNormal" style="tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt"><b style="mso-bidi-font-weight:normal"><span style="font-family:&quot;Courier New&quot;"><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp; </span><o:p></o:p></span></b></p>
+
+<p class="MsoNormal" style="tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt"><b style="mso-bidi-font-weight:normal"><span style="font-family:&quot;Courier New&quot;"><span style="mso-tab-count:2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="GramE">return</span> <span class="SpellE">currentNode</span>;<o:p></o:p></span></b></p>
+
+<p class="MsoNormal" style="tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt"><b style="mso-bidi-font-weight:normal"><span style="font-family:&quot;Courier New&quot;"><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>} // end <span class="SpellE">getReferenceTo</span><o:p></o:p></span></b></p>
+
+<p class="MsoNormal" style="tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Courier New&quot;"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal" style="margin-left:.25in"><span style="font-family:&quot;Courier New&quot;"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal" style="margin-left:.25in;text-indent:-.25in;mso-list:l4 level1 lfo10;
+tab-stops:list .25in"><!--[if !supportLists]--><span style="mso-list:Ignore">2)<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><!--[endif]-->Consider
+the following partial class declarations:<span style="font-family:&quot;Courier New&quot;"><o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-left:.25in"><span style="font-family:&quot;Courier New&quot;"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal" style="margin-left:.25in"><span class="GramE"><span style="font-family:&quot;Courier New&quot;">public</span></span><span style="font-family:
+&quot;Courier New&quot;"> class Person implements Comparable&lt;Person&gt;<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-left:.25in"><span style="font-family:&quot;Courier New&quot;">{<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-left:.25in"><span style="font-family:&quot;Courier New&quot;"><span style="mso-tab-count:2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="GramE">private</span> String
+name;<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-left:.25in"><span style="font-family:&quot;Courier New&quot;"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal" style="margin-left:.25in"><span style="font-family:&quot;Courier New&quot;"><span style="mso-tab-count:2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="GramE">public</span> String <span class="SpellE">toString</span>()<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-left:.25in"><span style="font-family:&quot;Courier New&quot;"><span style="mso-tab-count:2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>{<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-left:.25in"><span style="font-family:&quot;Courier New&quot;"><span style="mso-tab-count:3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="GramE">return</span> new
+String("Name: " + name);<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Courier New&quot;"><span style="mso-tab-count:2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>}<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-left:.25in"><span style="font-family:&quot;Courier New&quot;"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal" style="margin-left:.25in"><span style="font-family:&quot;Courier New&quot;"><span style="mso-tab-count:2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>// more declarations deleted<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-left:.25in"><span style="font-family:&quot;Courier New&quot;">}<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-left:.25in"><span style="font-family:&quot;Courier New&quot;"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal" style="margin-left:.25in"><span class="GramE"><span style="font-family:&quot;Courier New&quot;">public</span></span><span style="font-family:
+&quot;Courier New&quot;"> class Worker extends Person<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-left:.25in"><span style="font-family:&quot;Courier New&quot;">{<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-left:.25in"><span style="font-family:&quot;Courier New&quot;"><span style="mso-tab-count:2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="GramE">private</span> double
+salary;<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-left:.25in"><span style="font-family:&quot;Courier New&quot;"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal" style="margin-left:.25in"><span style="font-family:&quot;Courier New&quot;"><span style="mso-tab-count:2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>// more declarations deleted<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-left:.25in"><span style="font-family:&quot;Courier New&quot;">}
+<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Courier New&quot;"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal" style="margin-left:.5in;text-indent:-.25in;mso-list:l3 level1 lfo12;
+tab-stops:list .5in"><!--[if !supportLists]--><span style="mso-list:Ignore">a)<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><!--[endif]-->Add
+the method(s) necessary for this class to implement the <span style="font-family:
+&quot;Courier New&quot;">Comparable&lt;Person&gt;</span> <span class="GramE">interface,</span>
+<b>assuming that the </b><b><span style="font-family:&quot;Courier New&quot;">name</span>
+data object</b> will be used as the basis of comparison.<span style="font-family:
+&quot;Courier New&quot;"> <o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-left:.25in"><span style="font-family:&quot;Courier New&quot;"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal" style="margin-left:.5in"><span class="GramE"><b style="mso-bidi-font-weight:normal"><span style="font-family:&quot;Courier New&quot;">public</span></b></span><b style="mso-bidi-font-weight:normal"><span style="font-family:&quot;Courier New&quot;"> <span class="SpellE">int</span> <span class="SpellE">compareTo</span>(Person <span class="SpellE">rhs</span>)<o:p></o:p></span></b></p>
+
+<p class="MsoNormal" style="margin-left:.5in"><b style="mso-bidi-font-weight:
+normal"><span style="font-family:&quot;Courier New&quot;">{<o:p></o:p></span></b></p>
+
+<p class="MsoNormal" style="margin-left:.5in"><b style="mso-bidi-font-weight:
+normal"><span style="font-family:&quot;Courier New&quot;"><span style="mso-tab-count:
+1">&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="GramE">return</span> (<span class="SpellE">name.compareTo</span>(rhs.name));<o:p></o:p></span></b></p>
+
+<p class="MsoNormal" style="margin-left:.5in"><b style="mso-bidi-font-weight:
+normal"><span style="font-family:&quot;Courier New&quot;">}<o:p></o:p></span></b></p>
+
+<p class="MsoNormal" style="margin-left:.25in"><span style="font-family:&quot;Courier New&quot;"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal" style="margin-left:.5in;text-indent:-.25in;mso-list:l3 level1 lfo12;
+tab-stops:list .5in"><!--[if !supportLists]--><span style="mso-list:Ignore">b)<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><!--[endif]-->Add
+the <span class="SpellE"><span class="GramE">toString</span></span><span class="GramE">(</span>) method for the Worker class such that it will return both
+the name and salary of the Worker in a single String.<span style="font-family:
+&quot;Courier New&quot;"><o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-left:.5in"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal" style="margin-left:.5in"><span class="GramE"><b style="mso-bidi-font-weight:normal"><span style="font-family:&quot;Courier New&quot;">public</span></b></span><b style="mso-bidi-font-weight:normal"><span style="font-family:&quot;Courier New&quot;">
+String <span class="SpellE">toString</span>()<o:p></o:p></span></b></p>
+
+<p class="MsoNormal" style="margin-left:.5in"><b style="mso-bidi-font-weight:
+normal"><span style="font-family:&quot;Courier New&quot;">{<o:p></o:p></span></b></p>
+
+<p class="MsoNormal" style="margin-left:.5in"><b style="mso-bidi-font-weight:
+normal"><span style="font-family:&quot;Courier New&quot;"><span style="mso-tab-count:
+1">&nbsp;&nbsp;&nbsp;&nbsp; </span>String <span class="SpellE">supString</span> = <span class="SpellE"><span class="GramE">super.toString</span></span><span class="GramE">(</span>);<o:p></o:p></span></b></p>
+
+<p class="MsoNormal" style="margin-left:.5in"><b style="mso-bidi-font-weight:
+normal"><span style="font-family:&quot;Courier New&quot;"><span style="mso-tab-count:
+1">&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="GramE">return</span> (<span class="SpellE">supString</span>
++ " Salary: " + salary);<o:p></o:p></span></b></p>
+
+<p class="MsoNormal" style="margin-left:.5in"><b style="mso-bidi-font-weight:
+normal"><span style="font-family:&quot;Courier New&quot;">}<o:p></o:p></span></b></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Courier New&quot;"><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp; </span><b><span style="mso-spacerun:yes">&nbsp;</span><o:p></o:p></b></span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Courier New&quot;"><o:p>&nbsp;</o:p></span></p>
+
+</div>
+
+
+
+
+</body></html>

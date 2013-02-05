@@ -1,0 +1,4 @@
+GET index.html HTTP/1.1
+gdet bullshit hfg
+hfh
+GET onion HTTP/1.1

@@ -1,0 +1,1 @@
+public T getEntry(int givenPosition){   T result = null;  // result to return      if ((givenPosition >= 1) && (givenPosition <= numberOfEntries))   {      assert !isEmpty();      result = getNodeAt(givenPosition).getData();   } // end if      return result;} // end getEntry

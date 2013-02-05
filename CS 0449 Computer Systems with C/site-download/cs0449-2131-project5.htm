@@ -1,0 +1,567 @@
+<html>
+
+<head>
+<meta name=Generator content="Microsoft Word 14 (filtered)">
+<title>CS 0449 – Project 5: Multi-Threaded Web Server</title>
+
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Cambria;
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Consolas;
+	panose-1:2 11 6 9 2 2 4 3 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+h1
+	{mso-style-link:"Heading 1 Char";
+	margin-top:24.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:14.0pt;
+	font-family:"Cambria","serif";}
+h1.CxSpFirst
+	{mso-style-link:"Heading 1 Char";
+	margin-top:24.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:14.0pt;
+	font-family:"Cambria","serif";}
+h1.CxSpMiddle
+	{mso-style-link:"Heading 1 Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:14.0pt;
+	font-family:"Cambria","serif";}
+h1.CxSpLast
+	{mso-style-link:"Heading 1 Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:14.0pt;
+	font-family:"Cambria","serif";}
+h2
+	{mso-style-link:"Heading 2 Char";
+	margin-top:10.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:13.0pt;
+	font-family:"Cambria","serif";}
+h3
+	{mso-style-link:"Heading 3 Char";
+	margin-top:10.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	line-height:112%;
+	font-size:11.0pt;
+	font-family:"Cambria","serif";}
+h4
+	{mso-style-link:"Heading 4 Char";
+	margin-top:10.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Cambria","serif";
+	font-style:italic;}
+h5
+	{mso-style-link:"Heading 5 Char";
+	margin-top:10.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Cambria","serif";
+	color:#7F7F7F;}
+h6
+	{mso-style-link:"Heading 6 Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	line-height:112%;
+	font-size:11.0pt;
+	font-family:"Cambria","serif";
+	color:#7F7F7F;
+	font-style:italic;}
+p.MsoHeading7, li.MsoHeading7, div.MsoHeading7
+	{mso-style-link:"Heading 7 Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Cambria","serif";
+	font-style:italic;}
+p.MsoHeading8, li.MsoHeading8, div.MsoHeading8
+	{mso-style-link:"Heading 8 Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Cambria","serif";}
+p.MsoHeading9, li.MsoHeading9, div.MsoHeading9
+	{mso-style-link:"Heading 9 Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Cambria","serif";
+	letter-spacing:.25pt;
+	font-style:italic;}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{mso-style-link:"Header Char";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{mso-style-link:"Footer Char";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+p.MsoTitle, li.MsoTitle, div.MsoTitle
+	{mso-style-link:"Title Char";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	border:none;
+	padding:0in;
+	font-size:26.0pt;
+	font-family:"Cambria","serif";
+	letter-spacing:.25pt;}
+p.MsoTitleCxSpFirst, li.MsoTitleCxSpFirst, div.MsoTitleCxSpFirst
+	{mso-style-link:"Title Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	border:none;
+	padding:0in;
+	font-size:26.0pt;
+	font-family:"Cambria","serif";
+	letter-spacing:.25pt;}
+p.MsoTitleCxSpMiddle, li.MsoTitleCxSpMiddle, div.MsoTitleCxSpMiddle
+	{mso-style-link:"Title Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	border:none;
+	padding:0in;
+	font-size:26.0pt;
+	font-family:"Cambria","serif";
+	letter-spacing:.25pt;}
+p.MsoTitleCxSpLast, li.MsoTitleCxSpLast, div.MsoTitleCxSpLast
+	{mso-style-link:"Title Char";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	border:none;
+	padding:0in;
+	font-size:26.0pt;
+	font-family:"Cambria","serif";
+	letter-spacing:.25pt;}
+p.MsoSubtitle, li.MsoSubtitle, div.MsoSubtitle
+	{mso-style-link:"Subtitle Char";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:30.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:12.0pt;
+	font-family:"Cambria","serif";
+	letter-spacing:.65pt;
+	font-style:italic;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;}
+em
+	{letter-spacing:.5pt;
+	border:none;
+	font-weight:bold;}
+p.MsoNoSpacing, li.MsoNoSpacing, div.MsoNoSpacing
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+p.MsoQuote, li.MsoQuote, div.MsoQuote
+	{mso-style-link:"Quote Char";
+	margin-top:10.0pt;
+	margin-right:.25in;
+	margin-bottom:0in;
+	margin-left:.25in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";
+	font-style:italic;}
+p.MsoIntenseQuote, li.MsoIntenseQuote, div.MsoIntenseQuote
+	{mso-style-link:"Intense Quote Char";
+	margin-top:10.0pt;
+	margin-right:.8in;
+	margin-bottom:14.0pt;
+	margin-left:.7in;
+	text-align:justify;
+	line-height:115%;
+	border:none;
+	padding:0in;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";
+	font-weight:bold;
+	font-style:italic;}
+span.MsoSubtleEmphasis
+	{font-style:italic;}
+span.MsoIntenseEmphasis
+	{font-weight:bold;}
+span.MsoSubtleReference
+	{font-variant:small-caps;}
+span.MsoIntenseReference
+	{font-variant:small-caps;
+	letter-spacing:.25pt;
+	text-decoration:underline;}
+span.MsoBookTitle
+	{font-variant:small-caps;
+	letter-spacing:.25pt;
+	font-style:italic;}
+p.MsoTocHeading, li.MsoTocHeading, div.MsoTocHeading
+	{margin-top:24.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:14.0pt;
+	font-family:"Cambria","serif";
+	font-weight:bold;}
+p.MsoTocHeadingCxSpFirst, li.MsoTocHeadingCxSpFirst, div.MsoTocHeadingCxSpFirst
+	{margin-top:24.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:14.0pt;
+	font-family:"Cambria","serif";
+	font-weight:bold;}
+p.MsoTocHeadingCxSpMiddle, li.MsoTocHeadingCxSpMiddle, div.MsoTocHeadingCxSpMiddle
+	{margin:0in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:14.0pt;
+	font-family:"Cambria","serif";
+	font-weight:bold;}
+p.MsoTocHeadingCxSpLast, li.MsoTocHeadingCxSpLast, div.MsoTocHeadingCxSpLast
+	{margin:0in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:14.0pt;
+	font-family:"Cambria","serif";
+	font-weight:bold;}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-link:"Heading 1";
+	font-family:"Cambria","serif";
+	font-weight:bold;}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-link:"Heading 2";
+	font-family:"Cambria","serif";
+	font-weight:bold;}
+span.Heading3Char
+	{mso-style-name:"Heading 3 Char";
+	mso-style-link:"Heading 3";
+	font-family:"Cambria","serif";
+	font-weight:bold;}
+span.Heading4Char
+	{mso-style-name:"Heading 4 Char";
+	mso-style-link:"Heading 4";
+	font-family:"Cambria","serif";
+	font-weight:bold;
+	font-style:italic;}
+span.Heading5Char
+	{mso-style-name:"Heading 5 Char";
+	mso-style-link:"Heading 5";
+	font-family:"Cambria","serif";
+	color:#7F7F7F;
+	font-weight:bold;}
+span.Heading6Char
+	{mso-style-name:"Heading 6 Char";
+	mso-style-link:"Heading 6";
+	font-family:"Cambria","serif";
+	color:#7F7F7F;
+	font-weight:bold;
+	font-style:italic;}
+span.Heading7Char
+	{mso-style-name:"Heading 7 Char";
+	mso-style-link:"Heading 7";
+	font-family:"Cambria","serif";
+	font-style:italic;}
+span.Heading8Char
+	{mso-style-name:"Heading 8 Char";
+	mso-style-link:"Heading 8";
+	font-family:"Cambria","serif";}
+span.Heading9Char
+	{mso-style-name:"Heading 9 Char";
+	mso-style-link:"Heading 9";
+	font-family:"Cambria","serif";
+	letter-spacing:.25pt;
+	font-style:italic;}
+span.TitleChar
+	{mso-style-name:"Title Char";
+	mso-style-link:Title;
+	font-family:"Cambria","serif";
+	letter-spacing:.25pt;}
+span.SubtitleChar
+	{mso-style-name:"Subtitle Char";
+	mso-style-link:Subtitle;
+	font-family:"Cambria","serif";
+	letter-spacing:.65pt;
+	font-style:italic;}
+span.QuoteChar
+	{mso-style-name:"Quote Char";
+	mso-style-link:Quote;
+	font-style:italic;}
+span.IntenseQuoteChar
+	{mso-style-name:"Intense Quote Char";
+	mso-style-link:"Intense Quote";
+	font-weight:bold;
+	font-style:italic;}
+span.HeaderChar
+	{mso-style-name:"Header Char";
+	mso-style-link:Header;}
+span.FooterChar
+	{mso-style-name:"Footer Char";
+	mso-style-link:Footer;}
+ /* Page Definitions */
+ @page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-US link=blue vlink=purple>
+
+<div class=WordSection1>
+
+<div style='border:none;border-bottom:solid windowtext 1.0pt;padding:0in 0in 1.0pt 0in'>
+
+<p class=MsoTitle><span style='font-size:22.0pt'>CS 0449 – Project 5:
+Multi-Threaded Web Server</span><br>
+<span style='font-size:18.0pt'>Due: Monday, December 10, 2012, at 11:59pm</span></p>
+
+</div>
+
+<h1>Description</h1>
+
+<p class=MsoNormal>Launching a browser and visiting a site on the internet
+involves at least two parties: the web server and the requestor (you). In this
+assignment, we will use pthreads and Berkley Sockets to implement a primitive
+web server, which talks HTTP to browsers over TCP/IP.</p>
+
+<p class=MsoNormal>HTTP (HyperText Transfer Protocol) is a simple, text-based communication
+protocol by which a web browser requests documents from a web server, and the
+web server replies. For instance, if you visit a web site such as <a
+href="http://www.example.com/test.html">http://www.example.com/test.html</a>, your
+browser does the following:</p>
+
+<p class=MsoListParagraphCxSpFirst style='text-indent:-.25in'>1.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Connect
+to the IP address of <a href="http://www.example.com/test.html">http://www.example.com/test.html</a>
+(obtained via DNS lookup) at port 80 (standard web server port)</p>
+
+<p class=MsoListParagraphCxSpLast style='text-indent:-.25in'><span
+style='font-family:Consolas'>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span>Sends the HTTP request message:<br>
+<br>
+<span style='font-family:Consolas'>GET /test.html HTTP/1.1<br>
+Host: <a href="http://www.example.com">www.example.com</a></span></p>
+
+<p class=MsoNormal>To which the server should reply (assuming it finds the
+file):</p>
+
+<p class=MsoNoSpacing style='margin-left:.5in'><span style='font-family:Consolas'>HTTP/1.1
+200 OK</span></p>
+
+<p class=MsoNoSpacing style='margin-left:.5in'><span style='font-family:Consolas'>Date:
+Thu, 15 Nov 2007 00:24:55 GMT</span></p>
+
+<p class=MsoNoSpacing style='margin-left:.5in'><span style='font-family:Consolas'>Content-Length:
+4892</span></p>
+
+<p class=MsoNoSpacing style='margin-left:.5in'><span style='font-family:Consolas'>Connection:
+close</span></p>
+
+<p class=MsoNoSpacing style='margin-left:.5in'><span style='font-family:Consolas'>Content-Type:
+text/html</span></p>
+
+<p class=MsoNoSpacing>&nbsp;</p>
+
+<p class=MsoNormal>Followed by a blank line and the contents of the file (which
+is 4892 bytes in this example). If the file is not found, it should return the
+infamous 404 error code like so:</p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:Consolas'>HTTP/1.1
+404 Not Found</span></p>
+
+<p class=MsoNormal>Note that this message should also be followed by a blank
+line.</p>
+
+<h1>Requirements</h1>
+
+<p class=MsoNormal>Your task is to use Berkley sockets to accept GET requests
+for HTML pages over HTTP. Your main thread should wait for a connection to
+occur, spawn off a worker thread, and have that thread communicate to the
+requestor according to the above protocol.</p>
+
+<p class=MsoNormal>When the thread is done, it should add the request for that
+particular webpage to a file named stats.txt. Note that this file needs to be
+exclusively accessed, so you’ll need to do some sort of synchronization.</p>
+
+<h1>Ports and Addresses</h1>
+
+<p class=MsoNormal>Port 80 is the normal web server port, but we can’t all use
+it at the same time. On the class website there is a list of usernames and your
+designated, personal port number. Please use this port and only this port. For
+an address of the machine, we will simply refer to it as localhost, or
+localhost’s reserved ip address: 127.0.0.1</p>
+
+<h1>Testing</h1>
+
+<p class=MsoNormal>thot.cs.pitt.edu is firewalled from the outside world,
+meaning that you will only be able to connect to your server from thot itself.
+In order to do this, your best bet for testing is to use a few programs:</p>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal>telnet localhost PORT</li>
+ <li class=MsoNormal>wget http://127.0.0.1:PORT/page.html </li>
+ <li class=MsoNormal>lynx <a href="http://127.0.0.1:PORT/page.html">http://127.0.0.1:PORT/page.html</a></li>
+</ul>
+
+<p class=MsoNormal><b>telnet</b> is a terminal emulator. You can connect
+directly to your server, and anything you type will be sent. This means you can
+manually create a GET request, and you will see the reply of the server in
+plain text on your screen.</p>
+
+<p class=MsoNormal><b>wget</b> downloads files from the internet.</p>
+
+<p class=MsoNormal><b>lynx</b> is a text-mode web browser. No graphics, no
+tables, and minimal font support, but it’s a real, working browser.</p>
+
+<p class=MsoNormal>My advice is to work with two SSH windows open, one with
+your server printing error messages to stderr, and one that you are using one
+of the above programs to request pages.</p>
+
+<h1 style='line-height:150%'>Submission</h1>
+
+<p class=MsoNormal>You need to submit:</p>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+     150%'>Your well-commented program’s source</li>
+</ul>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'>&nbsp;</p>
+
+<p class=MsoNormal>Make a tar.gz file as in the first assignment, named <span
+style='font-size:10.0pt;line-height:115%;font-family:Consolas'>USERNAME-project5.tar.gz</span></p>
+
+<p class=MsoNormal><b><span style='color:red'>Copy your archive to the
+appropriate directory for your lecture time:</span></b></p>
+
+<p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+style='font-size:12.0pt;font-family:Consolas'>~jrmst106/submit/449/11am</span></p>
+
+<p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+style='font-size:12.0pt;font-family:Consolas'>~jrmst106/submit/449/4pm</span></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+</div>
+
+</body>
+
+</html>

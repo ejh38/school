@@ -1,0 +1,1 @@
+if (balance >= 0)	balance = balance + (INTEREST_RATE * balance) / 12;else	balance = balance - OVERDRAWN_PENALTY;

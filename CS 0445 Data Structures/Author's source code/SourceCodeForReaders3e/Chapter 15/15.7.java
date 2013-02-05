@@ -1,0 +1,1 @@
+Iterator<String> nameIterator = new SeparateIterator<String>(nameList);while (nameIterator.hasNext())   System.out.println(nameIterator.next());

@@ -1,0 +1,13 @@
+# 3 spheres, one red, one white, one blue
+# object_type (tx ty tz 1) (sx sy sz 1) (rx ry rz 1) (mat_shiny) (mat_emission) (mat_amb) (mat_diffuse) (mat_specular)
+3 (-5 0 0) (1 2 1 1) (0 0 0 1) (5) (0 0 0 0) (1 0 0 1) (1 0 0 1) (0.2 0.2 0.2 1)
+3 (0 0 0) (2 2 2 1) (0 0 0 1) (5) (0 0 0 0) (1 1 1 1) (1 1 1 1) (0.2 0.2 0.2 1)
+3 (5 0 0) (1 1 2 1) (0 0 0 1) (5) (0 0 0 0) (0 1 1 1) (1 1 1 1) (0.2 0.2 0.2 1)
+# lights
+# l (amb) (diff) (spec) (pos) [optional (dir) (angle)]
+# outer lights are white, center is blue
+l (0 0 0) (0.6 0.6 0.6) (0.4 0.4 0.4) (-5, 0, 5)
+l (0.2 0.2 0.2) (0 0 0.6) (0 0 0.4) (0, 0, 5)
+l (0 0 0) (0.6 0.6 0.6) (0.4 0.4 0.4) (5, 0, 5)
+# camera
+c (0 0 16 1) (0 0 -1 1) (0 1 0 0)

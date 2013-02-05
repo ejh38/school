@@ -1,0 +1,1 @@
+private void makeRoom(int newPosition){   int newIndex = newPosition - 1;   int lastIndex = numberOfEntries - 1;   for (int index = lastIndex; index >= newIndex; index--)      list[index + 1] = list[index];}  // end makeRoom

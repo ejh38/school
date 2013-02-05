@@ -1,0 +1,41 @@
+0 added to buffer
+2 added to buffer
+4 added to buffer
+6 added to buffer
+8 added to buffer
+No room for 10
+The buffer has 0 items
+The buffer is empty
+Buffer restored
+0 retrieved from buffer
+2 retrieved from buffer
+4 retrieved from buffer
+6 retrieved from buffer
+8 retrieved from buffer
+Nothing in the buffer
+Producing Item 1
+Producing Item 2
+Consuming Item 1
+Producing Item 3
+Consuming Item 2
+Producing Item 4
+Consuming Item 3
+Producing Item 5
+Consuming Item 4
+Producing Item 6
+Consuming Item 5
+Producing Item 7
+Consuming Item 6
+Producing Item 8
+Consuming Item 7
+Producing Item 9
+Consuming Item 8
+There are 1 items in the buffer
+Here is the buffer: 
+0 1 2 3 4 5 6 7 
+Here is the buffer: 
+7 6 5 4 3 2 1 0 
+Here is the buffer: 
+4 3 2 1 0 8 
+Here is the buffer: 
+8 0 1 2 3 4 

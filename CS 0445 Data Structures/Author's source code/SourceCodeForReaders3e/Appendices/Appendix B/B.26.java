@@ -1,0 +1,1 @@
+public Name setName(String firstName, String lastName){   setFirst(firstName);   setLast(lastName);     return this;} // end setName

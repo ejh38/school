@@ -1,0 +1,1 @@
+public VectorList(){   list = new Vector<T>();} // end default constructor/* ALTERNATE DEFINITIONpublic VectorList(){   this(DEFAULT_INITIAL_CAPACITY);} // end default constructor*/public VectorList(int initialSize){   list = new Vector<T>(initialSize);} // end constructor

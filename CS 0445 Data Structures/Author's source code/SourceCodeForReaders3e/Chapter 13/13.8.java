@@ -1,0 +1,1 @@
+public boolean add(int newPosition, T newEntry){   boolean isSuccessful = true;   if ((newPosition >= 1) && (newPosition <= numberOfEntries + 1))    {	      ensureCapacity();      makeRoom(newPosition);				      list[newPosition - 1] = newEntry;      numberOfEntries++;   }   else      isSuccessful = false;   return isSuccessful;} // end add

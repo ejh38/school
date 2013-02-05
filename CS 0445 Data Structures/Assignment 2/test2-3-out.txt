@@ -1,0 +1,32 @@
+Receiving 10 crates of bananas
+
+Lickety Splits Financial Statement:
+	Most Recent Shipment: 
+		Crates: 10
+		Banana cost: 20.0
+		Labor (moves): 28
+		Labor cost: 28.0
+		------------------------
+		Total: 48.0
+
+	Overall Expenses: 
+		Crates: 10
+		Banana cost: 20.0
+		Labor (moves): 28
+		Labor cost: 28.0
+		------------------------
+		Total cost: 48.0
+
+Stack crates (top to bottom): 
+Expires:1  Start Count:5  Remain:5  Cost:2.0
+Expires:2  Start Count:5  Remain:5  Cost:2.0
+Expires:3  Start Count:5  Remain:5  Cost:2.0
+Expires:4  Start Count:5  Remain:5  Cost:2.0
+Expires:5  Start Count:5  Remain:5  Cost:2.0
+Expires:6  Start Count:5  Remain:5  Cost:2.0
+Expires:7  Start Count:5  Remain:5  Cost:2.0
+Expires:8  Start Count:5  Remain:5  Cost:2.0
+Expires:9  Start Count:5  Remain:5  Cost:2.0
+Expires:10  Start Count:5  Remain:5  Cost:2.0
+
+End of Simulation

@@ -1,0 +1,1 @@
+//  Version 1int n, product;for (n = 1, product = 1; n <= 10; n++)	product = product * n;//  Version 2for (n = 1, product = 1; n <= 10; product = product * n, n++);//  Version 3for (n = 1, product = 1; n <= 10; product = product * n, n++){}

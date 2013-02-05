@@ -1,0 +1,1 @@
+public boolean isEmpty(){  return frontIndex == ((backIndex + 1) % queue.length);} // end isEmpty

@@ -1,0 +1,1 @@
+String fileName = "data.bin";DataOutputStream toFile = null;try{   FileOutputStream fos = new FileOutputStream(fileName);   toFile = new DataOutputStream(fos);}catch (FileNotFoundException e){   System.out.println("Cannot find, create, or open the file " + fileName);   System.out.println(e.getMessage());   System.exit(0);}

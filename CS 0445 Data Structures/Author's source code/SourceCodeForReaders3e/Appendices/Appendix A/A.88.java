@@ -1,0 +1,1 @@
+public static double[] incrementArrayBy2(double[] array){   double[] result = new double[array.length];   for (int index = 0; index < array.length; index++)      result[index] = array[index] + 2;   return result;} // end incrementArrayBy2

@@ -1,0 +1,1 @@
+   public void push(T newEntry)   {      ensureCapacity();      topIndex++;      stack[topIndex] = newEntry;   } // end push   private void ensureCapacity()   {      if (topIndex == stack.length - 1) // if array is full,      // double size of array      stack = Arrays.copyOf(stack, 2 * stack.length);   } // end ensureCapacity

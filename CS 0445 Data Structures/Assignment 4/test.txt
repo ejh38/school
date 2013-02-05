@@ -1,0 +1,6 @@
+Algorithm : Quick
+Array Size: 30
+Order: Random
+Number of trials: 10
+Average Time: 1.082E-4
+

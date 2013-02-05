@@ -1,0 +1,2098 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head > 
+
+
+<script type="text/javascript">
+try {
+    var agent = navigator.userAgent;
+    if(/mobile=false/.test(window.location.href) || /mobile=false/.test(document.cookie)) {
+        var expire = new Date();
+        expire.setTime(new Date().getTime() + 3600000*24*5);
+        document.cookie = "mobile=false;expires="+expire.toGMTString()+";domain=.theonion.com;path=/;";
+    }
+    else {
+        if(agent && agent !== undefined) {
+            if(/blackberry|iemobile|symbian/i.test(agent) && !/mobile=/.test(window.location.href)) {
+                var url = window.location.href.replace("www","mobile").replace("test","testmobile").split("?");
+                window.location = url[0] + "?mobile=true";
+            }
+        }
+    }
+} catch(err) {
+}
+</script>
+
+
+
+
+
+
+    <script type="text/javascript">
+        var version_timestamp = 'Mon, 10 Dec 2012 01:36:07 +0000';
+    
+        var site_name = "onion";
+        var afns_ua = "UA-223393-1";
+        var afns_ua_bigboy = "UA-30070605-1";
+        var afns_ua_master = "UA-30070605-9";   
+        
+        /* set media base_url */
+        var afns_static_url = "/static/";
+        var ignored_organic_keywords = toList("[&#39;the onion&#39;, &#39;onion&#39;, &#39;theonion&#39;, &#39;onion news&#39;, &#39;the onion news&#39;, &#39;theonion.com&#39;, &#39;http://www.theonion.com&#39;, &#39;www.theonion.com&#39;, &#39;onion.com&#39;, &#39;the onion.com&#39;, &#39;the onio&#39;, &#39;http://theonion.com/&#39;]");
+        
+        function toList(django_str){
+            django_str = django_str.replace(/&#39;/g,'\"');
+            return JSON.parse(django_str);
+        }
+    </script>   
+
+    
+    <link rel="stylesheet" type="text/css" href="/static/core/css/onion.6032c96f2214564cc71dc381d2c777ae.css" />
+    
+
+    
+    
+
+    <!--[if IE 7]>
+    <link rel="stylesheet" href="/static/onion/css/IE7.css" />
+    <![endif]-->
+    <!--[if IE 6]>
+    <link rel="stylesheet" href="/static/onion/css/IE6.css" />
+    <![endif]-->
+
+    <meta name="google-site-verification" content="jt7K0WtFb1R2MZllwyZxvKbOvIm8TwoRxDAgjjOGuf4" />
+
+    
+    <script type="text/javascript" src="/static/core/js/onion.2fdb201d18d800ae417f93815dfd1ec6.js"></script>
+    
+
+    
+    
+
+    <script type="text/javascript" src="http://partner.googleadservices.com/gampad/google_service.js">
+</script>
+
+<script type="text/javascript">
+try{
+  GS_googleAddAdSenseService("ca-pub-3411085762582526");
+  GS_googleEnableAllServices();
+}catch(e){}
+</script>
+
+<script type="text/javascript">
+  GA_googleAddSlot("ca-pub-3411085762582526", "wallpaper_masterslot");
+  GA_googleAddSlot("ca-pub-3411085762582526", "header_masterslot");
+  GA_googleAddSlot("ca-pub-3411085762582526", "premercial_masterslot");
+  GA_googleAddSlot("ca-pub-3411085762582526", "opa_pushdown");
+  GA_googleAddSlot("ca-pub-3411085762582526", "640x150_homepage");
+  GA_googleAddSlot("ca-pub-3411085762582526", "300x250_primary");
+  GA_googleAddSlot("ca-pub-3411085762582526", "sidebar_promobar_top");
+  GA_googleAddSlot("ca-pub-3411085762582526", "sidebar_promobar_middle");
+  GA_googleAddSlot("ca-pub-3411085762582526", "300x150_store");
+  GA_googleAddSlot("ca-pub-3411085762582526", "300x130_feature");
+  GA_googleAddSlot("ca-pub-3411085762582526", "300x250_secondary");
+  GA_googleAddSlot("ca-pub-3411085762582526", "300x150_personals");
+
+  GA_googleAddAttr("site", "theonion");
+  GA_googleAddAttr("dfp_site", "theonion");
+  GA_googleAddAttr("pagetype", "frontpage");
+  GA_googleAddAttr("dfp_pagetype", "home");
+  GA_googleAddAttr("dfp_adchannel", "home");
+  GA_googleAddAttr("dfp_channel", "home");
+  if (typeof(afns_video_ad) != "undefined" && afns_video_ad.gam_attribute) {
+    GA_googleAddAttr("video_target", afns_video_ad.gam_attribute);
+  }
+GA_googleUseSyncSRARendering();
+GA_googleFetchAds();
+</script>
+
+
+
+
+
+
+    
+     
+    
+    
+
+    
+
+<meta http-equiv="refresh" content="1800; url=/?ref=auto">
+
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta property="fb:page_id" content="20950654496" />
+    <meta property="fb:app_id" content="199226029179" />
+    <title>The Onion - America's Finest News Source</title>
+
+    <!-- CHARTBEAT start point -->
+    <script type="text/javascript">var _sf_startpt=(new Date()).getTime()</script>
+
+
+    
+    
+
+    
+
+    
+    
+
+    
+    
+
+
+    
+    <link rel="canonical" href="http://www.theonion.com" />
+    
+
+    <link rel="alternate" type="application/rss+xml" title="The Onion: Daily News" href="http://feeds.theonion.com/theonion/daily" />
+    <link rel="icon" type="image/png" href="/static/onion/img/favicon.ico" />
+
+    
+    <meta name="title" content="" />
+    <meta name="description" content="The Onion, America's Finest News Source, is an award-winning publication covering world, national, and * local issues. It is updated daily online and distributed weekly in select American cities." />
+    <meta name="copyright" content="2012" />
+    <meta name="keywords" content="" />
+    <meta name="site" content="theonion.com" />
+    
+
+    
+    
+
+    
+    
+
+    
+
+
+
+
+
+    
+<script type="text/javascript">
+var dfp_pagetype = "home";
+var dfp_channel = "home";
+var dfp_adchannel = "home";
+var vpv_levels = ["home"];
+</script>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', afns_ua]);
+
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+
+// console.log("DFP channel: " + dfp_channel + " DFP type:" + dfp_pagetype + " DFP type:" + dfp_articletype);
+
+try {
+    _gaq.push(['_setCustomVar', 1, "dfp_adchannel", dfp_adchannel, 3]);
+}
+catch(err) {
+    _gaq.push(['_setCustomVar', 1, "dfp_adchannel", 'None', 3]);
+}
+
+try {
+    _gaq.push(['_setCustomVar', 2, "dfp_articletype", dfp_articletype, 3]);
+}
+catch(err) {}
+
+try {
+    _gaq.push(['_setCustomVar', 3, "dfp_channel", dfp_channel, 3]);
+}
+catch(err) {}
+
+try {
+    _gaq.push(['_setCustomVar', 4, "dfp_pagetype", dfp_pagetype, 3]);
+}
+catch(err) { }
+
+try {
+    var isPaid = document.referrer.indexOf('paid.outbrain.com') > -1 ? "yes" : "no";
+    _gaq.push(['_setCustomVar', 5, "paid_outbrain", isPaid, 1]);
+} catch(er) { }
+
+_gaq.push(['_trackPageview']);
+analytics.trackPageview();
+
+</script>
+
+
+</head>
+<body id="" class="site_onion ga_section home"  name="home:default">
+    
+
+
+
+
+
+
+
+
+<script type="text/javascript">GA_googleFillSlot("wallpaper_masterslot");</script>
+
+
+<div id="topwrapper">
+
+
+<div class="top-adspace">
+<div class="top promo">
+  <script type="text/javascript">GA_googleFillSlot("header_masterslot");</script>
+</div>
+</div>
+
+<div class="masthead">
+    <div class="connect">
+        <ul class="links ga_section" name="topnav:empire-left" >
+            <li class="avclub" >
+            <a href="http://www.avclub.com/" target="_blank">
+            <div id="avclub_logo">
+            <!--[if lt IE 9]>
+<img height="12px" 
+              src="/static/onion/img/sharetools/av-club.png" 
+              alt="A.V. Club" style="background-color:whiteSmoke;"></img>
+<![endif]--></div>
+
+            </a>
+          </li>
+          <li class="store">
+            <a href="http://store.theonion.com/" target="_blank">
+              Store
+            </a>
+          </li>
+          <li class="personals">
+            <a href="http://personals.theonion.com/go/p8243" target="_blank">
+              Dating
+            </a>
+          </li>
+          <li class="">
+            <a href="http://www.theonion.com/encyclopedia/" target="_blank">
+              Onion Encyclopedia
+            </a>
+          </li>
+          <li class="porkin">
+            <a href="http://www.youtube.com/theonion " target="_blank">
+              YouTube: Porkin' Across America
+            </a>
+          </li>
+        </ul>
+        <ul class="social ga_section" name="topnav:empire-right">
+            <li class="facebook"><a href="http://www.facebook.com/theonion" target="_blank">
+                <i class="icon-facebook"></i>
+            </a></li>
+            <li class="twitter"><a href="http://twitter.com/#!/TheOnion" target="_blank">
+                <i class="icon-twitter"></i>
+            </a></li>
+            <li class="plus"><a href="https://plus.google.com/105559336484270406543/" target="_blank">
+                <i class="icon-google-plus"></i>
+            </a></li>
+            <li class="youtube">
+            <a href="http://www.youtube.com/theonion" target="_blank">
+              <img height="13px" src="/static/onion/img/sharetools/youtube.png" alt="YouTube"></img>
+            </a>
+          </li>
+        </ul>
+    </div>
+    <div class="logo">
+        <div class="left-content ga_section" name="topnav:weather">
+            
+
+<div class="nav-weather">
+    <div class="image"><img src="/static/onion/img/icons/weather/rain.png" /></div>  
+	<p class="temp"></p> 
+    <div class="entry">
+        <p class="teaser">So rainy you&#39;re probably moving today</p>
+    	<p class="go"><a href="/section/weather">Onion Weather Center</a></p>
+    </div>
+</div>
+
+        </div>
+        <div class="center-content ga_section" name="topnav:home">
+            
+            <a href="/"><img src="/static//onion/img/logo.png"></img></a>
+            
+        </div>
+        
+        <div class="right-content ga_section" name="topnav:search">
+            <div class="search">
+                <form action="/search/">
+                    <input type="text" name="q" value="Search" class="query" onclick="this.value=''; return false;"></input>
+                    <input type="submit" value="" class="button"></submit>
+                </form>
+            </div>
+        </div>
+    
+    </div>
+    <div class="navbar ga_section" name="topnav:sections">
+        <ul>
+        <li class="major home">
+            <a href="/">Home</a>
+        </li>
+        <li class="major video">
+            <a href="/articles/latest/video/">Video</a>
+        </li>
+        <li class="politics">
+            <a href="/section/politics/">Politics</a>
+        </li>
+        <li class="sports">
+            <a href="/section/sports/">Sports</a>
+        </li>
+        <li class="entertainment">
+            <a href="/section/entertainment/">Entertainment</a>
+        </li>
+        <li class="news-beat">
+            <a href="/section/news-beat/">News Beat</a>
+        </li>
+        <li class="economy">
+            <a href="/section/business/">Business</a>
+        </li>
+        <li class="technology">
+            <a href="/section/science-technology/">Sci/Tech</a>
+        </li>
+        <li class="local last">
+            <a href="/section/local/">Local</a>
+        </li>
+        
+    </div>
+</div>
+    
+    
+</div>
+
+
+
+
+
+<!--WRAPPER-->
+<div id="wrapper">
+
+<script type="text/javascript">GA_googleFillSlot("premercial_masterslot");</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="topcrawl">
+  
+  <ul class="trend">
+    <li class=""><h5>Latest News <i class="icon-play"></i></h5></li>
+    <li class="title ga_section" name="latest-news">
+      
+<!-- todays topics top crawl -->
+<ul id="todays-topics-top-crawl" data-vr-zone="In The News">
+  
+  <li data-vr-contentbox="" class="topic-item ">
+    <span><a href="/video/apple-promises-to-fix-glitches-in-map-software-by,30616/">
+    
+        Apple Maps
+    
+    </a></span>
+  </li>
+  
+  <li data-vr-contentbox="" class="topic-item ">
+    <span><a href="/articles/15yearold-duchess-of-mccomb-al-announces-pregnancy,30615/">
+    
+        Pregnant Duchess
+    
+    </a></span>
+  </li>
+  
+  <li data-vr-contentbox="" class="topic-item ">
+    <span><a href="/articles/hardees-introduces-shame-curtains-for-customers-to,30610/">
+    
+        Hardee&#39;s Shame Curtains
+    
+    </a></span>
+  </li>
+  
+  <li data-vr-contentbox="" class="topic-item ">
+    <span><a href="/video/shocking-report-says-even-the-smallest-horse-bite,30605/">
+    
+        Harmful Horse Bites
+    
+    </a></span>
+  </li>
+  
+  <li data-vr-contentbox="" class="topic-item ">
+    <span><a href="/articles/congress-arrested-on-manslaughter-charges,30588/">
+    
+        Congress Arrested
+    
+    </a></span>
+  </li>
+  
+  <li data-vr-contentbox="" class="topic-item last ">
+    <span><a href="/articles/boy-meets-world-spin-off-to-focus-on-difficulties,30538/">
+    
+        Boy Meets World
+    
+    </a></span>
+  </li>
+  
+</ul>
+
+<script type="text/javascript">
+    if( $('#todays-topics-top-crawl li.breaking-item').length > 0 ){
+        $('#topcrawl').addClass('breaking-mode');
+        $('#topcrawl li.breaking').text('Breaking News');
+    }
+</script>
+    </li>
+  </ul>
+
+  
+  <script type="text/javascript">GA_googleFillSlot("opa_pushdown");</script>
+</div>
+
+
+
+
+
+
+
+
+    <!--MAIN-->
+    <div id="main">
+    
+    <div id="special_channel_banner"></div>
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+        <div id="content_wrapper">
+            <!--CONTENT-->
+            <div id="content">
+                
+                
+            
+<div class="leftbar">
+ <div class="entry ga_section" name="home:top-story-1" data-vr-zone="Top Story 1">
+ 
+
+
+
+      <div data-vr-contentbox=""> 
+      
+      
+      
+      <p class="image">
+        
+        <a href="/articles/tim-tebow-puts-empty-gatorade-cups-in-wildcat-form,30658/">
+
+  <img src="http://o.onionstatic.com/images/18/18968/16x9/385.jpg?9768" class="" width="385" height="216" alt="" title="" />
+</a>
+            
+      </p>
+      
+        <p class="title">
+          <a href="/articles/tim-tebow-puts-empty-gatorade-cups-in-wildcat-form,30658/">Tim Tebow Puts Empty Gatorade Cups In Wildcat Formation On Jets Bench</a>
+          
+        </p>
+    
+      
+      
+      <p class="teaser">
+        JACKSONVILLE, FL&mdash;Jets quarterback Tim Tebow reportedly sat alone during Sunday&rsquo;s game against the Jacksonville Jaguars, arranging empty Gatorade cups in the wildcat formation and running plays across the bench. <strong><a href="/articles/tim-tebow-puts-empty-gatorade-cups-in-wildcat-form,30658/">more&nbsp;&raquo;</a></strong>
+      </p>
+      </div>
+
+ </div>
+ <div class="entry ga_section" name="home:top-story-2" data-vr-zone="Top Story 2">
+ 
+
+
+
+      <div data-vr-contentbox=""> 
+      
+<div class="video_banner" style="background-color:#e4e4e4; width:100%">
+  <img src="/static//onion/img/banners/onion_review_topstory_hat.png">
+</div>
+
+      
+      <p class="image">
+        
+        <iframe name="onsite" src="/video_embed/?id=30651&group=onn_homepage&source=home&autoplay=false" id="30651" width="385" height="217"  webkitallowfullscreen mozallowfullscreen style="border: none;"></iframe>
+            
+      </p>
+      
+        <p class="title">
+          <a href="/video/area-man-to-make-greatest-contribution-to-world-in,30651/">Oscar Mayer Unveils New Weiner Drone</a>
+          
+        </p>
+    
+      
+      
+      <p class="teaser">
+        The 15-year-old Duchess of McComb, Alabama announces her pregnancy, a 38-year-old little boy posts a picture of a fast car he likes on Facebook, and the nation's hardass cops finally find time to play games. <strong><a href="/video/area-man-to-make-greatest-contribution-to-world-in,30651/">more&nbsp;&raquo;</a></strong>
+      </p>
+      </div>
+
+ </div>
+<ol data-vr-zone="Recent News Continued">
+
+  <li class="ga_section" name="home:recentnews-continued:1">
+  
+
+
+<div data-vr-contentbox="" class="news ">
+    <span class="title">
+        <a href="/articles/obama-paranoid-government-coming-for-his-guns,30638/">
+            Obama Paranoid Government Coming For His Guns
+        </a>
+        
+    </span>
+    
+    
+</div>
+
+
+
+  </li>
+
+  <li class="ga_section" name="home:recentnews-continued:2">
+  
+
+
+<div data-vr-contentbox="" class="news-in-brief ">
+    <span class="title">
+        <a href="/articles/sitcom-characters-still-in-shock-after-christmas-e,30636/">
+            Sitcom Characters Still In Shock After Christmas Episode Proves Existence Of Santa Claus
+        </a>
+        
+    </span>
+    
+    
+</div>
+
+
+
+  </li>
+
+  <li class="ga_section" name="home:recentnews-continued:3">
+  
+
+
+<div data-vr-contentbox="" class="news-in-brief ">
+    <span class="title">
+        <a href="/articles/man-freely-smoking-pot-in-washington-literally-has,30635/">
+            Man Freely Smoking Pot in Washington Literally Has No Issue He Feels Strongly About Anymore
+        </a>
+        
+    </span>
+    
+    
+</div>
+
+
+
+  </li>
+
+  <li class="ga_section" name="home:recentnews-continued:4">
+  
+
+
+<div data-vr-contentbox="" class="news-with-video ">
+    <span class="title">
+        <a href="/articles/38yearold-little-boy-posts-picture-of-fast-car-he,30631/">
+            38-Year-Old Little Boy Posts Picture Of Fast Car He Likes To Facebook
+        </a>
+        
+    </span>
+    
+<span class="icon"><i class="icon-facetime-video"></i></span>
+
+    
+</div>
+
+
+
+  </li>
+
+  <li class="ga_section" name="home:recentnews-continued:5">
+  
+
+
+<div data-vr-contentbox="" class="news-in-brief ">
+    <span class="title">
+        <a href="/articles/relationship-definitely-hurtling-toward-something,30630/">
+            Relationship Definitely Hurtling Toward Something
+        </a>
+        
+    </span>
+    
+    
+</div>
+
+
+
+  </li>
+
+  <li class="ga_section" name="home:recentnews-continued:6">
+  
+
+
+<div data-vr-contentbox="" class="news ">
+    <span class="title">
+        <a href="/articles/15yearold-duchess-of-mccomb-al-announces-pregnancy,30615/">
+            15-Year-Old Duchess Of McComb, AL Announces Pregnancy
+        </a>
+        
+    </span>
+    
+    
+</div>
+
+
+
+  </li>
+
+  <li class="ga_section" name="home:recentnews-continued:7">
+  
+
+
+<div data-vr-contentbox="" class="news-in-brief ">
+    <span class="title">
+        <a href="/articles/pope-tweets-picture-of-self-with-god,30624/">
+            Pope Tweets Picture Of Self With God
+        </a>
+        
+    </span>
+    
+    
+</div>
+
+
+
+  </li>
+
+  <li class="ga_section" name="home:recentnews-continued:8">
+  
+
+
+<div data-vr-contentbox="" class="news-with-video ">
+    <span class="title">
+        <a href="/articles/nations-hardass-cops-finally-find-time-to-play-gam,30621/">
+            Nation's Hardass Cops Finally Find Time To Play Games
+        </a>
+        
+    </span>
+    
+<span class="icon"><i class="icon-facetime-video"></i></span>
+
+    
+</div>
+
+
+
+  </li>
+
+  <li class="ga_section" name="home:recentnews-continued:9">
+  
+
+
+<div data-vr-contentbox="" class="news ">
+    <span class="title">
+        <a href="/articles/department-of-transportation-announces-new-highway,30619/">
+            Department Of Transportation Announces New Highway Concert Series
+        </a>
+        
+    </span>
+    
+    
+</div>
+
+
+
+  </li>
+
+</ol>
+ <div id="osn" data-vr-zone="Onion Sports Network" class="ga_section" name="home:osn-box">
+    <div class="logo"><img src="/static//onion/img/osn/osn_logo.png"></img></div>
+    <ol>
+    
+
+
+<li data-vr-contentbox="" class="imageitem sports-news-in-brief ">
+<a href="/articles/eagles-concerned-by-nick-foles-asking-about-best-w,30646/">
+<div class="image">
+
+
+  <img src="http://o.onionstatic.com/images/18/18961/16x9/343.jpg?4175" class="" width="343" height="192" alt="" title="" />
+
+</div>
+    <span class="title">
+        
+            Eagles Concerned By Nick Foles Asking About Best Ways To Tear ACL 
+        
+    </span></a>
+    
+    
+    
+</li>
+    
+        <li>
+
+
+<div data-vr-contentbox="" class="sports-news-in-brief ">
+    <span class="title">
+        <a href="/articles/kobe-bryant-blasts-teammates-for-failure-to-critic,30637/">
+            Kobe Bryant Blasts Teammates For Failure To Criticize Pau Gasol
+        </a>
+        
+    </span>
+    
+    
+</div>
+
+
+</li>
+    
+        <li>
+
+
+<div data-vr-contentbox="" class="sports-news-in-brief ">
+    <span class="title">
+        <a href="/articles/charlie-batch-totally-embarrassed-after-almost-los,30634/">
+            Charlie Batch Totally Embarrassed After Almost Losing To Joe Flacco
+        </a>
+        
+    </span>
+    
+    
+</div>
+
+
+</li>
+    
+    </ol>
+ </div>
+</div>
+
+<div class="bikelane">
+<div data-vr-zone="Top Bike Lane Slot" class="ga_section" name="home:bike-lane-top">
+
+
+
+<li data-vr-contentbox="" class="imageitem news-in-photos ">
+
+<a href="/articles/supreme-court-to-hear-trial-determining-whether-hu,30652/">
+<div class="image">
+ 
+
+
+  <img src="http://o.onionstatic.com/images/18/18965/16x9/200.jpg?1485" class="" width="200" height="112" alt="" title="" />
+
+</div>
+    <span class="title">
+        
+            Supreme Court To Hear Cases Determining Whether Human Beings Deserve Equal Rights 
+        
+    </span></a>
+    
+    <span class="type">
+    News in Photos
+    </span>
+
+</li>
+</div>
+<br>
+<h5>Recent News</h5>
+<ol data-vr-zone="Recent News" >
+
+  <li class="ga_section" name="home:recent-news:1">
+  
+
+
+<div data-vr-contentbox="" class="news-in-photos ">
+
+    <span class="title">
+        <a href="/articles/tokyo-adds-100story-toadstool-to-skyline,30653/">
+            Tokyo Adds 100-Story Toadstool To Skyline 
+        </a>
+    </span>
+
+    
+    
+</div>
+
+  </li>
+
+  <li class="ga_section" name="home:recent-news:2">
+  
+
+
+<div data-vr-contentbox="" class="news-in-brief ">
+
+    <span class="title">
+        <a href="/articles/chris-christie-dreaming-about-72inch-springsteen-s,30647/">
+            Chris Christie Dreaming About 72-Inch Springsteen Sub 
+        </a>
+    </span>
+
+    
+    
+</div>
+
+  </li>
+
+  <li class="ga_section" name="home:recent-news:3">
+  
+
+
+<div data-vr-contentbox="" class="news-in-brief ">
+
+    <span class="title">
+        <a href="/articles/new-study-finds-primitive-customers-capable-of-buy,30643/">
+            New Study Finds Primitive Customers Capable Of Buying Tools From Hardware Store 
+        </a>
+    </span>
+
+    
+    
+</div>
+
+  </li>
+
+  <li class="ga_section" name="home:recent-news:4">
+  
+
+
+<div data-vr-contentbox="" class="news-in-brief ">
+
+    <span class="title">
+        <a href="/articles/area-family-has-no-idea-where-dad-gets-shirts,30642/">
+            Area Family Has No Idea Where Dad Gets Shirts 
+        </a>
+    </span>
+
+    
+    
+</div>
+
+  </li>
+
+  <li class="ga_section" name="home:recent-news:5">
+  
+
+
+<div data-vr-contentbox="" class="sports-news ">
+
+    <span class="title">
+        <a href="/articles/jerry-jones-wanders-up-and-down-field-during-game,30641/">
+            Jerry Jones Wanders Up And Down Field During Game 
+        </a>
+    </span>
+
+    
+    
+</div>
+
+  </li>
+
+  <li class="ga_section" name="home:recent-news:6">
+  
+
+
+<div data-vr-contentbox="" class="onncast ">
+
+    <span class="title">
+        <a href="/video/victorias-secret-fashion-show-a-hit-among-people-w,30626/">
+            Victoria's Secret Fashion Show A Hit Among People Who Don't Know That Pornography Exists 
+        </a>
+    </span>
+
+    
+              <span class="icon"><i title="Video" class="icon-facetime-video"></i></span><span class="type"> Video: ONNCast</span>
+
+    
+</div>
+
+  </li>
+
+</ol>
+<div class="missed-it ga_section" name="home:in-the-news" data-vr-zone="In The News">
+    <h5>In The News</h5>
+    <ul>
+    
+
+
+<li data-vr-contentbox="" class="imageitem onncast ">
+<a href="/video/apple-promises-to-fix-glitches-in-map-software-by,30616/">
+<div class="image">
+
+
+  <img src="http://o.onionstatic.com/images/18/18937/16x9/160.jpg?7391" class="" width="160" height="90" alt="" title="" />
+
+</div>
+    <span class="title">
+        
+            Apple Promises To Fix Glitches In Map Software By Rearranging Earth's Geography 
+        
+    </span></a>
+    
+   
+    
+</li>
+    
+    <li>
+
+
+<div data-vr-contentbox="" class="news-in-brief ">
+    <span class="title">
+        <a href="/articles/hardees-introduces-shame-curtains-for-customers-to,30610/">
+            Hardee's Introduces Shame Curtains For Customers To Eat Behind
+        </a>
+        
+    </span>
+    
+    
+</div>
+
+
+</li>
+    
+    <li>
+
+
+<div data-vr-contentbox="" class="news ">
+    <span class="title">
+        <a href="/articles/i-am-a-brand-pathetic-man-says,30545/">
+            'I Am A Brand,' Pathetic Man Says
+        </a>
+        
+    </span>
+    
+    
+</div>
+
+
+</li>
+    
+    </ul>
+</div>
+<ul class="ga_section" name="home:bikelane-graphical" data-vr-zone="Bike Lane Graphical Features">
+
+
+
+
+<li data-vr-contentbox="" class="imageitem weddings ">
+
+<a href="/articles/chad-greene-and-danielle-faye,30579/">
+<div class="image">
+ 
+
+
+  <img src="http://o.onionstatic.com/images/18/18926/16x9/200.jpg?0721" class="" width="200" height="112" alt="" title="" />
+
+</div>
+    <span class="title">
+        
+            Chad Greene and Danielle Faye 
+        
+    </span></a>
+    
+    <span class="type">
+    Weddings
+    </span>
+
+</li>
+
+
+
+
+<li data-vr-contentbox="" class="imageitem strongsideweakside ">
+
+<a href="/articles/johnny-manziel,30656/">
+<div class="image">
+ 
+
+
+  <img src="http://o.onionstatic.com/images/18/18967/16x9/200.jpg?0900" class="" width="200" height="112" alt="" title="" />
+
+</div>
+    <span class="title">
+        
+            Johnny Manziel 
+        
+    </span></a>
+    
+    <span class="type">
+    Strongside/Weakside
+    </span>
+
+</li>
+
+
+
+
+<li data-vr-contentbox="" class="imageitem sunday-magazine ">
+
+<a href="/articles/why-i-serve-nude-the-first-totally-naked-marine-sh,30640/">
+<div class="image">
+ 
+
+
+  <img src="http://o.onionstatic.com/images/18/18956/16x9/200.jpg?5374" class="" width="200" height="112" alt="" title="" />
+
+</div>
+    <span class="title">
+        
+            Why I Serve Nude: The First Totally Naked Marine Shares His Thoughts On Fighting In Afghanistan 
+        
+    </span></a>
+    
+    <span class="type">
+    Sunday Magazine
+    </span>
+
+</li>
+
+
+
+
+<li data-vr-contentbox="" class="imageitem statshot ">
+
+<a href="/articles/what-song-is-stuck-in-our-head,30628/">
+<div class="image">
+ 
+
+
+  <img src="http://o.onionstatic.com/images/18/18947/16x9/200.jpg?9981" class="" width="200" height="112" alt="" title="" />
+
+</div>
+    <span class="title">
+        
+            What Song Is Stuck In Our Head? 
+        
+    </span></a>
+    
+    <span class="type">
+    Statshot
+    </span>
+
+</li>
+
+</ul>
+
+
+</div>
+
+
+<div style="clear:both"></div>
+
+<div class="slideable recent_slider ga_section" id="recent_slider" name="home:graphical-feature-slider" data-vr-zone="Graphical Feature Slider">
+    <div class="wrapper">
+        <ul class="slides">
+            
+            <li class="slide element_0"  data-vr-contentbox="">
+                <h6>Weddings</h6>
+                <a class="image" href="/articles/lego-man-and-dora-the-explorer,30573/" >
+                    
+
+                    
+
+                    
+                    
+
+  <img src="http://o.onionstatic.com/images/18/18925/1x1/140.jpg?0695" class="" width="140" height="140" alt="" title="" />
+
+                    
+                </a>
+                <a class="title" href="/articles/lego-man-and-dora-the-explorer,30573/">
+                    Lego Man and Dora the Explorer
+                </a>
+            </li>
+            
+            <li class="slide element_1"  data-vr-contentbox="">
+                <h6>Weddings</h6>
+                <a class="image" href="/articles/pete-bushnell-and-mary-thoft,30568/" >
+                    
+
+                    
+
+                    
+                    
+
+  <img src="http://o.onionstatic.com/images/18/18924/1x1/140.jpg?0633" class="" width="140" height="140" alt="" title="" />
+
+                    
+                </a>
+                <a class="title" href="/articles/pete-bushnell-and-mary-thoft,30568/">
+                    Pete Bushnell and Mary Thoft
+                </a>
+            </li>
+            
+            <li class="slide element_2"  data-vr-contentbox="">
+                <h6>Editorial Cartoon</h6>
+                <a class="image" href="/articles/reprogrammed,30595/" >
+                    
+
+                    
+
+                    
+                    
+
+  <img src="http://o.onionstatic.com/images/18/18914/1x1/140.jpg?0219" class="" width="140" height="140" alt="" title="" />
+
+                    
+                </a>
+                <a class="title" href="/articles/reprogrammed,30595/">
+                    Reprogrammed
+                </a>
+            </li>
+            
+            <li class="slide element_3"  data-vr-contentbox="">
+                <h6>Slideshow</h6>
+                <a class="image" href="/articles/the-week-in-pictures,30594/" >
+                    
+
+                    
+
+                    
+                    
+
+  <img src="http://o.onionstatic.com/images/18/18913/1x1/140.jpg?9653" class="" width="140" height="140" alt="" title="" />
+
+                    
+                </a>
+                <a class="title" href="/articles/the-week-in-pictures,30594/">
+                    The Week In Pictures
+                </a>
+            </li>
+            
+            <li class="slide element_4"  data-vr-contentbox="">
+                <h6>Obituaries</h6>
+                <a class="image" href="/articles/nick-moyer,30491/" >
+                    
+
+                    
+
+                    
+                    
+
+  <img src="http://o.onionstatic.com/images/18/18829/1x1/140.jpg?5069" class="" width="140" height="140" alt="" title="" />
+
+                    
+                </a>
+                <a class="title" href="/articles/nick-moyer,30491/">
+                    Nick Moyer
+                </a>
+            </li>
+            
+            <li class="slide element_5"  data-vr-contentbox="">
+                <h6>Sunday Magazine</h6>
+                <a class="image" href="/articles/8-hot-makeup-tips-to-help-you-pass-a-cadaver-off-a,30583/" >
+                    
+
+                    
+
+                    
+                    
+
+  <img src="http://o.onionstatic.com/images/18/18907/1x1/140.jpg?3282" class="" width="140" height="140" alt="" title="" />
+
+                    
+                </a>
+                <a class="title" href="/articles/8-hot-makeup-tips-to-help-you-pass-a-cadaver-off-a,30583/">
+                    8 Hot Makeup Tips To Help You Pass A Cadaver Off As Alive
+                </a>
+            </li>
+            
+            <li class="slide element_6"  data-vr-contentbox="">
+                <h6>Statshot</h6>
+                <a class="image" href="/articles/what-are-we-putting-in-the-hotel-room-safe,30554/" >
+                    
+
+                    
+
+                    
+                    
+
+  <img src="http://o.onionstatic.com/images/18/18893/1x1/140.jpg?7797" class="" width="140" height="140" alt="" title="" />
+
+                    
+                </a>
+                <a class="title" href="/articles/what-are-we-putting-in-the-hotel-room-safe,30554/">
+                    What Are We Putting In The Hotel Room Safe?
+                </a>
+            </li>
+            
+            <li class="slide element_7"  data-vr-contentbox="">
+                <h6>Infographic</h6>
+                <a class="image" href="/articles/remaking-the-republican-party,30551/" >
+                    
+
+                    
+
+                    
+                    
+
+  <img src="http://o.onionstatic.com/images/18/18891/1x1/140.jpg?2519" class="" width="140" height="140" alt="" title="" />
+
+                    
+                </a>
+                <a class="title" href="/articles/remaking-the-republican-party,30551/">
+                    Remaking The Republican Party
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+    <div class="navigation">
+        <p class="previous"><a href="#">Previous</a></p>
+        <p class="next"><a href="#">Next</a></p>
+    </div>
+</div>
+<script type="text/javascript">
+htmlReady(function(){
+    if (numslides == undefined || numslides == "") {
+        var numslides = 4;
+    }
+    new Slideable("recent_slider", {
+        slidesVisible: numslides,
+        slideSpeed: 250,
+        slideWidth: 156
+        });
+});
+</script>
+
+<div class="ad">
+  <script type="text/javascript">GA_googleFillSlot("640x150_homepage");</script>
+</div>
+
+
+<div class="channellist">
+  
+  <div class="channelcol">
+  <div class="ga_section" name="home:opinion" style="">
+    <h5><a href="/section/opinion/">Opinion</a></h5>
+    <ul data-vr-zone="Channel List - Opinion">
+      
+      <li class="element_1" data-vr-contentbox="">
+        <p class="title">
+          <a href="/articles/i-honestly-dont-understand-how-anyone-could-suppor,30625/">I Honestly Don't Understand How Anyone Could Support Chris Brown</a>
+        </p>
+      </li>
+      
+      <li class="element_2" data-vr-contentbox="">
+        <p class="title">
+          <a href="/articles/its-funny-ive-actually-only-been-to-new-jersey-a-c,30611/">It's Funny, I've Actually Only Been To New Jersey A Couple Of Times</a>
+        </p>
+      </li>
+      
+      <li class="element_3" data-vr-contentbox="">
+        <p class="title">
+          <a href="/articles/cut-this-monster-out-of-me,30602/">Cut This Monster Out Of Me</a>
+        </p>
+      </li>
+      
+      <li class="element_4" data-vr-contentbox="">
+        <p class="title">
+          <a href="/articles/reprogrammed,30595/">Reprogrammed</a>
+        </p>
+      </li>
+      
+    </ul>
+  </div>
+  
+  
+  
+  <div class="ga_section" name="home:local" style="">
+    <h5><a href="/section/local/">Local</a></h5>
+    <ul data-vr-zone="Channel List - Local">
+      
+      <li class="element_1" data-vr-contentbox="">
+        <p class="title">
+          <a href="/articles/area-family-has-no-idea-where-dad-gets-shirts,30642/">Area Family Has No Idea Where Dad Gets Shirts</a>
+        </p>
+      </li>
+      
+      <li class="element_2" data-vr-contentbox="">
+        <p class="title">
+          <a href="/articles/man-freely-smoking-pot-in-washington-literally-has,30635/">Man Freely Smoking Pot in Washington Literally Has No Issue He Feels Strongly About Anymore</a>
+        </p>
+      </li>
+      
+      <li class="element_3" data-vr-contentbox="">
+        <p class="title">
+          <a href="/video/38yearold-little-boy-posts-picture-of-fast-car-he,30632/">38-Year-Old Little Boy Posts Picture Of Fast Car He Likes To Facebook</a>
+        </p>
+      </li>
+      
+      <li class="element_4" data-vr-contentbox="">
+        <p class="title">
+          <a href="/articles/38yearold-little-boy-posts-picture-of-fast-car-he,30631/">38-Year-Old Little Boy Posts Picture Of Fast Car He Likes To Facebook</a>
+        </p>
+      </li>
+      
+    </ul>
+  </div>
+  </div>
+  
+  <div class="channelcol">
+  <div class="ga_section" name="home:entertainment" style="">
+    <h5><a href="/section/entertainment/">Entertainment</a></h5>
+    <ul data-vr-zone="Channel List - Entertainment">
+      
+      <li class="element_1" data-vr-contentbox="">
+        <p class="title">
+          <a href="/articles/sitcom-characters-still-in-shock-after-christmas-e,30636/">Sitcom Characters Still In Shock After Christmas Episode Proves Existence Of Santa Claus</a>
+        </p>
+      </li>
+      
+      <li class="element_2" data-vr-contentbox="">
+        <p class="title">
+          <a href="/articles/department-of-transportation-announces-new-highway,30619/">Department Of Transportation Announces New Highway Concert Series</a>
+        </p>
+      </li>
+      
+      <li class="element_3" data-vr-contentbox="">
+        <p class="title">
+          <a href="/articles/highlights-of-the-hobbit,30618/">Highlights Of 'The Hobbit'</a>
+        </p>
+      </li>
+      
+      <li class="element_4" data-vr-contentbox="">
+        <p class="title">
+          <a href="/articles/coy-dexter-producers-hint-at-huge-plot-holes-in-se,30614/">Coy 'Dexter' Producers Hint At 'Huge Plot Holes' In Season Finale</a>
+        </p>
+      </li>
+      
+    </ul>
+  </div>
+  
+  
+  
+  <div class="ga_section" name="home:science-technology" style="">
+    <h5><a href="/section/science-technology/">Science &amp; Technology</a></h5>
+    <ul data-vr-zone="Channel List - Science &amp; Technology">
+      
+      <li class="element_1" data-vr-contentbox="">
+        <p class="title">
+          <a href="/articles/environmental-ad-campaign-encourages-turning-showe,30442/">Environmental Ad Campaign Encourages Turning Shower Off After Showering</a>
+        </p>
+      </li>
+      
+      <li class="element_2" data-vr-contentbox="">
+        <p class="title">
+          <a href="/articles/scientists-develop-highly-volatile-new-relationshi,30385/">Scientists Develop Highly Volatile New Relationship</a>
+        </p>
+      </li>
+      
+      <li class="element_3" data-vr-contentbox="">
+        <p class="title">
+          <a href="/articles/obese-salmon-unable-to-swim-upstream-to-spawn,30373/">Obese Salmon Unable To Swim Upstream To Spawn</a>
+        </p>
+      </li>
+      
+      <li class="element_4" data-vr-contentbox="">
+        <p class="title">
+          <a href="/articles/gallant-amazon-user-heroically-defends-fringe-seas,30327/">Gallant Amazon User Heroically Defends 'Fringe' Season 2 Box Set From Negative Reviewers</a>
+        </p>
+      </li>
+      
+    </ul>
+  </div>
+  </div>
+  
+  <div class="channelcol">
+  <div class="ga_section" name="home:sports" style="">
+    <h5><a href="/section/sports/">sports</a></h5>
+    <ul data-vr-zone="Channel List - sports">
+      
+      <li class="element_1" data-vr-contentbox="">
+        <p class="title">
+          <a href="/articles/tim-tebow-puts-empty-gatorade-cups-in-wildcat-form,30658/">Tim Tebow Puts Empty Gatorade Cups In Wildcat Formation On Jets Bench</a>
+        </p>
+      </li>
+      
+      <li class="element_2" data-vr-contentbox="">
+        <p class="title">
+          <a href="/articles/eagles-concerned-by-nick-foles-asking-about-best-w,30646/">Eagles Concerned By Nick Foles Asking About Best Ways To Tear ACL</a>
+        </p>
+      </li>
+      
+      <li class="element_3" data-vr-contentbox="">
+        <p class="title">
+          <a href="/articles/vikings-coach-maintains-confidence-in-christian-po,30645/">Vikings Coach Maintains Confidence In Christian Ponder's Ability To Hand Ball To Adrian Peterson</a>
+        </p>
+      </li>
+      
+      <li class="element_4" data-vr-contentbox="">
+        <p class="title">
+          <a href="/articles/jerry-jones-wanders-up-and-down-field-during-game,30641/">Jerry Jones Wanders Up And Down Field During Game</a>
+        </p>
+      </li>
+      
+    </ul>
+  </div>
+  
+  
+  
+  <div class="ga_section" name="home:politics" style="">
+    <h5><a href="/section/politics/">Politics</a></h5>
+    <ul data-vr-zone="Channel List - Politics">
+      
+      <li class="element_1" data-vr-contentbox="">
+        <p class="title">
+          <a href="/articles/obama-paranoid-government-coming-for-his-guns,30638/">Obama Paranoid Government Coming For His Guns</a>
+        </p>
+      </li>
+      
+      <li class="element_2" data-vr-contentbox="">
+        <p class="title">
+          <a href="/articles/congress-arrested-on-manslaughter-charges,30588/">Congress Arrested On Manslaughter Charges</a>
+        </p>
+      </li>
+      
+      <li class="element_3" data-vr-contentbox="">
+        <p class="title">
+          <a href="/video/congress-arrested-on-manslaughter-charges,30589/">Congress Arrested On Manslaughter Charges</a>
+        </p>
+      </li>
+      
+      <li class="element_4" data-vr-contentbox="">
+        <p class="title">
+          <a href="/articles/remaking-the-republican-party,30551/">Remaking The Republican Party</a>
+        </p>
+      </li>
+      
+    </ul>
+  </div>
+  </div>
+  
+</div>
+
+            </div>
+            <!--END CONTENT-->
+
+            <!--SIDEBAR-->
+            <div class="sidebar">
+            
+
+
+
+<div id="commentary">
+    
+<h5><a href="/articles/i-honestly-dont-understand-how-anyone-could-suppor,30625/">Opinion</a></h5>
+<div data-vr-contentbox="" class="photoleft ">
+    
+    
+    <p class="image">
+      <a href="/articles/i-honestly-dont-understand-how-anyone-could-suppor,30625/" class="thumbnail">
+
+  <img src="http://o.onionstatic.com/images/18/18944/1x1/75.jpg?7009" class="" width="75" height="75" alt="" title="" />
+</a>
+    </p>
+    
+    
+    <h2>
+      <a href="/articles/i-honestly-dont-understand-how-anyone-could-suppor,30625/">I Honestly Don't Understand How Anyone Could Support Chris Brown</a>
+    </h2>
+    
+    
+    <p class="teaser">
+      <p>By Chris Brown</p>
+    </p>
+    
+</div>
+    <ul data-vr-zone="Commentary" class="ga_section commentary" name="home:commentary">
+    
+        <li data-vr-contentbox=""><h2 style="font-size:12px;">&bull; <a href="/articles/its-funny-ive-actually-only-been-to-new-jersey-a-c,30611/">It&#39;s Funny, I&#39;ve Actually Only Been To New Jersey A Couple Of Times <span class="byline">By Bruce Springsteen</span></a></h2></li>
+    
+        <li data-vr-contentbox=""><h2 style="font-size:12px;">&bull; <a href="/articles/cut-this-monster-out-of-me,30602/">Cut This Monster Out Of Me <span class="byline">By Kate Middleton, Duchess of Cambridge</span></a></h2></li>
+    
+    </ul>
+</div>
+
+
+
+<div class="ad standard_box">
+  <script type="text/javascript">GA_googleFillSlot("300x250_primary");</script>
+</div>
+
+<div class="sidebar promo">
+  <div style="display:none;">
+  <script type="text/javascript">GA_googleFillSlot("sidebar_promobar_top");</script>
+  <script type="text/javascript">GA_googleFillSlot("sidebar_promobar_middle");</script>
+  </div>
+  <ul>
+    <li class="featured">
+      <ul>
+        <li id="promo_sidebar_1"></li>
+        <li id="promo_sidebar_2"></li>
+      </ul>
+    </li>
+  </ul>
+</div>
+
+<div class="ga_section" name="article:videowidget">
+<img src="/static/onion/img/headers/otalks_header.png"/>
+
+<div class="video_widget" data-vr-zone="Video Widget">
+    <div id="recent_vids">
+
+        <div class="vid" data-vr-contentbox="">
+           <a href="http://www.youtube.com/watch?v=yeqwDLsZJn8" class="image">
+              <i class="icon icon-play"></i>
+              <img src="/static/onion/img/oniontalks/ep8thumb.jpg" class="" width="95" height="53" alt="" title="">
+           </a>
+           <span class="title">
+               <a href="http://www.youtube.com/watch?v=yeqwDLsZJn8">Quit Whining And Put On A Goddamn Coat: My Journey</a>
+          </span>
+       </div>
+
+       <div class="vid" data-vr-contentbox="">
+           <a href="http://www.youtube.com/watch?v=p1WX-lRRQOs" class="image">
+              <i class="icon icon-play"></i>
+              <img src="/static/onion/img/oniontalks/ep7thumb.jpg" class="" width="95" height="53" alt="" title="">
+           </a>
+           <span class="title">
+               <a href="http://www.youtube.com/watch?v=p1WX-lRRQOs">Delicious Pie And The Value Of Patience</a>
+          </span>
+       </div>
+
+   </div>
+</div>
+
+</div>
+
+
+<div id="amvo" class="standard_box ga_section" name="home:american-voices" data-vr-zone="Sidebar Flexspot">
+  <div data-vr-contentbox="">
+  
+
+
+<div class="photoleft">
+  <h5><a href="/articles/latest/american-voices/">American Voices</h5>
+  
+  <div class="flexspot american-voices photoleft">
+    
+    
+    <p class="image">
+      <a href="/articles/pot-gay-marriage-now-legal-in-washington,30650/" class="thumbnail">
+
+  <img src="http://o.onionstatic.com/images/10/10321/1x1/75.jpg?0622" class="" width="75" height="75" alt="" title="" />
+</a>
+    </p>
+    <h2>
+      <a href="/articles/pot-gay-marriage-now-legal-in-washington,30650/">Pot, Gay Marriage Now Legal In Washington</a>
+    </h2>
+    <p class="teaser">
+      “That’s why at midnight I scooted over the border to Idaho, where things still make some sense.”
+    </p>
+    
+    
+    
+    <ul class="related">
+    
+        <li><h2 style="font-size:12px;">&bull; <a href="/articles/starbucks-opening-3000-new-stores,30639/">Starbucks Opening 3,000 New Stores</a></h2>
+    
+        <li><h2 style="font-size:12px;">&bull; <a href="/articles/apple-to-assemble-some-computers-in-us,30633/">Apple To Assemble Some Computers In U.S.</a></h2>
+    
+        <li><h2 style="font-size:12px;">&bull; <a href="/articles/nasa-to-send-new-rover-to-mars-in-2020,30627/">NASA To Send New Rover To Mars In 2020</a></h2>
+    
+    </ul>
+  </div>
+</div>
+
+  </div>
+</div>
+
+<div data-vr-zone="Letters to the Editor" class="ga_section" name="home:letters-to-the-editor" class="letters-to-the-editor">
+    
+<h5><a href="/articles/cartoon,16997/">Letters To The Editor</a></h5>
+<div data-vr-contentbox="" class="photoleft ">
+    
+    
+    
+    
+<p class="teaser">
+  <p class="salutation">Dear The Onion,</p>
+<p>I just got September 19th's political cartoon. Ha ha, good one!</p>
+<p class="valediction">Elias Marvinney, Somerville, MA</p>
+
+</p>
+
+</div>
+</div>
+
+<div>
+<script>
+$(function(){
+    var title = $('#connectbox .title');
+    var forward_button = $('#connectbox .forward');
+    var back_button = $('#connectbox .back');
+    var articles = [];
+    var currentIndex = 0;
+    
+    function nextHeadline(){
+        if(currentIndex >= articles.length-1) return false;
+        title.html(articles[++currentIndex].title);
+        if(currentIndex >= articles.length-1) forward_button.addClass('disabled');
+        if(currentIndex > 0) back_button.removeClass('disabled');
+        return false;
+    }
+    function prevHeadline(){
+        if(currentIndex <= 0) return false;
+        title.html(articles[--currentIndex].title);
+        if(currentIndex == 0) back_button.addClass('disabled');
+        if(currentIndex < articles.length-1) forward_button.removeClass('disabled');
+        return false;
+    }
+    $.getJSON('/ajax/more_news/', function(data) {
+        articles = data;
+        currentIndex = 0;
+        title.html(articles[currentIndex].title);
+        if(currentIndex < articles.length-1) forward_button.removeClass('disabled');
+        forward_button.click(nextHeadline);
+        back_button.click(prevHeadline);
+    });
+    
+
+});
+</script>
+<!-- start connect box -->
+<div id="connectbox" class="standard_box">
+    <div class="connect-nav">
+        <a href="#" class="disabled back"><i class="icon-circle-arrow-left"></i></a>
+        <a href="#" class="disabled forward"><i class="icon-circle-arrow-right"></i></a>
+    </div>
+    <h5>Daily Newsfeed</h5>
+    <h2 class="title"></h2>
+    
+    
+    <div id="follow">
+        
+        <ul>
+            <li class="twitter"><a title="Twitter" href="http://twitter.com/TheOnion"><i class="icon-twitter-sign"></i></a></li>
+            <li class="facebook"><a title="Facebook" href="http://facebook.com/TheOnion"><i class="icon-facebook-sign"></i></a></li>
+            <li class="google-plus"><a title="Google Plus" href="https://plus.google.com/105559336484270406543/"><i class="icon-google-plus-sign"></i></a></li>
+            <li class="rss"><a title="RSS" href="/feeds/daily/"><i class="icon-rss"></i></a></li>
+            <li class="digital last"><a title="Onion Apps" href="http://itunes.apple.com/us/artist/the-onion/id324147031?mt=8"><i class="icon-cloud"></i></a></li>
+        </ul>
+        <span>Follow The Onion by Clicking on these Stupid Little Icons</span>
+    </div>
+    <div id="signup">
+        <form action="http://www.theonion.com/newsletters/subscribe/" method="post">
+            <p class="checkboxes"><b>Sign Up For The Newsletter </b>
+            <input type="checkbox" name="newsletters" value="1" />Daily
+            <input type="checkbox" name="newsletters" value="3" />Weekly
+            <!--<input type="checkbox" name="newsletters" value="2" />Video-->
+            </p>
+            <p>
+            <input type="text" name="address" value="Your E-mail Address" onclick="this.value=''; return false;" class="subscribe" />
+            <input type="submit" value="SUBSCRIBE" class="submit" />
+            </p>
+        </form>
+    </div>
+</div>
+<!-- end connect box -->
+
+</div>
+
+<div>
+<script type="text/javascript">GA_googleFillSlot("300x150_store");</script>
+</div>
+
+<div class="standard_box">
+  <script type="text/javascript">GA_googleFillSlot("300x130_feature");</script>
+</div>
+
+<div data-vr-zone="Horoscopes" class="ga_section" name="home:horoscopes">
+    
+<h5><a href="/articles/your-horoscopes-week-of-december-4-2012,30607/">Horoscope</a></h5>
+<div data-vr-contentbox="" class="photoleft ">
+    
+    
+    <p class="image astro libra">
+          </p>
+
+    
+    <h2>
+      <a href="/articles/your-horoscopes-week-of-december-4-2012,30607/">Your Horoscopes - Week Of December 4, 2012</a>
+    </h2>
+    
+    
+    <p class="teaser">
+    
+     <strong>Libra </strong> Some may call your breast implants tacky, but at least you had the guts to try out unconventional shapes.
+    
+    </p>
+    
+</div>
+</div>
+<div data-vr-zone="stockwatch" class="ga_section" name="home:stockwatch">
+    
+<h5><a href="/articles/aetna-inc-aet,27011/">Stockwatch</a></h5>
+<div data-vr-contentbox="" class="photoleft ">
+    
+    
+    <p class="image">
+      <p class="image"><img src="/static/onion/img/icons/stockwatch_thumb_up.gif" width="38" height="57" border="0" alt="-" /></p>
+    </p>
+
+    
+    <h2>
+      <a href="/articles/aetna-inc-aet,27011/">Aetna Inc. (AET)</a>
+    </h2>
+    
+    
+    <p class="teaser">
+      $35.50 (+$0.24) (+0.68%) Confidence in the company increased after laughing executives simply said, &ldquo;Obamacare,&rdquo; and raised premiums 20 percent.
+    </p>
+    
+</div>
+</div>
+<div data-vr-zone="TV Listing" class="ga_section" name="home:tvlisting">
+    
+<h5><a href="/articles/sesame-street,30578/">TV Listings</a></h5>
+<div data-vr-contentbox="" class="photoleft ">
+    
+    
+    <p class="image">
+      <a href="/articles/sesame-street,30578/" class="thumbnail">
+</a>
+    </p>
+    
+    
+    <h2>
+      <a href="/articles/sesame-street,30578/">Sesame Street</a>
+    </h2>
+    
+    
+    <p class="teaser">
+      <p>PBS 7 a.m. EST/6 a.m. CST Cookie Monster is killed off.</p>
+    </p>
+    
+</div>
+</div>
+
+<div class="ad standard_box">
+  <script type="text/javascript">GA_googleFillSlot("300x250_secondary");</script>
+</div>
+<div>
+  <script type="text/javascript">GA_googleFillSlot("300x150_personals");</script>
+</div>
+<div class="standard_box partners ga_section" name="home:avlinks">
+  
+
+<div class="avclub">
+<h2><a href="http://www.avclub.com/"><img src="/static/onion/img/sharetools/av-club.png" alt="A.V. Club"></img></a></h2>
+  <ul>
+    
+    <li>
+      <a href="http://feedproxy.google.com/~r/avclub/daily/~3/WMpF2M_VOwU/">
+        The Simpsons (Classic), "Rosebud"
+      </a>
+    </li>
+    
+    <li>
+      <a href="http://feedproxy.google.com/~r/avclub/daily/~3/9ULiUUVoSWs/">
+        Doctor Who (Classic), "Planet Of Giants"
+      </a>
+    </li>
+    
+    <li>
+      <a href="http://feedproxy.google.com/~r/avclub/daily/~3/UWROfHKGyrg/">
+        Saturday Night Live, "Jamie Foxx/Ne-Yo"
+      </a>
+    </li>
+    
+    <li>
+      <a href="http://feedproxy.google.com/~r/avclub/daily/~3/-v40bb8jz3w/">
+        TV: What's On Tonight?: Is this Simpsons/Portlandia crossover local? Is it USDA organic, or Oregon organic, or Portland organic?
+      </a>
+    </li>
+    
+  </ul>
+</div>
+
+
+</div>
+
+
+
+
+
+
+            </div>
+            <div style="clear:both"></div>
+            <!--END SIDEBAR-->
+
+            
+            
+
+            
+            
+
+        </div>
+    
+
+    </div>
+    <!--END MAIN-->
+
+    
+    
+<div id="footer" class="ga_section" name="footer">
+    <ul>
+      <li>
+        <a href="/faq/">Help</a>
+      </li>
+      <li>
+        <a href="/contact/">Contact</a>
+      </li>
+      <li>
+        <a href="/privacy/">Privacy Policy</a>
+      </li>
+      <li>
+        <a href="http://mediakit.theonion.com">Media Kit</a>
+      </li>
+      <li>
+        <a href="/jobs/">Jobs</a>
+      </li>
+      <li>
+        <a href="http://www.theonionnation.com/">Franchising</a>
+      </li>
+      <li>
+        <a href="http://www.theonion.com/feeds/daily/">RSS</a>
+      </li>
+      <li class="last">
+        <i>The Onion</i> is not intended for readers under 18 years of age.
+        &copy; Copyright 2012 Onion Inc. All rights reserved.
+      </li>
+    </ul>
+</div>
+<br style="clear: both;" />
+
+    
+
+
+
+</div>
+<!--END WRAPPER-->
+
+<script type="text/javascript">
+    var tumblr_button = document.createElement("a");
+    tumblr_button.setAttribute("href", "http://www.tumblr.com/share/link?url=" + encodeURIComponent(tumblr_link_url) + "&name=" + encodeURIComponent(tumblr_link_name) + "&description=" + encodeURIComponent(tumblr_link_description));
+    tumblr_button.setAttribute("title", "Share on Tumblr");
+    tumblr_button.setAttribute("style", "display:inline-block; text-indent:-9999px; overflow:hidden; width:81px; height:20px; background:url('http://platform.tumblr.com/v1/share_1.png') top left no-repeat transparent;");
+    tumblr_button.innerHTML = "Share on Tumblr";
+    document.getElementById("tumblr_button_article_tools").appendChild(tumblr_button);
+</script>
+
+<script type="text/javascript" src="http://s.ppjol.net/pp.js">{
+  'zone':"X7Gu3YIpecAvEgj6-27cd0",
+  'mode':"meter",
+  'customPreCheck': "preCheckOnion100821",
+  'border': "qtYGSqnP-QssVfyr5XPE6D",
+  'debug':0
+}</script>
+<script type="text/javascript">
+function preCheckOnion100821($){
+    loc = window.location + '';
+    if (loc.match(/\/(articles|video)\/.+/i)) {
+        return 1;
+    }
+    return 0;
+}
+</script>
+
+
+<script type="text/javascript">
+    
+    function ga_section_click( evt ) {
+        try {
+            var parent = $(this).closest(".ga_section");
+            var section = parent.attr("name");
+            
+            var nth,
+                a = this;
+            
+            if(parent.length)
+                $("a", parent).each(function(n){
+                    if( this === a )
+                        nth = n;
+                });
+            
+            var url = this.href.replace(/(http:\/\/[a-z]+\.theonion\.com)/, "");
+            if (this.href.match(/(http:\/\/[a-z]+\.theonion\.com)/)) {
+                _gaq.push(['_trackEvent', 'click', section, url]);
+                analytics.trackClick(evt, section, nth, url);
+                // console.log("CLICK section: " + section + " url: " + url);
+            }
+            else {
+                _gaq.push(['_trackEvent', 'click-outbound', section, url]);
+                // console.log("CLICK-OUTBOUND section: " + section + " url: " + url);
+            }
+        }
+        catch (err) {}
+        return true;
+        // return false;
+    }
+    //only for onion, not sportsdome...(for now)
+    if (window.location.href.match(/(http:\/\/[a-z]+\.theonion\.com)/)) {
+        $("a").click(ga_section_click);
+    }
+
+    function extractParamFromUri(uri, paramName) {
+      if (!uri) {
+        return;
+      }
+      var uri = uri.split('#')[0];  // Remove anchor.
+      var parts = uri.split('?');  // Check for query params.
+      if (parts.length == 1) {
+        return;
+      }
+      var query = decodeURI(parts[1]);
+
+      // Find url param.
+      paramName += '=';
+      var params = query.split('&');
+      for (var i = 0, param; param = params[i]; ++i) {
+        if (param.indexOf(paramName) === 0) {
+          return unescape(param.split('=')[1]);
+        }
+      }
+    }
+</script>
+<!-- metrics -->
+
+<!-- quantcast -->
+<script type="text/javascript">
+_qoptions={
+    qacct:"p-39FYaAGOYli_-"
+};
+</script>
+<script type="text/javascript" src="http://edge.quantserve.com/quant.js"></script>
+<noscript>
+    <img src="http://pixel.quantserve.com/pixel/p-39FYaAGOYli_-.gif" style="display: none;" border="0" height="1" width="1" alt="Quantcast"/>
+</noscript>
+<script type="text/javascript">
+if(google_type !== "") {
+    var _sf_async_config={uid:1762,domain:"theonion.com"};
+    _sf_async_config.sections = google_type;
+}
+</script>
+
+<!-- chartbeat -->
+<script type="text/javascript">
+var _sf_async_config = {};
+var result = {}
+if( window.location.search ){
+    var params = window.location.search.slice(1).split("&");
+    for( var i = 0; i < params.length; i++ ){
+        var tmp = params[i].split("=");
+        result[tmp[0]] = unescape(tmp[1]);
+    }
+}
+if( !(result['ref'] === "auto") ){
+    var cbjspath = "static.chartbeat.com/js/chartbeat.js?uid=1762&domain=theonion.com";
+    var cbjsprotocol = (("https:" == document.location.protocol) ? "https://s3.amazonaws.com/" : "http://");
+    document.write(unescape("%3Cscript src='"+cbjsprotocol+cbjspath+"' type='text/javascript'%3E%3C/script%3E"))
+}
+</script>
+
+<!-- comscore -->
+<script>
+ document.write(unescape("%3Cscript src='" + (document.location.protocol == "https:" ? "https://sb" : "http://b")
++ ".scorecardresearch.com/beacon.js' %3E%3C/script%3E"));
+</script>
+<script>
+ COMSCORE.beacon({
+  c1:2,
+  c2:"6036328",
+  c3:"",
+  c4:"",
+  c5:"",
+  c6:"",
+  c15:""
+ });
+</script>
+<noscript>
+ <img src="http://b.scorecardresearch.com/b?c1=2&c2=6036328&c3=&c4=&c5=&c6=&c15=&cv=1.3&cj=1"
+style="display:none" width="0" height="0" alt="" />
+</noscript>
+
+<!-- nielsen -->
+<script type="text/javascript">
+  (function () {
+    var d = new Image(1, 1);
+    d.onerror = d.onload = function () {
+      d.onerror = d.onload = null;
+    };
+    d.src = ["//secure-us.imrworldwide.com/cgi-bin/m?ci=us-703755h&cg=0&cc=1&si=", escape(window.location.href), "&rp=", escape(document.referrer), "&ts=compact&rnd=", (new Date()).getTime()].join('');
+  })();
+</script>
+<noscript>
+  <div>
+    <img src="//secure-us.imrworldwide.com/cgi-bin/m?ci=us-703755h&amp;cg=0&amp;cc=1&amp;ts=noscript"
+    width="1" height="1" alt="" />
+  </div>
+</noscript>
+
+<!-- vertical acuity -->
+<script src="http://scripts.verticalacuity.com/vat/mon/vt.js" type="text/javascript"></script>
+
+<!-- google plusone -->
+<script type="text/javascript" src="http://apis.google.com/js/plusone.js"></script>
+
+<!--Visual Revenue Reader Response Tracking Script (v6) -->
+<script type="text/javascript">
+        var _vrq = _vrq || [];
+        _vrq.push(['id', 131]);
+        _vrq.push(['automate', true]);
+        _vrq.push(['track', function(){}]);
+        (function(d, a) {
+                var s = d.createElement(a),
+                x = d.getElementsByTagName(a)[0];
+                s.async = true;
+                s.src = 'http://a.visualrevenue.com/vrs.js';
+                x.parentNode.insertBefore(s, x);
+        })(document, 'script');
+</script>
+<!-- End of VR RR Tracking Script - All rights reserved -->
+
+<!-- START Parse.ly Include: Standard -->
+<div id="parsely-root" style="display: none">
+<div id="parsely-cfg" data-parsely-site="theonion.com"></div>
+</div>
+<script>
+(function(s, p, d) {
+var h=d.location.protocol, i=p+"-"+s,
+e=d.getElementById(i), r=d.getElementById(p+"-root"),
+u=h==="https:"?"d1z2jf7jlzjs58.cloudfront.net"
+:"static."+p+".com";
+if (e) return;
+e = d.createElement(s); e.id = i; e.async = true;
+e.src = h+"//"+u+"/p.js"; r.appendChild(e);
+})("script", "parsely", document);
+</script>
+<!-- END Parse.ly Include -->
+
+
+
+
+
+</body>
+</html>

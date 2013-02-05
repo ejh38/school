@@ -1,0 +1,38 @@
+assig3 > java Assig3
+Please enter an expression: 
+7.
+7. = 7
+321+5.  
+321+5. = 326
+321   +  5 .
+321   +  5 . = 326
+20 * (3 + 4).
+20 * (3 + 4). = 140
+(4 + 8)*(7 - 3).
+(4 + 8)*(7 - 3). = 48
+(12 / 4) + ((16/4)+7).
+(12 / 4) + ((16/4)+7). = 14
+((17 % 5)+(1234-1230))*5.
+((17 % 5)+(1234-1230))*5. = 30
+(1+(2+((3+4) + (5+(6+7))))).
+(1+(2+((3+4) + (5+(6+7))))). = 28
+(1+(2)).
+(1+(2)). = 3
+((((((((123)))))))).
+((((((((123)))))))). = 123
+1 + 
+Your expression was invalid: InvalidExpressionException: String Format Error
+11 + 8
+Your expression was invalid: InvalidExpressionException: Unexpected End of Line
+11 + 8 + 17.
+Your expression was invalid: InvalidExpressionException: String Format Error
+1 + (2 + 3.
+Your expression was invalid: InvalidExpressionException: String Format Error
+1 + hello.
+Your expression was invalid: InvalidExpressionException: Illegal Character
+3 4 5 + 6.
+Your expression was invalid: InvalidExpressionException: String Format Error
+3h4e.
+Your expression was invalid: InvalidExpressionException: String Format Error
+^D
+assig3 >

@@ -1,0 +1,9 @@
+Question 1:
+0x10010003
+
+Question 2:
+0x10010000
+
+Question 3: 
+Litle endian. You can tell because the first .byte loaded (in question 1) is put into the least significant byte address. Similarly, in question 2 the least significant digit is put in the first byte.
+

@@ -1,0 +1,1 @@
+public class Circle extends CircularBase{	public double getArea()	{		double radius = getRadius();      return Math.PI * radius * radius; 	} // end getArea} // end Circle

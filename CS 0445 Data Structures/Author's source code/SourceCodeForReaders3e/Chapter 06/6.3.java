@@ -1,0 +1,1 @@
+public void push(T newEntry){   Node newNode = new Node(newEntry, topNode);   topNode = newNode;} // end push

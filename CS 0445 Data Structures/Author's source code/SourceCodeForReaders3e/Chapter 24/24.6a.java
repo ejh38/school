@@ -1,0 +1,1 @@
+public BinaryNodeInterface<T> copy(){   BinaryNode<T> newRoot = new BinaryNode<T>(data);   if (left != null)      newRoot.left = (BinaryNode<T>)left.copy();       if (right != null)      newRoot.right = (BinaryNode<T>)right.copy();       return newRoot;	} // end copy

@@ -1,0 +1,1 @@
+if (balance >= 0){   System.out.println("Good for you. You earned interest.");   balance = balance + (INTEREST_RATE * balance) / 12;} // end if

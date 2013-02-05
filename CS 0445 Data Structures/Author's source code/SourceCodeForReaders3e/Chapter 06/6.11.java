@@ -1,0 +1,1 @@
+   public T pop()   {      T top = null;            if (!isEmpty())      {         top = stack[topIndex];         stack[topIndex] = null;         topIndex--;       } // end if           return top;   } // end pop

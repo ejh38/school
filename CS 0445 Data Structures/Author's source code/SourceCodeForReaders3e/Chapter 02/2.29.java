@@ -1,0 +1,1 @@
+	/** Tests whether this bag contains a given entry.		 @param anEntry  the entry to locate		 @return true if this bag contains anEntry, or false otherwise */   public boolean contains(T anEntry) 	{		return getIndexOf(anEntry) > -1; // or >= 0	} // end contains

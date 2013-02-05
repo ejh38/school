@@ -1,0 +1,6 @@
+Algorithm : Quick
+Array Size: 20
+Order: Reverse Sorted
+Number of trials: 20
+Average Time: 1.898E-4
+

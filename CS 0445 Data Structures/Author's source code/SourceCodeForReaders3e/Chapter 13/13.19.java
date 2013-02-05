@@ -1,0 +1,1 @@
+public boolean replace(int givenPosition, T newEntry){  boolean isSuccessful = true;    if ((givenPosition >= 1) && (givenPosition <= list.size()))  {    assert !isEmpty();    list.set(givenPosition - 1, newEntry);  }  else    isSuccessful = false;      return isSuccessful;} // end replace

@@ -1,0 +1,1 @@
+public interface CloneableListInterface<T>                 extends ListInterface<T>, Copyable // or Cloneable{} // end CloneableListInterface

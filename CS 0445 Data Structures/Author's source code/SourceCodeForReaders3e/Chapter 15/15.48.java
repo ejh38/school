@@ -1,0 +1,1 @@
+public void add(T newEntry){   isRemoveOrSetLegal = false;   nextIndex++;   ArrayListWithListIterator.this.add(nextIndex, newEntry);} // end add

@@ -1,0 +1,1 @@
+int n = 4;StackInterface<Integer> stack = new MyStack<Integer>();while (n > 0){   stack.push(n);   n--;} // end whileint result = 1;while (!stack.isEmpty()){   int integer = stack.pop();   result = result * integer;} // end whileSystem.out.println("result = " + result);

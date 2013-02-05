@@ -1,0 +1,1 @@
+public T remove(int givenPosition){  T result = null; // return value    if ((givenPosition >= 1) && (givenPosition <= list.size()))  {    assert !isEmpty();    result = list.remove(givenPosition - 1);  } // end if    return result;} // end remove

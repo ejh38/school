@@ -1,0 +1,1 @@
+StockLedger myStocks = new StockLedger();myStocks.buy(20, 45);                   // buy  20 shares at $45myStocks.buy(20, 75);                   // buy  20 shares at $75double capGain = myStocks.sell(30, 65); // sell 30 shares at $65

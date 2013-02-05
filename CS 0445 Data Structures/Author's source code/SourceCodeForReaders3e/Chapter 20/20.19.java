@@ -1,0 +1,1 @@
+private int locateIndex(K key){   // search until you either find an entry containing key or   // pass the point where it should be   int numberOfEntries = dictionary.size();   int index = 0;   while ( (index < numberOfEntries) &&            key.compareTo( (dictionary.get(index)).getKey() ) > 0 )      index++;       return index;} // end locateIndex

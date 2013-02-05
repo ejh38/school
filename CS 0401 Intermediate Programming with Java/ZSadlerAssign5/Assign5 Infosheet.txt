@@ -1,0 +1,34 @@
+Name: Zach Sadler			Assignnment #: 5
+
+Lab Day and Time: Tuesday 5:30 pm
+Lab Instructor: Wencan Luo
+Program Due Date: December 7, 2011
+Handed in Date: December 7, 2011
+
+Source code file names: MyShape.java, MyText.java, Snowflake.java, Tree.java, Greeting.java, Snowman.java, House.java, Present.java, Assig5.java
+
+Compiled (.class) file names:
+A5Help.class
+A5Help$1.class
+A5Help$ButtonHandler.class
+A5Help$RadioHandler.class
+A5Help$ShapePanel.class
+A5Help$ShapePanel$MyMouseListener.class
+A5Help$ShapePanel$MyMover.class
+Figures.class
+Greeting.class
+House.class
+Mode.class
+MyShape.class
+MyText.class
+Present.class
+Snowflake.class
+Snowman.class
+thePrintPanel.class
+Tree.class
+
+Other file names:
+
+My program compiles and runs without errors.
+
+No additional comments/Extra credit

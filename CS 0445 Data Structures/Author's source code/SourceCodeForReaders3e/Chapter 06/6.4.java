@@ -1,0 +1,1 @@
+public T peek(){   T top = null;     if (topNode != null)      top = topNode.getData();       return top;} // end peek

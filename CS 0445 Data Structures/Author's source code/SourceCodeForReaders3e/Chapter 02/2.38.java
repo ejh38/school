@@ -1,0 +1,1 @@
+   // Doubles the size of the array bag if it is full	private void ensureCapacity() 	{		if (numberOfEntries == bag.length)         bag = Arrays.copyOf(bag, 2 * bag.length);	} // end ensureCapacity

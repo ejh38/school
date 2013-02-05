@@ -1,0 +1,161 @@
+Receiving 6 crates of bananas
+
+Lickety Splits Financial Statement:
+	Most Recent Shipment: 
+		Crates: 6
+		Banana cost: 15.5
+		Labor (moves): 16
+		Labor cost: 16.0
+		------------------------
+		Total: 31.5
+
+	Overall Expenses: 
+		Crates: 6
+		Banana cost: 15.5
+		Labor (moves): 16
+		Labor cost: 16.0
+		------------------------
+		Total cost: 31.5
+
+Stack crates (top to bottom): 
+Expires:1  Start Count:9  Remain:9  Cost:2.5
+Expires:2  Start Count:4  Remain:4  Cost:2.0
+Expires:2  Start Count:10  Remain:10  Cost:3.0
+Expires:3  Start Count:6  Remain:6  Cost:2.0
+Expires:4  Start Count:12  Remain:12  Cost:3.5
+Expires:4  Start Count:8  Remain:8  Cost:2.5
+
+8 bananas needed for order
+Getting crate: Expires:1  Start Count:9  Remain:9  Cost:2.5  from the stack
+8 bananas used from current crate 
+
+7 bananas needed for order
+1 bananas used from current crate 
+Getting crate: Expires:2  Start Count:4  Remain:4  Cost:2.0  from the stack
+4 bananas used from current crate 
+Getting crate: Expires:2  Start Count:10  Remain:10  Cost:3.0  from the stack
+2 bananas used from current crate 
+
+6 bananas needed for order
+6 bananas used from current crate 
+
+The current day is now Day 1
+
+5 bananas needed for order
+2 bananas used from current crate 
+Getting crate: Expires:3  Start Count:6  Remain:6  Cost:2.0  from the stack
+3 bananas used from current crate 
+
+Current crate: Expires:3  Start Count:6  Remain:3  Cost:2.0
+Stack crates (top to bottom): 
+Expires:4  Start Count:12  Remain:12  Cost:3.5
+Expires:4  Start Count:8  Remain:8  Cost:2.5
+
+Receiving 4 crates of bananas
+
+Lickety Splits Financial Statement:
+	Most Recent Shipment: 
+		Crates: 4
+		Banana cost: 9.0
+		Labor (moves): 18
+		Labor cost: 18.0
+		------------------------
+		Total: 27.0
+
+	Overall Expenses: 
+		Crates: 10
+		Banana cost: 24.5
+		Labor (moves): 34
+		Labor cost: 34.0
+		------------------------
+		Total cost: 58.5
+
+Current crate: Expires:3  Start Count:6  Remain:3  Cost:2.0
+Stack crates (top to bottom): 
+Expires:1  Start Count:8  Remain:8  Cost:2.5
+Expires:2  Start Count:6  Remain:6  Cost:1.5
+Expires:4  Start Count:12  Remain:12  Cost:3.5
+Expires:4  Start Count:8  Remain:8  Cost:2.5
+Expires:5  Start Count:10  Remain:10  Cost:3.0
+Expires:6  Start Count:7  Remain:7  Cost:2.0
+
+The current day is now Day 2
+Top crate: Expires:1  Start Count:8  Remain:8  Cost:2.5 is expired!
+
+8 bananas needed for order
+3 bananas used from current crate 
+Getting crate: Expires:2  Start Count:6  Remain:6  Cost:1.5  from the stack
+5 bananas used from current crate 
+
+5 bananas needed for order
+1 bananas used from current crate 
+Getting crate: Expires:4  Start Count:12  Remain:12  Cost:3.5  from the stack
+4 bananas used from current crate 
+
+Current crate: Expires:4  Start Count:12  Remain:8  Cost:3.5
+Stack crates (top to bottom): 
+Expires:4  Start Count:8  Remain:8  Cost:2.5
+Expires:5  Start Count:10  Remain:10  Cost:3.0
+Expires:6  Start Count:7  Remain:7  Cost:2.0
+
+Receiving 3 crates of bananas
+
+Current crate: Expires:4  Start Count:12  Remain:8  Cost:3.5
+Stack crates (top to bottom): 
+Expires:4  Start Count:6  Remain:6  Cost:2.0
+Expires:4  Start Count:8  Remain:8  Cost:2.5
+Expires:5  Start Count:10  Remain:10  Cost:3.0
+Expires:5  Start Count:10  Remain:10  Cost:3.5
+Expires:6  Start Count:7  Remain:7  Cost:2.0
+Expires:7  Start Count:9  Remain:9  Cost:3.0
+
+Receiving 3 crates of bananas
+
+Lickety Splits Financial Statement:
+	Most Recent Shipment: 
+		Crates: 3
+		Banana cost: 5.0
+		Labor (moves): 15
+		Labor cost: 15.0
+		------------------------
+		Total: 20.0
+
+	Overall Expenses: 
+		Crates: 16
+		Banana cost: 38.0
+		Labor (moves): 60
+		Labor cost: 60.0
+		------------------------
+		Total cost: 98.0
+
+Current crate: Expires:4  Start Count:12  Remain:8  Cost:3.5
+Stack crates (top to bottom): 
+Expires:4  Start Count:6  Remain:6  Cost:2.0
+Expires:4  Start Count:8  Remain:8  Cost:2.5
+Expires:5  Start Count:10  Remain:10  Cost:3.0
+Expires:5  Start Count:10  Remain:10  Cost:3.5
+Expires:6  Start Count:7  Remain:7  Cost:2.0
+Expires:7  Start Count:9  Remain:9  Cost:3.0
+Expires:7  Start Count:4  Remain:4  Cost:1.0
+Expires:7  Start Count:5  Remain:5  Cost:1.5
+Expires:9  Start Count:8  Remain:8  Cost:2.5
+
+The current day is now Day 3
+
+The current day is now Day 4
+
+The current day is now Day 5
+Current crate: Expires:4  Start Count:12  Remain:8  Cost:3.5 is expired!
+Top crate: Expires:4  Start Count:6  Remain:6  Cost:2.0 is expired!
+Top crate: Expires:4  Start Count:8  Remain:8  Cost:2.5 is expired!
+
+Stack crates (top to bottom): 
+Expires:5  Start Count:10  Remain:10  Cost:3.0
+Expires:5  Start Count:10  Remain:10  Cost:3.5
+Expires:6  Start Count:7  Remain:7  Cost:2.0
+Expires:7  Start Count:9  Remain:9  Cost:3.0
+Expires:7  Start Count:4  Remain:4  Cost:1.0
+Expires:7  Start Count:5  Remain:5  Cost:1.5
+Expires:9  Start Count:8  Remain:8  Cost:2.5
+
+End of Simulation

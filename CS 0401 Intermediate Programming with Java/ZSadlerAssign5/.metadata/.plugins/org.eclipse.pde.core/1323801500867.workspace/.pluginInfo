@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map>
+	<bundle bundleID="763" hasExtensibleAPI="true" localization="plugin" name="%pluginName" project="org.eclipse.swt" provider="%providerName">
+		<library name="org.eclipse.swt_3.7.1.v3738a.jar"/>
+	</bundle>
+</map>

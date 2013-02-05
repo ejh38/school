@@ -1,0 +1,6 @@
+Still need to
+
+Put in the ray trace formula from the pdf
+Don't need to do gluLookAt- the ray trace just makes the screen
+Return the closestPoint as a pointer
+Don't redraw the background if unnecessary

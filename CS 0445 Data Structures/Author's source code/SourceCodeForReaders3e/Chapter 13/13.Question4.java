@@ -1,0 +1,1 @@
+public void add(T newEntry){	add(numberOfEntries + 1, newEntry);} // end add

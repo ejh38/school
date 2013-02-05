@@ -1,0 +1,1 @@
+public void enqueue(T newEntry){   queue.add(newEntry);} // end enqueue

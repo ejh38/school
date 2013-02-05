@@ -1,0 +1,1 @@
+// add to the class Namepublic Name(ImmutableName aName){   first = aName.getFirst();   last  = aName.getLast();} // end constructorpublic ImmutableName getImmutable(){   return new ImmutableName(first, last);} // end getMutable

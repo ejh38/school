@@ -1,0 +1,1 @@
+public Object clone(){   Student theCopy = null;   try   {      theCopy = (Student)super.clone(); // Object can throw an exception   }   catch (CloneNotSupportedException e)   {      throw new Error(e.toString());   }   theCopy.fullName = (Name)fullName.clone();   return theCopy;} // end clone

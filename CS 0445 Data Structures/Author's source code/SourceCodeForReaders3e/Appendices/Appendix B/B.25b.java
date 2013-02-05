@@ -1,0 +1,1 @@
+public Name(){	this("", "");} // end default constructor

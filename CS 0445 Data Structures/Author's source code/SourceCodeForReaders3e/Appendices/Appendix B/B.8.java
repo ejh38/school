@@ -1,0 +1,1 @@
+public String getFirst(){	return first;} // end getFirst

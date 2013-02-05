@@ -1,0 +1,1 @@
+Node newRef = theCopy.firstNode;       // last node in new chainNode oldRef = firstNode.getNextNode(); // next node in old chainfor (int count = 2; count <= numberOfEntries; count++){   newRef.setNextNode((Node)oldRef.clone()); // attach cloned node   newRef = newRef.getNextNode();            // update references   oldRef = oldRef.getNextNode();} // end for

@@ -1,0 +1,1 @@
+public final void clear(){   firstNode = null;   lastNode = null;   numberOfEntries = 0;} // end clear

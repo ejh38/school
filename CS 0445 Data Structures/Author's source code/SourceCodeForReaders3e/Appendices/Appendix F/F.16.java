@@ -1,0 +1,1 @@
+while (fileData.hasNextLine()){   String line = fileData.nextLine();   System.out.println(line);} // end while

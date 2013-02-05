@@ -1,0 +1,1 @@
+DequeInterface<String> myDeque = new LinkedDeque<String>();myDeque.addToFront("Jim");myDeque.addToFront("Jess");myDeque.addToBack("Jill");myDeque.addToBack("Jane");String name = myDeque.removeFront();myDeque.addToBack(name);myDeque.addToBack(myDeque.getFront());myDeque.addToFront(myDeque.removeBack());myDeque.addToFront(myDeque.getBack());

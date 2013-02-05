@@ -1,0 +1,1 @@
+public interface Pairable<S>{   public void setPair(S firstItem, S secondItem);} // end Pairable

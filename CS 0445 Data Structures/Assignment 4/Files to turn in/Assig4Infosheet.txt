@@ -1,0 +1,17 @@
+Name: Zach Sadler				Assignment #: 4
+
+Lab Day and Time: Monday 1:00 pm
+Lab Instructor: Di Bao
+Program Due Date: March 23, 2012
+Handed in Date: March 23, 2012
+
+Source code file names: AlreadyRandomAbstract.java, AlreadyReverseAbstract.java, AlreadySortedAbstract.java, Assig4.java. Assig4ableAbstract.java, Quick.java, QuickRandPivot.java, TextMergeQuick.java
+
+Compiled (.class) file names: AlreadyRandomAbstract.class, AlreadyReverseAbstract.class, AlreadySortedAbstract.class, Assig4.class, Assig4ableAbstract.class, Quick.class, QuickRandPivot.class, TextMergeQuick.class
+
+Other file names: Analysis.xslx, Analysis.pdf, Assig4infosheet.txt
+
+My program compiles without errors. 
+
+Additional comments/Extra credit:
+I implemented the three different data orders in their own class, each of which extends 'Assig4ableAbstract.' This allowed me to simply call array.fill(), array.getOrder(), etc, and have the proper method be executed, all from an Assig4ableAbstract array. I think that this is both good style and in line with what we have been learning all year.

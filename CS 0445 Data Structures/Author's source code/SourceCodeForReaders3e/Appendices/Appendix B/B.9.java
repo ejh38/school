@@ -1,0 +1,1 @@
+public void setFirst(String firstName){	first = firstName;} // end setFirst

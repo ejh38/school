@@ -1,0 +1,6 @@
+BASSLIB = libbass.dylib
+FLAGS = -Os -I. -mmacosx-version-min=10.4
+USDK = /Developer/SDKs/MacOSX10.4u.sdk
+
+%: %.c $(BASSLIB)
+	gcc $(FLAGS) $*.c $(BASSLIB) -o $@ -framework OpenGL -framework GLUT

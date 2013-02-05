@@ -1,0 +1,51 @@
+	  main
+ 	    |
+ 	  eval
+ 	    |
+ 	  expr
+  		|
+ 	  term
+ 		|
+digits or expression
+  | 		     |
+if digit    if parentheses
+
+
+
+(24+1)*5
+
+go through eval, expr, term (see paren), then expr again, term (see digit), digit.
+
+have a getNextChar() function that will increment the index until it gets a non-whitespace character.
+
+digits(int x, char c)
+{
+	int ans = x + c - '0';
+	digits(ans*10, c);
+}
+
+
+at end of expression (eval), if '.' then return to eval (main), otherwise error.
+
+
+
+3*(1+(8-3))
+
+expr()
+|
+term 
+|
+digit (recursively calls self, then returns 3)
+
+no parens, so term returns 3 to expr.
+
+next expr *, now looking for term (term op term)
+
+term (sees parens), expr, term, digits, recursively calls self, then returns 1 to term, term sees no parens, done. expr sees op, now wants term (term op term)
+term sees parens, calls expr, term, digits, op, term expected (term op term), 3, done.
+
+
+
+IDEA:
+DON'T do scans to check parentheses, or to look ahead to see how many digits in an int
+IDEA: when you hit ) then return. if error, you'll find it

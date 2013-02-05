@@ -1,0 +1,36 @@
+Fall 2012
+CS1566 Assignment 1
+Basic 2D Shapes, Interaction and Physics
+
+Tasks
+1. Building and running source as is (5p)
+5p
+
+2. Drawing where the mouse click happened (15p)
+15p
+
+3. Drawing a circle on clicks (15p)
+15p
+
+4. Animating the rectangle/circle (10p)
+10p
+
+5. Simple physics (collision w/ bottom 5 pts, acceleration 10 pts, deceleration 10 pts) (25p)
+25p
+
+6. Handling correctly at least 25 objects (20p)
+20p
+
+7. Submitting the completed Readme.txt file (10p)
+10p
+
+8. Extra credit
+30p
+
+
+Total
+130p
+
+
+Comments:
+Tremendous project! I especially liked the 'strobe' effect and the 'follow the mouse' effect for the current shape. Great work!

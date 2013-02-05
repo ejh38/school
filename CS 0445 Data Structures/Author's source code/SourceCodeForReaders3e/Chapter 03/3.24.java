@@ -1,0 +1,1 @@
+   /** Removes all entries from this bag. */	public void clear() 	{		while (!isEmpty())          remove();	} // end clear

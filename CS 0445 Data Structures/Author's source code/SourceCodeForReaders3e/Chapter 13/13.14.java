@@ -1,0 +1,1 @@
+public void add(T newEntry){   ensureCapacity();   list[numberOfEntries] = newEntry;   numberOfEntries++;} // end add

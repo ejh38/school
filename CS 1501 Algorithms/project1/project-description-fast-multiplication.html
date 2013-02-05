@@ -1,0 +1,72 @@
+<HTML>
+<BODY>
+
+<HR><CENTER><H3>Fast Multiplication</H3></CENTER>
+
+<P><HR><CENTER><H3>Introduction</H3></CENTER>
+
+We are all familiar with basic arithmetic on integers.  The standard
+algorithms we learned in elementary school work well for most
+applications.  However, conventional multiplication can be slow
+(quadratic) for very large integers.  Applications, such as
+cryptography, that perform arithmetic on integers with hundreds or
+thousands of digits typically multiply integers using a <EM>Fast
+Multiplication</EM> algorithm.  In this project, you will implement
+several of the simple school algorithms, plus <EM>Karatsuba-Ofman
+Multiplication</EM>, for very large integers.
+
+<P><HR><CENTER><H3>Requirements</H3></CENTER>
+
+You will implement a class of huge integers (with potentially several
+thousand decimal digits) in the class:
+<UL>
+  <LI><TT>public class HugeInteger implements Comparable&lt;HugeInteger&gt;</TT>
+</UL>
+Implement the following methods:
+<UL>
+  <LI><TT>public HugeInteger(String s)</TT>
+      constructs a new <TT>HugeInteger</TT> object.
+  <LI><TT>public int compareTo(HugeInteger h)</TT>
+      compares <TT>this</TT> to <TT>h</TT>.
+  <LI><TT>public HugeInteger add(HugeInteger h)</TT>
+      adds <TT>this</TT> and <TT>h</TT>.
+  <LI><TT>public HugeInteger subtract(HugeInteger h)</TT>
+      subtracts <TT>h</TT> from <TT>this</TT>.
+      Assumes <TT>h</TT> is not larger than <TT>this</TT>.
+  <LI><TT>public HugeInteger multiply(HugeInteger h)</TT>
+      multiplies <TT>this</TT> and <TT>h</TT> using the school algorithm.
+  <LI><TT>public HugeInteger fastMultiply(HugeInteger x)</TT>
+      multiplies <TT>this</TT> and <TT>h</TT> using Karatsuba-Ofman
+      multiplication.
+  <LI><TT>public String toString()</TT> is used for printing.
+</UL>
+Assume all huge integers are nonnegative.  Your methods should
+be nondestructive, so <TT>this</TT> and <TT>h</TT> are not changed.
+
+<P>
+
+Include a static variable to count primitive arithmetic operations:
+<UL>
+  <LI><TT>public static int DIGIT_OPERATIONS</TT>
+</UL>
+You can count single-digit additions, subtractions, comparisons, and
+multiplications, or use the number of digit-accesses in an array as a
+proxy.
+
+<P>
+
+Your <TT>HugeInteger</TT> class should work with my test file with
+similar performance.  That is, your operation counts should display
+the same asymptotic behavior as mine, and your code should run no
+slower than my code (and a factor of five).  Be sure to include a
+<TT>README.txt</TT> file with your submission.
+
+<P><HR><CENTER><H3>Submission</H3></CENTER>
+
+Submit your work to the CourseWeb site for this course.
+
+<P>
+<HR>
+</BODY>
+</HTML>
+

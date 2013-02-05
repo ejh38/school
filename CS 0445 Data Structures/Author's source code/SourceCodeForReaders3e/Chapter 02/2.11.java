@@ -1,0 +1,1 @@
+	/** Sees whether this bag is full.       @return true if this bag is full, or false if not */	public boolean isFull() 	{		return numberOfEntries == bag.length;	} // end isFull

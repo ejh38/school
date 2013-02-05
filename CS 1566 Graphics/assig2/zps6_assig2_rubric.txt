@@ -1,0 +1,49 @@
+                                                                     
+                                                                     
+                                                                     
+                                             
+Fall 2012
+CS1566 Assignment 2
+Stitcher
+
+Tasks
+1. Algorithm handin (40p)
+50p
+
+2. Bottom and top of cube (3p)
+3p
+
+3. Cube, normals (3p)
+3p
+
+4. Cylinder, normals (15p)
+13p - normals are off for all shapes except for the sphere
+
+5. Sphere, normals (10p)
+10p
+
+6. Cone, normals (10p)
+10p
+
+7. Torus, normals (8p)
+8p
+
+8. Slice tessellation (4p)
+3p - slices and stacks are switched for some shapes (+/- controls the stack rather than the slice tessellation)
+
+9. Stack tessellation (4p)
+4p
+
+10. Completed Readme.txt file (3p)
+3p
+
+11. Extra credit
+20p
+
+
+Total
+127p
+
+
+Comments:
+ - The slowmo mode is absolutely spectacular.

@@ -1,0 +1,1 @@
+Name jesse = new Name("Jesse", "Java");Name rob = new Name("Rob", "Bean");SortedListInterface<Name> alphaList = new SortedList<Name>();alphaList.add(jesse);alphaList.add(rob);alphaList.display();

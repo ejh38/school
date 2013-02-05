@@ -1,0 +1,1 @@
+StackInterface<String> stringStack = new OurStack<String>();stringStack.push("Jim");stringStack.push("Jess");stringStack.pop();stringStack.push("Jill");stringStack.push("Jane");stringStack.pop();

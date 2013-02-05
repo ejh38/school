@@ -1,0 +1,6 @@
+Buglist:
+	Using the 'Clear' button while at an input prompt can cause the program to infinite loop.
+		- I think this is more of a problem with MIPS in general and not a true bug, since the syscall is probably being interrupted by the 'Clear' button press.
+	When guessing, the user's input is taken after they enter n characters, where n is the length of the word.
+		- This is also not truly a bug in my eyes, but if the user types an extra character (ex: 's-q-u-i-d' for a 4 character word) then the extra character (in the squid case, the 'd') will be taken as input for the 'play again?' prompt, oftentimes ending the program prematurely. This bug can be avoided as long as the user types slowly and enters valid input.
+	I found no other bugs while testing. My program handles all of the special cases I can think of.

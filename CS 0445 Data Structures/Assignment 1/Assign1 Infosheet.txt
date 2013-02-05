@@ -1,0 +1,16 @@
+Name: Zach Sadler				Assignment #: 1
+
+Lab Day and Time: Monday 1:00 pm
+Lab Instructor: Di Bao
+Program Due Date: January 27, 2012
+Handed in Date: January 27, 2012
+
+Source code file names: Product.java, Bufferer.java, Reverser.java, SaveRestore.java, Assig1A.java,  Assig1B.java, Fixed.javam Variable.java, ByVolume.java, ByWeight.java, MyBuffer.java
+
+Compiled (.class) file names: Product.class, Bufferer.class, Reverser.class, SaveRestore.class, Assig1A.class,  Assig1B.class, Fixed.classm Variable.class, ByVolume.class, ByWeight.class, MyBuffer.class
+
+Other file names: 
+
+My program compiles and runs without errors
+
+Additional comments/Extra credit:

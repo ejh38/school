@@ -1,0 +1,1 @@
+protected Node getFirstNode(){   return firstNode;} // end getFirstNode

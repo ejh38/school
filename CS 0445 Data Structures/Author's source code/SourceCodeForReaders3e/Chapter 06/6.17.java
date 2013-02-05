@@ -1,0 +1,1 @@
+   public void push(T newEntry)   {      stack.add(newEntry);   } // end push

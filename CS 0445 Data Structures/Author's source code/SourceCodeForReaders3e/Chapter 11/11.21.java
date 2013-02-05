@@ -1,0 +1,1 @@
+public T dequeue(){   T front = null;   if (!isEmpty())      front = queue.remove(0);       return front;} // end dequeue
