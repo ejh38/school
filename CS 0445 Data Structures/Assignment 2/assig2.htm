@@ -1,0 +1,1388 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word" xmlns:m="http://schemas.microsoft.com/office/2004/12/omml" xmlns:mv="http://macVmlSchemaUri" xmlns="http://www.w3.org/TR/REC-html40"><head>
+<meta name="Title" content="">
+<meta name="Keywords" content="">
+<meta http-equiv="Content-Type" content="text/html; charset=x-mac-roman">
+<meta name="ProgId" content="Word.Document">
+<meta name="Generator" content="Microsoft Word 14">
+<meta name="Originator" content="Microsoft Word 14">
+<link rel="File-List" href="http://www.cs.pitt.edu/%7Eramirez/cs445/assigs/assig2/assig2_files/filelist.xml">
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>John C. Ramirez</o:Author>
+  <o:LastAuthor>John Ramirez</o:LastAuthor>
+  <o:Revision>3</o:Revision>
+  <o:TotalTime>1333</o:TotalTime>
+  <o:Created>2012-01-30T02:56:00Z</o:Created>
+  <o:LastSaved>2012-01-30T02:59:00Z</o:LastSaved>
+  <o:Pages>2</o:Pages>
+  <o:Words>1743</o:Words>
+  <o:Characters>9939</o:Characters>
+  <o:Company>University of Pittsburgh</o:Company>
+  <o:Lines>82</o:Lines>
+  <o:Paragraphs>23</o:Paragraphs>
+  <o:CharactersWithSpaces>11659</o:CharactersWithSpaces>
+  <o:Version>14.0</o:Version>
+ </o:DocumentProperties>
+ <o:OfficeDocumentSettings>
+  <o:PixelsPerInch>96</o:PixelsPerInch>
+ </o:OfficeDocumentSettings>
+</xml><![endif]-->
+<link rel="themeData" href="http://www.cs.pitt.edu/%7Eramirez/cs445/assigs/assig2/assig2_files/themedata.xml">
+<!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:Zoom>125</w:Zoom>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:TrackMoves>false</w:TrackMoves>
+  <w:TrackFormatting/>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:DoNotPromoteQF/>
+  <w:LidThemeOther>EN-US</w:LidThemeOther>
+  <w:LidThemeAsian>JA</w:LidThemeAsian>
+  <w:LidThemeComplexScript>X-NONE</w:LidThemeComplexScript>
+  <w:StyleSortMethod>0</w:StyleSortMethod>
+  <w:Compatibility>
+   <w:SelectEntireFieldWithStartOrEnd/>
+   <w:UseWord2002TableStyleRules/>
+   <w:DontUseIndentAsNumberingTabStop/>
+   <w:FELineBreak11/>
+   <w:WW11IndentRules/>
+   <w:DontAutofitConstrainedTables/>
+   <w:AutofitLikeWW11/>
+   <w:HangulWidthLikeWW11/>
+   <w:UseNormalStyleForList/>
+   <w:DontVertAlignCellWithSp/>
+   <w:DontBreakConstrainedForcedTables/>
+   <w:DontVertAlignInTxbx/>
+   <w:Word11KerningPairs/>
+   <w:CachedColBalance/>
+  </w:Compatibility>
+  <m:mathPr>
+   <m:mathFont m:val="Cambria Math"/>
+   <m:brkBin m:val="before"/>
+   <m:brkBinSub m:val="&#45;-"/>
+   <m:smallFrac m:val="off"/>
+   <m:dispDef m:val="off"/>
+   <m:lMargin m:val="0"/>
+   <m:rMargin m:val="0"/>
+   <m:defJc m:val="centerGroup"/>
+   <m:wrapRight/>
+   <m:intLim m:val="subSup"/>
+   <m:naryLim m:val="subSup"/>
+  </m:mathPr></w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="false"
+  DefSemiHidden="false" DefQFormat="false" LatentStyleCount="276">
+  <w:LsdException Locked="false" QFormat="true" Name="Normal"/>
+  <w:LsdException Locked="false" QFormat="true" Name="heading 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 9"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="caption"/>
+  <w:LsdException Locked="false" QFormat="true" Name="Title"/>
+  <w:LsdException Locked="false" Priority="1" Name="Default Paragraph Font"/>
+  <w:LsdException Locked="false" QFormat="true" Name="Subtitle"/>
+  <w:LsdException Locked="false" QFormat="true" Name="Strong"/>
+  <w:LsdException Locked="false" QFormat="true" Name="Emphasis"/>
+  <w:LsdException Locked="false" Priority="99" Name="No List"/>
+  <w:LsdException Locked="false" Priority="99" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Note Level 1"/>
+  <w:LsdException Locked="false" Priority="99" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Note Level 2"/>
+  <w:LsdException Locked="false" Priority="99" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Note Level 3"/>
+  <w:LsdException Locked="false" Priority="99" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Note Level 4"/>
+  <w:LsdException Locked="false" Priority="99" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Note Level 5"/>
+  <w:LsdException Locked="false" Priority="99" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Note Level 6"/>
+  <w:LsdException Locked="false" Priority="99" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Note Level 7"/>
+  <w:LsdException Locked="false" Priority="99" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Note Level 8"/>
+  <w:LsdException Locked="false" Priority="99" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Note Level 9"/>
+  <w:LsdException Locked="false" Priority="99" SemiHidden="true"
+   Name="Placeholder Text"/>
+  <w:LsdException Locked="false" Priority="1" SemiHidden="true" QFormat="true"
+   Name="No Spacing"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 1"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="99" SemiHidden="true" Name="Revision"/>
+  <w:LsdException Locked="false" Priority="34" QFormat="true"
+   Name="List Paragraph"/>
+  <w:LsdException Locked="false" Priority="29" QFormat="true" Name="Quote"/>
+  <w:LsdException Locked="false" Priority="30" QFormat="true"
+   Name="Intense Quote"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 1"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 1"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 2"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 2"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 2"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 3"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 3"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 3"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 4"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 4"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 4"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 5"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 5"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 5"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 6"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 6"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 6"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="19" QFormat="true"
+   Name="Subtle Emphasis"/>
+  <w:LsdException Locked="false" Priority="21" QFormat="true"
+   Name="Intense Emphasis"/>
+  <w:LsdException Locked="false" Priority="31" QFormat="true"
+   Name="Subtle Reference"/>
+  <w:LsdException Locked="false" Priority="32" QFormat="true"
+   Name="Intense Reference"/>
+  <w:LsdException Locked="false" Priority="33" QFormat="true" Name="Book Title"/>
+  <w:LsdException Locked="false" Priority="37" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Bibliography"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="TOC Heading"/>
+ </w:LatentStyles>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+@font-face
+	{font-family:"Courier New";
+	panose-1:2 7 3 9 2 2 5 2 4 4;
+	mso-font-charset:0;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:-536859905 -1073711037 9 0 511 0;}
+@font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;
+	mso-font-charset:2;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:0 268435456 0 0 -2147483648 0;}
+@font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;
+	mso-font-charset:2;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:0 268435456 0 0 -2147483648 0;}
+ /* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+p.MsoFootnoteText, li.MsoFootnoteText, div.MsoFootnoteText
+	{mso-style-noshow:yes;
+	mso-style-unhide:no;
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+span.MsoFootnoteReference
+	{mso-style-noshow:yes;
+	mso-style-unhide:no;
+	vertical-align:super;}
+p.MsoTitle, li.MsoTitle, div.MsoTitle
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	margin:0in;
+	margin-bottom:.0001pt;
+	text-align:center;
+	mso-pagination:widow-orphan;
+	font-size:16.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	font-weight:bold;}
+p.MsoBodyText, li.MsoBodyText, div.MsoBodyText
+	{mso-style-unhide:no;
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+p.MsoSubtitle, li.MsoSubtitle, div.MsoSubtitle
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	margin:0in;
+	margin-bottom:.0001pt;
+	text-align:center;
+	mso-pagination:widow-orphan;
+	font-size:16.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	font-weight:bold;}
+a:link, span.MsoHyperlink
+	{mso-style-unhide:no;
+	color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-unhide:no;
+	color:purple;
+	mso-themecolor:followedhyperlink;
+	text-decoration:underline;
+	text-underline:single;}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	mso-default-props:yes;}
+ /* Page Definitions */
+@page
+	{mso-footnote-separator:url(":assig2_files:header.htm") fs;
+	mso-footnote-continuation-separator:url(":assig2_files:header.htm") fcs;
+	mso-endnote-separator:url(":assig2_files:header.htm") es;
+	mso-endnote-continuation-separator:url(":assig2_files:header.htm") ecs;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:.9in 1.0in .7in 1.0in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+@list l0
+	{mso-list-id:116459620;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1000397172 67698705 67698713 67698715 67698703 67698713 67698715 67698703 67698713 67698715;}
+@list l0:level1
+	{mso-level-text:"%1\)";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:.25in;
+	text-indent:-.25in;}
+@list l0:level2
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:.75in;
+	text-indent:-.25in;}
+@list l0:level3
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	margin-left:1.25in;
+	text-indent:-9.0pt;}
+@list l0:level4
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:1.75in;
+	text-indent:-.25in;}
+@list l0:level5
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:2.25in;
+	text-indent:-.25in;}
+@list l0:level6
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	margin-left:2.75in;
+	text-indent:-9.0pt;}
+@list l0:level7
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:3.25in;
+	text-indent:-.25in;}
+@list l0:level8
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:3.75in;
+	text-indent:-.25in;}
+@list l0:level9
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	margin-left:4.25in;
+	text-indent:-9.0pt;}
+@list l1
+	{mso-list-id:766969910;
+	mso-list-template-ids:711086928;}
+@list l1:level1
+	{mso-level-text:"%1\)";
+	mso-level-tab-stop:.25in;
+	mso-level-number-position:left;
+	margin-left:.25in;
+	text-indent:-.25in;
+	mso-ansi-font-weight:normal;
+	mso-ansi-font-style:normal;}
+@list l1:level2
+	{mso-level-number-format:alpha-lower;
+	mso-level-text:"%2\)";
+	mso-level-tab-stop:.75in;
+	mso-level-number-position:left;
+	margin-left:.75in;
+	text-indent:-.25in;
+	mso-ansi-font-weight:normal;
+	mso-ansi-font-style:normal;}
+@list l1:level3
+	{mso-level-number-format:roman-lower;
+	mso-level-text:"%3\)";
+	mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	margin-left:1.0in;
+	text-indent:-.25in;}
+@list l1:level4
+	{mso-level-text:"\(%4\)";
+	mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	margin-left:1.0in;
+	text-indent:-.25in;}
+@list l1:level5
+	{mso-level-number-format:alpha-lower;
+	mso-level-text:"\(%5\)";
+	mso-level-tab-stop:1.25in;
+	mso-level-number-position:left;
+	margin-left:1.25in;
+	text-indent:-.25in;}
+@list l1:level6
+	{mso-level-number-format:roman-lower;
+	mso-level-text:"\(%6\)";
+	mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	margin-left:1.5in;
+	text-indent:-.25in;}
+@list l1:level7
+	{mso-level-tab-stop:1.75in;
+	mso-level-number-position:left;
+	margin-left:1.75in;
+	text-indent:-.25in;}
+@list l1:level8
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	margin-left:2.0in;
+	text-indent:-.25in;}
+@list l1:level9
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:2.25in;
+	mso-level-number-position:left;
+	margin-left:2.25in;
+	text-indent:-.25in;}
+@list l2
+	{mso-list-id:789128633;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1077744076 67698689 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l2:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:.25in;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l2:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:.75in;
+	text-indent:-.25in;
+	font-family:"Courier New";
+	mso-bidi-font-family:"Times New Roman";}
+@list l2:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:1.25in;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l2:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:1.75in;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l2:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:2.25in;
+	text-indent:-.25in;
+	font-family:"Courier New";
+	mso-bidi-font-family:"Times New Roman";}
+@list l2:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:2.75in;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l2:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:3.25in;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l2:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:3.75in;
+	text-indent:-.25in;
+	font-family:"Courier New";
+	mso-bidi-font-family:"Times New Roman";}
+@list l2:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:4.25in;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l3
+	{mso-list-id:1036857688;
+	mso-list-template-ids:-2002487800;}
+@list l3:level1
+	{mso-level-text:"%1\)";
+	mso-level-tab-stop:.25in;
+	mso-level-number-position:left;
+	margin-left:.25in;
+	text-indent:-.25in;
+	mso-ansi-font-weight:normal;
+	mso-ansi-font-style:normal;}
+@list l3:level2
+	{mso-level-number-format:alpha-lower;
+	mso-level-text:"%2\)";
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	margin-left:.5in;
+	text-indent:-.25in;
+	mso-ansi-font-weight:normal;
+	mso-ansi-font-style:normal;}
+@list l3:level3
+	{mso-level-number-format:roman-lower;
+	mso-level-text:"%3\)";
+	mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	margin-left:1.0in;
+	text-indent:-.25in;}
+@list l3:level4
+	{mso-level-text:"\(%4\)";
+	mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	margin-left:1.0in;
+	text-indent:-.25in;}
+@list l3:level5
+	{mso-level-number-format:alpha-lower;
+	mso-level-text:"\(%5\)";
+	mso-level-tab-stop:1.25in;
+	mso-level-number-position:left;
+	margin-left:1.25in;
+	text-indent:-.25in;}
+@list l3:level6
+	{mso-level-number-format:roman-lower;
+	mso-level-text:"\(%6\)";
+	mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	margin-left:1.5in;
+	text-indent:-.25in;}
+@list l3:level7
+	{mso-level-tab-stop:1.75in;
+	mso-level-number-position:left;
+	margin-left:1.75in;
+	text-indent:-.25in;}
+@list l3:level8
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	margin-left:2.0in;
+	text-indent:-.25in;}
+@list l3:level9
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:2.25in;
+	mso-level-number-position:left;
+	margin-left:2.25in;
+	text-indent:-.25in;}
+@list l4
+	{mso-list-id:1119492551;
+	mso-list-type:hybrid;
+	mso-list-template-ids:672010912 67698689 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l4:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l4:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Courier New";
+	mso-bidi-font-family:"Times New Roman";}
+@list l4:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l4:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l4:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Courier New";
+	mso-bidi-font-family:"Times New Roman";}
+@list l4:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l4:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l4:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Courier New";
+	mso-bidi-font-family:"Times New Roman";}
+@list l4:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l5
+	{mso-list-id:1364087555;
+	mso-list-template-ids:452373532;}
+@list l5:level1
+	{mso-level-text:"%1\)";
+	mso-level-tab-stop:.25in;
+	mso-level-number-position:left;
+	margin-left:.25in;
+	text-indent:-.25in;
+	mso-ansi-font-weight:normal;
+	mso-ansi-font-style:normal;}
+@list l5:level2
+	{mso-level-number-format:alpha-lower;
+	mso-level-text:"%2\)";
+	mso-level-tab-stop:.75in;
+	mso-level-number-position:left;
+	margin-left:.5in;
+	text-indent:-.25in;
+	mso-ansi-font-weight:normal;
+	mso-ansi-font-style:normal;}
+@list l5:level3
+	{mso-level-number-format:roman-lower;
+	mso-level-text:"%3\)";
+	mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	margin-left:1.0in;
+	text-indent:-.25in;}
+@list l5:level4
+	{mso-level-text:"\(%4\)";
+	mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	margin-left:1.0in;
+	text-indent:-.25in;}
+@list l5:level5
+	{mso-level-number-format:alpha-lower;
+	mso-level-text:"\(%5\)";
+	mso-level-tab-stop:1.25in;
+	mso-level-number-position:left;
+	margin-left:1.25in;
+	text-indent:-.25in;}
+@list l5:level6
+	{mso-level-number-format:roman-lower;
+	mso-level-text:"\(%6\)";
+	mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	margin-left:1.5in;
+	text-indent:-.25in;}
+@list l5:level7
+	{mso-level-tab-stop:1.75in;
+	mso-level-number-position:left;
+	margin-left:1.75in;
+	text-indent:-.25in;}
+@list l5:level8
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	margin-left:2.0in;
+	text-indent:-.25in;}
+@list l5:level9
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:2.25in;
+	mso-level-number-position:left;
+	margin-left:2.25in;
+	text-indent:-.25in;}
+@list l6
+	{mso-list-id:1398279375;
+	mso-list-template-ids:672010912;}
+@list l6:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l6:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Courier New";
+	mso-bidi-font-family:"Times New Roman";}
+@list l6:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l6:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l6:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Courier New";
+	mso-bidi-font-family:"Times New Roman";}
+@list l6:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l6:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l6:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Courier New";
+	mso-bidi-font-family:"Times New Roman";}
+@list l6:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l7
+	{mso-list-id:1497762632;
+	mso-list-type:hybrid;
+	mso-list-template-ids:248016364 1188433592 67698713 67698715 67698703 67698713 67698715 67698703 67698713 67698715;}
+@list l7:level1
+	{mso-level-text:"%1\)";
+	mso-level-tab-stop:.25in;
+	mso-level-number-position:left;
+	margin-left:.25in;
+	text-indent:-.25in;
+	mso-ansi-font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-ansi-font-weight:normal;
+	mso-ansi-font-style:normal;}
+@list l7:level2
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l7:level3
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:1.5in;
+	mso-level-number-position:right;
+	text-indent:-9.0pt;}
+@list l7:level5
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l7:level6
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:3.0in;
+	mso-level-number-position:right;
+	text-indent:-9.0pt;}
+@list l7:level8
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l7:level9
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:4.5in;
+	mso-level-number-position:right;
+	text-indent:-9.0pt;}
+@list l8
+	{mso-list-id:1716419674;
+	mso-list-template-ids:-2002487800;}
+@list l8:level1
+	{mso-level-text:"%1\)";
+	mso-level-tab-stop:.25in;
+	mso-level-number-position:left;
+	margin-left:.25in;
+	text-indent:-.25in;
+	mso-ansi-font-weight:normal;
+	mso-ansi-font-style:normal;}
+@list l8:level2
+	{mso-level-number-format:alpha-lower;
+	mso-level-text:"%2\)";
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	margin-left:.5in;
+	text-indent:-.25in;
+	mso-ansi-font-weight:normal;
+	mso-ansi-font-style:normal;}
+@list l8:level3
+	{mso-level-number-format:roman-lower;
+	mso-level-text:"%3\)";
+	mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	margin-left:1.0in;
+	text-indent:-.25in;}
+@list l8:level4
+	{mso-level-text:"\(%4\)";
+	mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	margin-left:1.0in;
+	text-indent:-.25in;}
+@list l8:level5
+	{mso-level-number-format:alpha-lower;
+	mso-level-text:"\(%5\)";
+	mso-level-tab-stop:1.25in;
+	mso-level-number-position:left;
+	margin-left:1.25in;
+	text-indent:-.25in;}
+@list l8:level6
+	{mso-level-number-format:roman-lower;
+	mso-level-text:"\(%6\)";
+	mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	margin-left:1.5in;
+	text-indent:-.25in;}
+@list l8:level7
+	{mso-level-tab-stop:1.75in;
+	mso-level-number-position:left;
+	margin-left:1.75in;
+	text-indent:-.25in;}
+@list l8:level8
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	margin-left:2.0in;
+	text-indent:-.25in;}
+@list l8:level9
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:2.25in;
+	mso-level-number-position:left;
+	margin-left:2.25in;
+	text-indent:-.25in;}
+@list l9
+	{mso-list-id:1968974878;
+	mso-list-template-ids:-759037078;}
+@list l9:level1
+	{mso-level-text:"%1\)";
+	mso-level-tab-stop:.25in;
+	mso-level-number-position:left;
+	margin-left:.25in;
+	text-indent:-.25in;}
+@list l9:level2
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:.75in;
+	mso-level-number-position:left;
+	margin-left:.75in;
+	text-indent:-.25in;}
+@list l9:level3
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:1.25in;
+	mso-level-number-position:right;
+	margin-left:1.25in;
+	text-indent:-9.0pt;}
+@list l9:level4
+	{mso-level-tab-stop:1.75in;
+	mso-level-number-position:left;
+	margin-left:1.75in;
+	text-indent:-.25in;}
+@list l9:level5
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:2.25in;
+	mso-level-number-position:left;
+	margin-left:2.25in;
+	text-indent:-.25in;}
+@list l9:level6
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:2.75in;
+	mso-level-number-position:right;
+	margin-left:2.75in;
+	text-indent:-9.0pt;}
+@list l9:level7
+	{mso-level-tab-stop:3.25in;
+	mso-level-number-position:left;
+	margin-left:3.25in;
+	text-indent:-.25in;}
+@list l9:level8
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:3.75in;
+	mso-level-number-position:left;
+	margin-left:3.75in;
+	text-indent:-.25in;}
+@list l9:level9
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:4.25in;
+	mso-level-number-position:right;
+	margin-left:4.25in;
+	text-indent:-9.0pt;}
+ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="1027"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body style="" lang="EN-US" link="blue" vlink="purple">
+
+<div class="WordSection1">
+
+<p class="MsoTitle">CS/COE 0445 Spring 2012 Assignment 2<span style="font-size:
+11.0pt;mso-bidi-font-size:12.0pt"><o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:12.0pt"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><b><span style="font-size:11.0pt;mso-bidi-font-size:12.0pt">Online:
+Sunday, January 29, 2012<o:p></o:p></span></b></p>
+
+<p class="MsoNormal"><b><span style="font-size:11.0pt;mso-bidi-font-size:12.0pt">Due:
+</span></b><span style="font-size:11.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-weight:
+bold">All files zipped into a single .zip file and submitted to the proper
+directory in the submission site by<b> 11:59PM on Monday, February 13, 2012<o:p></o:p></b></span></p>
+
+<p class="MsoNormal"><b><span style="font-size:11.0pt;mso-bidi-font-size:12.0pt">Late
+Due Date: 11:59PM on Wednesday, February 15, 2012<o:p></o:p></span></b></p>
+
+<p class="MsoNormal"><b><span style="font-size:11.0pt;mso-bidi-font-size:12.0pt"><o:p>&nbsp;</o:p></span></b></p>
+
+<p class="MsoNormal"><b><span style="font-size:11.0pt;mso-bidi-font-size:12.0pt">Purpose:</span></b><span style="font-size:11.0pt;mso-bidi-font-size:12.0pt"><span style="mso-spacerun:yes">&nbsp; </span>We have discussed Stacks both as a
+client (how to use them) and as an implementer.<span style="mso-spacerun:yes">&nbsp; </span>In this assignment you will get some
+practice using a Stack as a client in order to implement a simple simulation.<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:12.0pt"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><b><span style="font-size:11.0pt;mso-bidi-font-size:12.0pt">Idea:
+</span></b><span style="font-size:11.0pt;mso-bidi-font-size:12.0pt"><o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:12.0pt">You
+are the proprietor of a small ice-cream stand called "<span class="SpellE">Lickety</span>
+Splits". One of your specialties at the stand (as hinted at by the title)
+is your <i style="mso-bidi-font-style:normal">famous-in-five-continents</i>
+banana split.<span style="mso-spacerun:yes">&nbsp; </span>People come from near
+and far just to taste those bananas, sauces, ice cream (3 kinds), whipped cream
+(fresh), nuts, and of course cherries (on top).<span style="mso-spacerun:yes">&nbsp; </span>Because of all the business you do, you
+must keep a lot of bananas on hand (crates full of them).<span style="mso-spacerun:yes">&nbsp; </span>However, since your store is so small,
+you must keep the bananas in a stack so you still have room to move
+around.<span style="mso-spacerun:yes">&nbsp; </span>In order to ensure a fresh
+product for your loyal customers, you have expiration dates on all your crates
+of bananas.<span style="mso-spacerun:yes">&nbsp; </span>The dates are in order
+from oldest (on top of the stack) to newest (on the bottom).<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:12.0pt"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:12.0pt">You
+have many suppliers of bananas, and each delivery made by a supplier consists
+of crates of bananas with a variety of expiration dates, depending on when they
+were packed.<span style="mso-spacerun:yes">&nbsp; </span>Unfortunately, the
+shipping companies are not very organized, and so the boxes in the trucks are
+in no particular order.<span style="mso-spacerun:yes">&nbsp; </span>Each time
+you receive a delivery, you must merge each new crate of bananas with those already
+in your inventory.<span style="mso-spacerun:yes">&nbsp;&nbsp; </span>This is
+necessary because dates on newly received crates of bananas may be anywhere in
+the range of dates of the bananas already on the stack.<span style="mso-spacerun:yes">&nbsp; </span>Naturally, you may have to remove some crates
+from your in-store stack Ð these will be stacked temporarily until you
+can put them back on the main stack.<span style="mso-spacerun:yes">&nbsp;
+</span>But remember, the crates are heavy, so you don't want to have to move
+them around too much.<span style="mso-spacerun:yes">&nbsp; </span>Furthermore,
+you pay a part-time employee by the crate to handle banana deliveries, so the
+more crates that have to be moved the more money you will pay.<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:12.0pt"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:12.0pt">When
+you whip up your world-famous banana splits, you always take bananas from the
+crate on your counter (not on the stack).<span style="mso-spacerun:yes">&nbsp;
+</span>Once the counter crate is empty you dispose of it and take the next
+crate from the top of your stack to use (unless you encounter the horrific
+special case of having no remaining crates of bananas!). <span style="mso-spacerun:yes">&nbsp;</span><o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:12.0pt"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:12.0pt">Remember,
+though, that the bananas do have expiration dates on them.<span style="mso-spacerun:yes">&nbsp; </span>Each day first thing you check your
+bananas versus the current date.<span style="mso-spacerun:yes">&nbsp;
+</span>Any crate (including the crate on the counter) with <span class="GramE">an
+expiration</span> date less than the current date must be thrown away. <o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:12.0pt"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:12.0pt">Periodically
+you would like to see how much you are spending on your bananas (and their
+movement), so you keep track of the costs of the crates and of the pay for your
+mover, and display this information when required.<o:p></o:p></span></p>
+
+<p class="MsoNormal"><b><span style="font-size:11.0pt;mso-bidi-font-size:12.0pt"><o:p>&nbsp;</o:p></span></b></p>
+
+<p class="MsoNormal"><b><span style="font-size:11.0pt;mso-bidi-font-size:12.0pt">Details:
+</span></b><span style="font-size:11.0pt;mso-bidi-font-size:12.0pt"><o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:12.0pt"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:12.0pt">Your
+assignment is to simulate this banana bonanza in the following way:<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-left:.25in;text-indent:-.25in;mso-list:l0 level1 lfo10"><!--[if !supportLists]--><span style="font-size:11.0pt;mso-bidi-font-size:12.0pt"><span style="mso-list:Ignore">1)<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp; </span></span></span><!--[endif]--><span style="font-size:11.0pt;mso-bidi-font-size:12.0pt">Maintain a global clock
+(using a counter), the value of which will be the current date.<span style="mso-spacerun:yes">&nbsp; </span>When your program begins, this clock
+should be set on 0 (this will be the beginning of the "Banana Epoch")<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-left:.25in;text-indent:-.25in;mso-list:l0 level1 lfo10"><!--[if !supportLists]--><span style="font-size:11.0pt;mso-bidi-font-size:12.0pt"><span style="mso-list:Ignore">2)<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp; </span></span></span><!--[endif]--><span style="font-size:11.0pt;mso-bidi-font-size:12.0pt">Represent a single crate of
+bananas as a Crate object (new class), which minimally must contain the
+following information:<span style="mso-spacerun:yes">&nbsp; </span>expiration
+date, initial banana count, current banana count and cost (for the entire
+crate).<span style="mso-spacerun:yes">&nbsp; </span>Your Crate class must also
+implement the Comparable interface, with expiration date as the comparison
+value, so that Crates can easily be compared to one another.<span style="mso-spacerun:yes">&nbsp; </span>Finally, since you are a good
+object-oriented programmer, you will keep your data private and provide
+necessary <span class="SpellE">accessors</span> and <span class="SpellE">mutators</span>
+for access to a Crate.<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-left:.25in;text-indent:-.25in;mso-list:l0 level1 lfo10"><!--[if !supportLists]--><span style="font-size:11.0pt;mso-bidi-font-size:12.0pt"><span style="mso-list:Ignore">3)<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp; </span></span></span><!--[endif]--><span style="font-size:11.0pt;mso-bidi-font-size:12.0pt">Maintain the stack of banana
+crates using a Stack data structure as discussed in class.<span style="mso-spacerun:yes">&nbsp; </span>Note that you will also need a temporary
+Stack to use during some of your operations.<span style="mso-spacerun:yes">&nbsp; </span>You must use the <span class="SpellE">StackInterface</span>
+from the text but may use either the <span class="SpellE">ArrayStack</span> or
+the <span class="SpellE">LinkedStack</span> for your implementation.<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-left:.25in;text-indent:-.25in;mso-list:l0 level1 lfo10"><!--[if !supportLists]--><span style="font-size:11.0pt;mso-bidi-font-size:12.0pt"><span style="mso-list:Ignore">4)<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp; </span></span></span><!--[endif]--><span style="font-size:11.0pt;mso-bidi-font-size:12.0pt">Read in and process a file
+whose name is entered on the command line, which will contain a number of the
+following commands:<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-left:.75in;text-indent:-.25in;mso-list:l0 level2 lfo10"><!--[if !supportLists]--><span style="font-size:11.0pt;mso-bidi-font-size:12.0pt"><span style="mso-list:Ignore">a.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><!--[endif]--><span class="GramE"><b style="mso-bidi-font-weight:normal"><span style="font-size:11.0pt;
+mso-bidi-font-size:12.0pt;font-family:&quot;Courier New&quot;">receive</span></b></span><span style="font-size:11.0pt;mso-bidi-font-size:12.0pt"> Ð receive a new
+shipment of n crates of bananas.<span style="mso-spacerun:yes">&nbsp;
+</span>These will have to be merged into your Stack. After this command, the next
+line will contain an integer, </span><b style="mso-bidi-font-weight:normal"><span style="font-size:11.0pt;mso-bidi-font-size:12.0pt;font-family:&quot;Courier New&quot;">n</span></b><span style="font-size:11.0pt;mso-bidi-font-size:12.0pt">, indicating how many crates
+are to be received.<span style="mso-spacerun:yes">&nbsp; </span>The </span><b style="mso-bidi-font-weight:normal"><span style="font-size:11.0pt;mso-bidi-font-size:
+12.0pt;font-family:&quot;Courier New&quot;">n</span></b><span style="font-size:11.0pt;
+mso-bidi-font-size:12.0pt"> lines after that will contain information about the
+individual crates of bananas.<span style="mso-spacerun:yes">&nbsp; </span>In
+particular, each of the </span><b style="mso-bidi-font-weight:normal"><span style="font-size:11.0pt;mso-bidi-font-size:12.0pt;font-family:&quot;Courier New&quot;">n</span></b><span style="font-size:11.0pt;mso-bidi-font-size:12.0pt"> lines will be formatted as
+follows:<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-left:.75in;text-indent:.25in"><b style="mso-bidi-font-weight:normal"><span style="font-size:11.0pt;mso-bidi-font-size:
+12.0pt;font-family:&quot;Courier New&quot;">&lt;<span class="GramE">date</span>&gt; &lt;count&gt;
+&lt;cost&gt;<o:p></o:p></span></b></p>
+
+<p class="MsoNormal" style="margin-left:.75in"><span class="GramE"><span style="font-size:11.0pt;mso-bidi-font-size:12.0pt">where</span></span><span style="font-size:11.0pt;mso-bidi-font-size:12.0pt"> </span><b style="mso-bidi-font-weight:
+normal"><span style="font-size:11.0pt;mso-bidi-font-size:12.0pt;font-family:
+&quot;Courier New&quot;">&lt;date&gt;</span></b><span style="font-size:11.0pt;mso-bidi-font-size:
+12.0pt"> is an integer representing the expiration date for the crate, </span><b style="mso-bidi-font-weight:normal"><span style="font-size:11.0pt;mso-bidi-font-size:
+12.0pt;font-family:&quot;Courier New&quot;">&lt;count&gt;</span></b><span style="font-size:11.0pt;mso-bidi-font-size:12.0pt"> is an integer indicating
+the number of bananas in the crate, and </span><b style="mso-bidi-font-weight:
+normal"><span style="font-size:11.0pt;mso-bidi-font-size:12.0pt;font-family:
+&quot;Courier New&quot;">&lt;cost&gt;</span></b><span style="font-size:11.0pt;mso-bidi-font-size:
+12.0pt"> is a double representing the cost of the crate.<span style="mso-spacerun:yes">&nbsp; </span>See the test files for some examples.<span style="mso-spacerun:yes">&nbsp; </span>Remember that these crates will not be
+ordered in the file, but must be kept ordered on your Stack.<span style="mso-spacerun:yes">&nbsp; </span>The smaller the date, the
+"older" the bananas are.<span style="mso-spacerun:yes">&nbsp;
+</span>The oldest bananas must be kept on the top of the Stack.<span style="mso-spacerun:yes">&nbsp; </span><span style="mso-spacerun:yes">&nbsp;</span><b style="mso-bidi-font-weight:normal">Note
+that you must simulate this merge as accurately as possible.</b><span style="mso-spacerun:yes">&nbsp; </span>Crates must be removed from the store Stack
+in order to locate the proper position for any new crates, as dictated by the
+expiration dates.<span style="mso-spacerun:yes">&nbsp; </span>Crates that were
+removed must be stacked somewhere temporarily and then placed back onto the
+store stack.<span style="mso-spacerun:yes">&nbsp; </span>At the end of the
+entire process no crates should remain on the temporary stack (since it blocks
+the door to the restroom), but it does not have to be cleared between each
+individual crate merge.<span style="mso-spacerun:yes">&nbsp; </span>To save
+money you want to process the received crates in as few moves as possible. <span style="mso-spacerun:yes">&nbsp;</span>In particular, you have a part-time
+employee whose only job is to unload the crates during receipt of a
+shipment.<span style="mso-spacerun:yes">&nbsp; </span>She gets paid $1 per
+crate, so the more moving she <span class="GramE">has</span> to do, the more
+money it will cost you.<span style="mso-spacerun:yes">&nbsp; </span>Thus, you
+want to minimize the total number of crates moved during this process.<span style="mso-spacerun:yes">&nbsp; </span>Each crate move, whether to move a crate
+from the truck to the store stack, to move a crate from the store stack to a
+temporary stack, or to move a crate back from the temporary stack to the store
+stack, counts as a move.<span style="mso-spacerun:yes">&nbsp;&nbsp;
+</span>However, be careful not to over count moves.<span style="mso-spacerun:yes">&nbsp; </span>For example, if a crate is taken from
+the top of the store stack (pop) and put onto a temporary stack (push) this
+should count as only a single move even though both a pop and a push are being
+done. <span style="mso-spacerun:yes">&nbsp;&nbsp;</span>During each </span><b style="mso-bidi-font-weight:normal"><span style="font-size:11.0pt;mso-bidi-font-size:
+12.0pt;font-family:&quot;Courier New&quot;">receive</span></b><span style="font-size:
+11.0pt;mso-bidi-font-size:12.0pt"> you must also keep track of how many crates
+were received and how much they cost.<span style="mso-spacerun:yes">&nbsp;
+</span><b style="mso-bidi-font-weight:normal">If you require too many moves
+during your receive command, you will lose grade points on the assignment.</b><o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-left:.75in;text-indent:-.25in;mso-list:l0 level2 lfo10"><!--[if !supportLists]--><span style="font-size:11.0pt;mso-bidi-font-size:12.0pt"><span style="mso-list:Ignore">b.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><!--[endif]--><span class="GramE"><b style="mso-bidi-font-weight:normal"><span style="font-size:11.0pt;
+mso-bidi-font-size:12.0pt;font-family:&quot;Courier New&quot;">use</span></b></span><b style="mso-bidi-font-weight:normal"><span style="font-size:11.0pt;mso-bidi-font-size:
+12.0pt;font-family:&quot;Courier New&quot;"> </span></b><span style="font-size:11.0pt;
+mso-bidi-font-size:12.0pt">Ð use bananas for current orders.<span style="mso-spacerun:yes">&nbsp; </span>After this command, the next line will
+contain an integer, </span><b style="mso-bidi-font-weight:normal"><span style="font-size:11.0pt;mso-bidi-font-size:12.0pt;font-family:&quot;Courier New&quot;">k</span></b><span style="font-size:11.0pt;mso-bidi-font-size:12.0pt">, indicating how many
+bananas are needed.<span style="mso-spacerun:yes">&nbsp; </span>These are to be
+taken from the crate on the counter, unless that crate has fewer than </span><b style="mso-bidi-font-weight:normal"><span style="font-size:11.0pt;mso-bidi-font-size:
+12.0pt;font-family:&quot;Courier New&quot;">k</span></b><span style="font-size:11.0pt;
+mso-bidi-font-size:12.0pt"> bananas.<span style="mso-spacerun:yes">&nbsp;
+</span>If the counter crate has only</span><b style="mso-bidi-font-weight:normal"><span style="font-size:11.0pt;mso-bidi-font-size:12.0pt;font-family:&quot;Courier New&quot;"> m
+(&lt; k)</span></b><span style="font-size:11.0pt;mso-bidi-font-size:12.0pt">
+bananas, then take the remaining </span><b style="mso-bidi-font-weight:normal"><span style="font-size:11.0pt;mso-bidi-font-size:12.0pt;font-family:&quot;Courier New&quot;">m</span></b><span style="font-size:11.0pt;mso-bidi-font-size:12.0pt"> bananas from the counter
+crate, get a new crate from the Stack to put onto the counter, and then take
+the <span class="GramE">additional<b style="mso-bidi-font-weight:normal"><span style="font-family:&quot;Courier New&quot;">(</span></b></span></span><b style="mso-bidi-font-weight:normal"><span style="font-size:11.0pt;mso-bidi-font-size:
+12.0pt;font-family:&quot;Courier New&quot;">k Ð m)</span></b><span style="font-size:11.0pt;mso-bidi-font-size:12.0pt"> bananas from that crate.<span style="mso-spacerun:yes">&nbsp; </span>Be careful to handle special cases (ex: need
+several crates to satisfy order; not enough bananas in the store to satisfy
+order).<span style="mso-spacerun:yes">&nbsp; </span><b style="mso-bidi-font-weight:
+normal">Note:</b> Once a crate is being used (i.e. it is on the counter) it can
+never be put back onto the stack.<span style="mso-spacerun:yes">&nbsp;
+</span>Thus it is possible (due to new shipments) for a crate on the top of the
+stack to actually expire before the counter crate.<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-left:.75in;text-indent:-.25in;mso-list:l0 level2 lfo10"><!--[if !supportLists]--><span style="font-size:11.0pt;mso-bidi-font-size:12.0pt"><span style="mso-list:Ignore">c.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><!--[endif]--><span class="GramE"><b style="mso-bidi-font-weight:normal"><span style="font-size:11.0pt;
+mso-bidi-font-size:12.0pt;font-family:&quot;Courier New&quot;">display</span></b></span><span style="font-size:11.0pt;mso-bidi-font-size:12.0pt"> Ð display your
+counter crate and your stack of bananas.<span style="mso-spacerun:yes">&nbsp;
+</span>This should indicate clearly the order of the crates and all of the
+information for each crate (expiration, current count, initial count, cost).<span style="mso-spacerun:yes">&nbsp; </span><b style="mso-bidi-font-weight:normal">Interesting
+/ Important note:</b> The Stack ADT does not provide for a display operation,
+so to display the crates on your stack, you must pop all of them to a temporary
+stack and then push them back onto your store stack.<span style="mso-spacerun:yes">&nbsp; </span>Unlike receiving the crates, however, in
+real life we would assume that the crate information could be read on the sides
+of the crates without having to actually move them.<span style="mso-spacerun:yes">&nbsp; </span>Thus, the pops and pushes are simply an
+implementation issue and would not actually be done in the store.<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-left:.75in;text-indent:-.25in;mso-list:l0 level2 lfo10"><!--[if !supportLists]--><span style="font-size:11.0pt;mso-bidi-font-size:12.0pt"><span style="mso-list:Ignore">d.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><!--[endif]--><span class="GramE"><b style="mso-bidi-font-weight:normal"><span style="font-size:11.0pt;
+mso-bidi-font-size:12.0pt;font-family:&quot;Courier New&quot;">skip</span></b></span><span style="font-size:11.0pt;mso-bidi-font-size:12.0pt"> Ð skip to the next
+day.<span style="mso-spacerun:yes">&nbsp; </span>The global clock must be
+incremented here. Any bananas whose expiration dates are now less than the
+clock value must be thrown out.<span style="mso-spacerun:yes">&nbsp; </span>A
+message should be displayed for each crate that must be thrown away.<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-left:.75in;text-indent:-.25in;mso-list:l0 level2 lfo10"><!--[if !supportLists]--><span style="font-size:11.0pt;mso-bidi-font-size:12.0pt"><span style="mso-list:Ignore">e.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><!--[endif]--><span class="GramE"><b style="mso-bidi-font-weight:normal"><span style="font-size:11.0pt;
+mso-bidi-font-size:12.0pt;font-family:&quot;Courier New&quot;">report</span></b></span><b style="mso-bidi-font-weight:normal"><span style="font-size:11.0pt;mso-bidi-font-size:
+12.0pt"> </span></b><span style="font-size:11.0pt;mso-bidi-font-size:12.0pt"><span style="mso-spacerun:yes">&nbsp;</span>Ð report your banana expenses in a
+nicely formatted way.<span style="mso-spacerun:yes">&nbsp; </span>Your report
+must have two sections:<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-left:1.25in;text-indent:-1.25in;mso-text-indent-alt:
+-9.0pt;mso-list:l0 level3 lfo10"><!--[if !supportLists]--><span style="font-size:
+11.0pt;mso-bidi-font-size:12.0pt"><span style="mso-list:Ignore"><span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>i.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><!--[endif]--><span style="font-size:11.0pt;mso-bidi-font-size:12.0pt">The expenses from your most
+recent shipment.<span style="mso-spacerun:yes">&nbsp; </span>This should
+include the number of crates received, their cost, and the cost of moving them
+around (including how many actual moves were required when the crates were put
+away).<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-left:1.25in;text-indent:-1.25in;mso-text-indent-alt:
+-9.0pt;mso-list:l0 level3 lfo10"><!--[if !supportLists]--><span style="font-size:
+11.0pt;mso-bidi-font-size:12.0pt"><span style="mso-list:Ignore"><span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>ii.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><!--[endif]--><span style="font-size:11.0pt;mso-bidi-font-size:12.0pt">The overall expenses from
+the beginning of the simulation.<span style="mso-spacerun:yes">&nbsp;
+</span>The same data as above should be shown.<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-left:.75in"><b style="mso-bidi-font-weight:
+normal"><span style="font-size:11.0pt;mso-bidi-font-size:12.0pt">Note:</span></b><span style="font-size:11.0pt;mso-bidi-font-size:12.0pt"><span style="mso-spacerun:yes">&nbsp; </span>It is possible that more than one
+shipment is received between calls of the </span><b style="mso-bidi-font-weight:
+normal"><span style="font-size:11.0pt;mso-bidi-font-size:12.0pt;font-family:
+&quot;Courier New&quot;">report</span></b><span style="font-size:11.0pt;mso-bidi-font-size:
+12.0pt"> operation.<span style="mso-spacerun:yes">&nbsp; </span>Item <span class="SpellE">i</span>. above should only take into account the most recent
+shipment, but item ii. <span class="GramE">above</span> should take into account
+all shipments.<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-left:.25in;text-indent:-.25in;mso-list:l0 level1 lfo10"><!--[if !supportLists]--><span style="font-size:11.0pt;mso-bidi-font-size:12.0pt"><span style="mso-list:Ignore">5)<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp; </span></span></span><!--[endif]--><span style="font-size:11.0pt;mso-bidi-font-size:12.0pt">You must implement your
+program in a good object-oriented way.<span style="mso-spacerun:yes">&nbsp;
+</span>Specifically, you must create a class Crate (in file </span><b style="mso-bidi-font-weight:normal"><span style="font-size:11.0pt;mso-bidi-font-size:
+12.0pt;font-family:&quot;Courier New&quot;">Crate.java</span></b><span style="font-size:
+11.0pt;mso-bidi-font-size:12.0pt">) to represent your banana crates and your
+Stack should be a Stack of Crate objects.<span style="mso-spacerun:yes">&nbsp;
+</span>Also, your Crate class should have the <span class="SpellE">accessors</span>
+and <span class="SpellE">mutators</span> necessary to implement the functionality
+required without giving public access to variables<b style="mso-bidi-font-weight:
+normal">.<span style="mso-spacerun:yes">&nbsp; </span>It is probably a good
+idea to encapsulate the functionality of your overall store into a class as
+well, so as to keep the complexity of your main program lower.</b><span style="mso-spacerun:yes">&nbsp; </span>Your main program should be called
+Assig2 and should be in file </span><b style="mso-bidi-font-weight:normal"><span style="font-size:11.0pt;mso-bidi-font-size:12.0pt;font-family:&quot;Courier New&quot;">Assig2.java</span></b><span style="font-size:11.0pt;mso-bidi-font-size:12.0pt">.<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-left:.25in;text-indent:-.25in;mso-list:l0 level1 lfo10"><!--[if !supportLists]--><span style="font-size:11.0pt;mso-bidi-font-size:12.0pt"><span style="mso-list:Ignore">6)<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp; </span></span></span><!--[endif]--><span style="font-size:11.0pt;mso-bidi-font-size:12.0pt">Print all of your output to
+standard output.<span style="mso-spacerun:yes">&nbsp; </span>Note that there is
+no interactive input to this program.<span style="mso-spacerun:yes">&nbsp;
+</span>All input is read in from the file, whose name is entered at the command
+prompt.<span style="mso-spacerun:yes">&nbsp; </span>For an idea of how your
+output might look, and to see some reasonable values for the moves, see some
+sample input and output files:<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-left:.5in"><b style="mso-bidi-font-weight:
+normal"><span style="font-size:11.0pt;mso-bidi-font-size:12.0pt;font-family:
+&quot;Courier New&quot;"><a href="http://www.cs.pitt.edu/%7Eramirez/cs445/assigs/assig2/test2-1.txt"><span class="GramE">test2</span>-1.txt</a><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp; </span> <a href="http://www.cs.pitt.edu/%7Eramirez/cs445/assigs/assig2/test2-1-out.txt">test2-1-out.txt</a><o:p></o:p></span></b></p>
+
+<p class="MsoNormal" style="margin-left:.5in"><b style="mso-bidi-font-weight:
+normal"><span style="font-size:11.0pt;mso-bidi-font-size:12.0pt;font-family:
+&quot;Courier New&quot;"><a href="http://www.cs.pitt.edu/%7Eramirez/cs445/assigs/assig2/test2-2.txt"><span class="GramE">test2</span>-2.txt</a><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp; </span> <a href="http://www.cs.pitt.edu/%7Eramirez/cs445/assigs/assig2/test2-2-out.txt">test2-2-out.txt</a><o:p></o:p></span></b></p>
+
+<p class="MsoNormal" style="margin-left:.5in"><b style="mso-bidi-font-weight:
+normal"><span style="font-size:11.0pt;mso-bidi-font-size:12.0pt;font-family:
+&quot;Courier New&quot;"><a href="http://www.cs.pitt.edu/%7Eramirez/cs445/assigs/assig2/test2-3.txt">test2-3.txt</a><span style="mso-tab-count:
+1">&nbsp;&nbsp;&nbsp; </span> <a href="http://www.cs.pitt.edu/%7Eramirez/cs445/assigs/assig2/test2-3-out.txt">test2-3-out.txt</a><o:p></o:p></span></b></p>
+
+<p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:12.0pt"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:12.0pt">Make
+sure you <b style="mso-bidi-font-weight:normal">submit ALL of the following in
+a single .zip file</b> to get full credit:<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-left:.25in;text-indent:-.25in;mso-list:l3 level1 lfo6;
+tab-stops:list .25in"><!--[if !supportLists]--><span style="font-size:11.0pt;
+mso-bidi-font-size:12.0pt"><span style="mso-list:Ignore">1)<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp; </span></span></span><!--[endif]--><span style="font-size:11.0pt;mso-bidi-font-size:12.0pt">All of the files that you
+wrote, well-formatted and reasonably commented:<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-left:.5in;text-indent:-.25in;mso-list:l3 level2 lfo6;
+tab-stops:list .5in"><!--[if !supportLists]--><span style="font-size:11.0pt;
+mso-bidi-font-size:12.0pt"><span style="mso-list:Ignore">a)<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><!--[endif]--><span style="font-size:11.0pt;mso-bidi-font-size:12.0pt">Crate.java<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-left:.5in;text-indent:-.25in;mso-list:l3 level2 lfo6;
+tab-stops:list .5in"><!--[if !supportLists]--><span style="font-size:11.0pt;
+mso-bidi-font-size:12.0pt"><span style="mso-list:Ignore">b)<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><!--[endif]--><span style="font-size:11.0pt;mso-bidi-font-size:12.0pt">Assig2.java<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-left:.5in;text-indent:-.25in;mso-list:l3 level2 lfo6;
+tab-stops:list .5in"><!--[if !supportLists]--><span style="font-size:11.0pt;
+mso-bidi-font-size:12.0pt"><span style="mso-list:Ignore">c)<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><!--[endif]--><span style="font-size:11.0pt;mso-bidi-font-size:12.0pt">Any other files that you
+wrote<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-left:.5in;text-indent:-.25in;mso-list:l3 level2 lfo6;
+tab-stops:list .5in"><!--[if !supportLists]--><span style="font-size:11.0pt;
+mso-bidi-font-size:12.0pt"><span style="mso-list:Ignore">d)<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><!--[endif]--><span style="font-size:11.0pt;mso-bidi-font-size:12.0pt">All data files<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-left:.25in;text-indent:-.25in;mso-list:l3 level1 lfo6;
+tab-stops:list .25in"><!--[if !supportLists]--><span style="font-size:11.0pt;
+mso-bidi-font-size:12.0pt"><span style="mso-list:Ignore">2)<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp; </span></span></span><!--[endif]--><span style="font-size:11.0pt;mso-bidi-font-size:12.0pt">All files necessary for your
+Stack:<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-left:.5in;text-indent:-.25in;mso-list:l3 level2 lfo6;
+tab-stops:list .5in"><!--[if !supportLists]--><span style="font-size:11.0pt;
+mso-bidi-font-size:12.0pt"><span style="mso-list:Ignore">a)<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><!--[endif]--><span style="font-size:11.0pt;mso-bidi-font-size:12.0pt">StackInterface.java<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-left:.5in;text-indent:-.25in;mso-list:l3 level2 lfo6;
+tab-stops:list .5in"><!--[if !supportLists]--><span style="font-size:11.0pt;
+mso-bidi-font-size:12.0pt"><span style="mso-list:Ignore">b)<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><!--[endif]--><span style="font-size:11.0pt;mso-bidi-font-size:12.0pt">Either ArrayStack.java or
+LinkedStack.java<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-left:.25in;text-indent:-.25in;mso-list:l3 level1 lfo6;
+tab-stops:list .25in"><!--[if !supportLists]--><span style="font-size:11.0pt;
+mso-bidi-font-size:12.0pt"><span style="mso-list:Ignore">3)<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp; </span></span></span><!--[endif]--><span style="font-size:11.0pt;mso-bidi-font-size:12.0pt">Your completed Assignment
+Information Sheet.<span style="mso-spacerun:yes">&nbsp; </span>Be sure to help
+the TA with grading by clearly indicated here what you did and did not get working
+for the project.<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:12.0pt">As
+with Assignment 1, the idea from your submission is that your TA can compile
+and run your programs WITHOUT ANY additional files, so be sure to test them
+thoroughly before submitting them.<span style="mso-spacerun:yes">&nbsp;
+</span>If you cannot get the program working as specified, clearly indicate any
+changes you made and clearly indicate why, so that the TA can best give you
+partial credit.<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:12.0pt"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><b style="mso-bidi-font-weight:normal"><span style="font-size:11.0pt;mso-bidi-font-size:12.0pt">Extra Credit Ideas:</span></b><span style="font-size:11.0pt;mso-bidi-font-size:12.0pt"><span style="mso-spacerun:yes">&nbsp; </span>If you want to get some extra credit,
+here is an idea:<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-left:.25in;text-indent:-.25in;mso-list:l2 level1 lfo7"><!--[if !supportLists]--><span style="font-size:11.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">á<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><!--[endif]--><span style="font-size:11.0pt;mso-bidi-font-size:
+12.0pt">Allow one or more additional non-trivial commands. For example, you can
+make your simulation more useful by also including purchases and the money
+earned from them.<span style="mso-spacerun:yes">&nbsp; </span>Thus, when
+showing your report it will include both expenses and revenues and you can
+determine if a profit has been made.<span style="mso-spacerun:yes">&nbsp;
+</span>If you do this option, you should write a second program and your own
+input files so that the TA can test both your original required submission and
+your extra credit.<span style="mso-spacerun:yes">&nbsp; </span><o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:12.0pt"><o:p>&nbsp;</o:p></span></p>
+
+</div>
+
+
+
+
+</body></html>

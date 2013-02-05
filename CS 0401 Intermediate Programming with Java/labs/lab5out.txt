@@ -1,0 +1,9 @@
+R1: Width: 80 Height: 20 X: 100 Y: 50 Area: 1600
+R2: Width: 0 Height: 0 X: 0 Y: 0 Area: 0
+R3: Width: 100 Height: 100 X: 60 Y: 60 Area: 10000
+Point (120,70) is INSIDE Width: 80 Height: 20 X: 100 Y: 50
+Point (120,70) is INSIDE Width: 100 Height: 100 X: 60 Y: 60
+Point (130,110) is OUTSIDE Width: 80 Height: 20 X: 100 Y: 50
+Point (130,110) is INSIDE Width: 100 Height: 100 X: 60 Y: 60
+Point (130,110) is INSIDE Width: 120 Height: 240 X: 100 Y: 50
+Point (130,110) is OUTSIDE Width: 100 Height: 100 X: 400 Y: 350
