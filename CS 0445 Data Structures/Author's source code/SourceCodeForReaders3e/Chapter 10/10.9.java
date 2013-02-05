@@ -1,1 +1,0 @@
-WaitLine customerLine = new WaitLine();customerLine.simulate(20, 0.5, 5);customerLine.displayResults();

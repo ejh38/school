@@ -1,1 +1,0 @@
-public static PrintWriter openOutputTextFile(String fileName)throws FileNotFoundException, IOException{   PrintWriter toFile = new PrintWriter(fileName);   return toFile;} // end openOutputTextFile

@@ -1,1 +1,0 @@
-public Name(){	first = "";	last = "";} // end default constructor

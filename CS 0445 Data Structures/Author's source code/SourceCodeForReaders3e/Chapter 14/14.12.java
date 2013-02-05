@@ -1,1 +1,0 @@
-public boolean isEmpty(){   boolean result;         if (numberOfEntries == 0) // or getLength() == 0   {      assert firstNode == null;      result = true;   }   else   {      assert firstNode != null;      result = false;   } // end if         return result;} // end isEmpty

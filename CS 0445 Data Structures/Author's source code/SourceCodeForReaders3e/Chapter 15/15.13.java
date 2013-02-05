@@ -1,1 +1,0 @@
-public boolean hasNext(){   return nextPosition < list.getLength();} // end hasNext

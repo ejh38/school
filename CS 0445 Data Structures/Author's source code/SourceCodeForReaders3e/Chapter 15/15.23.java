@@ -1,1 +1,0 @@
-public void remove(){   throw new UnsupportedOperationException("remove() is not " +                                           "supported by this iterator");} // end remove

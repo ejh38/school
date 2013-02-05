@@ -1,1 +1,0 @@
-StackInterface<String> pile = new MyStack<String>();pile.push("Jane");pile.push("Jess");pile.push("Jill");pile.push(pile.pop());pile.push(pile.peek());pile.push("Jim");String name = pile.pop();pile.push(pile.peek());

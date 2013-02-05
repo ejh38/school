@@ -1,1 +1,0 @@
-boolean match = true;int index = 0;while (match && (index < a.length)){   if (a[index] != b[index])      match = false;   else      index++;} // end whileif (match)   System.out.println("Arrays have the same contents");else   System.out.println("Arrays have different contents");  

@@ -1,1 +1,0 @@
-Character c1 = new Character('a');Character c2 = new Character('A');if (c1.equals(c2))   System.out.println(c1.charValue() + " is the same as " + c2.charValue());else   System.out.println(c1.charValue() + " is not the same as " + c2.charValue());

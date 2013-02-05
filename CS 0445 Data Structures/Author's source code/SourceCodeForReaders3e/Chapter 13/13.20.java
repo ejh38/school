@@ -1,1 +1,0 @@
-public T[] toArray(){   @SuppressWarnings("unchecked")   T[] result = (T[])list.toArray();      return result;} // end toArray 

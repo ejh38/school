@@ -1,1 +1,0 @@
-public T pop(){   T top = peek();     if (topNode != null)      topNode = topNode.getNextNode();       return top;} // end pop

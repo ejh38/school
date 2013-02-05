@@ -1,1 +1,0 @@
-public T add(T newEntry){   T result = null;   if (isEmpty())      setRootNode(new BinaryNode<T>(newEntry));   else      result = addEntry(getRootNode(), newEntry);       return result;} // end add

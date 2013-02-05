@@ -1,1 +1,0 @@
-int[][] table = new int[10][6];for (int row = 0; row < table.length; row++)   for (int column = 0; column < table[row].length; column++)      table[row][column] = 0;        

@@ -1,1 +1,0 @@
-for (n = 1, product = 1; n <= 10; product = product * n, n++)   continue;  

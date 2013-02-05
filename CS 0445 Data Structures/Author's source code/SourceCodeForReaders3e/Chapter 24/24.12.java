@@ -1,1 +1,0 @@
-public void inorderTraverse() {   inorderTraverse(root);} // end inorderTraverseprivate void inorderTraverse(BinaryNodeInterface<T> node) {   if (node != null)   {      inorderTraverse(node.getLeftChild());      System.out.println(node.getData());      inorderTraverse(node.getRightChild());   } // end if} // end inorderTraverse

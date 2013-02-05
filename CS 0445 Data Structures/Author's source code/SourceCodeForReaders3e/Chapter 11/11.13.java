@@ -1,1 +1,0 @@
-public T getFront(){   T front = null;     if (!isEmpty())      front = queue[frontIndex];       return front;} // end getFront

@@ -1,1 +1,0 @@
-public interface Nameable{   public void setName(String petName);   public String getName();} // end Nameable

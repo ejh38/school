@@ -1,1 +1,0 @@
-try{   openRefrigerator();   takeOutMilk();   pourMilk();   putBackMilk();}catch (NoMilkException e){   System.out.println(e.getMessage());}finally{   closeRefrigerator();}

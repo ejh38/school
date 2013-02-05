@@ -1,1 +1,0 @@
-/** Adds a node to the beginning of a chain. */protected void addFirstNode(Node newNode){   assert newNode != null : "null argument in addFirstNode";   newNode.setNextNode(firstNode);   firstNode = newNode;   numberOfEntries++;} // end addFirstNode

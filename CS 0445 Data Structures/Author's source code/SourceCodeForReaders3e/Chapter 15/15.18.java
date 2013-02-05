@@ -1,1 +1,0 @@
-ListWithIteratorInterface<String> myList = new LinkedListWithIterator<String>();Iterator<String> myIterator = myList.getIterator();while (myIterator.hasNext())    System.out.println(myIterator.next());

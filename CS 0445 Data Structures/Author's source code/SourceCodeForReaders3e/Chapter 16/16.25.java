@@ -1,1 +1,0 @@
-public T getEntry(int givenPosition){   return list.getEntry(givenPosition);} // end getEntry

@@ -1,1 +1,0 @@
-private class IteratorForArrayList implements ListIterator<T>{   private int     nextIndex;   private boolean isRemoveOrSetLegal;   private Move    lastMove;   private IteratorForArrayList()   {      nextIndex = 0;      isRemoveOrSetLegal = false;      lastMove = null;   } // end default constructor   //  . . .} // end IteratorForArrayList

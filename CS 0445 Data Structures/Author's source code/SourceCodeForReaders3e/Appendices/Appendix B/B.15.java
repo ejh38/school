@@ -1,1 +1,0 @@
-public void giveLastNameTo2(Name child){   String firstName = child.getFirst();   child = new Name();   child.setFirst(firstName);   child.setLast(last);} // end giveLastNameTo2

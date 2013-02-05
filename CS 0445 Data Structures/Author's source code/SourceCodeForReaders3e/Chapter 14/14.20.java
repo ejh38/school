@@ -1,1 +1,0 @@
-private Node firstNode;       // head reference to first nodeprivate Node lastNode;        // tail reference to last nodeprivate int  numberOfEntries; // number of entries in list

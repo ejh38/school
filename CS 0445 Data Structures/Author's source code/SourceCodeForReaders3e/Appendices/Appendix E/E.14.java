@@ -1,1 +1,0 @@
-public SquareRootException(){   this("Attempted square root of a negative number.");} // end default constructor

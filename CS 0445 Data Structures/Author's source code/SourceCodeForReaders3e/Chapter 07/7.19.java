@@ -1,1 +1,0 @@
-public void display(){   displayArray(0, length - 1);} // end displayprivate void displayArray(int first, int last) {   System.out.println(list[first]);   if (first < last)      displayArray(first + 1, last);} // end displayArray

@@ -1,1 +1,0 @@
-public Object clone(){   AList<T> theCopy = null;   try   {      theCopy = (AList<T>)super.clone(); // not enough by itself   }   catch (CloneNotSupportedException e)   {      throw new Error(e.toString());   }   // < For a deep copy, we need to do more here, as you will see >   // . . .   return theCopy;} // end clone

@@ -1,1 +1,0 @@
-int number;// ... assign a value to number hereint count = 1;{	System.out.println(count);	count++;}while (count <= number){	System.out.println(count);	count++;}

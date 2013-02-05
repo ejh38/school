@@ -1,1 +1,0 @@
-public T next(){   if (hasNext())   {      lastMove = Move.NEXT;      isRemoveOrSetLegal = true;      T nextEntry = list[nextIndex];      nextIndex++;      return nextEntry;   }   else      throw new NoSuchElementException("Illegal call to next();" +                                       "iterator is after end of list.");} // end next

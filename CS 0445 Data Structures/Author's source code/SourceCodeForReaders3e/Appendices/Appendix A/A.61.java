@@ -1,1 +1,0 @@
-// Version 1int count, number;// ... assign a value to number herefor (count = 1; count <= number; count++)	System.out.println(count);// Version 2int number;// ... assign a value to number herefor (int count = 1; count <= number; count++)	System.out.println(count);

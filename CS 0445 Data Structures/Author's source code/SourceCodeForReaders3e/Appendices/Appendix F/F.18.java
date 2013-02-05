@@ -1,1 +1,0 @@
-File originalFile = new File("MyData.txt");File newFile = new File("MyUpdatedData.txt");originalFile.renameTo(newFile);if (originalFile.renameTo(newFile))   System.out.println("Name change successful.");else   System.out.println("Attempted name change unsuccessful.");

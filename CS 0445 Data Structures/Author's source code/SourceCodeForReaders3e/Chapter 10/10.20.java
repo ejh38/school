@@ -1,1 +1,0 @@
-public int compareTo(Assignment other){  return -date.compareTo(other.date);} // end compareTo

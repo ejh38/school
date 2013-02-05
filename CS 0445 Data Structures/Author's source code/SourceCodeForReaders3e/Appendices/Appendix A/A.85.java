@@ -1,1 +1,0 @@
-String phrase = "one - two   -    three four";Scanner scan = new Scanner(phrase);scan.useDelimiter("\\s+-?\\s*");System.out.println(scan.next());System.out.println(scan.next());System.out.println(scan.next());System.out.println(scan.next());

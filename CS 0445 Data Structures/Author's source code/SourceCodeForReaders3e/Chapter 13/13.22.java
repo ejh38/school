@@ -1,1 +1,0 @@
-public T getEntry(int givenPosition){  T result = null; // return value    if ((givenPosition >= 1) && (givenPosition <= list.size()))  {    assert !isEmpty();    result = list.get(givenPosition - 1);  } // end if    return result;} // end getEntry

@@ -1,1 +1,0 @@
-String fileName = "data.txt";PrintWriter toFile = null; try{   toFile = new PrintWriter(fileName); }catch (FileNotFoundException e){   System.out.println("PrintWriter error opening the file " + fileName);   System.out.println(e.getMessage());   // < Possibly other statements to deal with this exception. >   // . . .}

@@ -1,1 +1,0 @@
-public T dequeue(){   T front = null;   if (!isEmpty())   {      front = queueNode.getData();      queueNode.setData(null);      queueNode = queueNode.getNextNode();   } // end if   return front;} // end dequeue

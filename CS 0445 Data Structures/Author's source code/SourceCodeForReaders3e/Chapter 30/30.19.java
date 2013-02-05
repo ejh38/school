@@ -1,1 +1,0 @@
-public Object clone(){   CollegeStudent theCopy = (CollegeStudent)super.clone();   return theCopy;} // end clone

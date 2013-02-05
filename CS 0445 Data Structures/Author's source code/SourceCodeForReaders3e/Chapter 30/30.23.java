@@ -1,1 +1,0 @@
-public Object clone(){   AList<T> theCopy = null;   try   {      theCopy = (AList<T>)super.clone();   }   catch (CloneNotSupportedException e)   {      throw new Error(e.toString());   }   theCopy.list = (T[])list.clone();   for (int index = 0; index < length; index++)      theCopy.list[index] = (T)list[index].clone();   return theCopy;} // end clone

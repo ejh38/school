@@ -1,1 +1,0 @@
-public boolean equals(Object other) {	return (this == other);} // end equals

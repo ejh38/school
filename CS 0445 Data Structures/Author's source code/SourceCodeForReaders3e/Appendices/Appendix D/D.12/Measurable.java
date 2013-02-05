@@ -1,1 +1,0 @@
-/** An interface for methods that return    the perimeter and area of an object.*/public interface Measurable{   /** Gets the perimeter.       @return the perimeter */   public double getPerimeter();      /** Gets the area.       @return the area */   public double getArea();} // end Measurable

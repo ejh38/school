@@ -1,1 +1,0 @@
-s.push(a);s.push(b);s.push(c);t.push(d);t.push(s.pop());t.push(s.peek());s.push(t.pop());t.pop();

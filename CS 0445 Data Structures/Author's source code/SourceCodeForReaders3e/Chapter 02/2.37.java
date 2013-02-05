@@ -1,1 +1,0 @@
-	/** Adds a new entry to this bag.	    @param newEntry  the object to be added as a new entry	    @return true if the addition is successful, or false if not */	public boolean add(T newEntry) 	{		ensureCapacity();		bag[numberOfEntries] = newEntry;		numberOfEntries++;				return true;	} // end add

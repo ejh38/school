@@ -1,1 +1,0 @@
-public class SortedList<T extends Comparable<? super T>>             implements SortedListInterface<T>{   private ListInterface<T> list;   public SortedList()   {      list = new LList<T>();   } // end default constructor   // . . .} // end SortedList

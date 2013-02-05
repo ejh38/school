@@ -1,1 +1,0 @@
-if (balance >= 0){   System.out.println("Good for you. You earned interest.");   balance = balance + (INTEREST_RATE * balance) / 12;}else{    System.out.println("You will be charged a penalty.");   balance = balance - OVERDRAWN_PENALTY;} // end if

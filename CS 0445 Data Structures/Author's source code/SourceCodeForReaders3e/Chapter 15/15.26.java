@@ -1,1 +1,0 @@
-public boolean hasNext(){   return nextIndex < numberOfEntries;} // end hasNext

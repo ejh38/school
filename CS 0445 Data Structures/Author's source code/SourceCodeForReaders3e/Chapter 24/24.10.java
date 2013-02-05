@@ -1,1 +1,0 @@
-public int getHeight(){   return root.getHeight();} // end getHeightpublic int getNumberOfNodes(){   return root.getNumberOfNodes();} // end getNumberOfNodes

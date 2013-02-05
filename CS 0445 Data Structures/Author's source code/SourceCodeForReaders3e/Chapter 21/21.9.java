@@ -1,1 +1,0 @@
-long bits = Double.doubleToLongBits(key);int hashCode = (int)(bits ^ (bits >> 32));

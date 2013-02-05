@@ -1,1 +1,0 @@
-   public T pop()   {      T top = null;      if (!isEmpty())         top = stack.remove(stack.size() - 1);      return top;   } // end pop

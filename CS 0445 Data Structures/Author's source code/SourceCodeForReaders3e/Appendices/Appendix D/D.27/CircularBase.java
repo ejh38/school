@@ -1,1 +1,0 @@
-public abstract class CircularBase{	private double radius;	public void setRadius(double newRadius)	{		radius = newRadius;	} // end setRadius	public double getRadius()	{		return radius;	} // end getRadius	public abstract double getArea(); } // end CircularBase

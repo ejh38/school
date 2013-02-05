@@ -1,1 +1,0 @@
-public T peek(){   T top = null;   if (!isEmpty())      top = stack.lastElement();       return top;} // end peek

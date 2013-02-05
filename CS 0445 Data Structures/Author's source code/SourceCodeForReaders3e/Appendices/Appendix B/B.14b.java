@@ -1,1 +1,0 @@
-public static void main(String[] args){   Name jamie = new Name();   jamie.setFirst("Jamie");   jamie.setLast("Jones");   Name jane = new Name();   jane.setFirst("Jane");   jane.setLast("Doe");   jamie.giveLastNameTo(jane);} // end main

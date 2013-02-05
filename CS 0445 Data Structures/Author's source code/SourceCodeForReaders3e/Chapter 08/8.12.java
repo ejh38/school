@@ -1,1 +1,0 @@
-public static <T extends Comparable<? super T>>       void insertionSort(T[] a, int first, int last){   if (first < last)   {      // sort all but the last entry      insertionSort(a, first, last - 1);      // insert the last entry in sorted order      insertInOrder(a[last], a, first, last - 1);    } // end if} // end insertionSort

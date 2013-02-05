@@ -1,1 +1,0 @@
-switch (grade){   case A:      qualityPoints = 4.0;      break;   case B:      qualityPoints = 3.0;      break;   case C:      qualityPoints = 2.0;      break;   case D:      qualityPoints = 1.0;      break;   case F:      qualityPoints = 0.0;      break;   default:      qualityPoints = -9.0;} // end switch

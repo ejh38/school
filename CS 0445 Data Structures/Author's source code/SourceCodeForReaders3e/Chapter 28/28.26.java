@@ -1,1 +1,0 @@
-BasicGraphInterface<String> airMap = new UndirectedGraph<String>();airMap.addVertex("Boston");airMap.addVertex("Provincetown");airMap.addVertex("Nantucket");airMap.addEdge("Boston", "Provincetown");airMap.addEdge("Boston", "Nantucket");

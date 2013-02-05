@@ -1,1 +1,0 @@
-public boolean addVertex(T vertexLabel){   VertexInterface<T> isDuplicate =                  vertices.add(vertexLabel, new Vertex(vertexLabel));   return isDuplicate == null; // was add to dictionary successful?} // end addVertex

@@ -1,1 +1,0 @@
-public void giveLastNameTo(Name child){	child.setLast(last);} // end giveLastNameTo
