@@ -49,6 +49,8 @@ public class ClothCutter {
 			}
 		}
 		
+		solveSubproblem(width, height);
+		
 		System.out.println("The patterns I got are: ");
 		
 		for (Pattern p: patterns) {
@@ -94,7 +96,7 @@ public class ClothCutter {
 		for (int i = 1; i < subHeight; i++) {
 			int temp = solveSubproblem(subWidth, i).value + solveSubproblem(subWidth, subHeight - i).value;
 			if (temp > horizontalBest) {
-				bestHorizontal = new Cut(false, i);
+				bestHorizontal = new Cut(false, i, subWidth, subHeight);
 				horizontalBest = temp;
 			}
 		}
@@ -103,7 +105,7 @@ public class ClothCutter {
 		for (int i = 1; i < subWidth; i++) {
 			int temp = solveSubproblem(i, subHeight).value + solveSubproblem(subWidth - i, subHeight).value;
 			if (temp > verticalBest) {
-				bestVertical = new Cut(true, i);
+				bestVertical = new Cut(true, i, subWidth, subHeight);
 				verticalBest = temp;
 			}
 		}
@@ -111,16 +113,18 @@ public class ClothCutter {
 		// take the max of all those
 		ans = Math.max(patternBest, Math.max(horizontalBest, verticalBest));
 				
-		if (bestPattern != null && ans == patternBest) {
-			patterns.add(bestPattern);
-		}
-		else if (bestHorizontal != null && ans == horizontalBest) {
-			cuts.add(bestHorizontal);
-		}
-		else if (bestVertical != null && ans == verticalBest) {
-			cuts.add(bestVertical);
-		}
-		
+		if (subWidth == width && subHeight == height) {
+			
+			if (bestPattern != null && ans == patternBest) {
+				patterns.add(bestPattern);
+			}
+			else if (bestHorizontal != null && ans == horizontalBest) {
+				cuts.add(bestHorizontal);
+			}
+			else if (bestVertical != null && ans == verticalBest) {
+				cuts.add(bestVertical);
+			}
+		}		
 		return returnValue;
 	}
 	

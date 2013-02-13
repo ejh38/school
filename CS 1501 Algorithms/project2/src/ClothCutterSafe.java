@@ -8,6 +8,7 @@ public class ClothCutterSafe {
 	int height;
 	ArrayList<Pattern> patterns;
 	ArrayList<Cut> cuts;
+	ArrayList<Cut> finalCuts;
 	ArrayList<Garment> garments;
 	
 	// this stores the value of the maximum profit from size [width][height]
@@ -29,15 +30,37 @@ public class ClothCutterSafe {
 		
 		// no NullPointerExceptions over here!
 		cuts = new ArrayList<Cut>(10);
+		finalCuts = new ArrayList<Cut>(10);
 		garments = new ArrayList<Garment>(10);
+		
 	}
 	
 	public ArrayList<Cut> cuts() {
-		return cuts;
+		return finalCuts;
 	}
 	
 	public ArrayList<Garment> garments() {
 		return garments;
+	}
+	
+	public void finalRun(Cut c, int absx, int absy) {
+		if (c == null) {
+			return;
+		}
+		System.out.println("The current cut is " + c);
+		System.out.println("With absx, absy: " + absx + ", " + absy);
+		
+		finalCuts.add(new Cut(c.vertical, c.position, c.x, c.y, absx, absy));
+		
+		if (c.vertical) {
+			finalRun(getCut(c.x - c.position, c.y), absx + c.position, absy);
+			finalRun(getCut(c.position, c.y), absx, absy);
+		}
+		else if (!c.vertical) {
+			finalRun(getCut(c.x, c.y - c.position), absx, absy + c.position);
+			finalRun(getCut(c.x, c.position), absx, absy);
+		}
+						
 	}
 	
 	public void optimize() {
@@ -50,16 +73,26 @@ public class ClothCutterSafe {
 			}
 		}
 		
-	
-		System.out.println("The patterns I got are: ");	
-		for (Pattern p: patterns) {
-			System.out.println(p);
-		}
+		finalRun(cuts.get(cuts.size()-1), 0, 0);
 		
-		System.out.println("The cuts I got are: ");
-		for (Cut c: cuts) {
+		System.out.println("\n\nThe final cuts are:");
+		for (Cut c: finalCuts) {
 			System.out.println(c);
 		}
+	}
+	
+	public Cut getCut(int x, int y) {
+		for (Cut c: cuts) {
+			if (c.x == x && c.y == y) {
+				return c;
+			}
+		}
+		// need something that can talk about Cut or Pattern,
+		// then return that
+		// or just recognize we're done
+		// and stop cutting
+		System.out.println("pattern with dim: " + x + " " + y);
+		return null;
 	}
 	
 	public int solveSubproblem(int subWidth, int subHeight) {
@@ -94,7 +127,7 @@ public class ClothCutterSafe {
 		for (int i = 1; i < subHeight; i++) {
 			int temp = solveSubproblem(subWidth, i) + solveSubproblem(subWidth, subHeight - i);
 			if (temp > horizontalBest) {
-				bestHorizontal = new Cut(false, i);
+				bestHorizontal = new Cut(false, i, subWidth, subHeight, 0, 0);
 				horizontalBest = temp;
 			}
 		}
@@ -103,17 +136,17 @@ public class ClothCutterSafe {
 		for (int i = 1; i < subWidth; i++) {
 			int temp = solveSubproblem(i, subHeight) + solveSubproblem(subWidth - i, subHeight);
 			if (temp > verticalBest) {
-				bestVertical = new Cut(true, i);
+				bestVertical = new Cut(true, i, subWidth, subHeight, 0, 0);
 				verticalBest = temp;
 			}
 		}
 				
 		// take the max of all those
 		ans = Math.max(patternBest, Math.max(horizontalBest, verticalBest));
-		
 		// depending which won out, add it to patterns or cuts
 		if (bestPattern != null && ans == patternBest) {
 			patterns.add(bestPattern);
+			System.out.println("Pattern " + bestPattern.toString() + " at " + subWidth + " by " + subHeight);
 		}
 		else if (bestHorizontal != null && ans == horizontalBest) {
 			cuts.add(bestHorizontal);
@@ -121,7 +154,6 @@ public class ClothCutterSafe {
 		else if (bestVertical != null && ans == verticalBest) {
 			cuts.add(bestVertical);
 		}
-		
 		return ans;
 	}
 	

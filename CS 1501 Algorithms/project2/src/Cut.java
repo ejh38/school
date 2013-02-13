@@ -3,22 +3,31 @@ public class Cut {
 
 	boolean vertical;
 	int position;
+	int x;
+	int y;
+	int absX;
+	int absY;
+	
 	
 	// takes the cloth that it performed the cut on,
 	// a boolean for vertical or horizontal
 	// and where on the cloth it belongs
 	// position is an x coordinate for vertical and a y coordinate for horizontal
-	public Cut(boolean vert, int pos) {
+	public Cut(boolean vert, int pos, int x, int y, int absX, int absY) {
 		vertical = vert;
 		position = pos;
+		this.x = x;
+		this.y = y;
+		this.absX = absX;
+		this.absY = absY;
 	}
 	
 	public String toString() {
 		if (vertical) {
-			return "vertical " + position;
+			return "vertical " + position + " on " + x + " by " + y;
 		}
 		else {
-			return "horizontal " + position; 	
+			return "horizontal " + position+ " on " + x + " by " + y; 	
 		}
 	}
 }

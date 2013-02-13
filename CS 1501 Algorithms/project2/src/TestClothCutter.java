@@ -11,7 +11,7 @@ import java.util.Date ;
 public class TestClothCutter {
 
   public static int SYNC = 500 ;
-  public static int SLEEP = 300 ;
+  public static int SLEEP = 30 ;
 
   public static void main(String[] args) {
 

@@ -8,10 +8,10 @@ import java.util.ArrayList ;
 import javax.swing.* ;
 import java.util.Date ;
 
-public class TestClothCutterSafe {
+public class TestClothCutter {
 
   public static int SYNC = 500 ;
-  public static int SLEEP = 30 ;
+  public static int SLEEP = 300 ;
 
   public static void main(String[] args) {
 
@@ -21,10 +21,10 @@ public class TestClothCutterSafe {
     patterns.add(new Pattern(4,2,3,"C")) ;
     patterns.add(new Pattern(5,3,5,"D")) ;
     int width = 30 ;
-    int height = 15;
+    int height = 15 ;
     int pixels = 30 ;
 
-    ClothCutterSafe cutter = new ClothCutterSafe(width,height,patterns) ;
+    ClothCutter cutter = new ClothCutter(width,height,patterns) ;
     cutter.optimize() ;
     System.out.println( cutter.value() ) ;
     System.out.println( cutter.garments() ) ;
@@ -33,14 +33,9 @@ public class TestClothCutterSafe {
     JFrame frame = new JFrame("A Bolt of Fabulously Expensive Silk") ;
     frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE) ;
     frame.getContentPane().add(cloth) ;
-    frame.setSize(width*pixels,height*pixels);
     frame.pack() ;
     frame.setVisible(true) ;
     sleep(SYNC) ;
-    sleep(SYNC) ;
-
-    sleep(SYNC) ;
-
     for (Cut c : cutter.cuts()) { sleep(SLEEP) ; cloth.drawCut(c) ; }
     sleep(SYNC) ;
     for (Garment g : cutter.garments()) { sleep(SLEEP) ; cloth.drawGarment(g) ; }
