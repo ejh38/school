@@ -1,9 +1,11 @@
-///
-/// Contents: Test Cloth-Cutter Program
-/// Author:   John Aronis
-/// Date:     May 2012
-///
+/********************************
+ * Zach Sadler
+ * zps6@pitt.edu
+ * Project 2
+ * Cloth Cutting & Dynamic Programming
+ ********************************/
 
+import java.awt.GridLayout;
 import java.util.ArrayList ;
 import javax.swing.* ;
 import java.util.Date ;
@@ -20,7 +22,7 @@ public class TestClothCutter {
     patterns.add(new Pattern(2,6,4,"B")) ;
     patterns.add(new Pattern(4,2,3,"C")) ;
     patterns.add(new Pattern(5,3,5,"D")) ;
-    int width = 30 ;
+    int width = 31 ;
     int height = 15;
     int pixels = 30 ;
 
@@ -30,12 +32,17 @@ public class TestClothCutter {
     System.out.println( cutter.garments() ) ;
 
     Cloth cloth = new Cloth(width,height,pixels) ;
-    JFrame frame = new JFrame("A Bolt of Fabulously Expensive Silk") ;
+    JFrame frame = new JFrame("Zach Sadler - zps6 - Project 2") ;
     frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE) ;
-    frame.getContentPane().add(cloth) ;
+    frame.add(cloth) ;
     frame.pack() ;
+	frame.setLocation(100, 100);
     frame.setVisible(true) ;
     sleep(SYNC) ;
+    sleep(SYNC) ;
+
+    sleep(SYNC) ;
+
     for (Cut c : cutter.cuts()) { sleep(SLEEP) ; cloth.drawCut(c) ; }
     sleep(SYNC) ;
     for (Garment g : cutter.garments()) { sleep(SLEEP) ; cloth.drawGarment(g) ; }

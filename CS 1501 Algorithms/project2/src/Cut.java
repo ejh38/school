@@ -1,3 +1,9 @@
+/********************************
+ * Zach Sadler
+ * zps6@pitt.edu
+ * Project 2
+ * Cloth Cutting & Dynamic Programming
+ ********************************/
 
 public class Cut {
 
