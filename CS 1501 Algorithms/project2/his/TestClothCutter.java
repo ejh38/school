@@ -20,8 +20,8 @@ public class TestClothCutter {
     patterns.add(new Pattern(2,6,4,"B")) ;
     patterns.add(new Pattern(4,2,3,"C")) ;
     patterns.add(new Pattern(5,3,5,"D")) ;
-    int width = 31 ;
-    int height = 15 ;
+    int width = 500 ;
+    int height = 200 ;
     int pixels = 30 ;
 
     ClothCutter cutter = new ClothCutter(width,height,patterns) ;

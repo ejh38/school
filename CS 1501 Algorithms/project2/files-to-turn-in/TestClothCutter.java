@@ -1,5 +1,5 @@
 /********************************
- * Zach Sadler  
+ * Zach Sadler
  * zps6@pitt.edu
  * Project 2
  * Cloth Cutting & Dynamic Programming
@@ -22,9 +22,9 @@ public class TestClothCutter {
     patterns.add(new Pattern(4,2,3,"C")) ;
     patterns.add(new Pattern(5,3,5,"D")) ;
 
-    int width = 31 ;
+    int width = 30;
     int height = 15;
-    int pixels = 30 ;
+    int pixels = 30;
 
     ClothCutter cutter = new ClothCutter(width,height,patterns) ;
     cutter.optimize() ;
@@ -39,7 +39,7 @@ public class TestClothCutter {
 	frame.setLocation(100, 100);
     frame.setVisible(true) ;
     sleep(SYNC) ;
- 
+
     for (Cut c : cutter.cuts()) { sleep(SLEEP) ; cloth.drawCut(c) ; }
     sleep(SYNC) ;
     for (Garment g : cutter.garments()) { sleep(SLEEP) ; cloth.drawGarment(g) ; }
