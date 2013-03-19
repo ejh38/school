@@ -1,0 +1,51 @@
+<HTML>
+<BODY>
+
+<HR><CENTER><H3>Optimal Binary Search Trees</H3></CENTER>
+
+<P><HR><CENTER><H3>Introduction</H3></CENTER>
+
+A <EM>Binary Search Tree</EM> (BST) can often provide fast lookup.
+However, a BST will perform poorly if clients rarely retrieve the root
+value, but frequently need to retrieve values in distant leaves.  The
+<EM>Cost</EM> of looking up an item in a BST is the product of its
+frequency times the number of comparisons required to find it.  The
+<EM>Weighted Internal Path Length</EM> of a BST is the sum of the
+costs of each node.  An <EM>Optimal BST</EM> has the lowest weighted
+internal path length and will be the most efficient over time.
+
+<P><HR><CENTER><H3>Requirements</H3></CENTER>
+
+In this assignment, you will implement the top-down (memoized) dynamic
+programming algorithm that was described in class to find an optimal
+binary search tree.  You must implement two classes.  Your
+<TT>BinaryTree</TT> class will implement a binary tree data structure
+with the following methods:
+<UL>
+  <LI><TT>public BinaryTree()</TT> is a constructor.
+  <LI><TT>public int cost</TT> is the weighted internal path length.
+  <LI><TT>public String toString()</TT> is for printing.
+</UL>
+You should print your binary trees in a reasonably readable way.
+Your <TT>BSTOptimizer</TT> class must implement:
+<UL>
+  <LI><TT>public BSTOptimizer()</TT> is a constructor.
+  <LI><TT>public boolean MEMOIZE</TT> turns memoization on or off.
+  <LI><TT>public int CALLS</TT> counts recursive calls.
+  <LI><TT>public void addKey(String key, int frequency)</TT> adds a key.
+  <LI><TT>public BinaryTree optimize()</TT> returns an optimal BST.
+</UL>
+The keys might not arrive in sorted order, so you should do an initial
+sort before optimizing.
+
+Your code should work my test driver.  In particular, the experiments
+should verify that the runtime is cubic (with memoization turned on).
+
+<P><HR><CENTER><H3>Submission</H3></CENTER>
+
+Submit your work to the CourseWeb site for this course.
+
+<P>
+<HR>
+</BODY>
+</HTML>
