@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><!--Created with JFLAP 6.4.--><structure>
+	<type>fa</type>
+	<automaton>
+		<!--The list of states.-->
+		<state id="0" name="q0">
+			<x>153.0</x>
+			<y>109.0</y>
+		</state>
+		<state id="1" name="q1">
+			<x>258.0</x>
+			<y>106.0</y>
+			<final/>
+		</state>
+		<state id="2" name="q2">
+			<x>370.0</x>
+			<y>89.0</y>
+		</state>
+		<state id="3" name="q3">
+			<x>63.0</x>
+			<y>108.0</y>
+			<initial/>
+		</state>
+		<state id="4" name="q4">
+			<x>152.0</x>
+			<y>208.0</y>
+		</state>
+		<!--The list of transitions.-->
+		<transition>
+			<from>0</from>
+			<to>1</to>
+			<read>b</read>
+		</transition>
+		<transition>
+			<from>3</from>
+			<to>4</to>
+			<read>b</read>
+		</transition>
+		<transition>
+			<from>2</from>
+			<to>1</to>
+			<read>b</read>
+		</transition>
+		<transition>
+			<from>1</from>
+			<to>2</to>
+			<read>b</read>
+		</transition>
+		<transition>
+			<from>0</from>
+			<to>0</to>
+			<read>a</read>
+		</transition>
+		<transition>
+			<from>3</from>
+			<to>0</to>
+			<read>a</read>
+		</transition>
+		<transition>
+			<from>4</from>
+			<to>4</to>
+			<read>a, b</read>
+		</transition>
+		<note>
+			<text>This FA accepts any non-zero number of a's followed
+by any odd number of b's.</text>
+			<x>109.0</x>
+			<y>257.0</y>
+		</note>
+	</automaton>
+</structure>

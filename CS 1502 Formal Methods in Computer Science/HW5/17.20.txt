@@ -1,0 +1,19 @@
+Problem 17.20
+
+In the following problem, I use this notation:
+^  for conjunction
+v  for disjuntion
+-  for negation
+-> for implication
+T  for true
+F  for false 
+
+Questions:
+1. A ^ (-A v B v -C) ^ -C
+2. (-A v -B v C) ^ -C
+3. (-A v B) ^ (A v -B)
+
+Solutions:
+1. (T -> B) ^ ((A ^ -B ^ C) -> F) ^ (C -> F)
+2. ((A ^ B ^ -C) -> F) ^ (C -> F)
+3. (A -> B) ^ (B -> A)

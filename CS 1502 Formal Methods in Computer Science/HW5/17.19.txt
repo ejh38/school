@@ -1,0 +1,8 @@
+Problem 17.19
+
+We need to make all five sentences true:
+Start by assigning true to Cube(a) [sentence 2] and Large(e) [sentence 4].
+Then we know that -Large(e) v -Cube(a) is false, so Tet(f) must be true [sentence 1].
+Then we know that -Tet(f) v -Large(e) is false, so Small(d) must be true [sentence 3].
+But then -Cube(a) v -Large(e) v -Small(d) is false, and can not be made true.
+We are done, since it is impossible to make all five sentences true.

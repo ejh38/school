@@ -1,0 +1,38 @@
+Problem 10.1
+
+In the following problems, I use this notation:
+->  for implication
+v   for disjunction
+^   for conjunction
+~   for negation
+<-> for biconditional
+
+1. A
+Logical truth, not a tautology
+
+2. A -> B
+Not a logical truth
+
+3. A -> B
+Logical truth, not a tautology
+
+4. A -> B
+Logcical truth, not a tautology
+
+5. A <-> ~~A
+Tautology
+
+6. A -> ~B
+Logical truth, not a tautology
+
+7. A -> B
+Logical truth, not a tautology
+
+8. A -> (A v B)
+Logical truth, not a tautology
+
+9. (A v B) -> A
+Not a logical truth
+
+10. ((A -> B) ^ ~B) -> ~C
+Logical truth, not a tautology

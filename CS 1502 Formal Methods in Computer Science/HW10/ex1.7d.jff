@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><!--Created with JFLAP 6.4.--><structure>
+	<type>fa</type>
+	<automaton>
+		<!--The list of states.-->
+		<state id="0" name="q0">
+			<x>123.0</x>
+			<y>106.0</y>
+			<initial/>
+		</state>
+		<state id="1" name="q1">
+			<x>249.0</x>
+			<y>104.0</y>
+			<final/>
+		</state>
+		<!--The list of transitions.-->
+		<transition>
+			<from>0</from>
+			<to>1</to>
+			<read>0</read>
+		</transition>
+		<note>
+			<text>This NFA accepts only the string '0.' Anything else is rejected.</text>
+			<x>51.0</x>
+			<y>166.0</y>
+		</note>
+	</automaton>
+</structure>

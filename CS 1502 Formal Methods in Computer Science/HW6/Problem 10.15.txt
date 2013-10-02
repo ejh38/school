@@ -1,0 +1,11 @@
+Problem 10.15
+
+In the following problems, I use this notation:
+->  for implication
+v   for disjunction
+^   for conjunction
+~   for negation
+<-> for biconditional
+
+(A ^ ~B) -> ~(A = B)
+Logical consequence that is not first-order consequence

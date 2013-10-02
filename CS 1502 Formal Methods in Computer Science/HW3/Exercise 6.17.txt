@@ -1,0 +1,3 @@
+Exercise 6.17
+
+	Fitch won't let you perform step 8, because it attempts to use ^ introduction incorrectly. In step 8 it cites steps 7 and 5, but it can't cite step 5 because it is a part of a subproof. You can't cite something from within a previous subproof. Because of this, the conlclusion is not a consequence of the premises. 

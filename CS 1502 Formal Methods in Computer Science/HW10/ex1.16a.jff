@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><!--Created with JFLAP 6.4.--><structure>
+	<type>fa</type>
+	<automaton>
+		<!--The list of states.-->
+		<state id="0" name="1">
+			<x>83.0</x>
+			<y>37.0</y>
+		</state>
+		<state id="1" name="2">
+			<x>83.0</x>
+			<y>128.0</y>
+			<final/>
+		</state>
+		<state id="2" name="{}">
+			<x>365.0</x>
+			<y>130.0</y>
+		</state>
+		<state id="3" name="{1}">
+			<x>245.0</x>
+			<y>29.0</y>
+			<initial/>
+			<final/>
+		</state>
+		<state id="4" name="{2}">
+			<x>400.0</x>
+			<y>23.0</y>
+		</state>
+		<state id="5" name="{1,2}">
+			<x>246.0</x>
+			<y>127.0</y>
+			<final/>
+		</state>
+		<!--The list of transitions.-->
+		<transition>
+			<from>0</from>
+			<to>1</to>
+			<read>a</read>
+		</transition>
+		<transition>
+			<from>3</from>
+			<to>5</to>
+			<read>a</read>
+		</transition>
+		<transition>
+			<from>1</from>
+			<to>0</to>
+			<read>b</read>
+		</transition>
+		<transition>
+			<from>0</from>
+			<to>1</to>
+			<read>b</read>
+		</transition>
+		<transition>
+			<from>2</from>
+			<to>2</to>
+			<read>b</read>
+		</transition>
+		<transition>
+			<from>4</from>
+			<to>2</to>
+			<read>a</read>
+		</transition>
+		<transition>
+			<from>0</from>
+			<to>0</to>
+			<read>a</read>
+		</transition>
+		<transition>
+			<from>2</from>
+			<to>2</to>
+			<read>a</read>
+		</transition>
+		<transition>
+			<from>3</from>
+			<to>4</to>
+			<read>b</read>
+		</transition>
+		<transition>
+			<from>4</from>
+			<to>3</to>
+			<read>b</read>
+		</transition>
+		<transition>
+			<from>5</from>
+			<to>2</to>
+			<read>b</read>
+		</transition>
+		<transition>
+			<from>5</from>
+			<to>2</to>
+			<read>a</read>
+		</transition>
+		<note>
+			<text>This DFA is equivalent to the NFA on the right.</text>
+			<x>92.0</x>
+			<y>240.0</y>
+		</note>
+	</automaton>
+</structure>

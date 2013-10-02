@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><!--Created with JFLAP 6.4.--><structure>
+	<type>fa</type>
+	<automaton>
+		<note>
+			<text>Assume towards a contradiction that this is a regular language, and 
+let p be the pumping length given by the pumping language.
+Then pick s = (a^p)(b^p)(a^p).
+This is a member of the language, and since the length of s is greater
+than p, the pumping lemma guarantees three conditions.
+However, the 3rd condition fails, since
+|xy| = |(a^p)(b^p)| = 2p &gt; p
+Which is a contradiction.
+Thus this is not a regular language.</text>
+			<x>92.0</x>
+			<y>98.0</y>
+		</note>
+	</automaton>
+</structure>

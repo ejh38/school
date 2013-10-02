@@ -1,0 +1,53 @@
+\documentclass[11pt]{article}
+
+\begin{document}
+
+\noindent 
+CS 1510: Algorithm Design\\
+Homework 2 - Greedy Problems 1 \& 5\\
+Zach Sadler, John Hofrichter\\
+zps6@pitt.edu | jmh162@pitt.edu\\
+August 30, 2013\\ 
+\\ 
+\\
+
+\noindent \huge 
+Problem 1\\
+\normalsize
+\noindent 
+We will prove that the algorithm $G$ solves the problem.\\
+Suppose towards a contradiction that there is an input $I$ on which the algorithm $G$ produces unacceptable output. Let $Opt(I)$ be an optimal output which agrees with $G(I)$ for the maximum number of steps of all such optimal outputs.\\
+Since $G$ produces unacceptable output and $Opt$ produces the correct solution, they must disagree on at least one interval. Let $k$ be the first such interval where they disagree, so that $G_k \ne O_k$.\\
+Construct $Opt'(I) = Opt(I) - O_k + G_k$. Then clearly $Opt'(I)$ agrees with $G$ for one additional term than $Opt$. Additionally, note that by definition of $G$, we know $G_k$ overlaps fewer other intervals than $O_k$. So then if $Opt$ was optimal the $Opt'$ is optimal as well.\\
+Thus we have shown that there exists $Opt'(I)$ which is an optimal output which agrees with $G(I)$ for one step further than $Opt(I)$, and so we have a contradiction with the fact that $Opt(I)$ agrees with $G(I)$ for the maximum number of steps. So our original assumption that there was an input on which $G$ produced unacceptable output was incorrect, and we are done.\\
+\\
+\\
+\noindent \huge 
+Problem 5a\\
+\normalsize
+\noindent 
+We will disprove that the algorithm correctly solves the problem.\\
+Consider the input \\
+$I = \{.1, .2, .3, .4, .5, .6, .7, .8, .9, 1.0, 1.1 \\
+1.3\\
+1.5, 1.6, 1.7, 1.8, 1.9, 2.0, 2.1, 2.2, 2.3, 2.4, 2.5 \}.$\\
+The algorithm selects its next interval based on which will cover the most number of points, so there are 2 identical choices - the interval from $[.1, 1.1]$ and from $[1.5, 2.5]$, both of which contain 11 points. The algorithm will select one of these, then the other (it does not matter the order for our purposes), then will be left trying to select an interval that covers the remaining point $(1.3)$ without overlapping any of the previous intervals. The algorithm will fail, however, because it must select a unit interval and only has the space from $[1.1, 1.5]$ to work with.\\
+Thus with the input $I$, the algorithm will fail to produce a minimum cardinality set that covers all points with no overlap, and so the algorithm does not correctly solve the problem.\\
+\\
+\\
+\noindent \huge 
+Problem 5b\\
+\normalsize
+\noindent 
+We will prove the algorithm correctly solves the problem.\\
+Suppose towards a contradiction that there is an input $I$ on which the algorithm $G$ produces unacceptable output. Let $Opt(I)$ be an optimal output which agrees with $G(I)$ for the maximum number of steps of all such optimal outputs.\\
+Since $G$ produces unacceptable output and $Opt$ produces the correct solution, they must disagree on at least one interval. Let $k$ be the first such interval where they disagree, so that $G_k \ne O_k$.\\
+Next we will show that $O_k$ starts before $G_k$. We know this because $G_k$ starts at the rightmost position it can to still be able not to miss the point $a_k$. Thus if $O_k$ started after $G_k$ it would miss the point and not be optimal, and if it started at the same position as $G_k$ then it would not be the case that $G_k \ne O_k$.\\
+Thus we know that $Opt'(I) = Opt(I) - O_k + G_k$ is optimal if $Opt(I)$ is optimal, since $Opt'$ will cover at least as many points as $Opt$, and since $G_k$ ends after $O_k$, it is possible it covers even more and so could potentially require fewer later intervals.\\
+Thus we have shown that there exists $Opt'(I)$ which is an optimal output which agrees with $G(I)$ for one step further than $Opt(I)$, and so we have a contradiction with the fact that $Opt(I)$ agrees with $G(I)$ for the maximum number of steps. So our original assumption that there was an input on which $G$ produced unacceptable output was incorrect, and we are done.\\
+
+
+
+
+
+\end{document}

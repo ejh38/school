@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><!--Created with JFLAP 6.4.--><structure>
+	<type>fa</type>
+	<automaton>
+		<!--The list of states.-->
+		<state id="0" name="q0">
+			<x>157.0</x>
+			<y>217.0</y>
+			<initial/>
+			<final/>
+		</state>
+		<state id="1" name="q1">
+			<x>250.0</x>
+			<y>216.0</y>
+			<final/>
+		</state>
+		<state id="2" name="q2">
+			<x>343.0</x>
+			<y>217.0</y>
+		</state>
+		<state id="3" name="q3">
+			<x>421.0</x>
+			<y>220.0</y>
+			<final/>
+		</state>
+		<state id="4" name="q4">
+			<x>96.0</x>
+			<y>88.0</y>
+		</state>
+		<state id="5" name="q5">
+			<x>176.0</x>
+			<y>90.0</y>
+		</state>
+		<state id="6" name="q6">
+			<x>257.0</x>
+			<y>89.0</y>
+			<final/>
+		</state>
+		<state id="7" name="q7">
+			<x>342.0</x>
+			<y>90.0</y>
+		</state>
+		<!--The list of transitions.-->
+		<transition>
+			<from>6</from>
+			<to>7</to>
+			<read>a</read>
+		</transition>
+		<transition>
+			<from>4</from>
+			<to>4</to>
+			<read>b</read>
+		</transition>
+		<transition>
+			<from>5</from>
+			<to>5</to>
+			<read>b</read>
+		</transition>
+		<transition>
+			<from>0</from>
+			<to>0</to>
+			<read>b</read>
+		</transition>
+		<transition>
+			<from>3</from>
+			<to>3</to>
+			<read>b</read>
+		</transition>
+		<transition>
+			<from>2</from>
+			<to>2</to>
+			<read>b</read>
+		</transition>
+		<transition>
+			<from>1</from>
+			<to>1</to>
+			<read>b</read>
+		</transition>
+		<transition>
+			<from>6</from>
+			<to>6</to>
+			<read>b</read>
+		</transition>
+		<transition>
+			<from>3</from>
+			<to>3</to>
+			<read>a</read>
+		</transition>
+		<transition>
+			<from>1</from>
+			<to>2</to>
+			<read>a</read>
+		</transition>
+		<transition>
+			<from>4</from>
+			<to>5</to>
+			<read>a</read>
+		</transition>
+		<transition>
+			<from>5</from>
+			<to>6</to>
+			<read>a</read>
+		</transition>
+		<transition>
+			<from>2</from>
+			<to>3</to>
+			<read>a</read>
+		</transition>
+		<transition>
+			<from>0</from>
+			<to>1</to>
+			<read>a</read>
+		</transition>
+		<transition>
+			<from>7</from>
+			<to>7</to>
+			<read>a, b</read>
+		</transition>
+		<note>
+			<text>This DFA accepts strings that don't contain exactly two 'a's</text>
+			<x>117.0</x>
+			<y>269.0</y>
+		</note>
+		<note>
+			<text>This DFA accepts strings that contain exactly two a's.</text>
+			<x>33.0</x>
+			<y>18.0</y>
+		</note>
+	</automaton>
+</structure>

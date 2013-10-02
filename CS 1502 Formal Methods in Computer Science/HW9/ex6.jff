@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><!--Created with JFLAP 6.4.--><structure>
+	<type>fa</type>
+	<automaton>
+		<!--The list of states.-->
+		<state id="0" name="q0">
+			<x>46.0</x>
+			<y>107.0</y>
+		</state>
+		<state id="1" name="q1">
+			<x>157.0</x>
+			<y>62.0</y>
+		</state>
+		<state id="2" name="q2">
+			<x>154.0</x>
+			<y>127.0</y>
+		</state>
+		<state id="3" name="q3">
+			<x>132.0</x>
+			<y>211.0</y>
+		</state>
+		<state id="4" name="q4">
+			<x>285.0</x>
+			<y>97.0</y>
+		</state>
+		<state id="5" name="q5">
+			<x>279.0</x>
+			<y>212.0</y>
+		</state>
+		<state id="6" name="q6">
+			<x>388.0</x>
+			<y>76.0</y>
+		</state>
+		<state id="7" name="q7">
+			<x>401.0</x>
+			<y>197.0</y>
+		</state>
+		<!--The list of transitions.-->
+		<transition>
+			<from>3</from>
+			<to>4</to>
+			<read>i</read>
+		</transition>
+		<transition>
+			<from>5</from>
+			<to>4</to>
+			<read>t</read>
+		</transition>
+		<transition>
+			<from>4</from>
+			<to>7</to>
+			<read>t</read>
+		</transition>
+		<transition>
+			<from>1</from>
+			<to>5</to>
+			<read>a</read>
+		</transition>
+		<transition>
+			<from>2</from>
+			<to>5</to>
+			<read>a</read>
+		</transition>
+		<transition>
+			<from>4</from>
+			<to>6</to>
+			<read>d</read>
+		</transition>
+		<transition>
+			<from>5</from>
+			<to>7</to>
+			<read>n</read>
+		</transition>
+		<transition>
+			<from>0</from>
+			<to>2</to>
+			<read>h</read>
+		</transition>
+		<transition>
+			<from>0</from>
+			<to>3</to>
+			<read>p</read>
+		</transition>
+		<transition>
+			<from>4</from>
+			<to>5</to>
+			<read>n</read>
+		</transition>
+		<transition>
+			<from>0</from>
+			<to>1</to>
+			<read>b</read>
+		</transition>
+		<transition>
+			<from>3</from>
+			<to>5</to>
+			<read>a</read>
+		</transition>
+		<transition>
+			<from>5</from>
+			<to>6</to>
+			<read>d</read>
+		</transition>
+		<transition>
+			<from>1</from>
+			<to>4</to>
+			<read>i</read>
+		</transition>
+		<transition>
+			<from>2</from>
+			<to>4</to>
+			<read>i</read>
+		</transition>
+		<note>
+			<text>The string I would add is 'bin,' although I'm not completely
+sure what this question was asking. It was kind of weird.</text>
+			<x>63.0</x>
+			<y>259.0</y>
+		</note>
+	</automaton>
+</structure>

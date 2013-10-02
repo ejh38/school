@@ -1,0 +1,12 @@
+CS 1520 Fall 2013
+Simple Text Document
+This is Text text TeXT!
+
+If it were done when 'tis done then 'twere well
+It were done quickly: if the assassination
+Could trammel up the consequence, and catch
+With his surcease success; that but this blow
+Might be the be-all and end-all here
+
+For more information, see:
+http://www.nosweatshakespeare.com/quotes/if-it-were-done-when-tis-done/

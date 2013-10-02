@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><!--Created with JFLAP 6.4.--><structure>
+	<type>fa</type>
+	<automaton>
+		<!--The list of states.-->
+		<state id="0" name="q0">
+			<x>85.0</x>
+			<y>88.0</y>
+			<initial/>
+		</state>
+		<state id="1" name="q1">
+			<x>196.0</x>
+			<y>88.0</y>
+		</state>
+		<state id="2" name="q2">
+			<x>305.0</x>
+			<y>89.0</y>
+			<final/>
+		</state>
+		<!--The list of transitions.-->
+		<transition>
+			<from>0</from>
+			<to>1</to>
+			<read/>
+		</transition>
+		<transition>
+			<from>1</from>
+			<to>1</to>
+			<read>1</read>
+		</transition>
+		<transition>
+			<from>0</from>
+			<to>0</to>
+			<read>0</read>
+		</transition>
+		<transition>
+			<from>2</from>
+			<to>2</to>
+			<read>0</read>
+		</transition>
+		<transition>
+			<from>1</from>
+			<to>2</to>
+			<read>0</read>
+		</transition>
+		<note>
+			<text>This NFA accepts any string that follows the following format:
+zero or more '0's, then zero or more '1's, then one or more 0's.</text>
+			<x>49.0</x>
+			<y>197.0</y>
+		</note>
+	</automaton>
+</structure>

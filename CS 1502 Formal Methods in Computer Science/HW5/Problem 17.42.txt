@@ -1,0 +1,30 @@
+Problem 17.42
+
+In the following problem, I use this notation:
+^  for conjunction
+v  for disjuntion
+-  for negation
+-> for implication
+T  for true
+F  for false 
+
+Question:
+(A v (B ^ C)) ^ (-E) ^ ((A v B) -> (D v E)) ^ (-A) ^ -(C ^ D)
+
+Solution:
+First turn the -> into disjunction.
+(A v (B ^ C)) ^ (-E) ^ (-(A v B) v (D v E)) ^ (-A) ^ -(C ^ D)
+Then apply DeMorgan's law.
+(A v (B ^ C)) ^ (-E) ^ ((-A ^ -B) v (D v E)) ^ (-A) ^ (-C v -D)
+Then distribute the disunction.
+(A v B) ^ (A v C) ^ (-E) ^ ((-A ^ -B) v D) ^ ((-A ^ -B) v E)) ^ (-A) ^ (-C v -D)
+Distribute the disjunction again to get CNF.
+(A v B) ^ (A v C) ^ -E ^ (-A v D) ^ (-B v D) ^ (-A v E) ^ (-B v E) ^ -A ^ (-C v -D)
+
+First divide into clauses:
+{A, B}, {A, C}, {-E}, {-A, D}, {-B, D}, {-A, E}, {-B, E}, {-A}, {-C, -D}
+
+Combining {A, B} and {-A} we get {B}.
+Combining {-B, E} and {B} we get {E}.
+But now we have {E} and {-E}. 
+So {E} and {-E} is unsatisfiable, and so the premises along with the negation of the conlcusion is unsatisfiable, and so the premises imply the conclusion.

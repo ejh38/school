@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><!--Created with JFLAP 6.4.--><structure>
+	<type>fa</type>
+	<automaton>
+		<!--The list of states.-->
+		<state id="1" name="q1">
+			<x>38.0</x>
+			<y>183.0</y>
+		</state>
+		<state id="2" name="q2">
+			<x>171.0</x>
+			<y>186.0</y>
+		</state>
+		<state id="3" name="q3">
+			<x>279.0</x>
+			<y>50.0</y>
+			<initial/>
+			<final/>
+		</state>
+		<state id="4" name="q4">
+			<x>375.0</x>
+			<y>169.0</y>
+		</state>
+		<state id="5" name="q5">
+			<x>491.0</x>
+			<y>167.0</y>
+		</state>
+		<!--The list of transitions.-->
+		<transition>
+			<from>3</from>
+			<to>4</to>
+			<read>d</read>
+		</transition>
+		<transition>
+			<from>4</from>
+			<to>3</to>
+			<read>u</read>
+		</transition>
+		<transition>
+			<from>5</from>
+			<to>5</to>
+			<read>d</read>
+		</transition>
+		<transition>
+			<from>1</from>
+			<to>1</to>
+			<read>u</read>
+		</transition>
+		<transition>
+			<from>2</from>
+			<to>3</to>
+			<read>d</read>
+		</transition>
+		<transition>
+			<from>3</from>
+			<to>2</to>
+			<read>u</read>
+		</transition>
+		<transition>
+			<from>2</from>
+			<to>1</to>
+			<read>u</read>
+		</transition>
+		<transition>
+			<from>1</from>
+			<to>2</to>
+			<read>d</read>
+		</transition>
+		<transition>
+			<from>5</from>
+			<to>4</to>
+			<read>u</read>
+		</transition>
+		<transition>
+			<from>4</from>
+			<to>5</to>
+			<read>d</read>
+		</transition>
+		<note>
+			<text>This DFA is the one that expresses the table in exercise 1.3.</text>
+			<x>53.0</x>
+			<y>229.0</y>
+		</note>
+	</automaton>
+</structure>

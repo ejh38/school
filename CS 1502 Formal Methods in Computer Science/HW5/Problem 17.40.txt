@@ -1,0 +1,27 @@
+Problem 17.40
+
+In the following problem, I use this notation:
+^  for conjunction
+v  for disjuntion
+-  for negation
+-> for implication
+T  for true
+F  for false 
+
+Question:
+(B -> C) ^ -((A ^ B) -> C)
+
+Solution:
+First turn the -> into disjunctions.
+(-B v C) ^ -(-(A ^ B) v C)
+Then apply DeMorgan's law.
+(-B v C) ^ (--(A ^ B) ^ -C)
+Simplify the double negative to get the CNF form
+(-B v C) ^ A ^ B ^ -C
+
+First divide into clauses:
+{-B, C}, {A}, {B}, {-C}
+
+Combining {-B, C} and {B} we get {C}.
+But now we have {C} and {-C}.
+So {C} and {-C} is unsatisfiable, and so the premises along with the negation of the conlcusion is unsatisfiable, and so the premises imply the conclusion.

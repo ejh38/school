@@ -1,0 +1,20 @@
+Problem 12.31
+
+In the following problems, I use this notation:
+->  for implication
+v   for disjunction
+^   for conjunction
+~   for negation
+<-> for biconditional
+A   for universal quantifier
+E   for existential quantifier
+
+Question
+
+Ax (Cube(x) -> SameShape(x,c))
+---------
+Cube(c)
+
+Here is my informal proof.
+
+Let a be an arbitrary cube. Then by the given premise, a is the same shape as c. But a is a cube. Thus by the 8th axiom (the elimination axiom for cubes), c is a cube.

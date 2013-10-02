@@ -1,0 +1,23 @@
+Problem 17.33
+
+In the following problem, I use this notation:
+^  for conjunction
+v  for disjuntion
+-  for negation
+-> for implication
+T  for true
+F  for false 
+
+Question:
+(A v -C v B) ^ -A ^ (C v B v A) ^ (A v -B)
+
+Solution:
+
+First divide into clauses
+{A, B, -C}, {-A}, {A, B, C}, {A, -B}
+
+Combining {-A} and {A, -B} we get {-B}.
+Combining {-A}, {-B}, and {A, B, C} we get {C}.
+Combining {A, B, -C}, {-B}, and {C} we get {A}.
+Now we have {A} and {-A}.
+Thus the original CNF sentence is unsatisfiable.

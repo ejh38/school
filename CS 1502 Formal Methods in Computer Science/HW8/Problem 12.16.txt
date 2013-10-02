@@ -1,0 +1,28 @@
+Problem 12.16
+
+In the following problems, I use this notation:
+->  for implication
+v   for disjunction
+^   for conjunction
+~   for negation
+<-> for biconditional
+A   for universal quantifier
+E   for existential quantifier
+
+Question
+
+1. ∀x ∀y [LeftOf(x, y) → Larger(x, y)] 
+2. ∀x [Cube(x) → Small(x)] 
+3. ∀x [Tet(x) → Large(x)] 
+4. ∀x ∀y [(Small(x) ∧ Small(y)) → ¬Larger(x, y)]
+---------
+5. ¬∃x ∃y [Cube(x) ∧ Cube(y) ∧ RightOf(x, y)]
+
+Here is an informal proof.
+
+Premise 1 says that if something x is to the left of another thing y, then x is larger then y.
+Premise 2 says that all cubes are small.
+Thus if we have two cubes, then they are small (by 2 and modus ponens). 
+Now we know that one of the cubes is not larger than the other, so one is not left of the other as well (by 1 and modus tollens). 
+Since we cannot have one cube left of the other, we can not have one cube right of the other.
+So it is impossible to have two cubes such that one is right of the other, and so the conclusion is true.

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><!--Created with JFLAP 6.4.--><structure>
+	<type>fa</type>
+	<automaton>
+		<!--The list of states.-->
+		<state id="0" name="q0">
+			<x>57.0</x>
+			<y>84.0</y>
+		</state>
+		<state id="1" name="q1">
+			<x>223.0</x>
+			<y>79.0</y>
+			<final/>
+		</state>
+		<state id="2" name="q2">
+			<x>68.0</x>
+			<y>227.0</y>
+			<initial/>
+		</state>
+		<state id="3" name="q3">
+			<x>167.0</x>
+			<y>228.0</y>
+		</state>
+		<state id="4" name="q4">
+			<x>279.0</x>
+			<y>230.0</y>
+			<final/>
+		</state>
+		<state id="5" name="q5">
+			<x>370.0</x>
+			<y>233.0</y>
+		</state>
+		<!--The list of transitions.-->
+		<transition>
+			<from>0</from>
+			<to>1</to>
+			<read>bb</read>
+		</transition>
+		<transition>
+			<from>4</from>
+			<to>4</to>
+			<read>a</read>
+		</transition>
+		<transition>
+			<from>3</from>
+			<to>3</to>
+			<read>a</read>
+		</transition>
+		<transition>
+			<from>2</from>
+			<to>2</to>
+			<read>a</read>
+		</transition>
+		<transition>
+			<from>0</from>
+			<to>0</to>
+			<read>a</read>
+		</transition>
+		<transition>
+			<from>1</from>
+			<to>1</to>
+			<read>a</read>
+		</transition>
+		<transition>
+			<from>2</from>
+			<to>3</to>
+			<read>b</read>
+		</transition>
+		<transition>
+			<from>4</from>
+			<to>5</to>
+			<read>b</read>
+		</transition>
+		<transition>
+			<from>3</from>
+			<to>4</to>
+			<read>b</read>
+		</transition>
+		<transition>
+			<from>5</from>
+			<to>5</to>
+			<read>a, b</read>
+		</transition>
+		<note>
+			<text>The following strings are not accepted by the FA but are in the language:
+abab, baba, ababa, babaa, ababaa, babaaa.</text>
+			<x>40.0</x>
+			<y>124.0</y>
+		</note>
+		<note>
+			<text>This is the correct DFA.</text>
+			<x>61.0</x>
+			<y>266.0</y>
+		</note>
+	</automaton>
+</structure>

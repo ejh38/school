@@ -1,0 +1,17 @@
+Exercise 6.27
+
+Informal Proof:
+
+	Between the two disjunctions, there are four possible combinations of conjunctions which are true. Consider the four combinations one by one
+
+	1. (A ^ B) ^ (B ^ C)
+	2. (A ^ B) ^ (D ^ E)
+	3. (C ^ D) ^ (B ^ C)
+	4. (C ^ D) ^ (D ^ E)
+
+	in case one, C is true, so C v (A ^ E) is true.
+	in case two, A ^ E is true, so C v (A ^ E) is true.
+	in case three, C is true, so C v (A ^ E) is true.
+	in case four, C is true, so C v (A ^ E) is true.
+
+	Thus in any of the four combinations, the premsies imply the conclusion.

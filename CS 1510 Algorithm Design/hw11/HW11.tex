@@ -1,0 +1,109 @@
+\documentclass[12pt]{article}
+\usepackage{algorithmic}
+
+\title{CS 1510: Homework 11}
+\author{
+John Hofrichter\\\texttt{jmh162@pitt.edu}
+\and
+Kyra F. Lee \\\texttt{kfl5@pitt.edu}
+\and
+Zach Sadler \\\texttt{zps6@pitt.edu}}
+\date{\today}
+\begin{document}
+\maketitle
+\section*{Dynamic Programming Problem 10}
+	\subsection*{Part (a) - Recursive Solution}
+		\paragraph*{Recursive Solution}
+			Assume integral endpoints. Alternatively, we could enumerate the endpoints of the intervals and
+			index using that enumeration.
+			
+			In order to compute the optimal solution for the first $k$ intervals (considered in order of
+			increasing left endpoint), we need to know the optimal solutions with the smallest furthest right
+			endpoints. The optimal solution for the first $k$ intervals will be the either the optimal
+			solution for the first $k-1$ intervals or else the sum of the length of the maximum solution
+			whose furthest right endpoint is less than the left endpoint of interval $k$ plus the length of
+			interval $k$.
+			
+			Our recursive algorithm, therefore, must take in a number of intervals, $k$, and a right limit, $L$.
+			
+			If the $k$th interval's right endpoint is less than $L$, it returns the maximum of the recursively
+			calculated longest solution for the first $k-1$ intervals with limit $L$ and the sum of the length of
+			the maximum solution whose furthest right endpoint is less than the left endpoint of interval $k$,
+			recursively calculated by passing in the $k$'s left endpoint plus the length of interval $k$. If the
+			$k$th interval's right endpoint is not less than $L$, then it just returns the recursively
+			calculated longest solution for $k-1$ with limit $L$.
+			
+		\paragraph*{Recursive Pseudocode}
+			\begin{algorithmic}
+				\STATE maxLength(k, L)
+					\IF{k.right < L}
+						\STATE return max((maxLength(k-1, k.left) + k.length), maxLength(k-1, L))
+					\ELSE
+						\STATE return maxLength(k-1, L)
+					\ENDIF
+			\end{algorithmic}
+			
+		\paragraph*{Dynamic Programming}
+			To convert this recursive algorithm to an iterative, polynomial time dynamic programming one,
+			we create an n by L maxLength array, and fill it in from bottom to top and left to right. The final
+			result will be the entry at maxLength[n][L].
+			
+		\paragraph*{Dynamic Programming Pseudocode}
+			\begin{algorithmic}
+				\FOR {l = 1 \TO L}
+					\STATE maxLength[0][L] = 0
+				\ENDFOR
+				\FOR {k = 1 \TO n}
+					\FOR {l = 1 \TO L}
+						\IF{k.right $<$ l}
+							\STATE maxLength[k][l] = max((maxLength[k-1][k.left] + k.length), maxLength[k-1][l])
+						\ELSE
+							\STATE maxLength[k][l] = maxLength(k-1, l)
+						\ENDIF
+					\ENDFOR
+				\ENDFOR
+			\end{algorithmic}
+	\subsection*{Part (b) - Decision Tree Pruning}
+		\paragraph*{Explanation}
+			The tree pruning approach considers each interval in turn (ordered by increasing left endpoint.
+			It considers both options, adding and not adding that interval. Any branches that introduce
+			overlap or have the less length as another branch with the same right endpoint are pruned.
+			
+			\paragraph*{Dynamic Programming Tree Pruning Pseudocode}
+			Note that this is the same as the above solution. The right endpoint $r$ is the same as the limit
+			$l$ above.
+			\begin{algorithmic}
+				\FOR {l = 1 \TO L}
+					\STATE maxLength[0][L] = 0
+				\ENDFOR
+				\FOR {k = 1 \TO n}
+					\FOR {r = 1 \TO L}
+						\IF{k.right $<$ l}
+							\STATE maxLength[k][r] = max((maxLength[k-1][k.left] + k.length), maxLength[k-1][r])
+						\ELSE
+							\STATE maxLength[k][r] = maxLength(k-1, r)
+						\ENDIF
+					\ENDFOR
+				\ENDFOR
+			\end{algorithmic}
+\section*{Dynamic Programming Problem 15}
+	\subsection*{Algorithm}
+\begin{algorithmic}
+	\FOR{l = 0 to W}
+		\STATE{maxValue[l] = 0}
+	\ENDFOR
+	\FOR{l = 0 to W}
+		\FOR{k = 1 to n}
+			\IF{$0 < l - w_k$ AND $maxValue[l - w_k] + v_k > maxValue[l]$} 
+				\STATE{$maxValue[l] = maxValue[l - w_k] + v_k$}
+			\ENDIF
+		\ENDFOR
+	\ENDFOR
+\end{algorithmic}
+
+	\subsection*{Explanation}
+In our algorithm, we take in a set of $n$ objects, each with weight and value. So for an object $k$, $w_k$ is the weight and $v_k$ is the value. In addition, we take in a maximum weight $W$, which can also be thought of as a maximum carrying capacity.\\
+Our algorithm initializes an array of size $W$ to zero, then solves the subproblems from smallest weight $(0)$ to the largest weight allowed, $W$. For each weight $l$ from $0$ to $W$, we attempt to put in each object $k$ from $1$ to $n$. We look back in our array by the object's weight (unless this would yield a negative weight) and compare the current maximum value for weight $l$ with the maximum value of weight $l - w_k$ plus $v_k$. If adding this object yields a larger max value for $l$ then we update the maximum value for $l$.\\
+Thus we solve the problem from bottom up, so that $maxValue[W]$ has our answer, and $maxValue[x]$ contains the maximum possible value for carrying capacity $0 \le x \le W$.\\	
+Since we have two for loops- one of length $W$ and the other length $n$- and we do $O(1)$ work inside the inner for loop, our total runtime is polynomial in $n$ and $W$.
+\end{document}

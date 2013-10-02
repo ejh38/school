@@ -1,0 +1,59 @@
+<HTML>
+<BODY>
+
+<HR><CENTER><H3>Longest Common Subsequence</H3></CENTER>
+
+<P><HR><CENTER><H3>Introduction</H3></CENTER>
+
+A <EM>Longest Common Subsequence</EM> (LCS) of two strings is exactly
+what the name implies!  For instance, an LCS of the strings
+<TT>haedlelfog</TT> and <TT>abchxeylzloabc</TT> is the string
+<TT>hello</TT>.  Note that the characters of the LCS do not need to be
+contiguous in either of the original strings.  Also, there may be
+multiple LCS's.
+
+<P>
+
+It is simple to find an LCS of two strings recursively.  Suppose
+that <TT>s1</TT> and <TT>s2</TT> are strings, and <TT>c1</TT> and
+<TT>c1</TT> are characters.  Define <TT>LCS(s1+c1,s2+c2)</TT> to be:
+<UL>
+  <LI> <TT>LCS(s1,s2)+c1</TT> if <TT>c1==c2</TT>
+  <LI> <TT>LCS(s1+c1,s2)</TT> if <TT>c1!=c2</TT> and <TT>LCS(s1+c1,s2)>LCS(s1,s2+c2)</TT>
+  <LI> <TT>LCS(s1,s2+c2)</TT> if <TT>c1!=c2</TT> and <TT>LCS(s1,s2+c2)>LCS(s1+c1,s2)</TT>
+</UL>
+Of course, <TT>LCS(s1,empty)=LCS(empty,s2)=empty</TT>.
+
+<P>
+
+A straightforward recursive implementation of this definition would be
+unusable, but a dynamic programming implementation should run in
+quadratic time.  This is because for input strings <TT>s1</TT> and
+<TT>s2</TT>, we need to complete a table with
+<TT>length(s1)*length(s2)</TT> entries, where each entry requires us
+to examine three previously computed entries and some simple
+arithmetic.
+
+<P><HR><CENTER><H3>Requirements</H3></CENTER>
+
+You will write a class <TT>LCS</TT> in the file <TT>LCS.java</TT> with
+the method:
+<PRE>
+    public static String findLCS(String s1, String s2)
+</PRE>
+that will find a longest common subsequence of two strings.  It should
+run in less than ten seconds for strings up to length 100.  Your code
+must work with my test file.  Also include a brief
+<TT>README.txt</TT> file.
+
+<P><HR><CENTER><H3>Submission and Grading</H3></CENTER>
+
+Submit your work to the CourseWeb site for this course.  If you cannot
+complete the entire project you can still receive 5 points if your
+method returns an <TT>int</TT> that is the length of an LCS of the
+arguments.
+
+<P>
+<HR>
+</BODY>
+</HTML>

@@ -1,0 +1,21 @@
+Problem 11.34
+
+In the following problems, I use this notation:
+->  for implication
+v   for disjunction
+^   for conjunction
+~   for negation
+<-> for biconditional
+A   for universal quantifier
+E   for existential quantifier
+
+Question:
+(Ex P -> Q) <-> (Ax[P -> Q])
+
+Solution:
+Ex P -> Q 			 This is what we start with
+~(Ex P) v Q      By replacing the ->
+Ax ~P v Q     	 By distributing the ~
+Ax (~P v Q) 		 Since x is not free in Q
+
+Thus (Ex P -> Q) <-> (Ax[P -> Q]).

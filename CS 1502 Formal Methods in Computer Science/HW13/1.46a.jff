@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><!--Created with JFLAP 6.4.--><structure>
+	<type>fa</type>
+	<automaton>
+		<note>
+			<text>Assume that the language is regular. Let p be the pumping length
+given by the pumping lemma.
+s = (0^p)(1^p)(0^p)
+is a member of the language, and the length of s is 3p, which is
+at least p, so by the pumping lemma we should have
+|xy| &lt;= p
+but in fact,
+|xy| = |(0^p)(1^p)| = 2p &gt; p
+so we have a contradiction. Thus this language is not regular.</text>
+			<x>68.0</x>
+			<y>70.0</y>
+		</note>
+	</automaton>
+</structure>

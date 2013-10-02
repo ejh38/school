@@ -1,0 +1,49 @@
+1.
+		| Anyone who has won an academy award is famous.
+		| Meryl Streep has won an academy award.
+		-----
+		| Meryl Streep is famous.
+
+	Valid, but unsound. Many sound engineers, costume designers, editors, and other 'behind the scenes' people win Academy Awards and yet are not famous.
+
+2.
+		| Actors who have won an academy award are famous.
+		| Harrison Ford has not won an academy award.
+		-----
+		| Harrison Ford is not famous.
+	Invalid, and so unsound. The statement says that all actors who have won the award are famous, but there could also be other actors who have won multiple golden globes and have many academy award nominations (but no wins), and so are still famous.
+
+3.
+		| When Charlton Heston says something, it is true.
+		| Charlton Heston said, "the right to bear arms is the most important freedom."
+		-----
+		| "The right to bear arms is the most important freedom" is a true statement.
+	Valid, but unsound. Charlton Heston is not a perfect human being (despite his role in The Ten Commandments), and so when he says something it is not guaranteed to be true.
+
+
+4.
+		| Most politicians are dishonest.
+		| Al Gore is a politician.
+		-----
+		| Al Gore is dishonest.
+	Invalid, and so unsound. If 'most' was switched to 'all', then this would be a valid argument, but as it stands Al Gore may just slip through the cracks as one of the rare exceptions to the 'most' rule.
+
+5.
+		| Sam Clemens was born in Hannibal, Missouri.
+		| Sam Clemens is Mark Twain.
+		-----
+		| Mark Twain lived in Hannibal, Missouri.
+	Valid, and sound. The premises are true, and this type of argument is very straightforwardly valid.
+
+6.
+		| No one bought anything here last night.
+		-----
+		| No one under 21 bought beer here last night.
+	Valid. If no one bought anything, then no one under age bought a specific thing.
+
+7.
+		| Claire lives on the same street as Max.
+		| Max lives on the same street as Laura.
+		-----
+		| Claire lives on the same street as Laura.
+	Valid. Similar to the same row or same column problems in Tarski's world. SameRow(a, b) and SameRow(b, c) implies SameRow(a, c).

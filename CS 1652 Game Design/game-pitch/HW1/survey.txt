@@ -1,0 +1,13 @@
+
+	Wild Magic is a cross platform, open source Gaming Engine. It comes with a number of features that make it much easier to get off the ground and running than a simple editor and OpenGL/GLUT. Wild Magic features a number of libraries that allow one to easily do complex tasks, and a significant amount of example code to pore over and understand the feature set.
+
+	Wild Magic makes creating a scenegraph a breeze, with it's awesome renderer. Creating an extremely complex geometric shape, like a dodecahedron, is as simple as calling 
+		myShape = sm.Dodecahedron();
+		myScene->AttachChild(myShape);
+	and likewise for transformations, adding textures and effects, and so on. This kind of abstraction away of the details allows a user to just focus on programming at a higher level, rather than having to re-implement things down to the most basic level. Another good example of this is drawing text to the screen:
+    mRenderer->Draw(8, 16, mTextColor, "Text to display");
+  No more having to worry about loading glyphs or crazy sets of commands, just simple commands.
+
+  Wild Magic also comes with a large set of SampleMathematics and SamplePhysics tools, showing off its full featured physics library, including some awesome sample simulations, like a cloth blowing in the wind. Many of the SamplePhysics programs would have qualified as excellent 1566 assignments or Final Projects, yet they're freely available with the source for users to learn the tricks and how simple it is for Wild Magic to pull them off.
+
+  Wild Magic is full of tools that make it simple to make very impressive programs. I like it.

@@ -1,0 +1,76 @@
+Zach Sadler
+zps6
+01/23/12
+HW2: IDEA TREE
+
+Television
+	Comedies
+		Arrested Development
+		The Office
+		Modern Family
+		Always Sunny in Philadelphia
+		The League
+	Dramas
+		Breaking Bad
+		Weeds
+
+Movies
+	Comedies
+		Anchorman
+		21 Jump Street
+		Knocked Up
+		This is 40
+		Forgetting Sarah Marshall
+	Sci Fi
+		Alien
+		Predator
+		Prometheus
+		2001: A Space Oddessy
+
+Video Games
+	Platformers
+		Sly Cooper
+		Super Mario 64
+		Super Meat Boy
+		Super Mario World
+		Donkey Kong Country
+	First Person Shooters
+		Borderlands 2
+		Gears of War 3
+		Halo 2
+	Artsy Games
+		Journey
+		Bioshock
+		Flow
+		Flower
+		Braid
+
+Books
+	Sci Fi
+		Ender's Game
+		Shadow of the Hegemon
+		1984
+		Fahrenheit 451
+	Comedy
+		When You Are Engulfed in Flames
+		This is a Book
+		Sex, Drugs, and Cocoa Puffs
+	Comics
+		Watchmen
+		Batman
+		Scott Pilgrim
+
+Sports
+	NCAAB
+		Pitt
+		Maryland
+		Duquesne
+	NBA
+		LeBron James
+		Timberwolves
+		Kevin Durant
+		Kevin Love
+	MMA
+		Taekwondo
+		Brazilian Jiu-Jitsu
+		Hapkido

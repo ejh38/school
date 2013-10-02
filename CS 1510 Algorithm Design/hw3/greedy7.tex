@@ -1,0 +1,30 @@
+\documentclass[11pt]{article}
+
+\begin{document}
+
+\noindent 
+CS 1510: Algorithm Design\\
+Homework 3 - Greedy Problems 7\\
+Zach Sadler, John Hofrichter\\
+zps6@pitt.edu | jmh162@pitt.edu\\
+September 3, 2013\\ 
+\\ 
+\\
+
+\noindent \huge 
+Problem 7\\
+\normalsize
+\noindent 
+Our greedy algorithm goes through each page $j$ in the fast memory and locates its first reapparance $a_j$ in the slow memory , then evicts the page which reappears the furthest away in the slow memory.\\
+We will prove that the algorithm $G$ solves the problem.\\
+Suppose towards a contradiction that there is an input $I$ on which the algorithm $G$ produces unacceptable output. Let $Opt(I)$ be an optimal output which agrees with $G(I)$ for the maximum number of steps of all such optimal outputs.\\
+Since $G$ produces unacceptable output and $Opt$ produces the correct solution, they must disagree on at least one interval. Let $k$ be the first such interval where they disagree, so that $G_k \ne O_k$.\\
+Construct $Opt'(I) = Opt(I) - O_k + G_k$, by swapping the positions of $G_k$ and $O_k$ in $Opt$. Then clearly $Opt'(I)$ agrees with $G$ for one additional term than $Opt$. Additionally, since $G$ evicts the page from the fast memory which reappears furthest in time in the slow memory, then the next appearance of the page $G_k$ accesses must reappear after $Opt_k$. Because of this, in $Opt'$ the page $O_k$ represents would need to be reloaded before the page that $G_k$ represents, thus replacing $O_k$ with $G_k$ in $Opt'$ will not force an additional eviction of the page that $G_k$ represents. \\
+Also note that since we're only adjusting in memory (fast and slow) the pages represented by $O_k$ and $G_k$, the remaining pages will be unaffected by this swap from $Opt$ to $Opt'$. Since no aditional evictions are necessary, $Opt'$ will have at most the same number of evictions as $Opt$. So if $Opt$ was optimal the $Opt'$ is optimal as well.\\
+Thus we have shown that there exists $Opt'(I)$ which is an optimal output which agrees with $G(I)$ for one step further than $Opt(I)$, and so we have a contradiction with the fact that $Opt(I)$ agrees with $G(I)$ for the maximum number of steps. So our original assumption that there was an input on which $G$ produced unacceptable output was incorrect, and we are done.\\
+\\
+\\
+
+
+
+\end{document}

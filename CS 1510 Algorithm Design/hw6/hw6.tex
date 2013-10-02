@@ -1,0 +1,80 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+
+\title{CS 1510: Homework 6}
+\author{Kyra F. Lee \\
+			 \texttt{kfl5@pitt.edu}
+	\and
+Zach Sadler \\\texttt{zps6@pitt.edu}
+  \and
+  John Hofrichter\\\texttt{jmh162@pitt.edu}}
+\date{\today}
+\begin{document}
+\maketitle
+\section*{Greedy Algorithm}
+	\subsection*{Problem 11}
+		Assume, to yield a contradiction, that there exists an input $I$ for which the greedy algorithm
+				does not yield optimal output. Let $G(I)$ be the greedy algorithm's output, and $O(I)$ be
+				the optimal schedule that agrees with $G(I)$ for the most initial rows.
+		
+		Let $r_{k}$ be the first row where $G(I)$ and $O(I)$ differ. That is, there exist at least one
+				pair of columns $c_{i}$ and $c_{j}$ such that $G(I)$ has a 1 in $(r_{k}, c_{i})$ but not in 
+				$(r_{k}, c_{j})$, and $O(I)$ has a 1 in $(r_{k}, c_{j})$ but not in  $(r_{k}, c_{i})$.
+					
+		Since $r_{k}$ is the first row where they disagree, we know that both $c_{i}$ and $c_{j}$
+				still need to be assigned at least one more 1 in row $r_{k-1}$. By the definition of the
+				greedy algorithm, we know that $c_{j}$ does not need more 1s than $c_{i}$ after
+				$r_{k-1}$, and, because $c_{j}$ and not $c_{i}$ is assigned a 1 in $r_{k}$ in $O(I)$,
+				$c_{i}$ must need strictly more 1s than $c_{j}$ after $r_{k}$ in $O(I)$.
+					
+		Construct a new output, $O'(I)$, by copying $O(I)$, but swapping the 1s in all pairs of
+				$(r_{k}, c_{j})$s and $(r_{k}, c_{i})$s so that $r_{k}$ in $O'(I)$ agrees with $r_{k}$ in
+				$G(I)$. Because we know that for every $c_{i}, c_{j}$ pair, $c_{i}$ needs more 1s than
+				$c_{j}$, there must be at least one row $r_{m}, m > k$ where $(r_{k}, c_{i})$ but not
+				$(r_{k}, c_{j})$ has a 1 in $O(I)$. For every $c_{i}, c_{j}$ pair, swap the 0 and 1 in $r_{m}$ too.
+				
+		$O'(I)$ agrees with $G(I)$ for one more row than $O(I)$ does, because there is at
+				least one $(r_{k}, c_{j})$, $(r_{k}, c_{i})$ swap in $r_{k}$.
+		
+		For every set of affected locations, $(r_{k}, c_{i}), (r_{k}, c_{j}), (r_{m}, c_{i}), (r_{m}, c_{j})$, we
+				have swapped 1s from $(r_{k}, c_{j})$ and $(r_{m}, c_{i})$ to $(r_{k}, c_{i})$ and $(r_{m}, c_{j})$.
+				This diagonal switch swap maintains the number of 1s in all affected rows and columns.
+				Thus, we show that if $O(I)$ is optimal, then $O'(I)$ is as well.
+				
+		Contradiction, for we assumed that $O(I)$ was the optimal solution that agreed with
+				$G(I)$ for the maximum number of initial rows.
+				
+		Therefore, the greedy algorithm yields an optimal solution for all inputs. QED.
+\section*{Dynamic Programming}
+	\subsection*{Problem 1a}
+		A naive recursive implementation which does not save values as it solves smaller problems would have to recalculate each value $T(n)$ at each point. So to calculate $T(n+1)$ would require:
+		\begin{align*}
+			T(n+1) &= \sum_{i=1}^{n+1-1}T(i)T(i-1)\\
+				&= \sum_{i=1}^{n}T(i)T(i-1)\\
+				&= T(n)T(n-1) + \sum_{i=1}^{n-1}T(i)T(i-1)\\
+				&= T(n)T(n-1) + T(n)\\
+				&\ge T(n) + T(n)\\
+				&= 2T(n)
+		\end{align*}
+		That is, $T(n+1)$ requires twice as many calculations as $T(n)$, and so the program is exponential in $n$.
+	
+	\subsection*{Problem 1b}
+		If we count the number of operations we have for $T(n)$, we can see that we have
+		\begin{align*}
+			T(n) &= \sum_{i=1}^{n-1}T(i)T(i-1)\\
+				&= T(n-1)T(n-2) + T(n-2)T(n-3) + \cdots + T(1)T(0)
+		\end{align*}
+		so we have $n-1$ summands, each of which is two terms multiplied together, which is $O(n)$ operations total. However, it requires $O(n)$ operations to generate each of the $T(i)$ terms which we use in the sum (and we generate these terms exactly once each), so we have $O(n^2)$ operations total.
+		
+	\subsection*{Problem 1c}
+		A simpler algorithm which uses only $O(n)$ arithmetic operations is a dynamic programming solution:\\
+		$T(n)$:\\
+		$T[0] = T[1] = 2$\\
+		for $i = 2 \cdots n-1$ do
+		
+		$T[i] = T[i-1]*T[i-2] + T[i-1]$\\
+		end for\\
+		return $T[n-1]T[n-2] + T[n-1]$
+		
+		
+\end{document}

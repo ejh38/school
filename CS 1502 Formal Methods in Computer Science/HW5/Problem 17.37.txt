@@ -1,0 +1,23 @@
+Problem 17.37
+
+In the following problem, I use this notation:
+^  for conjunction
+v  for disjuntion
+-  for negation
+-> for implication
+T  for true
+F  for false 
+
+Question:
+(C v A) ^ -C ^ -(A v B)
+
+Solution:
+First apply DeMorgan's law to obtain the CNF form:
+(C v A) ^ -C ^ -A ^ -B
+
+First divide into clauses:
+{C, A}, {-C}, {-A}, {-B}
+
+Combining {-C} and {C, A} we get {A}.
+But we already have {-A}.
+So {A} and {-A} is unsatisfiable, and so the premises along with the negation of the conlcusion is unsatisfiable, and so the premises imply the conclusion.

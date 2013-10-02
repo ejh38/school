@@ -1,0 +1,25 @@
+Problem 12.32
+
+In the following problems, I use this notation:
+->  for implication
+v   for disjunction
+^   for conjunction
+~   for negation
+<-> for biconditional
+A   for universal quantifier
+E   for existential quantifier
+
+Question
+
+Ax Cube(x) v Ax Tet(x) v Ax Dodec(x)
+---------
+Ax Ay SameShape(x, y)
+
+Here is my informal proof.
+
+Proof by cases. 
+First assume that Ax Cube(x) is true.
+Then for any arbitrary b and c, b is a cube and c is a cube. We can apply axiom 5 (the Cube introduction axiom) to conclude that b and c are the same shape. Since b and c were arbitrary, we have Ax Ay SameShape(x, y).
+Similarly, if we assume that Ax Tet(x), then by the same reasoning and axiom 6, we get Ax Ay SameShape(x, y).
+Again, if we assume Ax Dodec(x) then by Axiom 7 we get Ax Ay SameShape(x,y).
+Thus in any of the three cases, we get Ax Ay SameShape(x,y), and so by disjunction elimination we can conclude Ax Ay SameShape(x,y).

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><!--Created with JFLAP 6.4.--><structure>
+	<type>fa</type>
+	<automaton>
+		<!--The list of states.-->
+		<state id="0" name="0">
+			<x>82.0</x>
+			<y>195.0</y>
+		</state>
+		<state id="1" name="1">
+			<x>205.0</x>
+			<y>40.0</y>
+		</state>
+		<state id="2" name="2">
+			<x>227.0</x>
+			<y>135.0</y>
+		</state>
+		<state id="3" name="3">
+			<x>380.0</x>
+			<y>195.0</y>
+			<final/>
+		</state>
+		<state id="4" name="{}">
+			<x>648.0</x>
+			<y>53.0</y>
+		</state>
+		<state id="5" name="{0}">
+			<x>490.0</x>
+			<y>106.0</y>
+			<initial/>
+		</state>
+		<state id="6" name="{2}">
+			<x>604.0</x>
+			<y>160.0</y>
+		</state>
+		<state id="7" name="{3}">
+			<x>787.0</x>
+			<y>203.0</y>
+			<final/>
+		</state>
+		<state id="8" name="{1}">
+			<x>785.0</x>
+			<y>76.0</y>
+		</state>
+		<state id="9" name="{0,1}">
+			<x>519.0</x>
+			<y>254.0</y>
+		</state>
+		<!--The list of transitions.-->
+		<transition>
+			<from>8</from>
+			<to>7</to>
+			<read>a</read>
+		</transition>
+		<transition>
+			<from>6</from>
+			<to>7</to>
+			<read>a</read>
+		</transition>
+		<transition>
+			<from>4</from>
+			<to>4</to>
+			<read>b</read>
+		</transition>
+		<transition>
+			<from>1</from>
+			<to>2</to>
+			<read/>
+		</transition>
+		<transition>
+			<from>5</from>
+			<to>6</to>
+			<read>b</read>
+		</transition>
+		<transition>
+			<from>3</from>
+			<to>0</to>
+			<read>a</read>
+		</transition>
+		<transition>
+			<from>4</from>
+			<to>4</to>
+			<read>a</read>
+		</transition>
+		<transition>
+			<from>2</from>
+			<to>3</to>
+			<read>a</read>
+		</transition>
+		<transition>
+			<from>0</from>
+			<to>2</to>
+			<read>b</read>
+		</transition>
+		<transition>
+			<from>0</from>
+			<to>1</to>
+			<read/>
+		</transition>
+		<transition>
+			<from>1</from>
+			<to>3</to>
+			<read>a</read>
+		</transition>
+		<transition>
+			<from>9</from>
+			<to>6</to>
+			<read>b</read>
+		</transition>
+		<transition>
+			<from>7</from>
+			<to>9</to>
+			<read>a</read>
+		</transition>
+		<transition>
+			<from>9</from>
+			<to>7</to>
+			<read>a</read>
+		</transition>
+		<transition>
+			<from>8</from>
+			<to>4</to>
+			<read>b</read>
+		</transition>
+		<transition>
+			<from>5</from>
+			<to>4</to>
+			<read>a</read>
+		</transition>
+		<transition>
+			<from>6</from>
+			<to>4</to>
+			<read>b</read>
+		</transition>
+		<transition>
+			<from>7</from>
+			<to>4</to>
+			<read>b</read>
+		</transition>
+		<note>
+			<text>This is a DFA of the NFA on the left.</text>
+			<x>539.0</x>
+			<y>297.0</y>
+		</note>
+	</automaton>
+</structure>

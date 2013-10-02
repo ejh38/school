@@ -1,0 +1,29 @@
+Problem 17.41
+
+In the following problem, I use this notation:
+^  for conjunction
+v  for disjuntion
+-  for negation
+-> for implication
+T  for true
+F  for false 
+
+Question:
+(A v B) ^ (A -> C) ^ (B -> D) ^ -(C v D)
+
+Solution:
+First turn the -> into disjunctions.
+(A v B) ^ (-A v C) ^ (-B v D) ^ -(C v D)
+Then apply DeMorgan's law.
+(A v B) ^ (-A v C) ^ (-B v D) ^ (-C ^ -D)
+Now we have CNF
+(A v B) ^ (-A v C) ^ (-B v D) ^ -C ^ -D
+
+First divide into clauses:
+{A, B}, {-A, C}, {-B, D}, {-C}, {-D}
+
+Combining {-A, C} and {-C} we get {-A}.
+Combining {A, B} and {-A} we get {B}.
+Combining {-B, D} and {B} we get {D}.
+Now we have {D} and {-D}.
+So {D} and {-D} is unsatisfiable, and so the premises along with the negation of the conlcusion is unsatisfiable, and so the premises imply the conclusion.

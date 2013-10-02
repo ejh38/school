@@ -1,0 +1,15 @@
+1. Capital(Indiana) > Capital(California)
+2. Died(Mistress(Hitler), 1945)
+3. ShookHands(Max, Father(Claire))
+4. Max = Son(Father(Max))
+5. Eldest(John, Nancy) < Eldest(Jon, Mary Ellen)
+
+Capital(x) means the capital city of the state x
+Capital(x) > Capital(y) means the population of the capital city of x is greater than the population of the capital city of y
+Died(x, y) means person x died in year y
+Mistress(x) means the mistress of person x
+ShookHands(x, y) means x shook hands with y
+Father(x) means the father of x
+Son(x) means the son of x
+Eldest(x, y) means the eldest child of x and y
+Eldest(x, y) < Eldest(z, w) means the eldest chlild of x and y is younger than the eldest child of z and w

@@ -1,0 +1,28 @@
+Problem 17.35
+
+In the following problem, I use this notation:
+^  for conjunction
+v  for disjuntion
+-  for negation
+-> for implication
+T  for true
+F  for false 
+
+Question:
+A v (B ^ C) v (-A ^ -B) v (-A ^ B ^ -C)
+
+Solution:
+First we negate the DNF sentence to obtain
+-(A v (B ^ C) v (-A ^ -B) v (-A ^ B ^ -C))
+which is equivalent to the CNF sentence
+-A ^ -(B ^ C) ^ -(-A ^ -B) ^ -(-A ^ B ^ -C)
+-A ^ (-B v -C) ^ (A v B) ^ (A v -B v C)
+
+First divide into clauses:
+{-A}, {-B, -C}, {A, B}, {A, -B, C}
+
+Combining {-A} and {A, B} we get {B}.
+Combining {B} and {-B, -C} we get {-C}.
+Combining {A, -B, C}, {B}, and {-C} we get {A}.
+Now we have {A} and {-A}.
+Thus the CNF sentence is unsatisfiable, so the original DNF sentence IS logically true.

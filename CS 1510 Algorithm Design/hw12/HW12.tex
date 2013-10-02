@@ -1,0 +1,44 @@
+\documentclass[12pt]{article}
+\usepackage{algorithmic}
+
+\title{CS 1510: Homework 13}
+\author{
+John Hofrichter\\\texttt{jmh162@pitt.edu}
+\and
+Kyra F. Lee \\\texttt{kfl5@pitt.edu}
+\and
+Zach Sadler \\\texttt{zps6@pitt.edu}}
+\date{\today}
+\begin{document}
+\maketitle
+\section*{Dynamic Programming Problem 16}
+	\subsection*{Explanation}
+	
+The first thing to note in this problem is that our bounds for runtime are very large. For instance, if our input is $1, 2, 2, 3, 4, 5, 6, 7$ then we have 8 numbers total ($n = 8$) and L = max($792, 10080) = 10080$. So to solve this small input of simply 8 single-digit numbers we are required to be within polynomial of over $10,000$ operations, which is enormous compared to $2^8 = 256$, which is exponential runtime and typically considered to be way too slow for an acceptable solution.\\
+So we understand that even an exponential solution may be a good one compared to our acceptable bounds, so what exactly will we have for our solution? We've already seen that $2^n$ can be a better runtime than the bounds we're given, and in fact our solution will run in about $O(2^n)$.\\
+We will calculate the power set of our input and then calculate the cubic sum and total product of each subset to see if it is a solution. If it is, then we finish and return that subset as a valid solution. So consider the following algorithm:\\
+
+	\subsection*{Algorithm}
+	
+\begin{algorithmic}
+	\STATE{PowerSet = null}
+	\FOR{i = 1 to n}
+		\STATE{newPowerSet = null}
+		\FOR{subset 1 to PowerSet.size}
+			\STATE{newPowerSet.add(subset)}
+			\STATE{newSubset = subset + i}
+			\STATE{newPowerSet.add(newSubset)}
+		\ENDFOR
+		\STATE{PowerSet = newPowerSet}
+	\ENDFOR
+	\STATE{//So now we have PowerSet as our complete power set of the input.}
+	\FOR{i = 1 to PowerSet.size}
+		\IF{cubicSum(PowerSet[i]) == totalProduct(PowerSet[i])}
+			\STATE{return i}
+		\ENDIF
+	\ENDFOR
+	\STATE{return "no solution"}
+\end{algorithmic}	
+
+
+\end{document}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><!--Created with JFLAP 6.4.--><structure>
+	<type>fa</type>
+	<automaton>
+		<note>
+			<text>Two that are members:
+     abab, ababab
+
+Two that are not members:
+     a, b</text>
+			<x>92.0</x>
+			<y>115.0</y>
+		</note>
+	</automaton>
+</structure>

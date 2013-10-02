@@ -1,0 +1,12 @@
+Problem 10.6
+
+In the following problems, I use this notation:
+->  for implication
+v   for disjunction
+^   for conjunction
+~   for negation
+<-> for biconditional
+
+((A -> (B ^ C)) ^ (D -> ~B) ^ D) -> E
+
+Invalid

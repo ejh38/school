@@ -1,0 +1,58 @@
+Zach Sadler
+zps6
+01/23/12
+HW2: IDEABASE version 1
+
+(Ideas marked with ****** ****** are ones I think are particularly interesting, easy to pull off, or would be very entertaining)
+
+
+1. ****** Coded Reality ****** - Black and white platformer where you can 'peek behind the scenes' and alter the game's code to solve the puzzles. Teaches basic programming and analytical skills.
+2. Heads or Tails or Bank - Race to 50 points, a game with multiplying values for streaks and a few win conditions.
+3. Super Applicant Processing: NSA Edition - Try to make it through the extremely confusing and often frustrating NSA application process.
+4. Being Red - A simple 'day in the life' game of a man with luscious red hair. Avoid gropers, collect shampoo.
+5. Breaking Super Mario 64 - A romhack of sorts to teach potential speedrunners how to do some of the various glitches (cannonless, LBLJ, SBLJ, skippy, clippy, etc).
+6. Alien vs. Anchorman - A misogynistic 60s newscaster faces down an alien race of feminists.
+7. Flight 1984 - Think Desert Bus. Board an airplane that turns out to be a floating propaganda machine for the world-state in 1984.
+8. Always Sunny in Rapture - A return to Rapture, but before the collapse. The world we know from Bioshock in the height of its glory. No talk of corruption, no murders, no secrets, just a great society with some awesome technology.
+9. Scott Pilgrim vs. the Pitt Basketball Team - Scott Pilgrim has fought off some serious challenges to get with Ramona, his girlfriend. But now he has to face off against the Pitt basketball team in order to date Steven Adams.
+10. This is a Game - Much like Demetri Martin's book, this game would be a very ironic, meta, self-aware game about game conventions and the tropes we're all aware of. Think DLC Quest.
+11. ****** This is Not a Game ****** - The total opposite of the previous one. Still very self-aware of gaming conventions and tropes, but plays with the user's gaming knowledge and gives unexpected results.
+12. Microsoft Flight (attendant) Simulator - Deal with needy passengers, comply with federal regulations, and try to expedite the boarding and exiting procedures.
+13. Street Table Tennis - A high stakes game of Table Tennis. Use cheap shots, dirty tricks, distractions, and deception to win.
+14. ****** Super Button Masher ****** - Tap the buttons as they appear as quickly as possible. Whoever gets the most taps in before time runs out wins!
+15. Sushi Ninja - It's like Fruit Ninja, but the emphasis is on extreme precision instead of speed and quantity. One good cut of tuna is better than a big multiplier.
+16. ****** Password Guesser Online ****** - Using information readily available from social media and a short conversation, attempt to guess your friends' passwords. Play with your real friends' profiles for added fun!
+17. Everyday Efficiency Olympics - Compete in several real life (and real simple) events like 'Mapping a Route to Class', 'Doing the Laundry', 'Cooking 3 Dishes at Once', and 'Cleaning a Room.' Try to minimize time, trips, and effort, while still yielding maximum results.
+18. Charlie Brown vs. Lucy - Finally get the revenge that Charlie Brown craves. Years of pulling away the football finally come back to haunt Lucy.
+19. Gandalf Simulator 2013 - Experience life as one of the most powerful figures in Middle Earth. Help hoppits, battle Balrogs, and hang out with giant eagles.
+20. ****** Strikes or Strike Out ****** - A bowling game where you have to bowl a perfect game. Anything less than a strike forces a mandatory reset. Strive for perfection, or settle for nothing.
+21. gdb: Late Night - Experience a high-pressure session of debugging tangled C code during a last-minute, late-night, caffeine-fueled coding binge. 
+22. The Sims: RA Edition - It's The Sims that you know and love, but this time in a familiar college scenario. Play as the RA and rule over a floor of troubled freshman, or play as a student and terrorize your superior.
+23. Raindrop Racer - The childhood game of many, Raindrop Racer recreates the game you'd play in the car where you try to determine which raindrops will make it to the bottom of the window first.
+24. Diabetes Detective - Use clues like 'checking the trash can' and 'keeping an inventory on the fridge' to determine what your diabetic girlfriend has been eating and what her blood sugar is probably like. The nosier you are, the better you're doing!
+25. Forgetting LeBron James - Take the role of an up and coming basketball player who starts in a lousy middle school and quickly becomes an unheard of success. Perform so well that you outshine King James in every aspect of his career, becoming the GOAT and making the world Forget about Lebron James.
+26. Arrested Sly Cooper - This game chronicles the later years of one of the greatest theives of all time. Sly Cooper, who was caught in his late 80s, spends the remainder of his days scamming prisoners, conning correcitional officers, and stealing an extra portion of meatloaf a lunchtime.
+27. Meat Boy 64 - Very simply, the worlds and scenery of Super Mario 64 combined with Meat Boy's physics. Collect Bandage Girl instead of Stars, and bandages instead of red coins.
+28. Fahrenheit 451: The Office - Instead of following the exciting journey of the firefighter who decided he wanted to read books instead of burn them, this game features the very important paperwork aspect of the firefighter's job. After all, books are bad but TPS reports are worse.
+29. When You Are Engulfed in Flowers - Experience life as an extremely attractive woman who is constantly given flowers by her countless lovers. Watch your 'creep-o-meter' to monitor how many people are staring at your butt, and try to put as many men into the friend zone as possible.
+30. Batman Jiu-Jitsu - After succesfully fighting off most of the serious threats in Gotham City, Batman is running out of ways to help the community. He opens up a martial arts studio to try to teach discipline, fighting skills, and a healthy dose of grit to orphans in the area.
+31. Gears of Prometheus - An inside look into what went into one of the most overhyped science fiction movies of the year, and an explanation for why it wa so awful. Score points by pointing out plot holes and extreme character stupidity.
+32. Overcompensation Adventure - Find relief from your insecurities by overcompensating in other aspects of life. Buy a fancy car, talk a lot of lies, brag for no reason.
+33. ****** Attention Defecit Diversion ****** - See what it's like to have severe ADHD and have to sit through a boring lecture. Try to keep your 'Focus Meter' up, or enjoy some awesome diversions. A game full of diverse minigames that you must complete or ignore while still paying enough attention to the material to pass a quiz later on.
+34. ****** Paranoid Perception ****** - Walk in the shoes of a paranoid schizophrenic who suffers from strong delusions, hears voices, and has to seperate reality from fiction. 
+35. Permadeth Pokemon - Much like the Nuzlocke challenge, this is a variant of the collectible 'catch, train, and battle' pokemon/dragon warrior type games. However, unlike those there is a heavy consequence for failure- any Pokemon that 'faints' is dead and cannot be revived. The theme goes from 'Gotta Catch em All' to 'Gotta Survive.'
+36. Suburban Drug Cartel - As a drug dealer to a rich white community, you have to accomodate to your client base and their quirks, while avoiding suspicious neighbors, the neighborhood watch, and rival drug dealers.
+37. Fields Medal: Leibniz' Rage - Leibniz travels a few hundred years into the future to discover that he's known much more for his contributions to rationalist philosophy than to mathematics (specifically, the Calculus that he invented). Furious, he decides to hunt down all living Fields medalists and erase them from history much as he was wrongfully forgotten.
+38. Philosophy Wars - Rationalists vs Empiricists, Platonic vs Aristotelian, Skeptic vs. Gnostic, this fighting game pits famous philosophers from all eras against each other. Support your favorite philosopher or ideology and squash those who disagree with you. Think Street Fighter meets Phoenix Wright (Objection!) meets Mafia Wars.
+39. 21st Birthday - Try to survive a 21st birthday night gone horribly wrong. An adventure game like Monkey Island.
+40. Wild Magic - Tame the majestic, ferocious creature known only as Wild Magic. Executive produced by David Eberly, this game pits you against an open source engine with nothing to lose. Try to produce a fun, working game despite little documentation, no online help, and a very out of date textbook.
+41. Super Schedule Crowdsource - A game to easily solve a complex issue- players try to solve 'randomly generated' logic puzzles that are actually scheduling combinatorics problems for Universities. The Universities get free work done, and the players face a challenging puzzle with real-world consequences.
+42. ****** MARS Rover ****** - Attempt to control the MARS rover (Curiosity) by sending it your own source code- written in MIPS. The code is uploaded directly to the robot, so any bugs will be found quickly and reported to you by NASA and the Federal government. Do well and you could discover intelligent life! Do poorly and you'll end up in jail!
+43. ****** Google STREET View ****** - Browse through never-before-seen images from the Google vans that collect data for Google Maps Street View. If you find explicit pictures that need to be blurred or photoshopped out, you can take your own screenshots and share them with the internet (gaining valuable karma), before then censoring them for the general public.
+44. ****** Orville Redenbaucher's Popcorn Kernel Madness ****** - You are randomly given root access to a computer on a remote network, but you will be kicked out in 2:20 (the time it takes to cook popcorn). Do as much damage as you can before you are Popcorn'ed to another system. Earn bonus time if you can create a zombie botnet, but don't let the popcorn burn! If you run out of time then you become the next target for another random user.
+45. ****** MeinKraft ****** - As a US soldier caught in a WWII POW camp, you don't have many options. Either dig your way out, or craft resources to help you fight back against your captives. Just watch out for the BlitzKrieepers.
+46. Awkward Strip Club Adventure - Travel with your friends to a local strip club on College night. Try to make dirty jokes and avoid feeling uncomfortable as you each share an erotic and embarrassing experience.
+47. Panic Attack: the Dark Descent - Find out what it's like to live with anxiety and panic attacks. Watch your 'anxiety meter' so that you can know when you're about to slip over the edge and have a panic attack. Surround yourself with friends for an unforgettable time.
+48. Embrace the Martian - Relive the incredible story of Kid Cudi as he descended from Mars to smoke pot and rap on the planet Earth. Fight off Solo Dolo, head Up Up and Away, and play all Day & Night. 
+49. Shadow of the Mario - Live life as the older, less successful brother to an exremely popular athlete, hero, and ladies' man. Try to avoid resentment as your brother hosts countless sports games and parties and you have to hope for an invite.
+50. ****** Precision Estimation ****** - Try to guess the exact lengths, angles, and timing of certain objects on screen. Improve your abilities to guesstimate by continuosly honing your skills in a series of minigames and tests.
