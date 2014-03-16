@@ -1,0 +1,73 @@
+class  
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            Factorial 
+
+
+
+
+                 {
+public static
+
+ void  
+
+ main(     String     [  ] a)    {
+System.out.println (new Fac(    ).ComputeFac(10)    )     ;
+}}
+class     Fac {
+public   
+
+
+
+ 
+
+
+
+
+
+
+
+       int     
+         ComputeFac(
+         int
+
+            num 
+
+          , 
+
+            int   
+            steve) {
+// this should be gone
+int      num_aux;if (steve < tryThis(10)) { if (steve < tryThis(10)) { yeah; } doSomething; }	// so should this
+else {
+/* jhfbsfjhsdbfjhsdfbsjfhbsdfjhsdfbdshjfbsfshfsbfhjsdfbs
+ kjsdh fjhsd dhbfe jkdnf df
+   fbhsdjfb sdjhfbsdjhfbe wehjbt dkcnncs
+   djhfbsdjhfbs sjhbsdhjfb
+   ejhbre
+   sdjhfbsjhbffsdbfhjdsbfsjdhfsdjhf hjsdbfjsdhfbhjewbfewj
+hf dsjbdsjhfbdsjhfbsdfjhsdbffhjbsdfjhbsf
+*/
+ 
+
+  num_aux = num* (this.ComputeFac(num-1));
+return num_aux;
+}}
+
+}
