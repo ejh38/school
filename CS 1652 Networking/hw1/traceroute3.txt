@@ -1,0 +1,15 @@
+traceroute to www.ece.rice.edu (128.42.246.177), 30 hops max, 60 byte packets
+ 1  vl1317.fq-core-2.gw.pitt.edu (136.142.184.129)  0.635 ms  0.811 ms  0.789 ms
+ 2  xe-1-0-0-713.externals-cl.gw.pitt.edu (136.142.2.169)  0.519 ms  0.514 ms  0.503 ms
+ 3  packetnet.pitt.3rox.net (147.73.16.169)  1.379 ms  1.370 ms  1.357 ms
+ 4  pitt-psc10G.layer3.nlr.net (192.88.115.167)  5.452 ms  5.445 ms  5.433 ms
+ 5  vlan-57.clev.layer2.nlr.net (216.24.186.64)  40.878 ms  40.850 ms  40.850 ms
+ 6  vlan-63.chic.layer2.nlr.net (216.24.186.60)  40.837 ms  40.625 ms  40.755 ms
+ 7  vlan-48.kans.layer2.nlr.net (216.24.186.63)  40.744 ms  40.998 ms  43.079 ms
+ 8  vlan-49.tuls.layer2.nlr.net (216.24.186.81)  40.889 ms  40.884 ms  40.918 ms
+ 9  vlan-50.hous.layer2.nlr.net (216.24.186.76)  41.009 ms  40.613 ms  40.731 ms
+10  hstn-hstn-nlr-ge-0-0-0-0-layer3.tx-learn.net (74.200.188.34)  40.660 ms  40.597 ms  40.585 ms
+11  setg-hstn-nlr-layer3.tx-learn.net (74.200.188.30)  39.855 ms  39.850 ms  39.780 ms
+12  198.32.236.100 (198.32.236.100)  40.094 ms  40.085 ms  40.047 ms
+13  198.32.236.22 (198.32.236.22)  40.182 ms  40.173 ms  40.160 ms
+14  www3.ece.rice.edu (128.42.246.177)  42.856 ms !X  42.834 ms !X  42.804 ms !X

@@ -1,0 +1,14 @@
+traceroute to www.eurocom.fr (92.243.13.96), 30 hops max, 60 byte packets
+ 1  vl1317.fq-core-2.gw.pitt.edu (136.142.184.129)  0.985 ms  0.843 ms  0.946 ms
+ 2  xe-1-0-0-713.externals-cl.gw.pitt.edu (136.142.2.169)  0.549 ms  0.564 ms  0.544 ms
+ 3  transitrail.pitt.3rox.net (147.73.16.175)  1.374 ms  1.365 ms  1.351 ms
+ 4  ae-3.511.chic0.tr-cps.internet2.edu (64.57.21.145)  13.585 ms  13.579 ms  13.567 ms
+ 5  * * *
+ 6  ae4.cr2.ord2.us.above.net (64.125.20.41)  14.583 ms  14.266 ms  14.242 ms
+ 7  xe-4-0-0.cr2.lga5.us.above.net (64.125.31.73)  31.292 ms  31.105 ms  29.458 ms
+ 8  xe-3-2-0.cr2.dca2.us.above.net (64.125.26.109)  41.963 ms  41.322 ms  41.301 ms
+ 9  xe-1-1-0.mpr1.bwi9.us.above.net (64.125.22.134)  23.232 ms  23.158 ms  23.171 ms
+10  64.125.192.86.t00709-01.above.net (64.125.192.86)  22.523 ms  22.388 ms  22.325 ms
+11  xe2-6-core1-d.paris.gandi.net (217.70.176.229)  100.817 ms  102.747 ms  100.751 ms
+12  xe1-5-5-dist1-d.paris.gandi.net (217.70.176.238)  100.699 ms  100.676 ms  100.030 ms
+13  srv4.felten.biz (92.243.13.96)  100.068 ms  100.036 ms  99.919 ms
