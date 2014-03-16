@@ -1,0 +1,49 @@
+Steps:
+
+FIRST MAKE THE INIT SCRIPT
+//init.php
+//	- What kind of schema?
+//	- Users : stores the username, email, password, wins, losses as before
+//	- CurrentlyLogged : for each user
+//			- Their user id
+//			- The state of the game they're currently in
+//	- State : for each game being played
+//			- Which person is maker, which is guesser
+/*			- Correct word: Max of 16 chars
+//			- Incorrect guesses (number)
+//			- List of guessed letters
+//			- Current word	
+
+
+THEN MAKE THE FLAT FILES
+users.txt
+
+THEN MAKE THE LOGIN SCRIPT
+
+Maybe slight modification of login.php from last time, because our schema may be slightly different
+
+HAVE LOGGING IN INSERT THE USER INTO CurrentlyLogged
+Display our full schema to make sure
+
+HAVE LOGGING IN A SECOND USER PAIR HIM WITH THE FIRST
+Make sure to not pair with yourself
+Make sure to delete once finished
+
+
+HAVE THE FIRST USER WAIT FOR THE SECOND, THEN BOTH ENTERED INTO THE GAME
+done
+
+GET THE SINGLE SET OF XML TAGS IN PLACE AS A STRUCTURE TO DISPLAY TO BOTH USERS
+	- Same tags for both users, different content inside
+	- See ramirez's files
+
+ACTUALLY START GENERATING AND PARSING DIFFERENT XML PER USER	
+done
+
+BIG STRUCTURE
+	- First wait until CurrentWord != ''
+		- Guesser gets a waiting screen
+		- Maker gets a input field
+		
+
+THEN COME BACK HERE AND WRITE MORE

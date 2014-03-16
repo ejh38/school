@@ -1,0 +1,180 @@
+<?php
+  session_start();
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Hangman!!</title>
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script type="text/javascript">
+// CS 1520 Fall 2013 -- Simple JQuery script to do a VERY PRIMITIVE
+// chat between two users.  See also:
+//	getID.php - script to assign ids to users
+//	processMessage.php - script to receive message from a user and put it
+//		into the DB
+//	getMessage.php - script to get message that were submitted and remove
+//		them from the DB
+//  setChat.php - script to set up the initial DB.  I do not log out users
+//      so you need this script to reset things also.
+
+    var myID, yourID; 
+    var t;
+    var makerOrGuesser;
+    var currentWord;
+    var incorrect;
+    var guesses;
+    var correctWord;
+    var rounds, won;
+
+
+    // Initially show the login div and hide the interactive div
+    $(document).ready(function() {
+      $("div#wholething").show();
+      getUserType();
+      processState();
+
+    });
+
+
+    function getUserType() {
+      args = {};
+      $.post("get-user-type.php", args, 
+          function (data) {
+             makerOrGuesser = $(data).find("Type").text();
+            }
+      );
+    }
+
+
+    function processState() {
+       
+      var args = {"type":makerOrGuesser};
+      $.post("process-state.php", args, 
+          function (data) {
+       
+            currentWord = $(data).find("Current").text();
+            guesses = $(data).find("Guessed").text();
+            incorrect = $(data).find("Incorrect").text();
+            rounds = $(data).find("Rounds").text();
+            $("div#rounds").text(rounds);
+            $("div#rounds").show();
+            won = $(data).find("Won").text();
+            $("div#won").text(won);
+            $("div#won").show();
+
+            $("div#hangmanImg").html("<img src = " + incorrect + ".JPG>");
+
+            // if no current word
+            if (currentWord == 0) {
+              getUserType();
+              $("div#currentWord").hide();
+
+              $("div#guessedLetters").hide();
+              $("div#guessALetter").hide();
+              if (makerOrGuesser == "GUESSER") {
+                $("div#waitingOnWord").show();
+                $("div#inputWord").hide();
+              }
+              else {
+                $("div#inputWord").show();
+                $("div#waitingOnWord").hide();
+              }
+            }
+            else {
+              // if there is a word
+              $("div#waitingOnWord").hide();
+              $("div#guessedLetters").show();
+
+
+              if (makerOrGuesser == "GUESSER") {
+                $("div#currentWord").text(currentWord);
+                $("div#currentWord").show();
+                $("div#guessALetter").show();
+
+              }
+              else {
+                // if maker
+                $("div#currentWord").text(currentWord);
+                $("div#currentWord").show();
+                $("div#inputWord").hide();
+              }
+            }
+
+
+            if (makerOrGuesser == "MAKER") {
+              correctWord = $(data).find("Correct").text();
+            }
+
+          });
+
+    $("div#guessedLetters").text("Guesses are: " + guesses);
+
+      t = window.setTimeout(processState, 250);
+
+    }
+
+
+    function sendWord() {
+      var msg = $("input[name=word]").val();
+      var args = {"word":msg};
+      $.post("send-word.php", args, 
+          function (data) {
+            $("div#inputWord").hide();
+          }
+      );
+    }
+
+    function sendLetter() {
+      var msg = $("input[name=letter]").val();
+      var args = {"letter":msg};
+      $.post("send-letter.php", args, 
+          function (data) {
+            processState();
+            getUserType();
+            checkWin();
+            getUserType();
+          }
+      );
+    }
+
+    function checkWin() {
+      var args = {};
+      $.post("check-win.php", args,
+        function (data) {
+
+        }
+      );
+    }
+
+   
+</script>
+</head>
+<body> 
+<div id ="wholething">
+<center>
+<div id = "hangmanImg"></div>  
+<div id = "currentWord"></div>
+<div id = "guessedLetters"></div>
+<div id="MAKER">
+<br>
+<div id ="inputWord">
+<h4>Input the word buddy:</h4><input type = "text" name = "word" id = "word" size = "16"><br />
+<input type = 'button' name="enter" id = "enter" value = "Enter" onclick = 'sendWord()'><br/>
+</div>
+</div>
+<div id="GUESSER">
+<div id="waitingOnWord">
+<h3>Still waiting for a word :(</h3>
+</div>
+<div id = "guessALetter">
+<h4>Guess a Letter:</h4><input type = "text" name = "letter" id = "letter" size = "3"><br />
+<input type = 'button' name="letterEnter" id = "letterEnter" value = "Enter" onclick = 'sendLetter()'>
+</div>
+<div id = "rounds"></div>
+<div id = "won"></div>
+</center>
+</div>
+</div>
+</body>
+</html>

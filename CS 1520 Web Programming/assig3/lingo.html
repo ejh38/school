@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>LINGO!</title>
+<script type="text/javascript">
+// CS 1520 Summer 2012 
+// Script to request a word from a wordserver.  The word is returned
+// as a JSON object and then processed in the following way:
+//	- If the word has been seen already, increment its count in the
+//	  list and in the HTML table
+//	- If the word has not yet been seen, add it to the list and to
+//	  the HTML table.
+// The words are stored in a simple array of Word objects.  A linear search
+// done to find a given word [note: an object in Javascript can be used
+// to make a hash -- to see more about this Google 'Javascript hash table'
+
+    function requestWord() {
+        var httpRequest;
+        httpRequest = new XMLHttpRequest();
+        if (!httpRequest) {
+            alert('Giving up :(Cannot create an XMLHTTP instance');
+            return false;
+        }
+ 
+        httpRequest.open('GET', 'getWord.php', true);
+        httpRequest.setRequestHeader('Content-Type', 'text/xml');
+        httpRequest.onreadystatechange = function() { updateList(httpRequest); };
+        httpRequest.send(null);
+
+    }
+
+    function requestWins() {
+    	var httpRequest;
+        httpRequest = new XMLHttpRequest();
+        if (!httpRequest) {
+            alert('Giving up :(Cannot create an XMLHTTP instance');
+            return false;
+        }
+ 
+        httpRequest.open('GET', 'get-wins.php', true);
+        httpRequest.setRequestHeader('Content-Type', 'text/xml');
+        httpRequest.onreadystatechange = function() { updateWins(httpRequest); };
+        httpRequest.send(null);
+    }
+
+    function updateWins(httpRequest)
+    {
+        if (httpRequest.readyState == 4)
+        {
+           if (httpRequest.status == 200)
+           {
+               var data = httpRequest.responseText;
+               //alert(data);
+               var roundsData = JSON.parse(data);
+               roundsWon = roundsData["Wins"];
+               roundsPlayed = roundsData["Rounds"];
+               email = roundsData["Email"];
+	         }
+        }
+    }
+
+    function updateList(httpRequest)
+    {
+        if (httpRequest.readyState == 4)
+        {
+           if (httpRequest.status == 200)
+           {
+               var data = httpRequest.responseText;
+               //alert(data);
+               var wordData = JSON.parse(data);
+               currentWord = wordData.Word;
+               currentWord = currentWord.toUpperCase();
+               state = 0;
+               var T = document.getElementById("theTable");
+							 var R = T.rows[0];
+							 var C = R.cells[0];
+							 resetTable();
+							 C.innerHTML = '<div style ="width:50px; height:50px; background-color:#FFFFFF; color:#FF0000; font-family:Helvetica; font-size:22pt; text-align: -webkit-center; vertical-align: -webkit-center"">' + currentWord[0].toUpperCase() + '</div>';
+							 state = 0;
+							 Timer.reset();
+							 roundsPlayed++;
+	         }
+        }
+    }
+
+    function setWins() {
+    	var httpRequest;
+        httpRequest = new XMLHttpRequest();
+        if (!httpRequest) {
+            alert('Giving up :(Cannot create an XMLHTTP instance');
+            return false;
+        }
+ 
+        httpRequest.open('POST', 'set-wins.php', true);
+        httpRequest.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+    
+        httpRequest.send("roundsPlayed=" + roundsPlayed + "&roundsWon=" + roundsWon
+        									+ "&email=" + email.replace("+", "%2B"));
+    }
+
+    function resetTable() {
+			var T = document.getElementById("theTable");
+			for (var i = 0; i < T.rows.length; i++) {
+	      var R = T.rows[i];
+				for (var j = 0; j < R.cells.length; j++) {
+		      var C = R.cells[j];
+		      C.innerHTML = '<div style ="width:50px; height:50px; background-color:#FFFFFF; color:#ABCDEF"></div>';
+				}
+			}			
+    }
+
+    function updateRow(index) {
+			var T = document.getElementById("theTable");
+			var R = T.rows[index];
+			for (var i = 0; i < R.cells.length; i++) {
+				var C = R.cells[i];
+				if (guess[i] != undefined) {
+					C.innerHTML = styleLetter(guess[i], currentWord[i]);
+				}
+			}
+
+    }
+
+    function styleLetter(guessLetter, actualLetter) {
+    	if (guessLetter == actualLetter) {
+    		return '<div style ="width:50px; height:50px; background-color:#FFFFFF; color:#FF0000; font-family:Helvetica; font-size:22pt; text-align: -webkit-center; vertical-align: -webkit-center">' + guessLetter.toUpperCase() + '</div>'
+    	}
+    	else {
+    		for (var i = 0; i < 5; i++) {
+    			if (currentWord[i] == guessLetter) {
+    				return '<div style ="width:50px; height:50px; background-color:#FFFFFF; color:#0000FF; font-family:Helvetica; font-size:22pt; text-align: -webkit-center; vertical-align: -webkit-center"">' + guessLetter.toUpperCase() + '</div>'
+    			}
+    		}
+    		return '<div style ="width:50px; height:50px; background-color:#FFFFFF; color:#000000; font-family:Helvetica; font-size:22pt; text-align: -webkit-center; vertical-align: -webkit-center"">' + guessLetter.toLowerCase() + '</div>'
+    	}
+    }
+
+    function submit() {
+    	if (state == -1) {
+    		return;
+    	}
+			var T = document.getElementById("guessInput");
+			guess = T.value;
+			guess = guess.toUpperCase();
+			if (guess == currentWord) {
+				updateRow(state);
+				state = 5;
+				roundsWon++;
+				return;
+			}
+			if (state < 5) {
+				updateRow(state);
+				state++;
+			}			
+			Timer.reset();	
+    }
+
+		function Timer(initcount) {
+    	this.initcount = initcount;
+    	this.count = initcount;
+    	this.startTimer = startTimer;
+    	this.step = step;
+    	this.reset = reset;
+    }
+
+    function reset() {
+    	Timer.count = Timer.initcount;
+    }
+
+    function startTimer() {
+    	window.setTimeout(Timer.step, 1000);
+    }
+
+    function step() {
+   		updateCurrTime();
+
+	    Timer.count--;
+	    if (Timer.count == 0 && state > -1 && state < 5) {
+    		guess = " :(  ";
+
+				updateRow(state);
+				if (state < 4) {
+				state++;
+				}
+   
+    		Timer.reset();
+   		}
+	  	window.setTimeout(Timer.step, 1000);
+    }
+
+    function updateCurrTime() {
+			var T = document.getElementById("currTime");
+			if (state > -1 && state < 5) {
+				if (Timer.count >= 0) {
+					T.innerHTML = "The time is: <b>" + Timer.count + "</b>";	
+				}
+				else {
+					T.innerHTML = 0;
+				}
+			}
+			else if (state == 5) {
+				if (guess == currentWord) {
+					T.innerHTML = "<b>YOU WIN!</b><br \>" +
+												"Your rounds played = " + roundsPlayed +
+												"<br \>Your rounds won = " + roundsWon;
+					setWins();
+					state = -1;
+
+				}
+				else {
+	    		T.innerHTML = "<b>You lose :(</b><br \>" +
+	    									"The word was <i>" + currentWord + "</i>." +
+												"<br \>Your rounds played = " + roundsPlayed +
+												"<br \>Your rounds won = " + roundsWon;
+				}
+			}
+    }
+
+</script>
+</head>
+<body> 
+<center>
+<input type = 'text' name = "guessInput" id = "guessInput"/>
+<input type = 'submit' name = "submit" id = "submit" onclick = 'submit()'/>
+<br \>
+<br \>
+
+
+<table id = "theTable" border = "1" class="thetable">
+<tr><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td></td><td></td><td></td><td></td><td></td></tr>
+</table>
+<h2>
+
+<input type = 'button' value = "Get a New Word" onclick = 'requestWord()'/>
+</h2>
+<div id = 'currTime'></div><br \>
+
+</center>
+<script type="text/javascript">
+    var currentWord, state = -1, guess, roundsWon, roundsPlayed, email;
+
+    requestWins();
+
+    Timer = new Timer(15);
+    Timer.startTimer();
+   
+
+
+
+	    resetTable();
+	</script>
+	</body>
+	</html>
