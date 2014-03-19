@@ -1,0 +1,221 @@
+import java.util.ArrayList;
+import java_cup.runtime.Symbol;
+import java.util.Hashtable;
+
+/* Preliminaries to use the scanner.  */
+scan with {: return lexer.next_token(); :};
+
+parser code {: 
+  BestLexer lexer;
+ 
+  public int instructionNum;
+  public Hashtable<String, Integer> labels;
+
+  public BestParser(BestLexer lex, Hashtable<String, Integer> hash) {
+      super(lex);
+      lexer = lex;
+      labels = hash;
+  }
+
+:}; 
+
+/* my terminals! */
+terminal LPAREN, RPAREN, NOT, NEW, INT, THIS;
+terminal TRUE, FALSE, LBRACKET, RBRACKET, COMMA;
+terminal AND, LESSTHAN, DOT, PLUS;
+terminal MINUS, TIMES, EQUALS, SEMICOLON;
+terminal PRINTLN, WHILE, IF, LBRACE, RBRACE;
+terminal BOOLEAN, PUBLIC, RETURN, STATIC, VOID;
+terminal MAIN, STRING, IDENTIFIER, EXTENDS, LENGTH;
+terminal Integer INTLITERAL;  
+
+non terminal ArrayList<Node> line_list;
+non terminal Node line;
+non terminal Node expr;
+
+non terminal Identifier, Expression, Statement;
+non terminal Type, MethodDeclaration, VarDeclaration;
+non terminal ClassDeclaration, MainClass, Goal;
+
+non terminal ExpList _ExpressionList, _ExpressionPart;
+
+start with Goal;
+
+Goal ::=
+	// lots of shit here
+	;
+
+MainClass ::=
+	CLASS Identifier:l LBRACE PUBLIC STATIC VOID MAIN LPAREN STRING LBRACKET RBRACKET Identifier:m RPAREN LBRACE Statement:r RBRACE RBRACE
+	{: RESULT = new MainClass(l, m, r); :}
+	;
+
+ClassDeclaration ::=
+	// lots of shit here
+	;
+
+VarDeclaration ::= 
+	Type:l Identifier:r SEMICOLON
+	{: RESULT = new VarDecl(l, r); :}
+	;
+
+_VarDeclList ::=
+	_VarDeclList:l VarDeclaration:r
+	{: l.addElement(r); RESULT = l; :}
+	|
+	// nothing
+	{: RESULT = new VarDeclList(); :}
+	;
+
+MethodDeclaration ::= 
+	PUBLIC Type:t Identifier:i LPAREN _FormalList:f
+	;
+
+_FormalList ::=
+	_Formal:l _FormalPart:r
+	{: FormalList ans = new FormalList();
+		ans.addElement(l);
+		for (int i = 0; i < r.size(); i++) {
+			ans.addElement(r.elementAt(i));
+		}
+		RESULT = ans;
+	:}
+	|
+	// nothing
+	{: RESULT = new FormalList(); :}
+	;
+
+_FormalPart ::=
+	_FormalPart:l COMMA _Formal:r
+	{: l.addElement(r); RESULT = l; :}
+	|
+	// nothing
+	{: RESULT = new FormalList(); :}
+	;
+
+_Formal ::=
+	Type:l Identifier:r
+	{: RESULT = new Formal(l, r); :}
+	;
+
+Type ::=
+	INT LBRACKET RBACKET
+	{: RESULT = new IntArrayType(); :}
+	|
+	BOOLEAN
+	{: RESULT = new BooleanType(); :}
+	|
+	INT
+	{: RESULT = new IntegerType(); :}
+	|
+	Identifier
+	{: RESULT = new IdentifierType(); :}
+	;
+
+Statement ::=
+	LBRACE _StatementList:l RBRACE
+	{: RESULT = new Block(l); :}
+	|
+	IF LPAREN Expression:l RPAREN Statement:m ELSE Statement:r
+	{: RESULT = new If(l, m, r); :}
+	|
+	WHILE LPAREN Expression:l RPAREN Statement:r
+	{: RESULT = new While(l, r); :}
+	|
+	PRINTLN LPAREN Expression:l RPAREN SEMICOLON
+	{: RESULT = new Print(l); :}
+	|
+	Identifier:l EQUALS Expression:r SEMICOLON
+	{: RESULT = new Assign(l, r); :}
+	|
+	Identifier:l LBRACKET Expression:m RBRACKET EQUALS Expression:r SEMICOLON
+	{: RESULT = new ArrayAssign(l, m, r); :}
+	;
+
+_StatementList ::=
+	_StatementList:l Statement:r
+	{: l.addElement(r); RESULT = l; :}
+	|
+	// nothing
+	{: RESULT = new StatementList(); :}
+	;
+
+Expression ::=
+	Expression:l AND Expression:r
+	{: RESULT = new And(l, r); :}
+	|
+	Expression:l LESSTHAN Expression:r
+	{: RESULT = new LessThan(l, r); :}
+	|
+	Expression:l PLUS Expression:r
+	{: RESULT = new Plus(l, r); :}
+	|
+	Expression:l MINUS Expression:r
+	{: RESULT = new Minus(l, r); :}
+	|
+	Expression:l TIMES Expression:r
+	{: RESULT = new Times(l, r); :}
+	|
+	Expression:l LBRACKET Expression:r RBRACKET
+	{: RESULT = new ArrayLookup(l, r); :}
+	|
+	Expression:l DOT LENGTH
+	{: RESULT = new ArrayLength(l); :}
+	|
+	Expression:l DOT Identifier:m LPAREN _ExpressionList:r RPAREN
+	{: RESULT = new Call(l, m, r); :}
+	|
+	INTLITERAL:l
+	{: RESULT = new IntegerLiteral(l); :}
+	|
+	TRUE
+	{: RESULT = new True(); :}
+	|
+	FALSE
+	{: RESULT = new False(); :}
+	|
+	Identifier:l
+	{: RESULT = new Identifier(l)); :}
+	|
+	THIS
+	{: RESULT = new This(); :}
+	|
+	NEW INT LBRACKET Expression:l RBRACKET
+	{: RESULT = new NewArray(l); :}
+	|
+	NEW Identifier:l LPAREN RPAREN
+	{: RESULT = new NewObject(l); :}
+	|
+	NOT Expression:l
+	{: RESULT = new Not(l); :}
+	|
+	LPAREN Expression:l RPAREN
+	{: RESULT = l; :}
+	;
+
+_ExpressionList ::=
+	Expression:l _ExpressionPart:r
+	{: ExpList ans = new ExpList();
+		ans.addElement(l);
+		for (int i = 0; i < r.size(); i++) {
+			ans.addElement(r.elementAt(i));
+		}
+		RESULT = ans;
+	:}
+	|
+	// nothing
+	{: RESULT = new ExpList(); :}
+	;
+
+_ExpressionPart ::=
+	_ExpressionPart:l COMMA Expression:r
+	{: l.addElement(r); RESULT = l; :}
+	|
+	// nothing
+	{: RESULT = new ExpList(); :}
+	;
+
+Identifier ::= 
+	IDENTIFIER:i
+	{: RESULT = new Identifier(i); }
+	;
