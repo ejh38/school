@@ -22,10 +22,20 @@ new_line = \r|\n|\r\n|\z
 white_space = {new_line} | [ \t\f]
 identifier = [_a-zA-Z][_a-zA-Z0-9]*
 
+/* comments */
+comment = {TraditionalComment} | {EndOfLineComment} | 
+          {DocumentationComment}
+InputCharacter = [^\r\n]
+
+TraditionalComment = "/*" [^*] ~"*/" | "/*" "*"+ "/"
+EndOfLineComment = "//" {InputCharacter}* {new_line}?
+DocumentationComment = "/*" "*"+ [^/*] ~"*/"
+
 %%
 
 /* MiniJava Terminals! */
 
+"System.out.println"    { return new Symbol(PRINTLN, yyline+1, yycolumn+18); }
 "("		 		{ return new Symbol(LPAREN, yyline+1, yycolumn+1); }
 ")"		 		{ return new Symbol(RPAREN, yyline+1, yycolumn+1); }
 "!"				{ return new Symbol(NOT, yyline+1, yycolumn+1); }
@@ -39,7 +49,6 @@ identifier = [_a-zA-Z][_a-zA-Z0-9]*
 "["				{ return new Symbol(LBRACKET, yyline+1, yycolumn+1); }
 "]"				{ return new Symbol(RBRACKET, yyline+1, yycolumn+1); }
 ","			 	{ return new Symbol(COMMA, yyline+1, yycolumn+1); }
-{int}			{return new Symbol(INTLITERAL, yyline+1, yycolumn+1, new Integer(Integer.parseInt(yytext())));}
 "&&"			{ return new Symbol(AND, yyline+1, yycolumn+2); }
 "<"			 	{ return new Symbol(LESSTHAN, yyline+1, yycolumn+1); }
 "."			 	{ return new Symbol(DOT, yyline+1, yycolumn+1); }
@@ -48,7 +57,6 @@ identifier = [_a-zA-Z][_a-zA-Z0-9]*
 "*"			 	{ return new Symbol(TIMES, yyline+1, yycolumn+1); }
 "="			 	{ return new Symbol(EQUALS, yyline+1, yycolumn+1); }
 ";"			 	{ return new Symbol(SEMICOLON, yyline+1, yycolumn+1); }
-"System.out.println"    { return new Symbol(PRINTLN, yyline+1, yycolumn+18); }
 "while"			{ return new Symbol(WHILE, yyline+1, yycolumn+5); }
 "if"			{ return new Symbol(IF, yyline+1, yycolumn+2); }
 "{"			 	{ return new Symbol(LBRACE, yyline+1, yycolumn+1); }
@@ -60,14 +68,18 @@ identifier = [_a-zA-Z][_a-zA-Z0-9]*
 "void"	 		{ return new Symbol(VOID, yyline+1, yycolumn+4); }
 "main"	 		{ return new Symbol(MAIN, yyline+1, yycolumn+4); }
 "String"	 	{ return new Symbol(STRING, yyline+1, yycolumn+6); }
-{identifier}	{ return new Symbol(IDENTIFIER, yyline+1, yycolumn+yytext().length, yytext()); }
+"class"			{ return new Symbol(CLASS, yyline+1, yycolumn+5); }
+"else"			{ return new Symbol(ELSE, yyline+1, yycolumn+4); }
 
-
-".text"	 { /* do nothing */ }
+{identifier}	{ return new Symbol(IDENTIFIER, yyline+1, yycolumn+yytext().length(), yytext()); }
+{int}			{return new Symbol(INTLITERAL, yyline+1, yycolumn+1, new Integer(Integer.parseInt(yytext())));}
+{comment}		{ /* ignore! */ }
 
 {new_line} { /*ignore! */ }
 
 {white_space}	{ /* ignore */ }
+
+
 
 /* error fallback */
 "[^]"	{ error("Illegal character <"+ yytext()+">"); }

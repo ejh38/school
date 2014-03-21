@@ -1,7 +1,7 @@
-RUN_FILE = test5.txt
+RUN_FILE = a.txt
 OUTPUT = output.txt
-PWD = /Users/RedDragon/Dropbox/College/CS\ 1622\ Compilers/Project2
-JARPATH = /Users/RedDragon/Dropbox/College/CS\ 1622\ Compilers/Project2/lib
+PWD = /Users/RedDragon/Desktop/project3
+JARPATH = /Users/RedDragon/Desktop/project3/lib
 
 all: build run
 
@@ -11,8 +11,8 @@ build_tools:
 	bin/jflex BestLexer.flex
 	java -jar $(JARPATH)/java-cup-11a.jar -interface -parser BestParser BestParser.cup
 build_class:
-	javac -classpath $(JARPATH)/java-cup-11a.jar:$(PWD)/ Apocalypse.java
+	javac -classpath $(JARPATH)/java-cup-11a.jar:$(PWD)/ Main.java
 run:
-	java -classpath $(JARPATH)/java-cup-11a.jar:$(PWD)/ Apocalypse $(RUN_FILE)
+	java -classpath $(JARPATH)/java-cup-11a.jar:$(PWD)/ Main $(RUN_FILE)
 save:
-	java -classpath $(JARPATH)/java-cup-11a.jar:$(PWD)/ Apocalypse $(RUN_FILE) > $(OUTPUT)
+	java -classpath $(JARPATH)/java-cup-11a.jar:$(PWD)/ Main $(RUN_FILE) > $(OUTPUT)
