@@ -16,7 +16,7 @@ import java_cup.runtime.Symbol;
   }
 %} 
 
-int = 0 | -?[1-9][0-9]*
+int = 0 | [1-9][0-9]*
 
 new_line = \r|\n|\r\n|\z
 white_space = {new_line} | [ \t\f]
@@ -72,7 +72,8 @@ DocumentationComment = "/*" "*"+ [^/*] ~"*/"
 "else"			{ return new Symbol(ELSE, yyline+1, yycolumn+4); }
 
 {identifier}	{ return new Symbol(IDENTIFIER, yyline+1, yycolumn+yytext().length(), yytext()); }
-{int}			{return new Symbol(INTLITERAL, yyline+1, yycolumn+1, new Integer(Integer.parseInt(yytext())));}
+{int}			{ return new Symbol(INTLITERAL, yyline+1, yycolumn+1, new Integer(Integer.parseInt(yytext()))); }
+
 {comment}		{ /* ignore! */ }
 
 {new_line} { /*ignore! */ }

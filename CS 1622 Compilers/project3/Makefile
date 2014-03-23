@@ -1,4 +1,4 @@
-RUN_FILE = a.txt
+RUN_FILE = e.txt
 OUTPUT = output.txt
 PWD = /Users/RedDragon/Desktop/project3
 JARPATH = /Users/RedDragon/Desktop/project3/lib

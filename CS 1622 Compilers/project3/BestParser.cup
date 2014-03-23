@@ -205,7 +205,7 @@ Expression ::=
 	{: RESULT = new Call(l, new Identifier(m), r); :}
 	|
 	INTLITERAL:l
-	{: RESULT = new IntegerLiteral(l); :}
+	{: RESULT = new IntegerLiteral(l);  :}
 	|
 	PLUS INTLITERAL:l
 	{: RESULT = new IntegerLiteral(l); :}
