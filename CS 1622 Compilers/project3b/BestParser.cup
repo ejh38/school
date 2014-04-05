@@ -1,0 +1,293 @@
+import java.util.ArrayList;
+import java_cup.runtime.Symbol;
+import java.util.Hashtable;
+import syntaxtree.*;
+import java.lang.Integer;
+
+/* Preliminaries to use the scanner.  */
+scan with {: return lexer.next_token(); :};
+
+parser code {: 
+  BestLexer lexer;
+  Program finishedProduct;
+  public boolean doneMessedUp = false;
+
+  public BestParser(BestLexer lex) {
+      super(lex);
+      lexer = lex;
+  }
+
+  public void report_error(String msg, Object info) {
+  	doneMessedUp = true;
+
+	if (msg.equals("Syntax error")) {
+		msg = "Generic syntax error";
+	}
+	if (info instanceof Symbol) {
+		return;
+	}
+	else {
+		Token s = (Token)info;
+		System.out.println(msg + " at line" + s.line + ", column " + s.column);
+	}
+  }
+
+:}; 
+
+/* my terminals! */
+terminal Token LPAREN, RPAREN, NOT, NEW, INT, THIS;
+terminal Token TRUE, FALSE, LBRACKET, RBRACKET, COMMA;
+terminal Token AND, LESSTHAN, DOT, PLUS;
+terminal Token MINUS, TIMES, EQUALS, SEMICOLON;
+terminal Token PRINTLN, WHILE, IF, LBRACE, RBRACE;
+terminal Token BOOLEAN, PUBLIC, RETURN, STATIC, VOID;
+terminal Token MAIN, STRING, EXTENDS, LENGTH, CLASS, ELSE;
+terminal Token INTLITERAL;  
+terminal Token IDENTIFIER;
+
+non terminal Program Goal;
+non terminal MainClass _MainClass;
+non terminal ClassDecl ClassDeclaration;
+non terminal ClassDeclList _ClassDeclList;
+non terminal VarDecl VarDeclaration; 
+non terminal VarDeclList _VarDeclList;
+non terminal MethodDecl MethodDeclaration;
+non terminal MethodDeclList _MethodDeclList;
+non terminal FormalList _FormalList, _FormalPart;
+non terminal Formal _Formal;
+non terminal Type _Type;
+non terminal Statement _Statement;
+non terminal StatementList _StatementList;
+non terminal Exp Expression;
+non terminal ExpList _ExpressionList, _ExpressionPart;
+
+precedence left AND;
+precedence left PLUS, MINUS;
+precedence left TIMES;
+precedence right RPAREN, RBRACE, RBRACKET;
+precedence right LPAREN, LBRACE, LBRACKET;
+precedence left LESSTHAN;
+precedence right NOT;
+
+start with Goal;
+
+Goal ::=
+	_MainClass:l _ClassDeclList:r
+	{: RESULT = new Program(l, r); parser.finishedProduct = RESULT; :}
+	;
+
+_MainClass ::=
+	CLASS IDENTIFIER:l LBRACE PUBLIC STATIC VOID MAIN LPAREN STRING LBRACKET RBRACKET IDENTIFIER:m RPAREN LBRACE _Statement:r RBRACE RBRACE
+	{: RESULT = new MainClass(new Identifier((String)l.content), new Identifier((String)m.content), r); :}
+	;
+
+ClassDeclaration ::=
+	CLASS IDENTIFIER:l LBRACE _VarDeclList:m _MethodDeclList:r RBRACE
+	{: RESULT = new ClassDeclSimple(new Identifier((String)l.content), m, r); :}
+	|
+	CLASS IDENTIFIER:i1 EXTENDS IDENTIFIER:i2 LBRACE _VarDeclList:m _MethodDeclList:r RBRACE
+	{: RESULT = new ClassDeclExtends(new Identifier((String)i1.content), new Identifier((String)i2.content), m, r); :}
+	|
+	error RBRACE:l
+	{: parser.report_error("Parse error", l); :}
+	;
+
+_ClassDeclList ::=
+	_ClassDeclList:l ClassDeclaration:r
+	{: l.addElement(r); RESULT = l; :}
+	|
+	// nothing
+	{: RESULT = new ClassDeclList(); :}
+	;
+
+VarDeclaration ::= 
+	_Type:l IDENTIFIER:r SEMICOLON
+	{: RESULT = new VarDecl(l, new Identifier((String)r.content)); :}
+	|
+	_Type error SEMICOLON:l
+	{: parser.report_error("Parse error", l); :}
+	;
+
+_VarDeclList ::=
+	_VarDeclList:l VarDeclaration:r
+	{: l.addElement(r); RESULT = l; :}
+	|
+	// nothing
+	{: RESULT = new VarDeclList(); :}
+	;
+
+MethodDeclaration ::= 
+	PUBLIC _Type:t IDENTIFIER:i LPAREN _FormalList:f RPAREN LBRACE _VarDeclList:v _StatementList:s RETURN Expression:e SEMICOLON RBRACE
+	{: RESULT = new MethodDecl(t, new Identifier((String)i.content), f, v, s, e); :}
+	|
+	PUBLIC _Type:t IDENTIFIER:i LPAREN RPAREN LBRACE _VarDeclList:v _StatementList:s RETURN Expression:e SEMICOLON RBRACE
+	{: RESULT = new MethodDecl(t, new Identifier((String)i.content), new FormalList(), v, s, e); :}
+	|
+	error RBRACE:l
+	{: parser.report_error("Parse error", l); :}
+	;
+
+_MethodDeclList ::=
+	_MethodDeclList:l MethodDeclaration:r
+	{: l.addElement(r); RESULT = l; :}
+	|
+	// nothing
+	{: RESULT = new MethodDeclList(); :}
+	;
+
+_FormalList ::=
+	_Formal:l _FormalPart:r
+	{: 
+		FormalList ans = new FormalList();
+		ans.addElement(l);
+		for (int i = 0; i < r.size(); i++) {
+			ans.addElement(r.elementAt(i));
+		}
+		RESULT = ans;
+	:}
+	|
+	// nothing
+	{: RESULT = new FormalList(); :}
+	|
+	error RPAREN:l
+	{: parser.report_error("Parse error", l); :}
+	;
+
+_FormalPart ::=
+	_FormalPart:l COMMA _Formal:r
+	{: l.addElement(r); RESULT = l; :}
+	|
+	// nothing
+	{: RESULT = new FormalList(); :}
+	;
+
+_Formal ::=
+	_Type:l IDENTIFIER:r
+	{: RESULT = new Formal(l, new Identifier((String)r.content)); :}
+	;
+
+_Type ::=
+	INT LBRACKET RBRACKET
+	{: RESULT = new IntArrayType(); :}
+	|
+	BOOLEAN
+	{: RESULT = new BooleanType(); :}
+	|
+	INT
+	{: RESULT = new IntegerType(); :}
+	|
+	IDENTIFIER:l
+	{: RESULT = new IdentifierType((String)l.content); :}
+	;
+
+_Statement ::=
+	LBRACE _StatementList:l RBRACE
+	{: RESULT = new Block(l); :}
+	|
+	IF LPAREN Expression:l RPAREN _Statement:m ELSE _Statement:r
+	{: RESULT = new If(l, m, r); :}
+	|
+	WHILE LPAREN Expression:l RPAREN _Statement:r
+	{: RESULT = new While(l, r); :}
+	|
+	PRINTLN LPAREN Expression:l RPAREN SEMICOLON
+	{: RESULT = new Print(l); :}
+	|
+	IDENTIFIER:l EQUALS Expression:r SEMICOLON
+	{: RESULT = new Assign(new Identifier((String)l.content), r); :}
+	|
+	IDENTIFIER:l LBRACKET Expression:m RBRACKET EQUALS Expression:r SEMICOLON
+	{: RESULT = new ArrayAssign(new Identifier((String)l.content), m, r); :}
+	|
+	error SEMICOLON:l
+	{: parser.report_error("Parse error", l); :}
+	;
+
+_StatementList ::=
+	_Statement:r _StatementList:l
+	{: l.addElement(r); RESULT = l; :}
+	|	
+	// nothing
+	{: RESULT = new StatementList(); :}
+	;
+
+Expression ::=
+	Expression:l AND Expression:r
+	{: RESULT = new And(l, r); :}
+	|
+	Expression:l LESSTHAN Expression:r
+	{: RESULT = new LessThan(l, r); :}
+	|
+	Expression:l PLUS Expression:r
+	{: RESULT = new Plus(l, r); :}
+	|
+	Expression:l MINUS Expression:r
+	{: RESULT = new Minus(l, r); :}
+	|
+	Expression:l TIMES Expression:r
+	{: RESULT = new Times(l, r); :}
+	|
+	Expression:l LBRACKET Expression:r RBRACKET
+	{: RESULT = new ArrayLookup(l, r); :}
+	|
+	Expression:l DOT LENGTH
+	{: RESULT = new ArrayLength(l); :}
+	|
+	Expression:l DOT IDENTIFIER:m LPAREN _ExpressionList:r RPAREN
+	{: RESULT = new Call(l, new Identifier((String)m.content), r); :}
+	|
+	INTLITERAL:l
+	{: RESULT = new IntegerLiteral((Integer)l.content);  :}
+	|
+	PLUS INTLITERAL:l
+	{: RESULT = new IntegerLiteral((Integer)l.content); :}
+	|
+	MINUS INTLITERAL:l
+	{: RESULT = new IntegerLiteral(-(Integer)l.content); :}
+	|
+	TRUE
+	{: RESULT = new True(); :}
+	|
+	FALSE
+	{: RESULT = new False(); :}
+	|
+	IDENTIFIER:l
+	{: RESULT = new IdentifierExp((String)l.content);  :}
+	|
+	THIS
+	{: RESULT = new This(); :}
+	|
+	NEW INT LBRACKET Expression:l RBRACKET
+	{: RESULT = new NewArray(l); :}
+	|
+	NEW IDENTIFIER:l LPAREN RPAREN
+	{: RESULT = new NewObject(new Identifier((String)l.content)); :}
+	|
+	NOT Expression:l
+	{: RESULT = new Not(l); :}
+	|
+	LPAREN Expression:l RPAREN
+	{: RESULT = l; :}
+	;
+
+_ExpressionList ::=
+	Expression:l _ExpressionPart:r
+	{: ExpList ans = new ExpList();
+		ans.addElement(l);
+		for (int i = 0; i < r.size(); i++) {
+			ans.addElement(r.elementAt(i));
+		}
+		RESULT = ans;
+	:}
+	|
+	// nothing
+	{: RESULT = new ExpList(); :}
+	;
+
+_ExpressionPart ::=
+	_ExpressionPart:l COMMA Expression:r
+	{: l.addElement(r); RESULT = l; :}
+	|
+	// nothing
+	{: RESULT = new ExpList(); :}
+	;
